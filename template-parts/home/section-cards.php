@@ -32,7 +32,7 @@ $bg    = apply_filters( 'iec_home_section_cards_bg_url', content_url( '/uploads/
 
 						<?php if ( ! empty( $main['heading'] ) ) : ?>
 
-							<h2 class="iec_section_heading" id="iec-home-cards-heading"><?= $main['heading']; ?></h2>
+							<h2 class="iec_section_heading iec-section-heading" id="iec-home-cards-heading"><?= $main['heading']; ?></h2>
 
 						<?php endif; ?>
 

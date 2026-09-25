@@ -21,7 +21,7 @@ $check_icon = '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns
 				<div class="col-md-5">
 
 					<?php if ( $heading ) : ?>
-						<h2 id="iec-voucher-installation-title" class="iec_section_heading mb-0"><?= $heading; ?></h2>
+						<h2 id="iec-voucher-installation-title" class="iec_section_heading iec-section-heading mb-0"><?= $heading; ?></h2>
 					<?php endif; ?>
 
 					<?php if ( $description ) : ?>

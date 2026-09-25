@@ -36,6 +36,14 @@
         } );
     }
 
+    function swiperConfig( config ) {
+        return Object.assign( {
+            touchStartPreventDefault: false,
+            preventClicks: false,
+            preventClicksPropagation: false,
+        }, config || {} );
+    }
+
     /* create swiper instance: */
     function create( el, config ) {
         if ( ! isReady( el ) ) {
@@ -44,20 +52,39 @@
         if ( ! hasWrapper( el ) ) {
             return null;
         }
-        return new Swiper( el, config );
+        return new Swiper( el, swiperConfig( config ) );
     }
+
+    IEC.swiperConfig = swiperConfig;
+
+    IEC.initMobileOnlySwiper = function ( selector, options ) {
+        var el = document.querySelector( selector );
+        var mobile = window.matchMedia( '(max-width: 767px)' );
+
+        if ( ! el ) {
+            return;
+        }
+
+        function sync() {
+            if ( mobile.matches ) {
+                if ( ! el.swiper ) {
+                    create( el, options );
+                }
+                return;
+            }
+
+            if ( el.swiper ) {
+                el.swiper.destroy( true, true );
+            }
+        }
+
+        sync();
+        mobile.addEventListener( 'change', sync );
+    };
 
     /* slide count: */
     function slideCount( el ) {
         return $( el ).find( '.swiper-slide' ).length;
-    }
-
-    /* smooth scroll: */
-    function scrollTo( $target, offset ) {
-        if ( ! $target.length ) {
-            return;
-        }
-        $( 'html, body' ).animate( { scrollTop: $target.offset().top - ( offset || 100 ) }, 400 );
     }
 
     /* ------------------------------------------------------------------ */
@@ -101,14 +128,16 @@
             desktop: {
                 slidesPerView: 'auto',
                 spaceBetween: 44,
-                loop: true,
+                loop: false,
+                watchOverflow: true,
                 autoplay: { delay: 2500, disableOnInteraction: false },
                 navigation: { nextEl: next, prevEl: prev },
                 pagination: { el: pagination, clickable: true },
             },
             mobile: {
                 slidesPerView: 1,
-                grid: { rows: 2 },
+                loop: false,
+                watchOverflow: true,
                 autoplay: { delay: 2500, disableOnInteraction: false },
                 spaceBetween: 23,
                 navigation: { nextEl: next, prevEl: prev },
@@ -721,7 +750,7 @@
                 return;
             }
             tabsSwiper.slideTo( idx, 600 );
-            scrollTo( $root );
+            IEC.scrollTo( $root );
         } );
 
         function goToHashTab() {
@@ -786,7 +815,7 @@
             }
             swiper.slideTo( index );
             setLandingTabActive( $buttons, index );
-            scrollTo( $root.find( '.iec_tab_landing_tab_section' ) );
+            IEC.scrollTo( $root.find( '.iec_tab_landing_tab_section' ) );
         } );
     }
 
@@ -796,28 +825,43 @@
 
     /* product thumbs + main: */
     function initProductHero() {
-        var $thumb = $ready( '.iec_single_porduct_swiper_thumb_hero' );
-        var $main  = $ready( '.iec_single_porduct_swiper_main_hero' );
+        var thumbEl = document.querySelector( '.iec_single_porduct_swiper_thumb_hero' );
+        var mainEl  = document.querySelector( '.iec_single_porduct_swiper_main_hero' );
+        var desktop = window.matchMedia( '(min-width: 992px)' );
 
-        if ( ! $thumb.length || ! $main.length ) {
+        if ( ! thumbEl || ! mainEl ) {
             return;
         }
 
-        var thumbSwiper = create( $thumb[0], {
-            spaceBetween: 30,
-            slidesPerView: 3,
-            watchSlidesProgress: true,
-            direction: $( window ).width() >= 992 ? 'vertical' : 'horizontal',
-            navigation: {
-                nextEl: '.hero-swiper-button-next',
-                prevEl: '.hero-swiper-button-prev',
-            },
-        } );
+        function sync() {
+            if ( thumbEl.swiper ) {
+                thumbEl.swiper.destroy( true, true );
+            }
+            if ( mainEl.swiper ) {
+                mainEl.swiper.destroy( true, true );
+            }
 
-        create( $main[0], {
-            spaceBetween: 10,
-            thumbs: { swiper: thumbSwiper },
-        } );
+            var thumbSwiper = create( thumbEl, {
+                spaceBetween: 30,
+                slidesPerView: 3,
+                watchSlidesProgress: true,
+                watchOverflow: true,
+                direction: desktop.matches ? 'vertical' : 'horizontal',
+                navigation: {
+                    nextEl: '.hero-swiper-button-next',
+                    prevEl: '.hero-swiper-button-prev',
+                },
+            } );
+
+            create( mainEl, {
+                spaceBetween: 10,
+                watchOverflow: true,
+                thumbs: { swiper: thumbSwiper },
+            } );
+        }
+
+        sync();
+        desktop.addEventListener( 'change', sync );
     }
 
     /* market sliders: */
@@ -841,7 +885,17 @@
                 return;
             }
             var cfg = marketConfig( item.next, item.prev, item.pag );
-            create( $el[0], $( window ).width() >= 637 ? cfg.desktop : cfg.mobile );
+            var wide = window.matchMedia( '(min-width: 637px)' );
+
+            function sync() {
+                if ( $el[0].swiper ) {
+                    $el[0].swiper.destroy( true, true );
+                }
+                create( $el[0], wide.matches ? cfg.desktop : cfg.mobile );
+            }
+
+            sync();
+            wide.addEventListener( 'change', sync );
         } );
     }
 
@@ -1099,10 +1153,7 @@
         initGlobalFeaturedNews();
     } );
 
-    window.initStarlinkPortfolio = initStarlinkPortfolioSwipers;
-    window.initSwiperImage       = initNewsGallery;
-    window.initFnSwiper          = initNewsFeatured;
-    window.useCaseSwiper         = function () {
+    window.useCaseSwiper = function () {
         initOptiviewDirections();
         initVoucherDirections();
     };

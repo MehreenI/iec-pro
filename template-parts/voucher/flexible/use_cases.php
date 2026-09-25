@@ -16,6 +16,6 @@ get_template_part(
 	array(
 		'items'         => $items,
 		'heading'       => $heading,
-		'heading_class' => 'directions__main iec_section_heading',
+		'heading_class' => 'directions__main iec_section_heading iec-section-heading',
 	)
 );

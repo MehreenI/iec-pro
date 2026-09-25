@@ -22,7 +22,7 @@ if ( ! $title && ! $body && ! $embed ) {
 					<div class="iec_iot_talk_solution_content">
 
 						<?php if ( $title ) : ?>
-							<h2 class="iec_section_heading"><?= $title; ?></h2>
+							<h2 class="iec_section_heading iec-section-heading"><?= $title; ?></h2>
 						<?php endif; ?>
 
 						<?php if ( $body ) : ?>

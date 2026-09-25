@@ -165,7 +165,7 @@ foreach ( $pins as $slot => $keys ) {
 					<div class="iec_home_global_content">
 						<?php if ( $heading ) : ?>
 
-							<h2 class="iec_section_heading" data-aos="fade-up"><?= $heading; ?></h2>
+							<h2 class="iec_section_heading iec-section-heading" data-aos="fade-up"><?= $heading; ?></h2>
 
 						<?php endif; ?>
 

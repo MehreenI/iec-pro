@@ -65,7 +65,7 @@ if ( $image_id < 1 && '' === $thumb && function_exists( 'bbtheme_get_image_or_pl
 
 $app_filters = function_exists( 'get_ps_filter_choices' ) ? get_ps_filter_choices( 'application' ) : array();
 ?>
-<a href="<?= esc_url( $permalink ); ?>" class="iec-product-solution-wrapper" data-product-id="<?= esc_attr( (string) $post_id ); ?>">
+<a href="<?= $permalink; ?>" class="iec-product-solution-wrapper" data-product-id="<?= $post_id; ?>" role="listitem">
     <?php if ( $applications !== array() ) : ?>
         <div class="category<?= $hide_card_category ? ' d-none' : ''; ?>">
             <?php foreach ( $applications as $application ) : ?>
@@ -73,7 +73,7 @@ $app_filters = function_exists( 'get_ps_filter_choices' ) ? get_ps_filter_choice
                 $tag_slug = sanitize_html_class( strtolower( str_replace( ' ', '-', (string) $application ) ) );
                 $label    = isset( $app_filters[ $application ] ) ? $app_filters[ $application ] : $application;
                 ?>
-                <p class="<?= esc_attr( $tag_slug ); ?>"><?= $label; ?></p>
+                <span class="<?= $tag_slug; ?>"><?= $label; ?></span>
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
@@ -82,12 +82,12 @@ $app_filters = function_exists( 'get_ps_filter_choices' ) ? get_ps_filter_choice
         <?php if ( $image_id > 0 ) : ?>
             <?= wp_get_attachment_image( $image_id, 'medium_large', false, array( 'class' => 'img-fluid', 'alt' => wp_strip_all_tags( (string) $title ), 'loading' => 'lazy', 'decoding' => 'async' ) ); ?>
         <?php elseif ( '' !== $thumb ) : ?>
-            <img src="<?= esc_url( $thumb ); ?>" alt="<?= esc_attr( wp_strip_all_tags( $title ) ); ?>" class="img-fluid" loading="lazy" decoding="async">
+            <img src="<?= $thumb; ?>" alt="<?= wp_strip_all_tags( $title ); ?>" class="img-fluid" loading="lazy" decoding="async">
         <?php endif; ?>
     </div>
 
     <div class="wrapper-content">
         <h3><?= $title_html; ?></h3>
-        <span class="link-to">Select</span>
+        <span class="link-to"><?= __( 'Select', 'bbtheme' ); ?></span>
     </div>
 </a>

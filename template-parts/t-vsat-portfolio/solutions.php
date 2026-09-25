@@ -190,11 +190,11 @@ $strip_count = 14;
             <div class="col-md-12">
                 <div class="iec_section_heading">
                     <?php if ( $eyebrow ) : ?>
-                        <span class="iec_section_eyebrow"><?= $eyebrow; ?></span>
+                        <span class="iec_home_eyebrow iec-eyebrow"><?= $eyebrow; ?></span>
                     <?php endif; ?>
 
                     <?php if ( $title ) : ?>
-                        <h2 class="recommended_title js-vsat-section-title"><?= $title; ?></h2>
+                        <h2 class="recommended_title iec-section-heading js-vsat-section-title"><?= $title; ?></h2>
                     <?php endif; ?>
                 </div>
             </div>

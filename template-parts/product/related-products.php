@@ -19,7 +19,7 @@ if ( ! is_array( $products ) ) {
 }
 
 ?>
-<section class="" id="our-products">
+<section class="iec_single_product_related" id="our-products">
     <?php
     iec_module(
         'products',

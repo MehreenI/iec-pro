@@ -102,7 +102,7 @@ foreach ( $services as $service ) {
 
 <section class="block-7 iec-offshore-vas-section">
 	<div class="container main-container">
-		<h2 class="iec_section_heading" data-aos="fade-up"><?= $heading; ?></h2>
+		<h2 class="iec_section_heading iec-section-heading" data-aos="fade-up"><?= $heading; ?></h2>
 		<div class="service-card" data-aos="fade-up">
 			<div class="tabs-wrapper">
 

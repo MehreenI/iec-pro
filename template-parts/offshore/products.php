@@ -17,7 +17,7 @@ $cta     = is_array( $section['cta'] ?? null ) ? $section['cta'] : array();
 $has_cta = ! empty( $cta['url'] );
 
 $module_args = array(
-	'heading_class' => 'iec_section_heading',
+	'heading_class' => 'iec_section_heading iec-section-heading',
 	'min_products'  => 0,
 	'post_type'     => 'product',
 	'heading_attrs' => 'data-aos="fade-up"',

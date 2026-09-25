@@ -1,7 +1,8 @@
 /* Desktop */
 
 /* Shared */
-.iec-voucher-management .iec_section_heading {
+.iec-voucher-management .iec_section_heading,
+.iec-voucher-management .iec-section-heading {
     font-family: 'Segoe UI';
     font-size: 1.409421rem;
     letter-spacing: 0.039151rem;
@@ -113,7 +114,8 @@ img.hero-side-img {
     margin-top: 0.46980706589827111rem;
 }
 
-.vmc_heading.iec_section_heading {
+.vmc_heading.iec_section_heading,
+.vmc_heading.iec-section-heading {
     margin-bottom: 0.32rem;
     line-height: normal;
 }
@@ -318,7 +320,8 @@ a.iec-arch-card__link {
 }
 
 /* Key features */
-.iec-voucher-management .iec_use_case_accordion .iec_section_heading {
+.iec-voucher-management .iec_use_case_accordion .iec_section_heading,
+.iec-voucher-management .iec_use_case_accordion .iec-section-heading {
     margin-bottom: 1.096216rem;
 }
 
@@ -546,7 +549,8 @@ a.iec-arch-card__link {
         text-align: center;
     }
 
-    .iec-solution-architecture .iec_section_heading {
+    .iec-solution-architecture .iec_section_heading,
+    .iec-solution-architecture .iec-section-heading {
         font-size: 1.625rem;
         line-height: 1.625rem;
     }
@@ -570,7 +574,8 @@ a.iec-arch-card__link {
     }
 
     /* Key features */
-    .iec-voucher-management .iec_use_case_accordion .iec_section_heading {
+    .iec-voucher-management .iec_use_case_accordion .iec_section_heading,
+    .iec-voucher-management .iec_use_case_accordion .iec-section-heading {
         text-align: center;
         font-size: 1.625rem;
         line-height: 1.625rem;

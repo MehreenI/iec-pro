@@ -32,10 +32,14 @@ $filter = $args['filter'] ?? array();
 											continue;
 										}
 										$img_url = $item['maritime_image']['url'] ?? '';
-										$link    = ! empty( $item['link'] ) ? $item['link'] : '#';
+										$href    = function_exists( 'iec_resolve_wpml_url' )
+											? (string) iec_resolve_wpml_url( $item['link'] ?? '' )
+											: ( is_array( $item['link'] ?? null ) ? ( $item['link']['url'] ?? '' ) : '' );
+										$tag     = $href ? 'a' : 'div';
+										$href_attr = $href ? ' href="' . esc_url( $href ) . '"' : '';
 										?>
 										<div class="swiper-slide">
-											<a href="<?= esc_url( $link ); ?>" class="iec_single_product_portfolio_swiper_content_wrapper">
+											<<?= $tag; ?><?= $href_attr; ?> class="iec_single_product_portfolio_swiper_content_wrapper">
 												<?php if ( $img_url !== '' ) : ?>
 													<img src="<?= esc_url( $img_url ); ?>" class="at_market_swiper_content_image" alt="<?= esc_attr( $item['text'] ?? '' ); ?>" loading="lazy" />
 												<?php endif; ?>
@@ -43,7 +47,7 @@ $filter = $args['filter'] ?? array();
 													<span><?= $item['text'] ?? ''; ?></span>
 													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-hidden="true"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
 												</div>
-											</a>
+											</<?= $tag; ?>>
 										</div>
 									<?php endforeach; ?>
 								</div>
@@ -92,10 +96,14 @@ $filter = $args['filter'] ?? array();
 											continue;
 										}
 										$img_url = $item['market_land']['url'] ?? '';
-										$link    = ! empty( $item['link'] ) ? $item['link'] : '#';
+										$href    = function_exists( 'iec_resolve_wpml_url' )
+											? (string) iec_resolve_wpml_url( $item['link'] ?? '' )
+											: ( is_array( $item['link'] ?? null ) ? ( $item['link']['url'] ?? '' ) : '' );
+										$tag     = $href ? 'a' : 'div';
+										$href_attr = $href ? ' href="' . esc_url( $href ) . '"' : '';
 										?>
 										<div class="swiper-slide">
-											<a href="<?= esc_url( $link ); ?>" class="iec_single_product_portfolio_swiper_content_wrapper">
+											<<?= $tag; ?><?= $href_attr; ?> class="iec_single_product_portfolio_swiper_content_wrapper">
 												<?php if ( $img_url !== '' ) : ?>
 													<img src="<?= esc_url( $img_url ); ?>" class="at_market_swiper_content_image" alt="<?= esc_attr( $item['market_title'] ?? '' ); ?>" loading="lazy" />
 												<?php endif; ?>
@@ -103,7 +111,7 @@ $filter = $args['filter'] ?? array();
 													<span><?= $item['market_title'] ?? ''; ?></span>
 													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-hidden="true"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
 												</div>
-											</a>
+											</<?= $tag; ?>>
 										</div>
 									<?php endforeach; ?>
 								</div>

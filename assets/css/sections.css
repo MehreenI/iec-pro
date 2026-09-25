@@ -660,10 +660,6 @@ form
     }
 }
 
-#header-v2.is_static.not_homepage.is_static.menu_open {
-    background: #717ba2 !important;
-}
-
 p.error {
     color: red;
     text-align: left;
@@ -711,26 +707,6 @@ select.error-field {
 .iec_home_contact_content {
     flex: 0 0 auto;
     width: 17.226259rem;
-}
-
-.iec_home_eyebrow {
-    width: 100%;
-    max-width: max-content;
-    height: 1.213668rem;
-    border-radius: 100vw;
-    padding: 0.078301rem 0.46980706589827111rem 0;
-    background-color: #727DA3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 400;
-    font-size: 0.548108rem;
-    line-height: 135%;
-    letter-spacing: 0.109622rem;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 0.939614rem;
 }
 
 .iec_home_contact_content .iec_home_section_heading {
@@ -1106,17 +1082,6 @@ select.error-field {
 }
 
 /* About Hero And Tabs */
-.bd_hero_banner {
-    background-color: #4a5568;
-    width: 100%;
-    min-height: 15.66023552994rem;
-    margin-top: -3.91505888249rem;
-    padding-top: 6.65560010023rem;
-    padding-bottom: 2.74054121774rem;
-    background-image: var(--bgImage);
-    z-index: -1;
-}
-
 .iec_hero_banner {
     width: 100%;
     min-height: 11.745177rem;
@@ -1147,17 +1112,8 @@ select.error-field {
     text-decoration: underline;
 }
 
-.overlay_title {
-    font-family: Myriad Pro, sans-serif;
-    font-weight: 700;
-    font-size: 1.56602355299rem;
-    line-height: 1.80092708594rem;
-    color: #7a84a6;
-    text-transform: uppercase;
-    margin-top: 3.24949887246rem;
-}
-
-.iec_heading_section h2, .iec-about-main-heading {
+.iec_heading_section h2,
+.iec-about-main-heading {
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 700;
     font-size: 1.56602355299rem;
@@ -1220,13 +1176,7 @@ select.error-field {
     color: #1b204c;
 }
 
-.bd_main_contact_section {
-    position: relative;
-    overflow: hidden;
-}
-
 /* Buttons */
-.bd_button,
 .iec_button {
     width: 100%;
     max-width: 7.047106rem;
@@ -1312,7 +1262,6 @@ select.error-field {
     left: 100%;
 }
 
-.bd_blue_gradient,
 .iec_blue_gradient {
     margin-left: auto;
     background: linear-gradient(270deg, #727da3, #1c214c);
@@ -1335,7 +1284,6 @@ select.error-field {
     transition: all 0.3s ease;
 }
 
-.bd_blue_gradient:hover,
 .iec_blue_gradient:hover {
     background: linear-gradient(270deg, #1c214c, #1c214c);
     text-decoration: none;
@@ -1352,156 +1300,6 @@ select.error-field {
     text-transform: uppercase;
     margin-bottom: 0.783012rem;
     margin-top: 0;
-}
-
-/* Products Grid */
-.iec_product_post_box_warpper {
-    min-height: 11.197068rem;
-    margin-bottom: 0.978765rem;
-}
-
-.iec-products-section {
-    padding: 2.740541rem 0;
-}
-
-.iec_product_posts_margin {
-    row-gap: 1.174518rem;
-}
-
-.iec_product_post_box_warpper {
-    min-height: 10rem;
-}
-
-.iec_products_posts_sec {
-    padding-top: 2.270734rem;
-    padding-bottom: 2.466487rem;
-}
-
-.iec_product_post_box_warpper {
-    min-height: 11.197068rem;
-    margin-bottom: 0.978765rem;
-}
-
-.iec_product_post_box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.iec_product_box_image {
-    width: 100%;
-    aspect-ratio: 1/0.60519;
-    position: relative;
-    background-color: #f9f9fa;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 0.274054rem;
-}
-
-.iec_product_box_image .cats {
-    background-color: #fff;
-    width: calc(61% - 0.075952rem);
-    height: 0.704710598847406665rem;
-    position: absolute;
-    bottom: 0;
-    left: 0.704710598847406665rem;
-    text-align: center;
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-    display: flex;
-}
-
-.iec_product_box_image .cats {
-    background-color: #fff;
-    width: calc(61% - 0.075952rem);
-    height: 0.704710598847406665rem;
-    position: absolute;
-    bottom: 0;
-    left: 0.704710598847406665rem;
-    text-align: center;
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-    display: flex;
-}
-
-.iec_product_box_image .cats > * {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.iec_product_box_image .cats > .land {
-    color: white;
-}
-
-.iec_product_box_image .cats > * {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.iec_product_box_image .cats > *:before {
-    content: " ";
-    width: 100%;
-    height: 0.117452rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.2s ease;
-}
-
-.iec_product_box_image .cats > .land:before {
-    background-color: #ddc9a3;
-}
-
-.iec_product_box_image .cats > .maritime:before {
-    background-color: #92c0e9;
-}
-
-.iec_product_box_image .cats > .maritime {
-    color: white;
-}
-
-.iec_product_box_image .cats > * div {
-    font-family: 'Myriad Pro';
-    font-weight: 600;
-    font-size: 0.46980706589827111rem;
-    line-height: 150%;
-    letter-spacing: 0.012528rem;
-    text-align: center;
-    text-transform: uppercase;
-
-    transition: all 0.2s ease;
-}
-
-.iec_product_post_title {
-    font-family: 'Myriad Pro';
-    font-weight: 400;
-    font-size: 0.822162rem;
-    letter-spacing: 0.012528rem;
-    color: #000;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.iec_product_post_box:hover .iec_product_box_image .cats > *:before {
-    height: 100%;
-}
-
-.iec_product_post_box:hover .iec_product_box_image .cats > * {
-    color: #fff !important;
-}
-
-.iec_product_post_title {
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 400;
-    font-size: 0.783012rem;
-    line-height: 130%;
-    color: #1b204c;
 }
 
 /* Featured News */
@@ -1825,19 +1623,7 @@ button.iec_partner_accordian_trigger {
     display: block;
 }
 
-/* Explore */
-.iec_exlore_section {
-    padding-top: 3.832047rem;
-    padding-bottom: 3.132047rem;
-    position: relative;
-    background-image: var(--desktopImage);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    display: flex;
-    align-items: center;
-}
-
+/* Section Headings */
 .iec_section_heading {
     font-family: 'Myriad Pro';
     font-weight: 700;
@@ -1849,7 +1635,6 @@ button.iec_partner_accordian_trigger {
     color: #1b204c;
 }
 
-/* Hero Slider */
 .iec_sec_sub_heading {
     font-family: 'Myriad Pro';
     font-weight: 300;
@@ -1857,6 +1642,19 @@ button.iec_partner_accordian_trigger {
     line-height: 118.182%;
     margin-bottom: 1.566024rem;
     text-transform: none;
+}
+
+/* Explore */
+.iec_exlore_section {
+    padding-top: 3.832047rem;
+    padding-bottom: 3.132047rem;
+    position: relative;
+    background-image: var(--desktopImage);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
 }
 
 /* Explore */
@@ -1976,16 +1774,6 @@ button.iec_partner_accordian_trigger {
 }
 
 .iec_optiview_directions .directions__container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
-    height: fit-content;
-    gap: 2.857993rem;
-    align-items: center;
-}
-
-.iec_optiview_directions .directions__bot__container {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -2326,105 +2114,6 @@ html[lang="id-ID"] .iec_starlink_portfolio_swiper_content .gray_btn {
     display: none;
 }
 
-/* Accordion */
-.iec_starlink_portfolio_accordion {
-    padding: 3.171198rem 0 4.698071rem;
-}
-
-.iec_starlink_portfolio_accordion {
-    background: #F1F2F7;
-    box-shadow: 0 -0.1566023553rem 0.99834001503rem -0.1566023553rem rgb(0 0 0 / 25%) inset;
-}
-
-.iec_starlink_portfolio_accordion .iec_main_heading {
-    letter-spacing: 0;
-    text-align: center;
-    margin-bottom: 1.174518rem;
-}
-
-.iec_starlink_portfolio_accordion_warpper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 0.626409rem 1.252819rem;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item {
-    flex: 0 0 auto;
-    max-width: 100%;
-    width: calc(50% - 0.626409rem);
-    border: none;
-    border-radius: 0;
-    background-color: #E7E6EE;
-    border-left: 0.03915058882rem solid #1B204C;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-header {
-}
-
-.iec_starlink_portfolio_accordion_header_content {
-    gap: 0.783012rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    min-height: 2.349035rem;
-    padding: 0.46980706589827111rem 0.704710598847406665rem 0.46980706589827111rem 0.665560rem;
-}
-
-.iec_starlink_portfolio_accordion_header_content h4 {
-    font-family: 'Myriad Pro';
-    font-weight: 600;
-    font-size: 0.783012rem;
-    line-height: 120%;
-    text-align: left;
-    color: #1B204C;
-    margin-bottom: 0;
-}
-
-.iec_starlink_portfolio_accordion_header_icon {
-    display: flex;
-    align-items: center;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-header svg {
-    width: auto;
-    height: 0.783012rem;
-    transform: none;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-header.active svg {
-    transform: rotate(180deg);
-    transition: trnsform 0.4s ease-in-out;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-collapse.collapse:not(.show) {
-    display: none;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body {
-    padding: 0.587259rem 0.704710598847406665rem 0.587259rem;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body p {
-    font-family: 'Myriad Pro';
-    font-weight: 400;
-    font-size: 0.626409rem;
-    line-height: 120%;
-    text-align: left;
-    color: #1B204C;
-    margin-bottom: 0.587259rem;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body p a {
-    color: #1B204C;
-    text-decoration: underline;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body p a:hover {
-    text-decoration: none;
-}
-
 /* FAQ */
 .iec_faq_section {
     padding: 3.327409rem 0 4.893249rem;
@@ -2586,25 +2275,6 @@ html[lang="id-ID"] .iec_starlink_portfolio_swiper_content .gray_btn {
 
 .iec-modal-close:hover {
     opacity: 0.6;
-}
-
-.iec-popup .iec-modal-trigger {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3132047106rem;
-    padding: 0.4698070659rem 0.9396141318rem;
-    background: #727DA4;
-    color: #fff;
-    border: none;
-    border-radius: 0.23490353295rem;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background 0.2s ease;
-}
-
-.iec-popup .iec-modal-trigger:hover {
-    background: #5a6588;
 }
 
 body.iec-modal-locked {
@@ -2806,33 +2476,6 @@ body.iec-modal-locked {
 }
 
 /* About Hero And Tabs */
-h1.iec-primary-heading {
-    color: #FFF;
-    font-family: "Segoe UI";
-    font-size: 1.9243297419rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.34903532949rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-bottom: 0.97876472062rem;
-}
-
-.iec-sub-heading {
-    color: #FFF;
-    font-family: "Segoe UI";
-    font-size: 1.0962164871rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding-bottom: 0.97876472062rem;
-    text-transform: capitalize;
-}
-
-.iec-sub-heading .highlight {
-    color: #7a84a6;
-}
-
 .iec_hero_banner {
     padding: 2.655600rem 0;
 }
@@ -2864,6 +2507,15 @@ h1.iec-primary-heading {
 }
 
 /* Products Grid */
+.iec-products-section {
+    padding: 2.740541rem 0;
+}
+
+.iec_products_posts_sec {
+    padding-top: 2.270734rem;
+    padding-bottom: 2.466487rem;
+}
+
 .iec-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -2915,11 +2567,13 @@ h1.iec-primary-heading {
     transform: scale(1.05);
 }
 
-.iec-product-solution-wrapper .category p {
+.iec-product-solution-wrapper .category p,
+.iec-product-solution-wrapper .category span {
     transition: transform 0.3s ease;
 }
 
-.iec-product-solution-wrapper:hover .category p {
+.iec-product-solution-wrapper:hover .category p,
+.iec-product-solution-wrapper:hover .category span {
     transform: translateY(-0.07830117765rem);
 }
 
@@ -2985,7 +2639,8 @@ img.img-fluid {
     align-items: center;
 }
 
-.category p {
+.category p,
+.category span {
     color: var(--Elements-white, #FFF);
     font-family: "Segoe UI", sans-serif;
     font-size: 0.48983431471rem;
@@ -3009,7 +2664,8 @@ img.img-fluid {
     background-color: #DDC9A3;
 }
 
-p.satellite-phones {
+p.satellite-phones,
+span.satellite-phones {
     background: var(--color-secondary);
     display:none
 }
@@ -3054,11 +2710,6 @@ section.iec-product-solution-section {
 /* Contact Form */
 .solution_btn {
     margin-top: 2rem;
-}
-
-h2.iec_section_title {
-    font-size: 1.4rem;
-    padding-bottom: 0.4rem;
 }
 
 @media (min-width: 30.10680280631rem) {
@@ -3266,20 +2917,9 @@ h2.iec_section_title {
         min-height: 31.32102420035rem;
     }
 
-h1.iec-primary-heading {
+.iec_hero_banner .iec-primary-heading,
+.iec_hero_banner .iec-sub-heading {
         text-align: center;
-    }
-
-h2.iec-sub-heading {
-        color: #FFF;
-        text-align: center;
-        font-family: "Myriad Pro", sans-serif;
-        font-size: 0.86131295415rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.17451766475rem;
-        letter-spacing: 0.01722554764rem;
-        text-transform: uppercase;
     }
 
 .iec_hero_banner .btn {
@@ -3337,10 +2977,6 @@ h2.iec-sub-heading {
 
 .iec-product-solution-wrapper {
         max-width: 100%;
-
-    }
-
-.iec-product-solution-wrapper {
         background: #FFF;
         box-shadow: 0 4.42401653721rem 1.2528188424rem 0 rgba(27,32,76,0),0 2.81884239539rem 1.13536707592rem 0 rgba(27,32,76,.01),0 1.60517414182rem .9396141318rem 0 rgba(27,32,76,.05),0 .70471059885rem .70471059885rem 0 rgba(27,32,76,.09),0 .19575294412rem .39150588825rem 0 rgba(27,32,76,.1);
         padding-top: .4698070659rem;
@@ -3389,14 +3025,6 @@ h2.iec-sub-heading {
 .iec_home_contact_content p {
         text-align: center;
         font-size: 0.888889rem;
-    }
-
-.iec_home_eyebrow {
-        padding: 0 0.888889rem;
-        font-size: 0.666667rem;
-        line-height: 135%;
-        letter-spacing: 0.133333rem;
-        margin: 0 auto 1.111111rem;
     }
 
 .iec-home-contact__label,
@@ -3456,10 +3084,6 @@ h2.iec-sub-heading {
         font-size: 0.990478rem;
         text-align: center;
     }
-
-h2.iec_section_title {
-        text-align: center;
-    }
 }
 
 @media (max-width: 21.14131796542rem) {
@@ -3496,7 +3120,8 @@ h2.iec_section_title {
     align-items: center;
 }
 
-.iec-offshore-solutions-section .iec_section_heading {
+.iec-offshore-solutions-section .iec_section_heading,
+.iec-offshore-solutions-section .iec-section-heading {
     color: #fff;
 }
 
@@ -3707,7 +3332,8 @@ h2.iec_section_title {
         padding: 2.348rem 0;
     }
 
-    .iec-offshore-solutions-section .iec_section_heading {
+    .iec-offshore-solutions-section .iec_section_heading,
+    .iec-offshore-solutions-section .iec-section-heading {
         color: #fff;
         text-align: center;
     }
@@ -3762,7 +3388,8 @@ h2.iec_section_title {
     background: #fff;
 }
 
-.iec-offshore-usecases-section .iec_section_heading {
+.iec-offshore-usecases-section .iec_section_heading,
+.iec-offshore-usecases-section .iec-section-heading {
     color: #1b204c;
     text-align: left;
     margin-bottom: 3rem;
@@ -3884,7 +3511,8 @@ h2.iec_section_title {
 }
 
 @media (max-width: 767px) {
-    .iec-offshore-usecases-section .iec_section_heading {
+    .iec-offshore-usecases-section .iec_section_heading,
+    .iec-offshore-usecases-section .iec-section-heading {
         color: #1b204c;
         margin-bottom: 1.291818rem;
     }

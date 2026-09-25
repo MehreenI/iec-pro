@@ -50,7 +50,7 @@ $current = max( 1, (int) get_query_var( 'paged' ) );
 $total   = isset( $GLOBALS['wp_query']->max_num_pages ) ? (int) $GLOBALS['wp_query']->max_num_pages : 1;
 ?>
 
-<div id="main" class="minimum-height">
+<main id="main" class="minimum-height">
 	<div class="iec_search_result_widget">
 		<div class="container">
 			<div class="row">
@@ -124,6 +124,6 @@ $total   = isset( $GLOBALS['wp_query']->max_num_pages ) ? (int) $GLOBALS['wp_que
 			<?php endif; ?>
 		</div>
 	</div>
-</div>
+</main>
 
 <?php get_footer(); ?>

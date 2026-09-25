@@ -108,7 +108,7 @@ $render_card = static function ( $solution, $aos_delay = null ) use ( $arrow ) {
 			<div class="col-md-8">
 				<?php if ( $heading ) : ?>
 
-					<h2 class="iec_section_heading" data-aos="fade-up"><?= esc_html( $heading ); ?></h2>
+					<h2 class="iec_section_heading iec-section-heading" data-aos="fade-up"><?= esc_html( $heading ); ?></h2>
 
 				<?php endif; ?>
 

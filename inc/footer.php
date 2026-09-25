@@ -86,7 +86,6 @@ $current_language = apply_filters( 'wpml_current_language', null );
                             <?php endforeach; ?>
                         </div>
 
-                        <!-- Subscribe -->
                         <div class="iec_footer_newsletter">
                             <h4><?= 'Stay Connected'; ?></h4>
                             <p><?= 'Subscribe for company news and industry insights.'; ?></p>
@@ -203,108 +202,10 @@ $current_language = apply_filters( 'wpml_current_language', null );
     })();
 </script>
 
-<!-- <script>
-document.addEventListener('DOMContentLoaded', function() {
-	const starlinkSubMenu = document.querySelector('#menu-new-secondary-menu-1 > li:nth-child(6) > .sub-menu');
-
-	if (!starlinkSubMenu) {
-		return;
-	}
-
-	const allItems = starlinkSubMenu.querySelectorAll('li.menu-item-has-children');
-
-	allItems.forEach(function(item) {
-		const link = item.querySelector('a');
-		if (!link) {
-			return;
-		}
-		const linkText = link.textContent.trim();
-		if (linkText === 'OUR OFFER' || linkText === 'HEADQUARTERS') {
-			item.classList.add('support_headquarters');
-		}
-	});
-});
-</script> -->
-
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTNQ2WQ" height="0" width="0" style="display:none;visibility:hidden" title="<?php esc_attr_e( 'Google Tag Manager', 'bbtheme' ); ?>"></iframe>
 </noscript>
-<script>
-    document.querySelectorAll('.iec_menu_dropdown').forEach(dropdown => {
-        const megaMenu = [...dropdown.parentElement.children].find(el =>
-            el.classList.contains('iec_mega_menu_warpper')
-        );
 
-        dropdown.addEventListener('mouseenter', () => {
-            megaMenu?.classList.add('iec_menu_visible');
-        });
-
-        dropdown.addEventListener('mouseleave', () => {
-            setTimeout(() => {
-                if (megaMenu && !megaMenu.matches(':hover')) {
-                    megaMenu.classList.remove('iec_menu_visible');
-                }
-            }, 50);
-        });
-    });
-
-    document.querySelectorAll('.iec_mega_menu_warpper').forEach(megaMenu => {
-        megaMenu.addEventListener('mouseenter', () => {
-            megaMenu.classList.add('iec_menu_visible');
-        });
-
-        megaMenu.addEventListener('mouseleave', () => {
-            megaMenu.classList.remove('iec_menu_visible');
-        });
-    });
-</script>
-
-<script>
-    jQuery(function ($) {
-        $('.iec_mobile_menu_btn').on('click', function () {
-            $(this).toggleClass('active');
-            $('.iec_mobile_navigation').toggleClass('active');
-            $('body').toggleClass('menu-open');
-        });
-
-        /* ==========================
-           Top Level Accordion
-        ========================== */
-        $('.iec_mobile_toggle').on('click', function () {
-            const parent = $(this).closest('.iec_mobile_dropdown');
-            if (parent.hasClass('active')) {
-                parent.removeClass('active');
-                parent.find('> .iec_mobile_submenu').stop(true, true).slideUp(300);
-            } else {
-                $('.iec_mobile_dropdown').removeClass('active');
-                $('.iec_mobile_submenu').stop(true, true).slideUp(300);
-                parent.addClass('active');
-                parent.find('> .iec_mobile_submenu').stop(true, true).slideDown(300);
-            }
-        });
-        /* ==========================
-           Second Level Accordion
-        ========================== */
-        $('.iec_mobile_card_toggle').on('click', function () {
-            const card = $(this).closest('.iec_mobile_card');
-            if (card.hasClass('active')) {
-                card.removeClass('active');
-                card.find('> .iec_mobile_links').stop(true, true).slideUp(250);
-            } else {
-                card
-                    .siblings('.iec_mobile_card')
-                    .removeClass('active')
-                    .find('.iec_mobile_links')
-                    .stop(true, true)
-                    .slideUp(250);
-                card.addClass('active');
-                card.find('> .iec_mobile_links').stop(true, true).slideDown(250);
-            }
-        });
-    });
-</script>
-
-<!-- Open in new Page  -->
 <script>
 jQuery(document).ready(function($) {
     var baseUrl = window.location.hostname;

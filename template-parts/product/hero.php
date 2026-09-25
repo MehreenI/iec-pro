@@ -26,20 +26,20 @@ $slides     = $hero_right['products'] ?? array();
 					<div class="iec_single_product_hero_swiper_main_wrapper">
 						<div class="iec_single_product_hero_slide_content">
 							<?php if ( ! empty( $filter ) ) : ?>
-								<ul class="iec_single_product_slide_pills">
+								<ul class="iec_single_product_slide_pills iec-anim-stagger" data-iec-anim-on-load="true" data-iec-anim-stagger="0.1">
 									<?php if ( in_array( 'land', $filter, true ) ) : ?>
-										<li style="--bg: #DDC9A3;"><?= 'Land'; ?></li>
+										<li style="--bg: #DDC9A3;"><?= __( 'Land', 'bbtheme' ); ?></li>
 									<?php endif; ?>
 
 									<?php if ( in_array( 'maritime', $filter, true ) ) : ?>
-										<li style="--bg: #92C0E9;"><?= 'Maritime'; ?></li>
+										<li style="--bg: #92C0E9;"><?= __( 'Maritime', 'bbtheme' ); ?></li>
 									<?php endif; ?>
 								</ul>
 							<?php endif; ?>
 
-							<h1 class="iec_single_product_product_name"><?= $hero_left['heading'] ?? ''; ?></h1>
+							<h1 class="iec_single_product_product_name iec-anim-split-words" data-iec-anim-on-load="true"><?= $hero_left['heading'] ?? get_the_title(); ?></h1>
 
-							<ul class="iec_single_product_slide_buttons">
+							<ul class="iec_single_product_slide_buttons iec-anim-stagger" data-iec-anim-on-load="true" data-iec-anim-stagger="0.12">
 								<li>
 									<a href="#contact" class="download at_btn iec_blue_gradient">
 										<?= $hero_left['button_label'] ?? ''; ?>
@@ -58,7 +58,7 @@ $slides     = $hero_right['products'] ?? array();
 							</ul>
 						</div>
 
-						<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper iec_single_porduct_swiper_main_hero">
+						<div class="swiper iec_single_porduct_swiper_main_hero">
 							<div class="swiper-wrapper">
 								<?php
 								foreach ( $slides as $index => $product ) :
@@ -88,7 +88,7 @@ $slides     = $hero_right['products'] ?? array();
 					</div>
 
 					<div class="iec_single_porduct_swiper_thumb_wrapper">
-						<div thumbsSlider="" class="swiper iec_single_porduct_swiper_thumb_hero">
+						<div class="swiper iec_single_porduct_swiper_thumb_hero">
 							<div class="swiper-wrapper">
 								<?php
 								foreach ( $slides as $index => $product ) :

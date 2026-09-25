@@ -964,6 +964,145 @@
 	/* Fallback + boot                                                     */
 	/* ------------------------------------------------------------------ */
 
+	function isAutoSkip( el ) {
+		if ( ! el || ! el.classList ) {
+			return true;
+		}
+
+		if ( el.closest( '.t-vsat-portfolio, [data-iec-anim-skip], .swiper-slide-duplicate, .js-split-reveal, .slo-reveal' ) ) {
+			return true;
+		}
+
+		if ( el.hasAttribute( 'data-aos' ) || el.closest( '[data-aos]' ) ) {
+			return true;
+		}
+
+		return el.classList.contains( 'iec-anim-init' )
+			|| el.classList.contains( 'iec-anim-stagger' )
+			|| el.classList.contains( 'iec-anim-stagger-group' )
+			|| el.classList.contains( 'iec-anim-split-words' )
+			|| el.classList.contains( 'iec-anim-split-chars' );
+	}
+
+	function isHeroContext( el ) {
+		return !! el.closest( '.iec-anim-hero-curtain, .iec_hero_banner, .iec_default_hero_section, .iec_single_product_hero_section, .iec_single_solution_hero, .iec-hero-banner, .iec_banner_section, .iec_starlink_portfolio_hero, .iec-vms-hero, .iec-industries-hero' );
+	}
+
+	function markInit( el, preset, onLoad ) {
+		if ( isAutoSkip( el ) ) {
+			return;
+		}
+
+		if ( el.getAttribute( 'data-split' ) === 'word' ) {
+			el.classList.add( 'iec-anim-split-words' );
+		} else {
+			el.classList.add( 'iec-anim-init', preset || 'iec-anim-fade-up' );
+		}
+
+		if ( onLoad ) {
+			el.setAttribute( 'data-iec-anim-on-load', 'true' );
+		}
+	}
+
+	function markStagger( el, target, onLoad ) {
+		if ( isAutoSkip( el ) ) {
+			return;
+		}
+
+		var items = target ? $$( target, el ) : getStaggerItems( el );
+
+		if ( items.length < 1 ) {
+			return;
+		}
+
+		if ( items.length === 1 ) {
+			markInit( items[ 0 ], 'iec-anim-fade-up', onLoad );
+			return;
+		}
+
+		if ( 'UL' === el.tagName || 'OL' === el.tagName ) {
+			el.classList.add( 'iec-anim-stagger' );
+		} else {
+			el.classList.add( 'iec-anim-stagger-group' );
+			if ( target ) {
+				el.setAttribute( 'data-iec-anim-target', target );
+			}
+		}
+
+		el.setAttribute( 'data-iec-anim-preset', 'iec-anim-fade-up' );
+		el.setAttribute( 'data-iec-anim-stagger', String( CONFIG.defaultStagger ) );
+
+		if ( onLoad ) {
+			el.setAttribute( 'data-iec-anim-on-load', 'true' );
+		}
+	}
+
+	function autoBind() {
+		$$( [
+			'.iec-section-heading',
+			'.iec-primary-heading',
+			'.iec-secondary-heading',
+			'.iec-sub-heading',
+			'.iec_primary_heading',
+			'h1.iec_section_heading',
+			'h2.iec_section_heading',
+			'h1.iec_single_product_product_name',
+			'h1.iec_single_solution_name',
+			'.iec_single_product_section_title',
+			'.iec_sub_section_heading',
+			'.iec_iot_section_heading',
+			'.iec_tab_section_heading',
+			'.slo-h2',
+			'#iec-starlink-page-title',
+			'#iec-voucher-hero-title',
+		].join( ', ' ) ).forEach( function ( el ) {
+			markInit( el, 'iec-anim-fade-up', isHeroContext( el ) );
+		} );
+
+		$$( '.iec-eyebrow, .iec_home_eyebrow' ).forEach( function ( el ) {
+			markInit( el, 'iec-anim-fade-up', isHeroContext( el ) );
+		} );
+
+		$$( [
+			'.iec_starlink_portfolio_hero_button_list',
+			'.iec_single_products_links_list',
+			'.iec_single_product_slide_buttons',
+			'.iec_single_solution_slide_buttons',
+			'.iec_single_product_slide_pills',
+			'.iec_single_solution_slide_pills',
+		].join( ', ' ) ).forEach( function ( el ) {
+			markStagger( el, '', isHeroContext( el ) );
+		} );
+
+		$$( '.iec_home_hero_actions, .hero__buttons, .btns, .slo-actions, .iec-industry-types-grid, .navigation-buttons' ).forEach( function ( el ) {
+			var target = el.classList.contains( 'iec-industry-types-grid' ) ? '.iec-industry-type-card' : 'a, button';
+			markStagger( el, target, isHeroContext( el ) );
+		} );
+
+		$$( '[data-fade]' ).forEach( function ( el ) {
+			var delayMs = parseFloat( el.getAttribute( 'data-delay' ) );
+			var stagger = el.getAttribute( 'data-stagger' );
+
+			if ( stagger ) {
+				markStagger( el, stagger, isHeroContext( el ) );
+			} else {
+				markInit( el, 'iec-anim-fade-up', isHeroContext( el ) );
+			}
+
+			if ( ! isNaN( delayMs ) ) {
+				el.setAttribute( 'data-iec-anim-delay', String( delayMs / 1000 ) );
+			}
+		} );
+
+		$$( '.iec_faq_grid' ).forEach( function ( el ) {
+			markStagger( el, '.iec_faq_item', false );
+		} );
+
+		$$( '.iec-land-industries__grid, .iec-specialized-connectivity__grid, .iec-our-solutions__grid' ).forEach( function ( el ) {
+			markStagger( el, 'a', false );
+		} );
+	}
+
 	function initFallbackObserver() {
 		if ( state.reduced || hasGsap() ) {
 			return;
@@ -985,7 +1124,7 @@
 			} );
 		}, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' } );
 
-		$$( '.iec-anim-init, .iec-anim-stagger > li, .iec-anim-stagger-item' ).forEach( function ( el ) {
+		$$( '.iec-anim-init, .iec-anim-stagger > li, .iec-anim-stagger-item, .iec-anim-stagger-group > *' ).forEach( function ( el ) {
 			observer.observe( el );
 		} );
 	}
@@ -1001,6 +1140,7 @@
 			return;
 		}
 
+		autoBind();
 		initHeroCurtains();
 		initSplitText();
 		bindHeroSwiperSplits();

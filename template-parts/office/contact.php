@@ -34,7 +34,7 @@ $allowed_map = array(
 				<div class="col-md-4">
 
 					<?php if ( ! empty( $contact_us['heading'] ) ) : ?>
-						<h2 class="iec_section_heading"><?php echo $contact_us['heading']; ?></h2>
+						<h2 class="iec_section_heading iec-section-heading"><?php echo $contact_us['heading']; ?></h2>
 					<?php endif; ?>
 
 					<?php foreach ( $addresses as $address ) :

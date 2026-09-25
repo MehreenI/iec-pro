@@ -21,6 +21,9 @@ class IEC_Asset_Loader {
 		'voucher-management-template',
 		'starlink-landing',
 		'maritime-starlink-landing',
+		'operator-page',
+		't-market-landing',
+		'satellite-internet',
 	);
 
 	private array $aos = array(
@@ -39,13 +42,14 @@ class IEC_Asset_Loader {
 	public function global_assets(): void {
 		$this->style( 'iec-base', $this->asset( 'css/base.css' ) );
 		$this->style( 'iec-sections', $this->asset( 'css/sections.css' ), array( 'iec-base' ) );
-		$this->style( 'iec-header-dropdown', $this->asset( 'css/header-dropdown.css' ), array( 'iec-base' ) );
+		$this->style( 'iec-header-footer', $this->asset( 'css/header-footer.css' ), array( 'iec-base' ) );
 		$this->style( 'iec-tablet', $this->asset( 'css/tablet.css' ), array( 'iec-base' ) );
 		$this->style( 'iec-responsive', $this->asset( 'css/responsive.css' ), array( 'iec-base' ) );
 		$this->style( 'iec-animate', $this->asset( 'css/animate.css' ) );
 
 		$this->script( 'iec-accordion', $this->asset( 'js/plugins/accordion-init.js' ) );
 		$this->script( 'iec-popup', $this->asset( 'js/plugins/popup.js' ) );
+		$this->script( 'iec-header-footer', $this->asset( 'js/plugins/header-footer.js' ), array( 'jquery' ) );
 
 		$swiper_init = array( 'jquery' );
 		if ( wp_script_is( 'iec-swiper', 'enqueued' ) ) {
@@ -92,16 +96,17 @@ class IEC_Asset_Loader {
 
 		$css = $this->find_asset( $slug, 'css' );
 		$page_handle = '';
+		$css_deps    = array( 'iec-sections' );
+		if ( 'single-solution' === $slug ) {
+			$product_css = $this->find_asset( 'single-product', 'css' );
+			if ( $product_css ) {
+				$this->style( 'iec-page-single-product', $product_css, array( 'iec-sections' ) );
+				$css_deps[] = 'iec-page-single-product';
+			}
+		}
 		if ( $css ) {
 			$page_handle = 'iec-page-' . sanitize_title( $slug );
-			$this->style( $page_handle, $css, array( 'iec-sections' ) );
-		}
-
-		if ( 'single-office' === $slug && function_exists( 'get_field' ) && get_field( 'is_tunisian_page' ) ) {
-			$tunisian = $this->find_asset( 'tunisian-landing-page', 'css' );
-			if ( $tunisian ) {
-				$this->style( 'iec-page-tunisian-landing-page', $tunisian, $page_handle ? array( $page_handle ) : array( 'iec-sections' ) );
-			}
+			$this->style( $page_handle, $css, $css_deps );
 		}
 
 		if ( in_array( $slug, $this->aos, true ) ) {
@@ -137,7 +142,12 @@ class IEC_Asset_Loader {
 		if ( $qid ) {
 			$template = get_page_template_slug( $qid );
 			if ( $template ) {
-				return str_replace( array( '.php', 'page-templates/' ), '', $template );
+				$slug = str_replace( array( '.php', 'page-templates/' ), '', $template );
+				$map  = array(
+					'starlink-operator-page'  => 'operator-page',
+					'satellite-internet-page' => 'satellite-internet',
+				);
+				return $map[ $slug ] ?? $slug;
 			}
 		}
 
@@ -244,7 +254,6 @@ class IEC_Asset_Loader {
 					),
 				),
 			),
-			'sp-landing-page'     => array( 'iecSpLanding', $this->sp_landing_data( $page_id, $lang ) ),
 			't-solution-product'  => array( 'iecSpLanding', $this->sp_landing_data( $page_id, $lang ) ),
 			'news-landing-page'   => array(
 				'iecNewsLanding',
@@ -288,12 +297,10 @@ class IEC_Asset_Loader {
 		$this->script( 'iec-intl-tel-input-utils', $this->vendor( 'intl-tel-input-17/js/utils.js' ), array( 'iec-intl-tel-input' ), '17' );
 		$this->script( 'iec-phone-plugin', $this->asset( 'js/plugins/phone-plugin.js' ), array( 'jquery', 'iec-intl-tel-input', 'iec-intl-tel-input-utils' ) );
 		$this->script( 'iec-country-select', $this->asset( 'js/plugins/country-select.js' ), array( 'jquery', 'iec-select2' ) );
-		$this->script( 'iec-interest-select', $this->asset( 'js/plugins/interest-select.js' ), array( 'jquery', 'iec-select2' ) );
-		$this->script( 'iec-hear-select', $this->asset( 'js/plugins/hear-select.js' ), array( 'jquery', 'iec-select2' ) );
 		$this->script(
 			'iec-enquiry-submit',
 			$this->asset( 'js/plugins/enquiry-form-submit.js' ),
-			array( 'jquery', 'iec-theme', 'iec-phone-plugin', 'iec-country-select', 'iec-interest-select', 'iec-hear-select' )
+			array( 'jquery', 'iec-theme', 'iec-phone-plugin', 'iec-country-select' )
 		);
 
 		if ( function_exists( 'iec_enquiry_script_config' ) ) {

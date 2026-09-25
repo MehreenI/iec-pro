@@ -3,10 +3,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$section = get_field( 'offshore_solutions' );
+$section = is_array( $args['section'] ?? null ) ? $args['section'] : get_field( 'offshore_solutions' );
+$section = is_array( $section ) ? $section : array();
 
 if ( empty( $section['enabled'] ) ) {
-	return;
+	if ( ! get_field( 'show_rec' ) ) {
+		return;
+	}
+
+	$section = array(
+		'enabled' => true,
+		'heading' => get_field( 'rec_title' ),
+		'slider'  => get_field( 'slider' ),
+	);
 }
 
 $heading = ! empty( $section['heading'] ) ? $section['heading'] : 'Recommended Solutions';
@@ -73,11 +82,11 @@ foreach ( $slides as $slide ) {
 }
 ?>
 
-<section class="recommended_solutions_section iec-offshore-solutions-section">
+<section class="recommended_solutions_section iec-offshore-solutions-section" id="recommended_solutions">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="iec_section_heading" data-aos="fade-up"><?= $heading; ?></h2>
+				<h2 class="iec_section_heading iec-section-heading" data-aos="fade-up"><?= $heading; ?></h2>
 			</div>
 		</div>
 		<div class="row">

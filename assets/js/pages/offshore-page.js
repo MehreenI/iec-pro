@@ -1,24 +1,6 @@
 ( function ( $ ) {
 	'use strict';
 
-	/* Page */
-	function initAos() {
-		if ( typeof AOS === 'undefined' ) {
-			return;
-		}
-
-		AOS.init( {
-			duration: 800,
-			once: true,
-			easing: 'ease-out-cubic',
-			offset: 80,
-		} );
-
-		if ( window.IEC && typeof IEC.scheduleAOSKick === 'function' ) {
-			IEC.scheduleAOSKick();
-		}
-	}
-
 	/* Solutions */
 	function playSolutionReveal( box, reduced ) {
 		if ( ! box || box.classList.contains( 'is-empty' ) ) {
@@ -103,14 +85,7 @@
 		} );
 	}
 
-	function boot() {
-		initAos();
+	$( function () {
 		initSolutions();
-	}
-
-	if ( document.readyState === 'loading' ) {
-		document.addEventListener( 'DOMContentLoaded', boot );
-	} else {
-		boot();
-	}
-}( jQuery ) );
+	} );
+} )( jQuery );

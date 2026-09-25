@@ -282,7 +282,8 @@ section.iec_banner_section.iec_new_office_banner .sub_head {
     overflow: hidden;
 }
 
-.iec_do_featured_news .iec_section_heading {
+.iec_do_featured_news .iec_section_heading,
+.iec_do_featured_news .iec-section-heading {
     margin-top: 0;
 }
 
@@ -292,7 +293,8 @@ section.iec_banner_section.iec_new_office_banner .sub_head {
     padding-bottom: 2.349035rem;
 }
 
-.iec_solution_section .iec_section_heading {
+.iec_solution_section .iec_section_heading,
+.iec_solution_section .iec-section-heading {
     margin-bottom: 0.783012rem;
 }
 

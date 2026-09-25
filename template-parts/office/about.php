@@ -22,7 +22,7 @@ $membership = $about_us['membership'] ?? array();
 				<div class="col-md-12">
 
 					<?php if ( ! empty( $about_us['heading'] ) ) : ?>
-						<h2 class="iec_section_heading"><?php echo $about_us['heading']; ?></h2>
+						<h2 class="iec_section_heading iec-section-heading"><?php echo $about_us['heading']; ?></h2>
 					<?php endif; ?>
 
 					<?php if ( ! empty( $about_us['content'] ) ) : ?>

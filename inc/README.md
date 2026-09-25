@@ -1,34 +1,30 @@
 # Theme `inc/`
 
-PHP bootstrap, helpers, page controllers, and layout partials. Markup lives in `layout/`, `mega-menu/`, or `template-parts/`. New helpers go in the matching domain file, not `helpers/helpers.php`, unless two or more domains share them.
+PHP bootstrap, helpers, page controllers, and layout markup. New helpers go in the matching domain file, not `helpers/helpers.php`, unless two or more domains share them.
 
 ## Layout
 
 ```
 inc/
   load.php                 Boot order
-  setup/                   Theme supports, nav, ACF admin
+  setup/                   theme-setup, runtime, enqueue
   helpers/                 Shared + domain helpers
-  pages/                   Page controllers / queries
-  layout/                  head, header, footer markup
-  mega-menu/               Desktop + mobile menu overrides
-  enqueue.php
-  api.php
-  filters.php
-  cache-tools.php
-  cache-tools-admin.php
+  pages/                   Page controllers (page-*.php)
+  api/                     REST / query helpers
+  admin/                   Cache tools
+  head.php / header.php / footer.php
+  iec-mega-menu-*.php      Desktop + mobile menu overrides
 ```
 
 ## Load order (`load.php`)
 
-1. `setup/` — theme-setup, nav-menu, admin-acf
-2. `helpers/helpers.php` + `filters.php`
-3. `pages/` — vertical-market, tunisian-landing, starlink, sp-landing
-4. `enqueue.php` + `api.php`
-5. Domain helpers (news, voucher, office, product, solution)
-6. Cache tools
+1. `setup/` — theme-setup, runtime, enqueue
+2. `helpers/` — shared helpers, filters, then news / office / product / solution
+3. `pages/` — tunisian, starlink, t-solution-product, optiview
+4. `api/api.php`
+5. `admin/` cache tools
 
-Root `header.php` / `footer.php` load `inc/layout/*` via `get_template_part()`.
+Root `header.php` / `footer.php` load `inc/head`, `inc/header`, and `inc/footer` via `get_template_part()`.
 
 ## Naming
 

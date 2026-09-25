@@ -11,7 +11,7 @@ while ( have_posts() ) :
 	the_post();
 	?>
 
-	<div id="main" class="ice_thankyou_page_warpper">
+	<main id="main" class="ice_thankyou_page_warpper">
 		<?php get_template_part( 'template-parts/thankyou/decorations' ); ?>
 		<div class="container">
 			<div class="row">
@@ -20,7 +20,7 @@ while ( have_posts() ) :
 				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 
 	<?php
 endwhile;

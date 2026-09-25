@@ -345,27 +345,18 @@ button.iec_partner_accordian_trigger {
 	border: 0;
 }
 
-/* About Hero And Tabs */
-h1.iec-primary-heading {
-	color:  #FFF ;
-	font-family: "Segoe UI";
+/* Hero */
+.iec_hero_banner .iec-primary-heading {
+	color: #fff;
 	font-size: 1.9243297419rem;
-	font-style: normal;
-	font-weight: 700;
 	line-height: 2.34903532949rem;
-	text-transform: uppercase;
-	text-decoration: none;
 	padding-bottom: 0.97876472062rem;
 }
 
-.iec-sub-heading{
-	color:  #FFF;
-	font-family: "Segoe UI";
+.iec_hero_banner .iec-sub-heading {
+	color: #fff;
 	font-size: 1.0962164871rem;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	padding-bottom: 0.97876472062rem
+	padding-bottom: 0.97876472062rem;
 }
 
 /* Hero */
@@ -496,14 +487,14 @@ h1.iec-primary-heading {
 		min-height: 800px;
 	}
 
-/* About Hero And Tabs */
-h1.iec-primary-heading {
+/* Hero */
+.iec_hero_banner .iec-primary-heading,
+.iec_hero_banner .iec-sub-heading {
         text-align: center;
     }
 
-h2.iec-sub-heading {
-        text-align:center;
-        font-size: 22px
+.iec_hero_banner .iec-sub-heading {
+        font-size: 1.37037rem;
     }
 
 .btn{

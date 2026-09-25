@@ -1,0 +1,1902 @@
+.iec-operator-main { color: var(--color-text); background: var(--color-white); }
+
+.iec-operator-main .slo-reveal {
+	opacity: 0;
+	transform: translateY(1.174518rem);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+	transition-delay: calc(var(--i, 0) * 0.08s);
+}
+
+.iec-operator-main .slo-reveal.is-visible {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.iec-operator-main .slo-reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+}
+
+.iec-operator-main img { max-width: 100%; display: block; height: 100%; }
+
+.iec-operator-main a:focus-visible,
+.iec-operator-main button:focus-visible { outline: 0.078302rem solid var(--color-secondary); outline-offset: 0.078302rem; }
+
+.iec-operator-main .col-md-12 > .iec_content_box { max-width: 42.5rem; margin: 0 0 0.75rem; }
+
+.iec-operator-main .navigation-buttons .secondary-btn { margin-bottom: 0; width: auto; }
+
+.iec-operator-main #how-it-works,
+.iec-operator-main #solutions,
+.iec-operator-main #why-leo,
+.iec-operator-main #availability,
+.iec-operator-main #buying-guide { background: var(--color-bg); }
+
+.iec-operator-main #solutions .col-md-3,
+.iec-operator-main #country-guides .col-md-3 { margin-bottom: 1.174518rem; }
+
+section#solutions {
+    padding-top: 0;
+}
+
+/* ====== Hero ====== */
+.iec-operator-main .iec_hero_banner {
+    display: flex;
+    align-items: center;
+    min-height: 26rem;
+    height: auto;
+    color: var(--color-white);
+    overflow: visible;
+    background:
+            linear-gradient(
+                    100deg,
+                    rgba(6, 9, 28, 0.92) 0%,
+                    rgba(6, 9, 28, 0.7) 38%,
+                    rgba(6, 9, 28, 0.28) 68%,
+                    rgba(6, 9, 28, 0.06) 100%
+            ),
+            var(--bgImage) center / cover no-repeat;
+    padding: 4.4rem 0 5.6rem;
+}
+
+.iec-operator-main .iec_hero_banner::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 7rem;
+    background: linear-gradient(180deg, rgba(6, 9, 28, 0) 0%, rgba(6, 9, 28, 0.55) 100%);
+    pointer-events: none;
+}
+
+.iec-operator-main .iec_hero_banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(46rem 26rem at 16% 42%, rgba(120, 170, 255, 0.2) 0%, rgba(120, 170, 255, 0) 62%);
+    pointer-events: none;
+}
+
+.iec-operator-main .iec_hero_banner .container { position: relative; z-index: 2; }
+
+.iec-operator-main .iec_hero_banner .iec-eyebrow {
+    background: color-mix(in srgb, var(--color-white) 16%, transparent);
+    border: 0.039151rem solid color-mix(in srgb, var(--color-white) 34%, transparent);
+    color: var(--color-white);
+    backdrop-filter: blur(0.234908rem);
+}
+
+.iec-operator-main .iec_hero_banner .iec-primary-heading {
+    font-size: 2.035831rem;
+    line-height: 1.12;
+    padding-bottom: 0.469814rem;
+}
+
+.iec-operator-main .iec_hero_banner .iec-sub-heading {
+    max-width: 21.5rem;
+    color: color-mix(in srgb, var(--color-white) 86%, var(--color-secondary));
+    font-weight: var(--regular);
+}
+
+.iec-operator-main .iec_hero_banner .navigation-buttons { margin-top: 1.174518rem; flex-wrap: wrap; }
+
+.iec-operator-main .iec_hero_banner .outline-btn {
+    min-width: 8.6rem;
+    height: 1.72rem;
+    background: transparent;
+    border: 0.039151rem solid color-mix(in srgb, var(--color-white) 55%, transparent);
+    color: var(--color-white);
+}
+
+.iec-operator-main .iec_hero_banner .secondary-btn {
+    min-width: 8.6rem;
+    height: 1.72rem;
+    box-shadow: 0 0.313210rem 0.939614rem rgba(6, 9, 28, 0.35);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+}
+
+@media (hover: hover) {
+    .iec-operator-main .iec_hero_banner .secondary-btn:hover {
+        transform: translateY(-0.117454rem);
+        box-shadow: 0 0.469814rem 1.174518rem rgba(6, 9, 28, 0.45);
+    }
+
+    .iec-operator-main .iec_hero_banner .outline-btn:hover {
+        background: color-mix(in srgb, var(--color-white) 14%, transparent);
+        border-color: var(--color-white);
+        color: var(--color-white);
+    }
+}
+
+/* ====== Hero stats bar ====== */
+
+.iec-statistics { margin-top: -3rem; padding-bottom: 0.626419rem; }
+
+.iec-operator-main #role .row { align-items: center; --bs-gutter-x: 5rem; }
+
+.iec-operator-main #role .iec_image_wrapper {
+    position: relative;
+    width: 32.5rem;
+    height: 20.5rem;
+    max-width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iec-operator-main #role .iec_image_wrapper > span {
+    position: absolute;
+    width: 16.25rem;
+    height: 16.25rem;
+    border: 0.058727rem dashed var(--color-primary);
+    border-radius: 50%;
+}
+
+.iec-operator-main #role .iec_image_wrapper > div:not([data-position]) {
+    z-index: 3;
+    width: 13.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iec-operator-main #role .iec_image_wrapper > div:not([data-position]) img { width: 8.625rem; height: auto; }
+
+.iec-operator-main #role .iec_image_wrapper [data-position] {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.iec-operator-main #role .iec_image_wrapper [data-position] > div {
+    width: 2.375rem;
+    height: 2.375rem;
+    margin: 0 auto 0.5rem;
+    border-radius: 50%;
+    background: #eef3ff;
+    border: 0.039151rem solid #dbe2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+}
+
+.iec-operator-main #role .iec_image_wrapper [data-position] svg { width: 1rem; height: 1rem; display: block; }
+
+.iec-operator-main #role .iec_image_wrapper [data-position] .iec-secondary-heading {
+    margin: 0;
+    font-size: 0.55rem;
+    line-height: 1.35;
+    font-weight: var(--semi-bold);
+    width: 7.83024rem;
+}
+
+.iec-operator-main #role .iec_image_wrapper [data-position="top"] { top: 0.875rem; left: 50%; transform: translateX(-50%); }
+
+.iec-operator-main #role .iec_image_wrapper [data-position="left"] { left: -0.75rem; top: 53%; transform: translateY(-50%); }
+
+.iec-operator-main #role .iec_image_wrapper [data-position="right"] { right: -0.822175rem; top: 53%; transform: translateY(-50%); }
+
+.iec-operator-main #role .iec_image_wrapper [data-position="bottom"] { bottom: -1.125rem; left: 50%; transform: translateX(-50%); }
+
+/* ====== Connectivity flow ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â step cards ====== */
+
+.iec_flow_steps { --flow-gap: 2.114131rem; gap: var(--flow-gap); }
+
+.iec_flow_step {
+    position: relative;
+    padding: 1.174518rem 1.017931rem;
+    background: var(--color-white);
+    border: 0.039151rem solid color-mix(in srgb, var(--color-secondary) 24%, var(--color-white));
+    border-radius: 0.626419rem;
+    box-shadow: 0 0.078302rem 0.469814rem rgba(27, 32, 76, 0.05);
+}
+
+.iec_flow_step_number {
+    display: block;
+    margin-bottom: 0.626419rem;
+    color: color-mix(in srgb, var(--color-secondary) 70%, var(--color-white));
+    font-family: var(--font-secondary);
+    font-size: 0.626419rem;
+    font-weight: var(--bold);
+    letter-spacing: 0.078302rem;
+    line-height: 1;
+}
+
+.iec_flow_step_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.114131rem;
+    height: 2.114131rem;
+    margin-bottom: 0.783024rem;
+    border-radius: 0.469814rem;
+    background: var(--color-bg);
+    color: var(--color-primary);
+}
+
+.iec_flow_step_icon svg { width: 1.487722rem; height: 1.487722rem; }
+
+.iec_flow_step .iec-heading { margin: 0 0 0.391512rem; color: var(--color-primary); }
+
+.iec_flow_step .wysiwyg-content p { margin: 0; color: var(--color-secondary); font-size: 0.626419rem; line-height: 1.65; }
+
+.iec_flow_arrow {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    z-index: 2;
+    width: var(--flow-gap);
+    height: var(--flow-gap);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.iec_flow_arrow svg { width: 80%; height: auto; overflow: visible; }
+
+.iec_flow_arrow_line { stroke-dasharray: 3 3; }
+
+.iec_flow_steps.is-flowing .iec_flow_arrow_line { animation: iec-flow-dash 0.8s linear infinite; }
+
+@keyframes iec-flow-dash {
+    to { stroke-dashoffset: -6; }
+}
+
+.iec-operator-main #why-leo [role="table"],
+.iec-operator-main #buying-guide [role="table"] {
+    background: var(--color-white);
+    border: 0.039151rem solid color-mix(in srgb, var(--color-secondary) 28%, var(--color-white));
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.55rem 1.75rem color-mix(in srgb, var(--color-primary) 5%, transparent);
+    margin-bottom: 1rem;
+}
+
+.iec-operator-main #why-leo [role="row"],
+.iec-operator-main #buying-guide [role="row"] {
+    display: grid;
+    grid-template-columns: 8.6rem 1fr 1fr;
+    border-top: 0.039151rem solid color-mix(in srgb, var(--color-secondary) 18%, var(--color-white));
+}
+
+.iec-operator-main #why-leo [role="row"]:first-child,
+.iec-operator-main #buying-guide [role="row"]:first-child { border-top: 0; }
+
+.iec-operator-main #why-leo [role="columnheader"],
+.iec-operator-main #why-leo [role="cell"],
+.iec-operator-main #why-leo [role="rowheader"],
+.iec-operator-main #buying-guide [role="columnheader"],
+.iec-operator-main #buying-guide [role="cell"],
+.iec-operator-main #buying-guide [role="rowheader"] {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.55rem;
+    line-height: 1.5;
+    border-left: 0.039151rem solid color-mix(in srgb, var(--color-secondary) 18%, var(--color-white));
+}
+
+.iec-operator-main #why-leo [role="row"] > :first-child,
+.iec-operator-main #buying-guide [role="row"] > :first-child {
+    border-left: 0;
+    color: var(--color-primary);
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+
+.iec-operator-main #why-leo [role="row"]:first-child > *,
+.iec-operator-main #buying-guide [role="row"]:first-child > * {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-left-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+}
+
+.iec-operator-main #why-leo [role="columnheader"] strong { display: block; font-size: 0.75rem; margin-bottom: 0.15rem; }
+
+.iec-operator-main #why-leo [role="columnheader"] span {
+    display: block;
+    font-size: 0.5rem;
+    color: color-mix(in srgb, var(--color-white) 78%, var(--color-secondary));
+    font-weight: var(--regular);
+}
+
+/* ====== Why LEO ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â recommended approach card ====== */
+
+.iec-recommended-approach {
+    background: var(--color-white);
+    border: 0.039151rem solid color-mix(in srgb, var(--color-secondary) 24%, var(--color-white));
+    border-radius: 0.626419rem;
+    padding: 1.566048rem 1.252838rem;
+    margin: 1.879258rem 0;
+    box-shadow: 0 0.078302rem 0.469814rem rgba(27, 32, 76, 0.05);
+}
+
+.iec-recommended-approach .iec-eyebrow { display: none; }
+
+.iec-recommended-approach .iec-secondary-heading { font-size: 0.939629rem; font-weight: 700; margin: 0.31321rem 0 0.469814rem; color: var(--color-primary); }
+
+.iec-recommended-approach .wysiwyg-content p { color: var(--color-secondary); font-size: 0.587268rem; line-height: 1.6; }
+
+.iec-recommended-approach .col-md-6:last-child > div { display: grid; gap: 0.548117rem; }
+
+.iec-recommended-approach .col-md-6:last-child > div > div {
+    display: flex;
+    align-items: center;
+    gap: 0.548117rem;
+    background: var(--color-bg);
+    border-radius: 0.469814rem;
+    padding: 0.626419rem 0.704722rem;
+    margin-bottom: 0.548117rem;
+}
+
+.iec-recommended-approach .col-md-6:last-child > div > div strong {
+    display: block;
+    flex-shrink: 0;
+    min-width: 3.053794rem;
+    text-align: center;
+    padding: 0.195756rem 0.391512rem;
+    border-radius: 0.783024rem;
+    font-size: 0.469814rem;
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+
+.iec-recommended-approach .col-md-6:last-child > div > div:nth-child(1) strong { background: var(--color-primary); color: var(--color-white); }
+
+.iec-recommended-approach .col-md-6:last-child > div > div:nth-child(2) strong { background: color-mix(in srgb, var(--color-secondary) 22%, var(--color-white)); color: var(--color-secondary); }
+
+.iec-recommended-approach .col-md-6:last-child > div > div span { color: var(--color-primary); font-size: 0.567692rem; line-height: 1.5; }
+
+.iec-operator-main #coverage .iec-coverage-aside { height: auto; padding: 0; background: transparent; color: var(--color-primary); }
+
+.iec-operator-main #coverage .iec-coverage-aside .wysiwyg-content p { margin: 0 0 1.15rem; line-height: 1.5; }
+
+.iec-coverage-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.783024rem;
+    list-style: none;
+    padding: 0;
+}
+
+.iec-coverage-points li { background: #fff; border: 0.039151rem solid #eef0f5; border-radius: 0.626419rem; box-shadow: 0 0.156605rem 0.783024rem rgba(20, 33, 73, 0.06); padding: 0.939629rem; }
+
+.iec-coverage-points strong { display: flex; align-items: center; gap: 0.548117rem; font-size: 0.665567rem; margin-bottom: 0.469814rem; }
+
+.iec-coverage-points strong::before {
+    content: '';
+    width: 1.722653rem;
+    height: 1.722653rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--color-primary-light, #e9edfb) no-repeat center;
+    background-size: 0.783024rem 0.783024rem;
+}
+
+.iec-coverage-points p { margin: 0; color: var(--color-text-muted, #5b6472); text-align: left; font-size: 0.626419rem; line-height: 1.6; }
+
+.iec-coverage-points li:nth-child(1) strong::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M3 18L9 8L13 14L16 9L21 18H3Z' stroke='%23142149' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E"); }
+
+.iec-coverage-points li:nth-child(2) strong::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 16L2 19H22L20 16' stroke='%23142149' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 16V9H18V16' stroke='%23142149' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 9V4M9 4H15' stroke='%23142149' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E"); }
+
+.iec-coverage-points li:nth-child(3) strong::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='5' r='1.6' stroke='%23142149' stroke-width='1.4'/%3E%3Cpath d='M12 7V20M7 14C7 17 9 19.5 12 20C15 19.5 17 17 17 14M7 14H5M17 14H19M9 9H15' stroke='%23142149' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+
+.iec-coverage-points li:nth-child(4) strong::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z' stroke='%23142149' stroke-width='1.6' stroke-linejoin='round'/%3E%3Cpath d='M9 11.5L11 13.5L15 9.5' stroke='%23142149' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+
+.iec-operator-main #coverage .col-md-6 .iec_image_wrapper {
+    border-radius: 1.25rem;
+    background: #0b1b4a;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    box-shadow: 0 0.9375rem 2.5rem color-mix(in srgb, var(--color-primary) 15%, transparent);
+}
+
+/* ====== Maritime and land patterns ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â cards on the portfolio band ====== */
+
+.iec_starlink_patterns .swiper-slide {
+    max-width: none;
+    height: auto;
+    background: var(--color-white);
+    /* border: 0.039151rem solid color-mix(in srgb, var(--color-secondary) 28%, var(--color-white)); */
+    /* padding: 1.02rem;; */
+}
+
+.iec_starlink_patterns .swiper-slide article{
+    padding: 0.79151201941899616318rem;
+}
+
+.iec_starlink_patterns article > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-bottom: 0.47rem;
+    border-radius: 0.4rem;
+    background: var(--color-bg);
+    color: var(--color-primary);
+    font-weight: var(--bold);
+    font-size: 0.55rem;
+}
+
+.iec_starlink_patterns article .iec-heading { margin: 0 0 0.625rem; color: var(--color-primary); }
+
+.iec_starlink_patterns article .wysiwyg-content p { margin: 0.54rem 0 0; color: var(--color-secondary); }
+
+.iec_starlink_patterns .iec-eyebrow { background: color-mix(in srgb, var(--color-secondary) 45%, transparent); color: var(--color-white); }
+
+.iec_starlink_patterns .iec_market_slider_content p { color: color-mix(in srgb, var(--color-white) 78%, var(--color-secondary)); }
+
+.iec_starlink_patterns .swiper-button-prev .iec_swiper_mobile_icon,
+.iec_starlink_patterns .swiper-button-next .iec_swiper_mobile_icon { display: none; }
+
+section#availability .iec_content_box { margin-bottom: 1.9rem; margin-bottom: 1.174518rem; }
+
+section#availability .iec_content_box:has(> .iec-heading:only-child) { margin-bottom: 0.469807rem; }
+
+section#availability .iec_content_box .iec-heading { margin-bottom: 0; }
+
+.iec-operator-main #availability .iec-avail-key { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; margin: 0 0 1.25rem; }
+
+.iec-operator-main #availability .iec-avail-key-item {display: inline-flex;align-items: center;gap: 0.4rem;font-size: 0.557268rem;color: var(--color-primary);}
+
+.iec-operator-main #availability .iec-avail-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+
+.iec-operator-main #availability .iec-avail-dot--live { background: #2f9e44; }
+
+.iec-operator-main #availability .iec-avail-dot--pend { background: #e0a106; }
+
+.iec-operator-main #availability .iec-avail-dot--no { background: #98a2b3; }
+
+.iec-operator-main #availability .iec-avail-tabnav { display: flex; flex-wrap: wrap; gap: 0.15rem 1.5rem; margin-bottom: 1.25rem; border-bottom: 0.039151rem solid #dce3ef; }
+
+.iec-operator-main #availability .iec-avail-tab {
+    border: 0;
+    background: transparent;
+    color: var(--color-secondary);
+    border-radius: 0;
+    padding: 0.55rem 0 0.7rem;
+    font-size: 0.5504722rem;
+    font-weight: var(--semi-bold);
+    line-height: 1.2;
+    cursor: pointer;
+    box-shadow: none;
+    border-bottom: 0.117454rem solid transparent;
+    margin-bottom: -0.039151rem;
+}
+
+.iec-operator-main #availability .iec-avail-tab.is-active,
+.iec-operator-main #availability .iec-avail-tab[aria-selected="true"] {
+    background: transparent;
+    border-color: transparent;
+    border-bottom-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.iec-operator-main #availability .iec-avail-panel { background: transparent; border: 0; border-radius: 0; padding: 0.15rem 0 0; }
+
+.iec-operator-main #availability .iec-avail-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.iec-operator-main #availability .iec-avail-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.32rem 0.65rem;
+    background: var(--color-white);
+    border: 0.039151rem solid #dce3ef;
+    border-radius: 100vw;
+    font-size: 0.487268rem;
+    line-height: 1.25;
+    color: var(--color-primary);
+}
+
+.iec-operator-main #availability .iec-avail-empty { margin: 0; font-size: 0.548117rem; color: var(--color-primary); }
+
+.iec-operator-main #availability .row:last-child .iec_content_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: none;
+    margin-top: 2.1875rem;
+    padding: 1.35rem 1.5rem 1.35rem 1.4rem;
+    background: var(--color-white);
+    border: 0.039151rem solid #dce3ef;
+    border-left: 0.156605rem solid var(--color-primary);
+    border-radius: 0.75rem;
+}
+
+.iec-operator-main #availability .row:last-child .iec_content_box strong {display: block;margin-bottom: 0.5rem;color: var(--color-primary);font-size: 0.7900478rem;}
+
+.iec-operator-main #availability .row:last-child .navigation-buttons { flex-shrink: 0; }
+
+.iec_avail_tab_search { margin-bottom: 1.174518rem; }
+
+.iec_avail_tab_search form {}
+
+.iec_avail_tab_search form input {
+    width: 100%;
+    height: 1.722626rem;
+    padding: 0.391506rem 1.761048rem 0.391506rem 0.626409rem;
+    border-radius: 0.313205rem;
+    border: 0.039151rem solid #cad1ea;
+    background-color: #eceef3;
+    color: #727da3;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 0.648108rem;
+    line-height: normal;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='15' viewBox='0 0 13 15' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'%3E%3Cpath d='M5.6721 10.7605C8.48226 10.7605 10.7603 8.48238 10.7603 5.67222C10.7603 2.86207 8.48226 0.583984 5.6721 0.583984C2.86194 0.583984 0.583862 2.86207 0.583862 5.67222C0.583862 8.48238 2.86194 10.7605 5.6721 10.7605Z' stroke='%231b204c' stroke-width='1.16837' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M12.2952 13.6184L8.54456 9.8678' stroke='%231b204c' stroke-width='1.16837' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 0.508958rem;
+    background-position: right 0.783012rem center;
+}
+
+.iec_avail_tab_search form input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.117454rem rgba(27, 32, 76, 0.12);
+    background-color: #fff;
+}
+
+/* ====== Availability ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â closing note and specialist CTA ====== */
+
+.iec_availability_note {
+    margin-top: 1.878258rem;
+    padding: 1.409421rem;
+    border: 0.039151rem solid rgba(114, 125, 163, 0.28);
+    border-radius: 0.626409rem;
+    background: linear-gradient(120deg, #f4f6fb 0%, #ffffff 60%);
+    text-align: left;
+}
+
+.iec_availability_note .iec-secondary-heading { margin-bottom: 0.391506rem; color: var(--color-primary); }
+
+.iec_availability_note p { margin: 0 0 0.783012rem; color: var(--color-primary); font-size: 0.626409rem; line-height: 150%; }
+
+.iec_availability_note .navigation-buttons { flex-wrap: wrap; justify-content: start; gap: 0.469807rem; }
+
+/* ====== Country guides ====== */
+
+.iec_country_guides_warpper { width: 100%; position: relative; padding-bottom: 2.114131rem; }
+
+.iec_country_guides_swiper:not(.swiper-initialized) .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.174518rem;
+    transform: none;
+}
+
+.iec_country_guides_warpper:not(.is-carousel) .swiper-pagination,
+.iec_country_guides_warpper:not(.is-carousel) .swiper-button-prev,
+.iec_country_guides_warpper:not(.is-carousel) .swiper-button-next { display: none; }
+
+.iec_country_guides_warpper .swiper-slide { height: auto; }
+
+.iec_country_guides_warpper .swiper-pagination {
+    position: static;
+    width: 100%;
+    margin-top: 1.174518rem;
+    gap: 0.469807rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iec_country_guides_warpper .swiper-pagination .swiper-pagination-bullet {
+    margin: 0;
+    width: 0.626409rem;
+    height: 0.626409rem;
+    opacity: 1;
+    border: 0.078301rem solid #727da3;
+    background-color: transparent;
+}
+
+.iec_country_guides_warpper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: #727da3; }
+
+.iec_country_guides_warpper .swiper-button-next,
+.iec_country_guides_warpper .swiper-button-prev {
+    width: 1.213668rem;
+    height: auto;
+    top: 0;
+    bottom: 2.114131rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.iec_country_guides_warpper .swiper-button-prev .iec_swiper_mobile_icon,
+.iec_country_guides_warpper .swiper-button-next .iec_swiper_mobile_icon { display: none; }
+
+.iec_country_guides_warpper .swiper-button-next:after,
+.iec_country_guides_warpper .swiper-button-prev:after { content: none; }
+
+.iec_country_guides_warpper .swiper-button-next svg,
+.iec_country_guides_warpper .swiper-button-prev svg { display: block; width: 100%; height: auto; }
+
+.iec_country_guides_warpper .swiper-button-next { right: -2.074981rem; }
+
+.iec_country_guides_warpper .swiper-button-prev { left: -1.918379rem; }
+
+/* ====== Buying guide ====== */
+
+.iec-operator-main #buying-guide .navigation-buttons { margin-top: 1.174518rem; }
+
+/* ====== Beyond Connectivity ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â managed services ====== */
+
+.iec-operator-main #managed { background: linear-gradient(155deg, #161b45 0%, #0b0f2e 100%); color: var(--color-white); }
+
+.iec-operator-main #managed .iec-eyebrow { background: color-mix(in srgb, var(--color-secondary) 45%, transparent); color: var(--color-white); }
+
+.iec-operator-main #managed .wysiwyg-content p { color: color-mix(in srgb, var(--color-white) 72%, var(--color-secondary)); }
+
+.iec-operator-main #managed article { height: 100%; padding: 1.02rem; background: #202655; border: 0.039151rem solid #30386f; border-radius: 0.5rem; }
+
+.iec-operator-main #managed article > span {
+    width: 1.56rem;
+    height: 1.56rem;
+    margin-bottom: 0.47rem;
+    border-radius: 0.4rem;
+    background: #30386f;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--bold);
+    font-size: 0.55rem;
+}
+
+.iec-operator-main #managed article .iec-secondary-heading { margin: 0 0 0.625rem; }
+
+.iec-operator-main #managed article .wysiwyg-content p { margin: 0.59rem 0 0; font-size: 0.55rem; width: 81%; }
+
+/* ====== Closing authorization band ====== */
+
+.iec-starlink-cta {
+    padding: 3.132047rem 0;
+    color: var(--color-white);
+
+}
+
+.top-img{
+    height: 7.85146rem;
+    overflow: hidden;
+}
+
+.top-img img{
+    height: 100%;
+    transition: 0.4s;
+    width: 100%;
+    object-fit: cover;
+}
+
+.starlink-img-slide:hover .top-img  img{
+    transform: scale(1.1);
+}
+
+.iec-starlink-cta-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.iec-starlink-cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.313205rem;
+    padding: 0.234908rem 0.626419rem;
+    margin-bottom: 0.939614rem;
+    border-radius: 100vw;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 0 0.039151rem rgba(255, 255, 255, 0.35);
+    font-family: var(--font-secondary);
+    font-size: 0.508966rem;
+    font-weight: var(--semi-bold);
+    letter-spacing: 0.039151rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.iec-starlink-cta-badge svg { width: 0.704711rem; height: 0.704711rem; flex-shrink: 0; }
+
+.iec-starlink-cta .wysiwyg-content p { color: rgba(255, 255, 255, 0.78); margin-bottom: 0; }
+
+.iec-starlink-cta .navigation-buttons { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 0.469807rem; margin-top: 1.174518rem; }
+
+.iec-starlink-cta-order { background: var(--color-white); color: var(--color-primary); }
+
+.iec-starlink-cta-order:hover { background: var(--color-secondary); color: var(--color-white); }
+
+.iec-starlink-cta-talk { background: transparent; color: var(--color-white); box-shadow: inset 0 0 0 0.039151rem rgba(255, 255, 255, 0.5); }
+
+.iec-starlink-cta-talk:hover { background: var(--color-white); color: var(--color-primary); }
+
+.iec-starlink-cta-points {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.626419rem;
+}
+
+.iec-starlink-cta-points li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.195753rem;
+    padding: 0.783024rem 0.939614rem;
+    border: 0.039151rem solid rgba(255, 255, 255, 0.14);
+    border-left: 0.156605rem solid rgba(255, 255, 255, 0.7);
+    border-radius: 0.469814rem;
+    background: rgba(255, 255, 255, 0.06);
+    transition: background-color 0.35s ease, transform 0.35s ease;
+}
+
+@media (hover: hover) {
+    .iec-starlink-cta-points li:hover { background: rgba(255, 255, 255, 0.1); transform: translateX(0.156605rem); }
+}
+
+.iec-starlink-cta-points strong {
+    font-family: var(--font-secondary);
+    font-size: 0.548118rem;
+    font-weight: var(--semi-bold);
+    letter-spacing: 0.031321rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.iec-starlink-cta-points span { font-size: 0.587259rem; line-height: 140%; color: rgba(255, 255, 255, 0.7); }
+
+.iec_starlink_patterns_heading_warpper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.iec_patterns_heading_btn {
+    flex: 0 0 auto;
+}
+
+.iec_market_slider_content .wysiwyg-content p {margin-bottom: 0 !important;}
+
+.iec_market_slider_content .wysiwyg-content p:not(:last-child) { margin-bottom: 1.840078rem !important; }
+
+.iec_market_slider_warpper .swiper-pagination,
+.iec_market_slider_warpper .swiper-pagination.swiper-pagination-horizontal { display: none !important; }
+
+.iec_starlink_connectivity_section {
+    padding-top: 1.327409rem;
+    padding-bottom: 1.327409rem;
+    background: var(--color-bg);
+}
+
+.iec_starlink_why_content .iec-eyebrow,
+.iec_starlink_inmart_fit_content .iec-eyebrow,
+.iec_starlink_connectivity_content .iec-eyebrow,
+.iec_starlink_inmarsat_coverage_content .iec-eyebrow, { margin-bottom: 0.978765rem; }
+
+.iec_starlink_why_content .iec-section-heading,
+.iec_starlink_inmart_fit_content .iec-section-heading,
+.iec_starlink_connectivity_content .iec-section-heading,
+.iec_starlink_inmarsat_coverage_content .iec-section-heading { margin-bottom: 0.978765rem; }
+
+.iec_starlink_why_content .wysiwyg-content p,
+.iec_starlink_inmart_fit_content .wysiwyg-content p,
+.iec_starlink_connectivity_content .wysiwyg-content p,
+.iec_starlink_inmarsat_coverage_content .wysiwyg-content p { margin-bottom: 0; }
+
+.iec_starlink_why_content .wysiwyg-content p:not(:last-child),
+.iec_starlink_inmart_fit_content .wysiwyg-content p:not(:last-child),
+.iec_starlink_connectivity_content .wysiwyg-content p:not(:last-child),
+.iec_starlink_inmarsat_coverage_content .wysiwyg-content p:not(:last-child) { margin-bottom: 0.704710598847406665rem; }
+
+.iec_starlink_connectivity_box {
+    background: var(--color-primary);
+    color: white;
+    padding: 1.957529rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.iec_starlink_connectivity_box h3 {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 0.939614rem;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 1.096216rem;
+}
+
+.iec_starlink_number_list {
+    list-style: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    counter-reset: custom-counter;
+}
+
+.iec_starlink_number_list li {
+    counter-increment: custom-counter;
+    padding: 0.587259rem 0 0.587259rem 1.252819rem;
+    border-top: 1px solid rgba(255, 255, 255, .14);
+    position: relative;
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 0.740710598847406665rem;
+    line-height: 144.444%;
+}
+
+.iec_starlink_number_list li:before {
+    content: "0" counter(custom-counter);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 0.740710598847406665rem;
+    line-height: 144.444%;
+    color: #717ba2;
+    position: absolute;
+    left: 0;
+    top: 0.587259rem;
+}
+
+.iec_starlink_why {
+    padding: 3.132047rem 0;
+}
+
+.iec_starlink_why_box_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.039151rem;
+    background: color-mix(in srgb, var(--color-secondary) 35%, var(--color-white));
+}
+
+.iec_starlink_why_box {
+    padding: 1.174518rem;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 0.548108rem;
+}
+
+.iec_starlink_why_box_label {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 0.740710598847406665rem;
+    line-height: 144.444%;
+    color: var(--color-secondary);
+}
+
+/* ====== Why IEC Telecom ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â dark background option ====== */
+
+.iec_starlink_why.is-dark { color: var(--color-white); background-color: var(--color-primary); }
+
+.iec_starlink_why.is-dark .iec_starlink_why_box_grid { background: #717ba2; }
+
+.iec_starlink_why.is-dark .iec_starlink_why_box { background-color: var(--color-primary); }
+
+.iec_starlink_why.is-dark .iec_starlink_why_box_label { color: #717ba2; }
+
+.iec_starlink_why_box h3 {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 0.861313rem;
+    line-height: normal;
+}
+
+.iec_starlink_why_box p {
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 0.626409rem;
+    line-height: 144.444%;
+}
+
+.iec_starlink_hero_below_grid {
+    --stat-line: color-mix(in srgb, var(--color-secondary) 20%, var(--color-white));
+    position: relative;
+    overflow: hidden;
+    background: var(--color-white);
+    border: 0.039151rem solid var(--stat-line);
+    /* border-radius: 0.626419rem; */
+    /* box-shadow: 0 0.313210rem 1.174518rem rgba(27, 32, 76, 0.08); */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.iec_starlink_hero_below_box {
+    padding: 1.096216rem 1.174518rem;
+    border-right: 1px solid;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(145deg, rgba(255, 255, 255, .20), rgba(182, 184, 220, .08));
+    border-right-color: var(--stat-line);
+    display: flex;
+    flex-direction: column;
+    gap: 0.313205rem;
+}
+
+.iec_starlink_hero_below_box:last-child { border-right: none; }
+
+.iec_starlink_hero_below_box_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.114131rem;
+    height: 2.114131rem;
+    margin-bottom: 0.587259rem;
+    border-radius: 0.469814rem;
+    background: var(--color-bg);
+    color: var(--color-primary);
+}
+
+.iec_starlink_hero_below_box_icon svg {
+    width: 1.487722rem;
+    height: 1.487722rem;
+}
+
+.iec_starlink_hero_below_box h2 {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 0.73962884660559079164rem;
+    line-height: normal;
+    margin-bottom: 0;
+    color: var(--color-text);
+}
+
+.iec_starlink_hero_below_box .wysiwyg-content p {
+    font-size: 0.626409rem;
+    margin-bottom: 0;
+    color: var(--color-secondary);
+}
+
+.iec_starlink_inmarsat_section {padding: 2.132047rem 0;}
+
+.iec_starlink_inmarsat {
+    position: relative;
+    overflow: hidden;
+    padding-top: 1.879228rem;
+    padding-bottom: 1.644325rem;
+    padding-inline: 1.957529rem;
+    color: var(--color-white);
+    background: var(--color-primary);
+    box-shadow: 0 22px 54px rgba(27, 32, 76, .14);
+}
+
+.iec_starlink_inmarsat_footer,
+.iec_starlink_inmarsat_header,
+.iec_starlink_inmarsat_filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.939614rem;
+}
+
+.iec_starlink_inmarsat_header { margin-bottom: 1.331120rem; }
+
+.iec_starlink_inmarsat_header_left {}
+
+.iec_starlink_inmarsat_header_left .iec-eyebrow { margin-bottom: 0.978765rem; }
+
+.iec_starlink_inmarsat_footer .wysiwyg-content p,
+.wysiwyg-content.iec_starlink_inmarsat_header_right p,
+.iec_starlink_inmarsat_header_left .iec-section-heading { margin-bottom: 0; }
+
+.wysiwyg-content.iec_starlink_inmarsat_header_right {
+    flex: 0 0  auto;
+    width: 15.660236rem;
+    min-width: 15.660236rem;
+}
+
+.iec_starlink_inmarsat_footer .wysiwyg-content p:not(:last-child),
+.wysiwyg-content.iec_starlink_inmarsat_header_right p:not(:last-child) { margin-bottom: 0.704710598847406665rem; }
+
+.iec_starlink_inmarsat_filters {
+    padding: 0.508958rem 0;
+    margin-bottom: 1.096216rem;
+    border-top: 1px solid rgba(182, 184, 220, .22);
+    border-bottom: 1px solid rgba(182, 184, 220, .22);
+}
+
+.iec_starlink_inmarsat_filter_title {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 0.761313rem;
+    line-height: normal;
+    /* color: #717ba2; */
+    text-transform: capitalize;
+}
+
+.iec_starlink_inmarsat_filter_buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.156602rem;
+}
+
+.iec_starlink_inmarsat_filter_btn {
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-secondary);
+    font-weight: var(--semi-bold);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.35rem 0.68rem;
+    font-size: 0.5288117rem;
+    border: none;
+    border-radius: 0.12660480776759846527rem;
+    max-width: fit-content;
+    height: 1.448572rem;
+    color: var(--color-white);
+    background-color: transparent;
+}
+
+.iec_starlink_inmarsat_filter_btn:hover { background: rgba(255, 255, 255, .06); }
+
+.iec_starlink_inmarsat_filter_btn.is-active { background: var(--color-secondary); }
+
+/*.iec_starlink_inmarsat_post_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.783012rem;
+}
+
+*/
+
+.iec_starlink_inmarsat_post_grid[hidden] { display: none; }
+
+.inmarsat_post_swiper_warpper { position: relative; }
+
+.inmarsat_post_swiper_warpper .swiper-slide {
+    width: 100%;
+    max-width: 14.589858rem;
+    height: auto;
+}
+
+.iec_starlink_inmarsat_post {
+    width: 100%;
+    min-height: 15.660236rem;
+    padding-top: 1.096216rem;
+    padding-bottom: 1.096216rem;
+    padding-inline: 0.978765rem;
+    background-color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 0.66557rem;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.35s ease;
+}
+
+.iec_starlink_inmarsat_post_header {
+    display: flex;
+    align-items: center;
+    gap: 0.783012rem;
+    margin-bottom: 1.096216rem;
+}
+
+.iec_starlink_inmarsat_post_header span {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 1.134073rem;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #717ba2;
+}
+
+.iec_starlink_inmarsat_post_title {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 0.861313rem;
+    line-height: normal;
+    color: var(--color-primary);
+    margin-bottom: 0;
+}
+
+.iec_starlink_inmarsat_post .wysiwyg-content {
+    margin-bottom: 0.978765rem;
+}
+
+.iec_starlink_inmarsat_post .wysiwyg-content p {
+    margin-bottom: 0;
+}
+
+.iec_starlink_inmarsat_post_meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 0 0.978765rem;
+    border-top: 1px solid #D9DBE8;
+    border-bottom: 1px solid #D9DBE8;
+}
+
+.iec_starlink_inmarsat_post_meta_item {
+    padding: 0.548108rem 0.391506rem 0.548108rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.234903532949135555rem;
+}
+
+.iec_starlink_inmarsat_post_meta_item + .iec_starlink_inmarsat_post_meta_item {
+    padding-left: 0.626409rem;
+    border-left: 0.039151rem solid #D9DBE8;
+}
+
+.iec_starlink_inmarsat_post_meta_item span,
+.iec_starlink_inmarsat_post_meta_item strong {
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 0.626409rem;
+    line-height: 144.444%;
+    color: var(--color-primary);
+}
+
+.iec_starlink_inmarsat_post_meta_item strong {
+    font-weight: var(--bold);
+}
+
+.iec_starlink_inmarsat_post_link {
+    margin-top: auto;
+    transition: color 0.35s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.31321rem;
+    color: #17245d;
+    font-size: 0.548108rem;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.035em;
+}
+
+.iec_starlink_inmarsat_post_link svg {
+    width: 0.66557rem;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-top: -0.078301rem;
+}
+
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev,
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_next {
+    width: 1.213668rem;
+    height: 1.213668rem;
+    margin-top: 0;
+    top: calc(50% + 0.626409rem);
+    z-index: 3;
+    opacity: 1;
+}
+
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_next { right: -1.566024rem; }
+
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev { left: -1.566024rem; }
+
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev svg,
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_next svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.inmarsat_post_swiper_warpper .iec_swiper_mobile_icon { display: none; }
+
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev:after,
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_next:after {
+    content: none !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev:after {  }
+
+.inmarsat_post_swiper_warpper .inmarsat_post_swiper_next:after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none' aria-hidden='true'%3E%3Cpath d='M0.5 0L12.8944 0L25.5 15.022L13 31H0.5L13 15.5L0.5 0Z' fill='%23727DA4' fill-opacity='0.5'%3E%3C/path%3E%3C/svg%3E"); }
+
+@media (hover: hover) {
+    .iec_starlink_inmarsat_post:hover {
+        transform: translateY(-0.195756rem);
+        border-color: var(--color-secondary);
+        box-shadow: 0 0.469814rem 1.174518rem rgba(6, 9, 28, 0.28);
+    }
+
+    .iec_starlink_inmarsat_post:hover .iec_starlink_inmarsat_post_link {
+        color: var(--color-secondary);
+    }
+
+    .iec_starlink_inmarsat_post:hover .iec_starlink_inmarsat_post_link svg {
+        transform: translateX(0.195756rem);
+    }
+}
+
+.iec_starlink_inmarsat_footer {
+    border-top: 1px solid rgba(182, 184, 220, .22);
+    margin-top: 1.331120rem;
+    padding-top: 0.508958rem;
+}
+
+.iec_starlink_inmarsat_footer .wysiwyg-content {
+    width: 100%;
+}
+
+.iec_starlink_inmarsat_coverage_section {
+    padding: 3.132047rem 0;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.iec_starlink_inmarsat_coverage_content {}
+
+.iec_starlink_inmarsat_coverage_content_box_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.626409rem;
+    margin: 1.409421rem 0;
+}
+
+.iec_starlink_inmarsat_coverage_content_box {
+    width: 100%;
+    height: 100%;
+    padding: 0.626409rem;
+    border: 1px solid rgba(182, 184, 220, .22);
+    background: rgba(255, 255, 255, .04);
+    display: flex;
+    flex-direction: column;
+    gap: 0.391506rem;
+}
+
+.iec_starlink_inmarsat_coverage_content_box h3 {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 0.704710598847406665rem;
+    line-height: normal;
+}
+
+.iec_starlink_inmarsat_coverage_content_box p {
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 0.626409rem;
+    line-height: 144.444%;
+}
+
+.iec_starlink_inmarsat_coverage_right_box {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(182, 184, 220, .28);
+    background: linear-gradient(145deg, rgba(255, 255, 255, .09), rgba(255, 255, 255, .025));
+    padding: 1.331120rem;
+}
+
+.iec_starlink_inmarsat_coverage_right_box_image {
+    width: 100%;
+    height: 8.417377rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.iec_starlink_inmarsat_coverage_right_box_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.iec_starlink_inmarsat_coverage_right_box ul {
+    list-style: none;
+    margin: 1.096216rem 0;
+}
+
+.iec_starlink_inmarsat_coverage_right_box ul li {
+    padding: 0.587259rem 0;
+    border-top: 1px solid rgba(255, 255, 255, .14);
+    position: relative;
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 0.740710598847406665rem;
+    line-height: 144.444%;
+    display: flex;
+    gap: 0.46980706589827111rem;
+    justify-content: space-between;
+}
+
+.iec_starlink_inmarsat_coverage_right_box ul li span {
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+.iec_starlink_inmarsat_coverage_disclaimer_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.195753rem;
+    padding: 0.783024rem 0.939614rem;
+    border: 0.039151rem solid rgba(255, 255, 255, 0.14);
+    border-left: 0.156605rem solid rgba(255, 255, 255, 0.7);
+    border-radius: 0.469814rem;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.iec_starlink_inmarsat_coverage_disclaimer_box p {
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 0.626409rem;
+    line-height: 144.444%;
+    margin-bottom: 0;
+}
+
+.iec_starlink_inmarsat_fits_section {
+    /* padding: 3.13205rem 0px; */
+    background: var(--color-bg);
+}
+
+.iec_starlink_inmarst_fit_box_gird {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.626409rem;
+    margin: 1.409421rem 0 0;
+}
+
+.iec_starlink_inmarsat_fit_box {
+    width: 100%;
+    height: 100%;
+    min-height: 15.268730rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    padding: 1.096216rem 1.096216rem 1.174518rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.iec_starlink_inmarsat_fit_box:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(27, 32, 76, .34) 0%, rgba(27, 32, 76, .72) 48%, rgba(17, 22, 49, .97) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.50s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.iec_starlink_inmarst_fit_box_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.iec_starlink_inmarst_fit_box_image img {
+    object-position: center center;
+    transition: 0.50s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.iec_starlink_inmarsat_fit_box_content {
+    position: relative;
+    z-index: 4;
+    color: #fff;
+}
+
+.iec_starlink_inmarsat_fit_box_content h3 {
+    font-family: var(--font-secondary);
+    font-weight: var(--bold);
+    font-size: 0.861313rem;
+    line-height: normal;
+    margin: 0.626409rem 0 0.46980706589827111rem;
+}
+
+.iec_starlink_inmarsat_fit_box_content p {
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 0.626409rem;
+    line-height: 144.444%;
+    margin-bottom: 0;
+}
+
+.iec_starlink_inmarsat_fit_box:hover {}
+
+.iec_starlink_inmarsat_fit_box:hover:before {
+    background: linear-gradient(180deg, rgb(27 32 76 / 50%) 0%, rgb(27 32 76 / 90%) 48%, rgb(17 22 49) 100%);
+    transition: 0.50s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.iec_starlink_inmarsat_fit_box:hover .iec_starlink_inmarst_fit_box_image img {
+    transform: scale(1.2);
+    transition: 0.50s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+section.split-content > .container {
+    display: flex;
+    /* gap: 90px; */
+    /* align-items: flex-start; */
+    flex-direction: column;
+}
+
+section.split-content > .container > .row:first-child {
+    flex: 0 0 35%;
+    /* position: fixed; */
+    top: 120px;
+}
+
+section.split-content > .container > .row:last-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.iec_starlink_inmarsat_footer .btn:hover,
+.iec_market_slider_content .secondary-btn:hover,
+.iec_starlink_inmarsat_coverage_content .btn:hover {
+    color: #1b1f4c;
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    section.split-content > .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    section.split-content > .container > .row:first-child {
+        position: static;
+        flex: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .iec_starlink_connectivity_content {
+        max-width: 22.707342rem;
+    }
+
+    .iec_starlink_connectivity_box {
+        max-width: 21.532824rem;
+        margin-inline: auto 0;
+    }
+
+    .iec_starlink_why_content,
+    .iec_starlink_inmarsat_coverage_content {
+        max-width: 17.069657rem;
+    }
+
+    .iec_starlink_why_box_grid {
+        max-width: 25.604485rem;
+        margin-inline: auto 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iec_market_slider_section:after {
+        height: 10.696141rem;
+        /* margin-bottom: -10.696141rem; */
+    }
+
+    .iec_starlink_hero_below_grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /*.iec_starlink_inmarsat_post_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }*/
+
+    .iec_starlink_inmarsat_post_grid.is-four {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .iec_starlink_inmarsat_post_meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iec_starlink_inmarsat_footer .wysiwyg-content {
+        width: 27.013906rem;
+    }
+
+    .iec_starlink_inmarsat_coverage_content_box_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iec_starlink_inmarsat_coverage_right_box {
+        max-width: 25.604485rem;
+        margin-inline: auto 0;
+    }
+
+    .iec_starlink_inmarst_fit_box_gird {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .inmarsat_post_swiper_warpper .iec_swiper_mobile_icon { display: none !important; }
+
+}
+
+@media (max-width: 992px) {
+    .iec_stats_bar { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 991px) {
+    .iec-operator-main #why-leo [role="row"]:first-child > :first-child,
+    .iec-operator-main #buying-guide [role="row"]:first-child > :first-child { display: none; }
+
+    .iec-operator-main #role .row { --bs-gutter-x: 1.174518rem; }
+
+    .iec-operator-main #role .iec_image_wrapper { width: 26.25rem; height: 26.25rem; }
+
+    .iec-operator-main #coverage > .container > .row:first-child { margin-bottom: 1.25rem; }
+
+    .iec-operator-main #coverage .iec-coverage-aside { margin-bottom: 1rem; }
+
+    .iec-operator-main #why-leo [role="row"] { grid-template-columns: 1fr 1fr; }
+
+    .iec-operator-main #why-leo [role="row"] > :first-child { grid-column: 1 / -1; }
+
+    .iec-operator-main #why-leo [role="row"]:first-child > [role="columnheader"] { grid-column: auto; }
+
+    .iec-operator-main #buying-guide [role="row"] { grid-template-columns: 1fr 1fr; }
+
+    .iec-operator-main #buying-guide [role="row"] > :first-child { grid-column: 1 / -1; }
+
+    .iec-operator-main #buying-guide [role="row"]:first-child > [role="columnheader"] { grid-column: auto; }
+}
+
+@media (max-width: 767px) {
+    .iec-operator-main #role .iec_image_wrapper { width: 26.25rem; height: 26.25rem; transform: scale(0.75); margin: -2.5rem auto; }
+
+    .iec-operator-main #role .iec_image_wrapper > span { width: 13.75rem; height: 13.75rem; }
+
+    .iec-operator-main #availability .row:last-child .iec_content_box { flex-direction: column; align-items: flex-start; }
+
+    .iec-operator-main .iec_hero_banner .navigation-buttons { justify-content: center; flex-direction: column; }
+
+    section.iec-statistics { margin: 0; padding: 0; }
+
+    .iec_stat:nth-child(2n) { border-right: 0; }
+
+    .iec_stat:not(:nth-last-child(-n + 2)) { border-bottom: 0.039151rem solid var(--stat-line); }
+
+    .iec-recommended-approach { padding: 1.096216rem 0.783012rem; }
+
+    .iec_flow_arrow { top: 100%; left: 50%; transform: translateX(-50%) rotate(90deg); }
+
+    .iec_stats_bar--compact .iec_stat { padding: 0.626419rem 0.939614rem; }
+
+    .iec_starlink_why,
+    .iec_starlink_inmarsat_section,
+    .iec_starlink_connectivity_section,
+    .iec_starlink_inmarsat_fits_section,
+    .iec_starlink_inmarsat_coverage_section { padding: 2.222222rem 0; }
+
+    .iec_starlink_connectivity_content {}
+
+    .iec_starlink_connectivity_box {
+        margin-top: 1.333333rem;
+        padding: 1.333333rem;
+    }
+
+    .iec_starlink_number_list li {
+        font-size: 0.888889rem;
+        padding: 0.777778rem 0 0.777778rem 1.444444rem;
+    }
+
+    .iec_starlink_number_list li:before {
+        font-size: 0.888889rem;
+        top: 0.777778rem;
+    }
+
+    .iec_starlink_connectivity_box h3 { /* font-size: 1.222222rem; */ }
+
+    .iec_starlink_why_box_grid { margin-top: 1.333333rem; }
+    .iec_starlink_why_box_label { font-size: 0.888889rem; }
+    .iec_starlink_why_box p { font-size: 0.777778rem; }
+    .iec_starlink_why_box h3 { font-size: 1rem; }
+
+    .iec_starlink_why_box {
+        padding: 1.333333rem;
+        gap: 0.833333rem;
+    }
+
+    .iec_starlink_patterns_heading_warpper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iec_market_slider_content .btn.secondary-btn {
+        margin-top: 1.444444rem;
+    }
+
+    .iec_starlink_hero_below_box {
+        padding: 0.939614rem;
+        border-right: none;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iec_starlink_hero_below_box:not(:last-child) { border-bottom: 1px solid var(--stat-line); }
+    .iec_starlink_hero_below_box h2 { font-size: 0.939614rem; }
+    .iec_starlink_hero_below_box .wysiwyg-content p { font-size: 0.777778rem; }
+
+    .iec_starlink_inmarsat_footer, .iec_starlink_inmarsat_header, .iec_starlink_inmarsat_filters {
+        flex-wrap: wrap;
+        gap: 0.833333rem;
+    }
+
+    .iec_starlink_inmarsat { padding: 1.333333rem !important; }
+
+    .iec_starlink_inmarsat_filter_buttons {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .iec_starlink_inmarsat_filter_btn {
+        height: auto;
+        font-size: 0.777778rem;
+        line-height: 150%;
+    }
+
+    .iec_starlink_inmarsat_post_title { font-size: 1rem; }
+    .iec_starlink_inmarsat_post_header span { font-size: 1.222222rem; }
+
+    .iec_starlink_inmarsat_post_meta_item {
+        padding: 0.5rem !important;
+        text-align: center;
+    }
+
+    .iec_starlink_inmarsat_post_meta_item + .iec_starlink_inmarsat_post_meta_item {
+        border-left: none;
+        border-top: 1px solid #D9DBE8;
+    }
+
+    .iec_starlink_inmarsat_post_meta_item span, .iec_starlink_inmarsat_post_meta_item strong { font-size: 0.777778rem; }
+    .iec_starlink_inmarsat_post_link { font-size: 0.777778rem; }
+
+    .iec_starlink_inmarsat_post_link svg {
+        width: 0.888889rem;
+        height: 0.888889rem;
+        margin-top: -3px;
+    }
+
+    .iec_starlink_inmarsat_footer { padding-top: 1rem; }
+
+    .iec_starlink_inmarsat_coverage_content_box {
+        padding: 0.833333rem;
+        gap: 0.5rem;
+    }
+
+    .iec_starlink_inmarsat_coverage_content_box h3 { font-size: 0.888889rem; }
+    .iec_starlink_inmarsat_coverage_content_box p { font-size: 0.777778rem; }
+
+    .iec_starlink_inmarsat_coverage_right_box {
+        margin-top: 1.333333rem;
+        padding: 1.333333rem !important;
+    }
+
+    .iec_starlink_inmarsat_coverage_right_box ul { padding-left: 0 !important; }
+
+    .iec_starlink_inmarsat_coverage_right_box ul li {
+        font-size: 0.777778rem;
+        padding: 0.777778rem 0 0.777778rem;
+    }
+
+    .iec_starlink_inmarsat_coverage_disclaimer_box {
+        text-align: center;
+        gap: 0.3333333rem;
+    }
+
+    .iec_starlink_inmarsat_coverage_disclaimer_box p { font-size: 0.666667rem; }
+    .iec_starlink_inmarsat_fit_box { padding: 1.3333333rem; }
+    .iec_starlink_inmarsat_fit_box_content h3 { font-size: 1rem; }
+    .iec_starlink_inmarsat_fit_box_content p { font-size: 0.777778rem; }
+
+    .inmarsat_post_swiper_warpper {
+        margin-inline: auto;
+        max-width: 15.555556rem;
+        padding-top: 3.333333rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inmarsat_post_swiper_warpper .swiper { width: 100%; }
+    .inmarsat_post_swiper_warpper .swiper-slide { max-width: 100%; }
+
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev,
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_next {
+        width: 1.777778rem;
+        height: 1.777778rem;
+        top: 0.555556rem;
+        border-radius: 0.444444rem;
+        border: 1px solid #727da3;
+    }
+
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev { left: calc(50% - 2.111111rem); }
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_next { right: calc(50% - 2.111111rem); }
+
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev svg:not(.iec_swiper_mobile_icon),
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_next svg:not(.iec_swiper_mobile_icon) { display: none !important; }
+
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_prev .iec_swiper_mobile_icon,
+    .inmarsat_post_swiper_warpper .inmarsat_post_swiper_next .iec_swiper_mobile_icon {
+        display: block;
+        width: 0.888889rem;
+        height: 0.888889rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .iec-coverage-points,
+    .iec_stats_bar { grid-template-columns: 1fr; width: 100%; }
+
+    .iec_stat { border-right: 0; }
+
+    .iec_stat:not(:last-child) { border-bottom: 0.039151rem solid var(--stat-line); }
+}
+
+.iec-operator-main #availability .iec-avail-card {
+        padding: 0.939615rem;
+        background: var(--color-white);
+        border: 0.039151rem solid #dce3ef;
+        border-radius: 0.626409rem;
+    }
+
+.iec-operator-main #availability .iec-avail-tabs { row-gap: 0.939615rem; }
+
+.iec-operator-main #availability .iec-avail-tabnav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.234904rem;
+        margin: 0;
+        border-bottom: none;
+    }
+
+.iec-operator-main #availability .iec-avail-tab {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.469807rem;
+        width: 100%;
+        margin: 0;
+        padding: 0.548117rem 0.626409rem;
+        border: 0;
+        border-left: 0.117454rem solid transparent;
+        border-radius: 0.391506rem;
+        background: transparent;
+        color: var(--color-secondary);
+        font-size: 0.5504722rem;
+        font-weight: var(--semi-bold);
+        line-height: 1.2;
+        text-align: left;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+.iec-operator-main #availability .iec-avail-tab:hover { background: #f4f6fb; color: var(--color-primary); }
+
+.iec-operator-main #availability .iec-avail-tab:focus { outline: none; box-shadow: none; }
+
+.iec-operator-main #availability .iec-avail-tab:focus-visible { outline: 0.078301rem solid var(--color-primary); outline-offset: 0.078301rem; }
+
+.iec-operator-main #availability .iec-avail-tab.is-active,
+    .iec-operator-main #availability .iec-avail-tab[aria-selected="true"] {
+        background: var(--color-primary);
+        color: var(--color-white);
+        border-left-color: var(--color-primary);
+    }
+
+.iec-operator-main #availability .iec-avail-tab-count {
+        padding: 0.137454rem;
+        border-radius: 100vw;
+        background: var(--color-primary);
+        color: var(--color-white);
+        font-size: 0.469807rem;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+    }
+
+.iec-operator-main #availability .iec-avail-tab.is-active .iec-avail-tab-count { padding: 0.117454rem; background: var(--color-secondary); }
+
+.iec-operator-main #availability .iec-avail-board {
+        height: 100%;
+        padding: 0 0 0 0.939615rem;
+        border-left: 0.039151rem solid var(--color-primary);
+    }
+
+.iec-operator-main #availability .iec_avail_tab_search { margin: 0 0 0.783012rem; padding: 0; }
+
+.iec-operator-main #availability .iec_avail_tab_search form { display: block; margin: 0; }
+
+.iec-operator-main #availability .iec_avail_tab_search form input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 1.722626rem;
+        margin: 0;
+        border: 1px solid #cad1ea;
+    }
+
+.iec-operator-main #availability .iec-avail-panel[hidden] { display: none; }
+
+.iec-operator-main #availability .iec-avail-panel-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 0.626409rem;
+        margin: 0 0 0.783012rem;
+        padding: 0 0 0.626409rem;
+        border-bottom: 0.039151rem solid #dce3ef;
+    }
+
+.iec-operator-main #availability .iec-avail-panel-title { margin: 0; font-size: 0.704711rem; font-weight: var(--semi-bold); color: var(--color-primary); }
+
+.iec-operator-main #availability .iec-avail-panel-meta { font-size: 0.487268rem; color: #727da3; white-space: nowrap; }
+
+.iec-operator-main #availability .iec-avail-chips {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 0.5rem;
+        max-height: 13.702850rem;
+        overflow-y: auto;
+        padding: 0.117454rem 0.626409rem 0.117454rem 0;
+        scrollbar-width: thin;
+        scrollbar-color: #727da3 #eef1f7;
+    }
+
+.iec-operator-main #availability .iec-avail-chips::-webkit-scrollbar { width: 0.313205rem; }
+
+.iec-operator-main #availability .iec-avail-chips::-webkit-scrollbar-track { background: #eef1f7; border-radius: 100vw; }
+
+.iec-operator-main #availability .iec-avail-chips::-webkit-scrollbar-thumb { background: #727da3; border-radius: 100vw; }
+
+.iec-operator-main #availability .iec-avail-chips::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+
+.iec-operator-main #availability .iec-avail-chip { transition: border-color 0.2s, box-shadow 0.2s; }
+
+.iec-operator-main #availability .iec-avail-chip:hover { border-color: var(--color-primary); box-shadow: 0 0.078301rem 0.234904rem rgba(27, 32, 76, 0.08); }
+
+.iec-operator-main #availability .iec-avail-noresult { margin-top: 0.469807rem; }
+
+.iec-operator-main #availability .iec-avail-board:has(.iec-avail-noresult:not([hidden])) .iec-avail-panel.is-active .iec-avail-chips { display: none; }
+
+@media (max-width: 767.98px) {
+        .iec-operator-main #availability .iec-avail-tabnav { flex-direction: row; overflow-x: auto; scrollbar-width: none; }
+
+        .iec-operator-main #availability .iec-avail-tab { flex: 0 0 auto; width: auto; white-space: nowrap; border-left: 0; }
+
+        .iec-operator-main #availability .iec-avail-board { padding: 0.939615rem 0 0; border-left: 0; border-top: 0.039151rem solid #dce3ef; }
+
+        .iec-operator-main #availability .iec-avail-chips { max-height: 11.745180rem; }
+    }

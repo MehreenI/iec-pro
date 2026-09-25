@@ -110,9 +110,13 @@
     pointer-events: none;
 }
 
+.iec_home_hero_contain h1,
+.iec_home_hero_contain .iec_sub_heading_content,
 .iec_home_hero_contain a,
 .iec_home_hero_contain button {
     pointer-events: auto;
+    -webkit-user-select: text;
+    user-select: text;
 }
 
 
@@ -266,11 +270,13 @@ a.iec_home_hero_cta.iec_home_hero_anim.outline_btn {
     max-width: 26rem;
 }
 
+.iec_home_about_content .iec-eyebrow,
 .iec_home_about_content .iec_home_eyebrow {
     margin-bottom: 0.939614rem;
 }
 
-.iec_home_about_content .iec_section_heading {
+.iec_home_about_content .iec_section_heading,
+.iec_home_about_content .iec-section-heading {
     max-width: 22rem;
     margin-bottom: 0.939614rem;
     color: #fff;
@@ -932,7 +938,8 @@ a.iec_home_hero_cta.iec_home_hero_anim.outline_btn {
     margin-bottom: 0.508958rem;
 }
 
-.iec_home_card .iec_section_heading {
+.iec_home_card .iec_section_heading,
+.iec_home_card .iec-section-heading {
     color: #fff;
     margin-bottom: 0.508958rem;
 }
@@ -1124,7 +1131,8 @@ a.iec_home_hero_cta.iec_home_hero_anim.outline_btn {
     gap: 1.409421rem;
 }
 
-.iec_home_global_content .iec_section_heading {
+.iec_home_global_content .iec_section_heading,
+.iec_home_global_content .iec-section-heading {
     margin-bottom: 0.313205rem;
     max-width: 15.660236rem;
 }
@@ -1415,7 +1423,8 @@ img.iec_home_global_office_ring {
     z-index: 1;
 }
 
-.iec_home_network_layer_header .iec_section_heading {
+.iec_home_network_layer_header .iec_section_heading,
+.iec_home_network_layer_header .iec-section-heading {
     margin-bottom: 0.313205rem;
     color: #fff;
 }

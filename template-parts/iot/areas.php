@@ -17,7 +17,7 @@ if ( empty( $items ) ) {
 		<?php if ( $title ) : ?>
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="iec_section_heading"><?= $title; ?></h2>
+					<h2 class="iec_section_heading iec-section-heading"><?= $title; ?></h2>
 				</div>
 			</div>
 		<?php endif; ?>

@@ -1,6 +1,3 @@
-/**
- * Single solution — image modal, accordion, and Swipers.
- */
 ( function ( $ ) {
 	'use strict';
 
@@ -13,21 +10,26 @@
 			return;
 		}
 
-		document.querySelectorAll( '.iec_single_solution_product_image_post' ).forEach( function ( link ) {
-			link.addEventListener( 'click', function ( e ) {
-				e.preventDefault();
-				modalImg.src = this.getAttribute( 'data-img' ) || '';
-				modalImg.alt = this.getAttribute( 'aria-label' ) || '';
-				overlay.classList.add( 'is-open' );
-				document.body.style.overflow = 'hidden';
-			} );
-		} );
+		function openModal( trigger ) {
+			modalImg.src = trigger.getAttribute( 'data-img' ) || '';
+			modalImg.alt = trigger.getAttribute( 'aria-label' ) || '';
+			overlay.classList.add( 'is-open' );
+			document.body.style.overflow = 'hidden';
+		}
 
 		function closeModal() {
 			overlay.classList.remove( 'is-open' );
 			modalImg.src = '';
+			modalImg.alt = '';
 			document.body.style.overflow = '';
 		}
+
+		document.querySelectorAll( '.iec_single_solution_product_image_post' ).forEach( function ( trigger ) {
+			trigger.addEventListener( 'click', function ( e ) {
+				e.preventDefault();
+				openModal( this );
+			} );
+		} );
 
 		closeBtn.addEventListener( 'click', closeModal );
 		overlay.addEventListener( 'click', function ( e ) {
@@ -46,41 +48,51 @@
 		$( '.iec_single_solution_acordion_body' ).hide();
 
 		$( '.iec_single_solution_acordion_header' ).on( 'click', function () {
-			var $item = $( this ).closest( '.iec_single_solution_acordion_item' );
+			var $header = $( this );
+			var $item   = $header.closest( '.iec_single_solution_acordion_item' );
+			var $body   = $item.find( '.iec_single_solution_acordion_body' );
+			var open    = $item.hasClass( 'active' );
 
-			if ( $item.hasClass( 'active' ) ) {
-				$item.removeClass( 'active' )
-					.find( '.iec_single_solution_acordion_body' ).stop( true, true ).slideUp( 300 );
-			} else {
-				$( '.iec_single_solution_acordion_item' ).removeClass( 'active' )
-					.find( '.iec_single_solution_acordion_body' ).stop( true, true ).slideUp( 300 );
-				$item.addClass( 'active' )
-					.find( '.iec_single_solution_acordion_body' ).stop( true, true ).slideDown( 300 );
+			$( '.iec_single_solution_acordion_item' ).removeClass( 'active' )
+				.find( '.iec_single_solution_acordion_header' ).attr( 'aria-expanded', 'false' );
+			$( '.iec_single_solution_acordion_body' ).stop( true, true ).slideUp( 300 );
+
+			if ( ! open ) {
+				$item.addClass( 'active' );
+				$header.attr( 'aria-expanded', 'true' );
+				$body.stop( true, true ).slideDown( 300 );
 			}
 		} );
 	}
 
 	function initSwipers() {
-		if ( typeof Swiper === 'undefined' ) {
+		if ( typeof IEC.initMobileOnlySwiper !== 'function' ) {
 			return;
 		}
 
-		if ( document.querySelector( '.image-modal-swiper' ) ) {
-			new Swiper( '.image-modal-swiper', {
-				slidesPerView: 1,
-				spaceBetween: 15,
-				grid: { rows: 2 },
-				navigation: { nextEl: '.image_modal_swiper_next', prevEl: '.image_modal_swiper_prev' },
-			} );
-		}
+		IEC.initMobileOnlySwiper( '.image-modal-swiper', {
+			slidesPerView: 1,
+			spaceBetween: 15,
+			speed: 600,
+			loop: false,
+			watchOverflow: true,
+			navigation: {
+				nextEl: '.image_modal_swiper_next',
+				prevEl: '.image_modal_swiper_prev'
+			}
+		} );
 
-		if ( document.querySelector( '.use_cases_swiper' ) ) {
-			new Swiper( '.use_cases_swiper', {
-				slidesPerView: 'auto',
-				spaceBetween: 15,
-				navigation: { nextEl: '.use_cases_swiper_next', prevEl: '.use_cases_swiper_prev' },
-			} );
-		}
+		IEC.initMobileOnlySwiper( '.use_cases_swiper', {
+			slidesPerView: 1,
+			spaceBetween: 15,
+			speed: 600,
+			loop: false,
+			watchOverflow: true,
+			navigation: {
+				nextEl: '.use_cases_swiper_next',
+				prevEl: '.use_cases_swiper_prev'
+			}
+		} );
 	}
 
 	$( function () {

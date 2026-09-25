@@ -37,7 +37,7 @@ $map_kses = [
 
 				<div class="col-md-4">
 					<?php if ( $heading !== '' ) : ?>
-						<h2 class="iec_section_heading"><?= $heading; ?></h2>
+						<h2 class="iec_section_heading iec-section-heading"><?= $heading; ?></h2>
 					<?php endif; ?>
 
 					<?php foreach ( $address_detail as $address ) :

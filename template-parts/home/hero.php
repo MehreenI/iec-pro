@@ -177,7 +177,7 @@ if ( $has_mobile_gallery ) {
     <div class="iec_home_hero_contain iec-anim-hero-content container">
         <?php if ( $heading ) : ?>
 
-            <h1 class="iec_primary_heading iec_home_hero_anim"><?= $heading; ?></h1>
+            <h1 class="iec_primary_heading iec_home_hero_anim iec-anim-split-words" data-iec-anim-on-load="true"><?= $heading; ?></h1>
 
         <?php endif; ?>
 
@@ -191,7 +191,7 @@ if ( $has_mobile_gallery ) {
 
         <?php if ( ! empty( $cta_links ) ) : ?>
 
-            <div class="iec_home_hero_actions">
+            <div class="iec_home_hero_actions iec-anim-stagger-group" data-iec-anim-on-load="true" data-iec-anim-target="a" data-iec-anim-preset="iec-anim-fade-up" data-iec-anim-stagger="0.12">
                 <?php foreach ( $cta_links as $index => $cta ) : ?>
                     <?php $btn_class = ( 0 !== (int) $index % 2 ) ? ' outline_btn' : ''; ?>
                     <a

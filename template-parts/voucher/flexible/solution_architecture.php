@@ -21,7 +21,7 @@ $chevron = '<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="htt
 				<?php if ( $heading || $description ) : ?>
 					<div>
 						<?php if ( $heading ) : ?>
-							<h2 id="iec-voucher-architecture-title" class="iec_section_heading mb-0"><?= $heading; ?></h2>
+							<h2 id="iec-voucher-architecture-title" class="iec_section_heading iec-section-heading mb-0"><?= $heading; ?></h2>
 						<?php endif; ?>
 
 						<?php if ( $description ) : ?>

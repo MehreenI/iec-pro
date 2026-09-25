@@ -31,11 +31,11 @@ $section_attr = $section_id !== '' ? ' id="' . esc_attr( $section_id ) . '"' : '
                 <?php if ( $eyebrow || $heading ) : ?>
                     <div class="iec_section_heading">
                         <?php if ( $eyebrow ) : ?>
-                            <span class="iec_section_eyebrow"><?= $eyebrow; ?></span>
+                            <span class="iec_home_eyebrow iec-eyebrow"><?= $eyebrow; ?></span>
                         <?php endif; ?>
 
                         <?php if ( $heading ) : ?>
-                            <h2 class="iec_section_title <?= esc_attr( $heading_class ); ?>" <?= $heading_attrs; ?>><?= $heading; ?></h2>
+                            <h2 class="iec-section-heading <?= esc_attr( $heading_class ); ?>" <?= $heading_attrs; ?>><?= $heading; ?></h2>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

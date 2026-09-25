@@ -46,7 +46,7 @@ $hear_source    = function_exists( 'get_config' ) ? ( get_config( 'form_hear_sou
 					<div class="iec_iot_enquriy_content_warpper">
 
 						<?php if ( $title ) : ?>
-							<h2 class="iec_section_heading"><?= $title; ?></h2>
+							<h2 class="iec_section_heading iec-section-heading"><?= $title; ?></h2>
 						<?php endif; ?>
 
 						<?php if ( $body ) : ?>

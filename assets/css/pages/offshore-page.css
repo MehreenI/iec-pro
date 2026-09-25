@@ -306,7 +306,8 @@
 }
 
 /* Portfolio */
-.offshore .iec-offshore-portfolio-section .iec_section_heading {
+.offshore .iec-offshore-portfolio-section .iec_section_heading,
+.offshore .iec-offshore-portfolio-section .iec-section-heading {
     color: #fff;
 }
 
@@ -402,7 +403,8 @@
     margin: auto;
 }
 
-.offshore .iec-offshore-vas-section .iec_section_heading {
+.offshore .iec-offshore-vas-section .iec_section_heading,
+.offshore .iec-offshore-vas-section .iec-section-heading {
     color: #1b204c;
 }
 
@@ -641,7 +643,8 @@
 }
 
 /* News */
-.offshore .iec-offshore-news-section .iec_section_heading {
+.offshore .iec-offshore-news-section .iec_section_heading,
+.offshore .iec-offshore-news-section .iec-section-heading {
     color: #1b204c;
 }
 
@@ -652,7 +655,8 @@
     padding-bottom: 3.131679rem;
 }
 
-.offshore .iec_defualt_position.bd_do_featured_news.iec_starlink_portfolio_featured_news .iec_section_heading {
+.offshore .iec_defualt_position.bd_do_featured_news.iec_starlink_portfolio_featured_news .iec_section_heading,
+.offshore .iec_defualt_position.bd_do_featured_news.iec_starlink_portfolio_featured_news .iec-section-heading {
     margin-bottom: 1.291818rem;
 }
 
@@ -677,13 +681,15 @@
         padding-top: 3rem;
     }
 
-    .offshore .iec-offshore-news-section .iec_section_heading {
+    .offshore .iec-offshore-news-section .iec_section_heading,
+    .offshore .iec-offshore-news-section .iec-section-heading {
         margin-bottom: 1.291818rem;
     }
 }
 
 /* Products */
-.offshore .iec-offshore-products-section .iec_section_heading {
+.offshore .iec-offshore-products-section .iec_section_heading,
+.offshore .iec-offshore-products-section .iec-section-heading {
     color: #1b204c;
 }
 
@@ -692,13 +698,15 @@
 }
 
 @media (max-width: 767px) {
-    .offshore .iec-offshore-products-section .iec_section_heading {
+    .offshore .iec-offshore-products-section .iec_section_heading,
+    .offshore .iec-offshore-products-section .iec-section-heading {
         margin-bottom: 1.291818rem;
     }
 }
 
 /* FAQ */
-.offshore .iec-offshore-faq-section .iec_section_heading {
+.offshore .iec-offshore-faq-section .iec_section_heading,
+.offshore .iec-offshore-faq-section .iec-section-heading {
     color: #1b204c;
 }
 

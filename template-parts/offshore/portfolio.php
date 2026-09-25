@@ -20,7 +20,7 @@ get_template_part(
 	null,
 	array(
 		'heading'       => $section['heading'] ?? '',
-		'heading_class' => 'iec_section_heading',
+		'heading_class' => 'iec_section_heading iec-section-heading',
 		'content'       => $section['description'] ?? '',
 		'button_url'    => $cta['url'] ?? '',
 		'button_title'  => ! empty( $cta['title'] ) ? $cta['title'] : 'Learn More',

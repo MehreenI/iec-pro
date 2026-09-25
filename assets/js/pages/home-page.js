@@ -195,30 +195,9 @@
         } );
     }
 
-    function initAos() {
-        if ( typeof AOS === 'undefined' ) {
-            return;
-        }
-
-        AOS.init( {
-            duration: 800,
-            once: true,
-            easing: 'ease-out-cubic',
-            offset: 120,
-            delay: 0,
-            anchorPlacement: 'top-bottom',
-        } );
-
-        if ( window.IEC && typeof IEC.scheduleAOSKick === 'function' ) {
-            IEC.scheduleAOSKick();
-        }
-    }
-
     function refreshAos() {
-        if ( typeof AOS !== 'undefined' && typeof AOS.refreshHard === 'function' ) {
-            AOS.refreshHard();
-        } else if ( typeof AOS !== 'undefined' && typeof AOS.refresh === 'function' ) {
-            AOS.refresh();
+        if ( window.IEC && typeof IEC.kickAOS === 'function' ) {
+            IEC.kickAOS();
         }
     }
 
@@ -312,6 +291,9 @@
         new Swiper( el, {
             slidesPerView: 'auto',
             spaceBetween: 20,
+            touchStartPreventDefault: false,
+            preventClicks: false,
+            preventClicksPropagation: false,
             pagination: { el: pagination, clickable: true },
             navigation: { nextEl: next, prevEl: prev },
         } );
@@ -656,7 +638,6 @@
     }
 
     $( function () {
-        initAos();
         initSpotlightTagsProgress();
         initNetworkLayerParticles();
         initHomeInsights();
@@ -666,8 +647,5 @@
         initNetworkLayers();
         initPartnerMarquee();
     } );
-
-    // Expose for insights AJAX re-bind.
-    window.iecHomeRefreshAos = refreshAos;
 
 } )( jQuery );

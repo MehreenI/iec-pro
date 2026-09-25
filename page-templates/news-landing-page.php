@@ -13,6 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
+if ( is_page() && have_posts() ) {
+	the_post();
+}
+
 $category         = iec_news_landing_current_category();
 $current_industry = isset( $_GET['industry'] ) ? sanitize_text_field( wp_unslash( $_GET['industry'] ) ) : '';
 $current_location = isset( $_GET['location'] ) ? sanitize_text_field( wp_unslash( $_GET['location'] ) ) : '';
@@ -29,6 +33,10 @@ $filter_arrow     = '<svg width="9" height="14" viewBox="0 0 9 14" fill="none" x
 ?>
 
 	<main id="main" class="iec-news-landing-main news-landing-page">
+
+		<?php if ( ! $slider_query->have_posts() ) : ?>
+			<h1 class="screen-reader-text"><?= $featured_title ?: get_the_title(); ?></h1>
+		<?php endif; ?>
 
 		<?php if ( $slider_query->have_posts() ) : ?>
 			<section class="ice_news_hero_banner ice_defualt_position">

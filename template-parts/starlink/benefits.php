@@ -22,7 +22,7 @@ if ( empty( $fields['types'] ) ) {
 			<div class="col-md-12">
 				<div class="iec_benefits_box_warpper">
 					<div class="iec_benefits_box">
-						<h2 class="iec_section_heading">
+						<h2 class="iec_section_heading iec-section-heading">
 							<span><?= $fields['types'][0]['type_title']; ?></span>
 							<span><?= $fields['types'][0]['type_title']; ?></span>
 							<span><?= $fields['types'][0]['type_title']; ?></span>
@@ -95,7 +95,7 @@ if ( empty( $fields['types'] ) ) {
 						</ul>
 					</div>
 					<div class="iec_benefits_box">
-						<h2 class="iec_section_heading">
+						<h2 class="iec_section_heading iec-section-heading">
 							<span><?= $fields['types'][1]['type_title']; ?></span>
 							<span><?= $fields['types'][1]['type_title']; ?></span>
 							<span><?= $fields['types'][1]['type_title']; ?></span>

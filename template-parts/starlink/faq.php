@@ -20,7 +20,7 @@ if ( empty( $fields['questions_and_answers'] ) ) {
 		<div class="row">
 			<div class="col-md-12">
 				<div class="iec_starlink_acordions_sec_warpper">
-					<h2 class="iec_section_heading"><?= $fields['faq_title']; ?></h2>
+					<h2 class="iec_section_heading iec-section-heading"><?= $fields['faq_title']; ?></h2>
 					<div class="iec_starlink_acordion_row">
 						<?php foreach ( $fields['questions_and_answers'] as $questionsAndAnswer ) { ?>
 							<div class="iec_starlink_acordion_item">

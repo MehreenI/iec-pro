@@ -17,7 +17,7 @@ $slider_query   = iec_office_regional_news_query( (int) get_the_ID() );
 				<div class="col-md-12">
 
 					<?php if ( ! empty( $news['heading'] ) ) : ?>
-						<h2 class="iec_section_heading"><?php echo $news['heading']; ?></h2>
+						<h2 class="iec_section_heading iec-section-heading"><?php echo $news['heading']; ?></h2>
 					<?php endif; ?>
 
 				</div>

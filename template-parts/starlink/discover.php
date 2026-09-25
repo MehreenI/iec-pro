@@ -20,7 +20,7 @@ if ( empty( $fields['discover_title'] ) ) {
 		<div class="row">
 			<div class="col-md-6 col-lg-4">
 				<div class="iec_starlink_discover_left_contnet">
-					<h2 class="iec_section_heading"><?= $fields['discover_title']; ?></h2>
+					<h2 class="iec_section_heading iec-section-heading"><?= $fields['discover_title']; ?></h2>
 					<h3 class="iec_sec_sub_heading"><?= $fields['discover_description']; ?></h3>
 					<?php if ( ! empty( $fields['discover_features'] ) ) : ?>
 						<ul class="iec_icon_list">

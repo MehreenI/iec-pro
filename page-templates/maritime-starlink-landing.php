@@ -14,24 +14,32 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-$ctx = iec_starlink_landing_context();
-
 get_header();
-?>
 
-    <div class="content starlink-landing">
-        <?php get_template_part( 'template-parts/starlink/banner', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/featured-news', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/benefits', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/products', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/discover', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/video', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/info', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/functionality-tabs', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/directions', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/directions-bottom', null, $ctx ); ?>
-        <?php get_template_part( 'template-parts/starlink/faq', null, $ctx ); ?>
-    </div>
+while ( have_posts() ) :
+	the_post();
 
-<?php
+	$ctx = iec_starlink_landing_context();
+	?>
+
+	<main id="main" class="content starlink-landing">
+		<?php if ( empty( $ctx['fields']['banner_title'] ) && empty( $ctx['fields']['background_image'] ) ) : ?>
+			<h1 class="screen-reader-text"><?= get_the_title(); ?></h1>
+		<?php endif; ?>
+		<?php get_template_part( 'template-parts/starlink/banner', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/featured-news', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/benefits', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/products', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/discover', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/video', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/info', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/functionality-tabs', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/directions', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/directions-bottom', null, $ctx ); ?>
+		<?php get_template_part( 'template-parts/starlink/faq', null, $ctx ); ?>
+	</main>
+
+	<?php
+endwhile;
+
 get_footer();

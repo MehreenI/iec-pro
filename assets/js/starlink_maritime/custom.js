@@ -1,15 +1,30 @@
 document.querySelectorAll('.menu-items').forEach(item => {
 	item.addEventListener('click', function () {
-		document.querySelector('body').classList.toggle('not_scroll');
-		document.querySelector('.big_menu_block').classList.toggle('active');
-		document.querySelector('.header').classList.toggle('header-2');
-		document.querySelector('.iec_header_wrapper .iec_header_right').classList.toggle('header-2');
+		var body = document.querySelector('body');
+		var bigMenu = document.querySelector('.big_menu_block');
+		var header = document.querySelector('.header');
+		var right = document.querySelector('.iec_header_wrapper .iec_header_right');
+		if ( body ) {
+			body.classList.toggle('not_scroll');
+		}
+		if ( bigMenu ) {
+			bigMenu.classList.toggle('active');
+		}
+		if ( header ) {
+			header.classList.toggle('header-2');
+		}
+		if ( right ) {
+			right.classList.toggle('header-2');
+		}
 	});
 });
 
 document.addEventListener('scroll', function() {
     const rightElement = document.querySelector('.iec_header_wrapper .iec_header_right');
     const bigMenuBlock = document.querySelector('.big_menu_block');
+    if ( ! rightElement || ! bigMenuBlock ) {
+        return;
+    }
 
     if (window.scrollY > 0) {
         rightElement.classList.add('transforms');
@@ -20,7 +35,7 @@ document.addEventListener('scroll', function() {
     }
 });
 
-document.querySelectorAll('.search-icon').forEach(icon => {
+document.querySelectorAll('.iec_header_wrapper .search-icon').forEach(icon => {
     icon.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -51,30 +66,30 @@ document.querySelectorAll('.search-icon').forEach(icon => {
 });
 
 document.addEventListener('click', function (e) {
-    // Close search when clicking outside
-    if (!e.target.closest('.search')) {
-        document.querySelectorAll('.search').forEach(search => {
+    if (!e.target.closest('.iec_header_wrapper .search')) {
+        document.querySelectorAll('.iec_header_wrapper .search').forEach(search => {
             search.classList.remove('searching');
         });
     }
 });
 
-document.querySelector('.lang').addEventListener('click', function () {
-	const menu = document.querySelector('.language-menu');
+document.querySelector('.iec_header_wrapper .lang')?.addEventListener('click', function () {
+	const menu = document.querySelector('.iec_header_wrapper .language-menu');
+	if ( ! menu ) {
+		return;
+	}
 	menu.classList.toggle('visible');
-
-	// Обертання стрілки
 	this.classList.toggle('open');
 });
 
-// Оновлення поточної мови при виборі
-document.querySelectorAll('.language-menu a').forEach(function (link) {
+document.querySelectorAll('.iec_header_wrapper .language-menu a').forEach(function (link) {
 	link.addEventListener('click', function (event) {
-		event.preventDefault(); // Щоб не переходити відразу на іншу сторінку
+		event.preventDefault();
 		const selectedLang = this.textContent.trim();
-		document.querySelector('.current-lang').textContent = selectedLang;
-
-		// Зробити перенаправлення на сторінку мови після оновлення тексту (при потребі)
+		const current = document.querySelector('.iec_header_wrapper .current-lang');
+		if ( current ) {
+			current.textContent = selectedLang;
+		}
 		window.location.href = this.href;
 	});
 });
@@ -171,9 +186,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-
-	// PRODUCT SWIPER
-	var swiper = new Swiper(".product_swiper", {
+	if ( typeof Swiper === 'undefined' || ! document.querySelector('.product_swiper') ) {
+		return;
+	}
+	new Swiper(".product_swiper", {
 		slidesPerView: "auto",
 		spaceBetween: 20,
 		loop: true,
@@ -340,6 +356,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+	if ( typeof Swiper === 'undefined' || ! document.querySelector('.iec_starlink_swiper_direction_right') ) {
+		return;
+	}
 	var swiperDir = new Swiper(".iec_starlink_swiper_direction_right", {
 		slidesPerView: 1,
 		spaceBetween: 0,
@@ -389,6 +408,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+	if ( typeof Swiper === 'undefined' || ! document.querySelector('.iec_starlink_swiper_direction_bot_right') ) {
+		return;
+	}
 	var swiperDir__bot = new Swiper(".iec_starlink_swiper_direction_bot_right", {
 		slidesPerView: 1,
 		spaceBetween: 0,
@@ -436,6 +458,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	function reinitSliders() {
 		const swiperElement = document.querySelector('.iec_starlink_swiper_direction_bot_right');
+		if ( ! swiperElement ) {
+			return;
+		}
 		swiperElement.removeAttribute('dir');
 
 		swiperDir1__bot.destroy(true, true);

@@ -50,7 +50,7 @@ get_template_part(
 	null,
 	array(
 		'heading'       => $section['heading'] ?? '',
-		'heading_class' => 'iec_section_heading',
+		'heading_class' => 'iec_section_heading iec-section-heading',
 		'query'         => $query,
 		'spacing'       => 'iec-offshore-news-section',
 		'heading_attrs' => 'data-aos="fade-up"',

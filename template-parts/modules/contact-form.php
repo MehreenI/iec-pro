@@ -61,11 +61,11 @@ $interest_fallback = array(
 				<div class="iec_home_contact_warpper">
 					<div class="iec_home_contact_content" data-aos="fade-up">
 						<?php if ( $eyebrow ) : ?>
-							<span class="iec_home_eyebrow"><?= $eyebrow; ?></span>
+							<span class="iec_home_eyebrow iec-eyebrow"><?= $eyebrow; ?></span>
 						<?php endif; ?>
 
 						<?php if ( $heading ) : ?>
-							<h2 class="iec_section_heading" id="iec-home-contact-heading"><?= $heading; ?></h2>
+							<h2 class="iec_section_heading iec-section-heading" id="iec-home-contact-heading"><?= $heading; ?></h2>
 						<?php endif; ?>
 
 						<?php if ( $content ) : ?>

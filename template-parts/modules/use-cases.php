@@ -28,7 +28,7 @@ if ( $items === array() ) {
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="iec_section_heading" data-aos="fade-up"><?= $heading; ?></h2>
+				<h2 class="iec_section_heading iec-section-heading" data-aos="fade-up"><?= $heading; ?></h2>
 				<div class="faq-grid" data-offshore-accordion>
 
 					<?php foreach ( $items as $index => $item ) : ?>

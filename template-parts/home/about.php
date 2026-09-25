@@ -41,13 +41,13 @@ $heading_id = 'iec-home-about-heading-' . wp_unique_id();
 
 					<?php if ( $eyebrow ) : ?>
 
-						<span class="iec_home_eyebrow"><?= esc_html( $eyebrow ); ?></span>
+						<span class="iec_home_eyebrow iec-eyebrow"><?= esc_html( $eyebrow ); ?></span>
 
 					<?php endif; ?>
 
 					<?php if ( $heading ) : ?>
 
-						<h2 class="iec_section_heading" id="<?= esc_attr( $heading_id ); ?>"><?= esc_html( $heading ); ?></h2>
+						<h2 class="iec_section_heading iec-section-heading" id="<?= esc_attr( $heading_id ); ?>"><?= esc_html( $heading ); ?></h2>
 
 					<?php endif; ?>
 

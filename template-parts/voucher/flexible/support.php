@@ -25,7 +25,7 @@ if ( ! $heading && ! $body && empty( $list ) ) {
 			<div class="col-md-6">
 
 				<?php if ( $heading ) : ?>
-					<h2 id="iec-voucher-support-title" class="iec_section_heading vmc_heading mb-0"><?= $heading; ?></h2>
+					<h2 id="iec-voucher-support-title" class="iec_section_heading iec-section-heading vmc_heading mb-0"><?= $heading; ?></h2>
 				<?php endif; ?>
 
 				<?php if ( $body ) : ?>

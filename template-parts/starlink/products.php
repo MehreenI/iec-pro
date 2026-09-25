@@ -20,7 +20,7 @@ if (empty($fields['general_specs_title']) && empty($fields['spec_title_main']) &
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="iec_section_heading"><?= $fields['general_specs_title']; ?></h2>
+                    <h2 class="iec_section_heading iec-section-heading"><?= $fields['general_specs_title']; ?></h2>
                     <div class="iec_starlink_product_swiper_warpper">
                         <div class="swiper product_swiper">
                             <div class="swiper-wrapper">

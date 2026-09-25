@@ -36,7 +36,7 @@ $archive_url = function_exists( 'iec_news_archive_url' ) ? iec_news_archive_url(
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h2 class="iec_section_heading" id="iec-home-insights-heading" data-aos="fade-up"><?= __( 'Insights & resources', 'bbtheme' ); ?></h2>
+                <h2 class="iec_section_heading iec-section-heading" id="iec-home-insights-heading" data-aos="fade-up"><?= __( 'Insights & resources', 'bbtheme' ); ?></h2>
             </div>
             <div class="col-md-4">
                 <a href="<?= esc_url( $archive_url ); ?>" class="iec_button iec_blue_gradient" data-aos="fade-up" data-aos-delay="100"><?= __( 'Explore all resources', 'bbtheme' ); ?></a>

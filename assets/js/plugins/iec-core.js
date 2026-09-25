@@ -10,11 +10,11 @@
 		}
 	};
 
-	IEC.scrollTo = function ( $target, offset ) {
+	IEC.scrollTo = function ( $target, offset, duration ) {
 		if ( ! $target || ! $target.length ) {
 			return;
 		}
-		$( 'html, body' ).animate( { scrollTop: $target.offset().top - ( offset || 100 ) }, 400 );
+		$( 'html, body' ).animate( { scrollTop: $target.offset().top - ( offset || 100 ) }, duration || 400 );
 	};
 
 	IEC.fieldContainer = function ( $field ) {
@@ -128,31 +128,21 @@
 	};
 
 	function initGlobalUI() {
-		$( '.search .search-icon' ).on( 'click', function ( e ) {
+		$( document ).on( 'click', 'a.iec-scroll-link[href^="#"]', function ( e ) {
+			var $target = $( $( this ).attr( 'href' ) );
+			if ( ! $target.length ) {
+				return;
+			}
 			e.preventDefault();
-			e.stopPropagation();
-			var $wrap = $( this ).closest( '.search' );
-			$wrap.toggleClass( 'searching' );
-			if ( $wrap.hasClass( 'searching' ) ) {
-				$wrap.find( 'input' ).trigger( 'focus' );
-			}
-		} );
-
-		$( document ).on( 'click', function ( e ) {
-			if ( ! $( e.target ).closest( '.search' ).length ) {
-				$( '.search' ).removeClass( 'searching' );
-			}
-		} );
-
-		$( '.lang-container' ).on( 'click', function () {
-			$( this ).find( '.lang' ).toggleClass( 'open' );
-			$( this ).find( '.language-menu' ).toggleClass( 'visible' );
+			IEC.scrollTo( $target, 80 );
 		} );
 	}
 
 	IEC.boot = function () {
 		IEC.setErrorMessages();
 		initGlobalUI();
+		IEC.initAOS();
+		IEC.scheduleAOSKick();
 
 		if ( typeof IEC.initPopups === 'function' ) {
 			IEC.initPopups();

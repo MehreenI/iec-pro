@@ -12,8 +12,8 @@ Text domain: `bbtheme`. Use `__()` / `_e()` for translations. Do not use `esc_ht
 - ACF Pro (page templates + flexible layouts; **no** `acf-json/` in this repo)
 - Bootstrap grid class names (`container`, `row`, `col-*`)
 - jQuery (WP bundled)
-- CSS in `assets/css/base.css`, `assets/css/sections.css`, `assets/css/responsive.css`, `assets/css/tablet.css`, plus `assets/css/pages/{template-slug}.css`
-- JS in `assets/js/plugins/` (global) and `assets/js/pages/{template-slug}.js` (per template)
+- CSS in `assets/css/base.css`, `assets/css/sections.css`, `assets/css/header-footer.css`, `assets/css/responsive.css`, `assets/css/tablet.css`, plus `assets/css/pages/{template-slug}.css`
+- JS in `assets/js/plugins/` (global, including header-footer.js) and `assets/js/pages/{template-slug}.js` (per template)
 - No build tools, no Sass, no npm for theme code
 - Asset loader: `inc/setup/enqueue.php` (`IEC_Asset_Loader`)
 
@@ -27,11 +27,11 @@ theme-root/
 │   │   ├── sections.css
 │   │   ├── tablet.css
 │   │   ├── responsive.css
-│   │   ├── header-dropdown.css
+│   │   ├── header-footer.css
 │   │   ├── pages/          # one file per template slug
 │   │   └── starlink_maritime/
 │   ├── js/
-│   │   ├── plugins/        # accordion, enquiry, swiper-init, iec-core
+│   │   ├── plugins/        # accordion, enquiry, swiper-init, iec-core, header-footer
 │   │   ├── pages/          # matches page template slug
 │   │   └── starlink_maritime/
 │   ├── fonts/

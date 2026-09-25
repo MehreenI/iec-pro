@@ -4,26 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! function_exists( 'getStarlinkLocationByLocale' ) ) {
-		function getStarlinkLocationByLocale( $lang ) {
-		switch ( $lang ) {
-			case 'tr':
-				return 'turkey';
-			case 'no':
-				return 'norway';
-			case 'it':
-				return 'italy';
-			case 'id':
-				return 'indonesia';
-			case 'fr':
-				return 'france';
-			case 'en':
-			default:
-				return 'global';
-		}
-	}
-}
-
 if ( ! function_exists( 'iec_starlink_default_thank_content' ) ) {
 		function iec_starlink_default_thank_content() {
 		return '<h5>THANK YOU FOR YOUR INQUIRY!</h5>

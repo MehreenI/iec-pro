@@ -30,7 +30,7 @@ $last_index = count( $layers ) - 1;
                 <div class="iec_home_network_layer_header" >
                     <?php if ( $heading ) : ?>
 
-                        <h2 class="iec_section_heading"><?= $heading; ?></h2>
+                        <h2 class="iec_section_heading iec-section-heading"><?= $heading; ?></h2>
 
                     <?php endif; ?>
 

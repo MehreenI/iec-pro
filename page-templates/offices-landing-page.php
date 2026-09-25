@@ -19,7 +19,7 @@ while ( have_posts() ) :
 	$offices = iec_offices_get_items( $fields['ro_offices'] ?? array() );
 	$map_src = get_stylesheet_directory_uri() . '/assets/img/offices-map.png';
 	?>
-	<div id="main">
+	<main id="main">
 		<section class="iec_regional_offices_section iec_defualt_position">
 			<div class="container">
 				<div class="row">
@@ -68,7 +68,7 @@ while ( have_posts() ) :
 				</div>
 			</div>
 		</section>
-	</div>
+	</main>
 	<?php
 endwhile;
 

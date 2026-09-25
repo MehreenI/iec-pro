@@ -59,7 +59,7 @@ $icon = function_exists( 'iec_office_check_icon_svg' ) ? iec_office_check_icon_s
 			<div class="<?php echo esc_attr( $content_col ); ?>">
 
 				<?php if ( $heading ) : ?>
-					<h2<?php echo $heading_id ? ' id="' . esc_attr( $heading_id ) . '"' : ''; ?> class="iec_section_heading <?php echo esc_attr( $color ); ?>"><?php echo $heading; ?></h2>
+					<h2<?php echo $heading_id ? ' id="' . esc_attr( $heading_id ) . '"' : ''; ?> class="iec_section_heading iec-section-heading <?php echo esc_attr( $color ); ?>"><?php echo $heading; ?></h2>
 				<?php endif; ?>
 
 				<?php if ( $subheading ) : ?>

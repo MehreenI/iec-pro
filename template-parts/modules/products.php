@@ -11,7 +11,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $heading      = $args['heading'] ?? '';
 $products     = $args['products'] ?? array();
+$query        = $args['query'] ?? null;
 $show_btn     = ! empty( $args['show_btn'] ) || ! empty( $args['show_btn_product'] );
+
+if ( $query instanceof WP_Query ) {
+	$products = $query->posts;
+	wp_reset_postdata();
+}
 $block        = $args['block'] ?? array();
 $layout       = $args['layout'] ?? 'default';
 $min_products = $args['min_products'] ?? 0;
@@ -67,7 +73,7 @@ if ( ! $view_all_url ) {
 		<?php if ( $heading_text !== '' ) : ?>
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="<?= esc_attr( $heading_class !== '' ? $heading_class : ( $is_office ? 'iec_section_heading' : 'iec_main_heading text_blue' ) ); ?>" <?= $heading_attrs; ?>><?= ucfirst( strtolower( $heading_text ) ); ?></h2>
+					<h2 class="<?= esc_attr( $heading_class !== '' ? $heading_class : ( $is_office ? 'iec_section_heading iec-section-heading' : 'iec_main_heading text_blue' ) ); ?>" <?= $heading_attrs; ?>><?= ucfirst( strtolower( $heading_text ) ); ?></h2>
 				</div>
 			</div>
 		<?php endif; ?>

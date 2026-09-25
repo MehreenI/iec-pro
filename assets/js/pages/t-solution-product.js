@@ -354,16 +354,16 @@
             }
 
             $filterSection.find( '.filters-group' ).removeClass( 'expand' );
-            $filterSection.find( '.filters-group h6' ).attr( 'aria-expanded', 'false' );
+            $filterSection.find( '.filters-group .filters-group-title' ).attr( 'aria-expanded', 'false' );
         }
 
-        $filterSection.find( '.filters-group h6' ).attr( {
+        $filterSection.find( '.filters-group .filters-group-title' ).attr( {
             role: 'button',
             tabindex: '0',
             'aria-expanded': 'false',
         } );
 
-        $filterSection.on( 'click', '.filters-group h6', function ( e ) {
+        $filterSection.on( 'click', '.filters-group .filters-group-title', function ( e ) {
             if ( ! isMobile() ) {
                 return;
             }
@@ -375,7 +375,7 @@
             var isOpen   = $group.hasClass( 'expand' );
 
             $filterSection.find( '.filters-group' ).removeClass( 'expand' );
-            $filterSection.find( '.filters-group h6' ).attr( 'aria-expanded', 'false' );
+            $filterSection.find( '.filters-group .filters-group-title' ).attr( 'aria-expanded', 'false' );
 
             if ( ! isOpen ) {
                 $group.addClass( 'expand' );
@@ -383,7 +383,7 @@
             }
         } );
 
-        $filterSection.on( 'keydown', '.filters-group h6', function ( e ) {
+        $filterSection.on( 'keydown', '.filters-group .filters-group-title', function ( e ) {
             if ( ! isMobile() ) {
                 return;
             }

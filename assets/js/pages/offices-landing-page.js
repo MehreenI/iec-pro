@@ -1,17 +1,6 @@
 ( function ( $ ) {
 	'use strict';
 
-	function initAos() {
-		if ( typeof AOS === 'undefined' ) {
-			return;
-		}
-		AOS.init( {
-			duration: 800,
-			once: true,
-			easing: 'ease-out-back',
-		} );
-	}
-
 	function initRegionalMap() {
 		var tooltip = document.getElementById( 'mapTooltip' );
 		if ( ! tooltip ) {
@@ -244,13 +233,6 @@
 	}
 
 	$( function () {
-		initAos();
 		initRegionalMap();
-	} );
-
-	$( window ).on( 'load', function () {
-		if ( typeof AOS !== 'undefined' ) {
-			AOS.refresh();
-		}
 	} );
 } )( jQuery );

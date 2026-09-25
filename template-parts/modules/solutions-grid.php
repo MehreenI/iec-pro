@@ -41,7 +41,7 @@ $render_card = static function ( $solution ) {
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="iec_section_heading"><?php echo $heading; ?></h2>
+				<h2 class="iec_section_heading iec-section-heading"><?php echo $heading; ?></h2>
 
 				<div class="iec_solution_swiper_warpper">
 					<button type="button" class="swiper-button-prev custom-arrow" aria-label="<?php esc_attr_e( 'Previous', 'bbtheme' ); ?>">

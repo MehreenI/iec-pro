@@ -56,7 +56,7 @@ if ( ! $heading && ! $body && ! $main_id && empty( $list ) ) {
 			<div class="col-md-12">
 
 				<?php if ( $heading ) : ?>
-					<h2 class="iec_section_heading"><?= $heading; ?></h2>
+					<h2 class="iec_section_heading iec-section-heading"><?= $heading; ?></h2>
 				<?php endif; ?>
 
 				<?php if ( $body ) : ?>

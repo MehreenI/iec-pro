@@ -108,5 +108,3 @@ final class IEC_Tunisian_Landing_Page {
 		);
 	}
 }
-
-// Office CPT Tunisian path loads assets/css/pages/tunisian-landing-page.css via IEC_Asset_Loader.

@@ -210,7 +210,6 @@ function iec_extra_body_classes(): array {
     $map = array(
         'page-templates/offices-landing-page.php'     => array( 'offices-landing-page', 'regional-offices-page' ),
         'page-templates/optiview-page.php'            => 'optiview-page',
-        'page-templates/sp-landing-page.php'          => 'sp-landing-page',
         'page-templates/t-solution-product.php'       => 't-solution-product',
         'page-templates/t-starlink-portfolio.php'     => 't-starlink-portfolio-page',
         'page-templates/thankyou-landing.php'           => array( 'thankyou-landing-page', 'thank-you' ),
@@ -218,6 +217,10 @@ function iec_extra_body_classes(): array {
         'page-templates/vas-detail-page.php'          => 'vas-detail-page',
         'page-templates/vas-landing-page.php'         => 'vas-landing-page',
         'page-templates/voucher-management-template.php' => array( 'voucher-management-page', 'iec-voucher-management' ),
+        'page-templates/operator-page.php'              => 'iec-operator-page',
+        'page-templates/starlink-operator-page.php'     => 'iec-operator-page',
+        'page-templates/t-market-landing.php'           => 't-market-landing',
+        'page-templates/satellite-internet-page.php'    => 'iec-satellite-internet',
     );
 
     $template = get_page_template_slug();

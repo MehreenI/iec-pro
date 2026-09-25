@@ -157,7 +157,7 @@
 			};
 		} );
 
-		initSelect( $form, 'select[name="interests[]"]', 'interestSelect', function ( $el ) {
+		initSelect( $form, 'select[name="interests[]"]', '', function ( $el ) {
 			$el.find( 'option[value=""]' ).remove();
 			return {
 				placeholder: $el.data( 'placeholder' ) || $form.find( '#interest-label' ).first().text().trim() || 'Interest...',
@@ -169,7 +169,7 @@
 			};
 		} );
 
-		initSelect( $form, 'select[name="hear_source"]', 'hearSelect', function ( $el ) {
+		initSelect( $form, 'select[name="hear_source"]', '', function ( $el ) {
 			return {
 				placeholder: $el.data( 'placeholder' ) || $form.find( '#hear-source-label' ).first().text().trim() || '',
 				allowClear: true,

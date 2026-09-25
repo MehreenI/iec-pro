@@ -29,7 +29,7 @@ if ( is_array( $thumb ) && ! empty( $thumb['ID'] ) ) {
 	<div class="container">
 
 		<?php if ( $heading ) : ?>
-			<h2 id="iec-voucher-video-title" class="iec_section_heading"><?= $heading; ?></h2>
+			<h2 id="iec-voucher-video-title" class="iec_section_heading iec-section-heading"><?= $heading; ?></h2>
 		<?php endif; ?>
 
 		<div class="iec-video-player">

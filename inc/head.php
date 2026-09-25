@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </script>
     <?php endif; ?>
 
-    <?php if ( is_single() ) : ?>
+    <?php if ( is_singular( array( 'news', 'post' ) ) ) : ?>
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",

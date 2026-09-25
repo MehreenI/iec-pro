@@ -44,7 +44,7 @@ $check_icon = '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns
 			<div class="col-md-5">
 
 				<?php if ( $title ) : ?>
-					<h2 class="iec_section_heading"<?= $heading_id ? ' id="' . $heading_id . '"' : ''; ?>><?= $title; ?></h2>
+					<h2 class="iec_section_heading iec-section-heading"<?= $heading_id ? ' id="' . $heading_id . '"' : ''; ?>><?= $title; ?></h2>
 				<?php endif; ?>
 
 				<?php if ( $body ) : ?>

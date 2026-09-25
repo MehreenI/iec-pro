@@ -1,1704 +1,10 @@
-/* t-market-landing Ã¢â‚¬â€ converted from img/Market-images/style.css (px / 25.542 = rem) */
-
-.t-market-landing .iec-land-industries,
-.t-market-landing .iec-maritime-industries {
-    scroll-margin-top: 5rem;
-}
-
-.t-market-landing h2.iec_sub_section_heading {
-    /* font-size: 1.409421rem; */
-    /* margin: 0 0 0.783012rem; */
-}
-
-.t-market-landing .iec_market_landing_section--dark h2.iec_sub_section_heading {
-    /* color: #ffffff; */
-}
-
-.t-market-landing .iec_market_landing_heading_highlight {
-    display: block;
-    margin-top: 0.234908rem;
-    color: var(--color-secondary);
-}
-
-.t-market-landing .text-align-center {
-    text-align: center;
-}
-
-.t-market-landing .text-white {
-    color: #ffffff !important;
-}
-
-.t-market-landing .text-white .iec_market_landing_heading_highlight {
-    color: var(--color-secondary) !important;
-}
-
-.t-market-landing h2.iec_home_section_heading {
-    margin-bottom: 0.939614rem;
-}
-
-.t-market-landing h2.iec_home_section_heading.text-white {
-    /* color: #ffffff; */
-}
-
-.t-market-landing .iec_market_landing_section--video h2.iec-primary-heading {
-    max-width: 30.928665rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-}
-
-.t-market-landing .iec_market_landing_section--video h3.iec-sub-heading {
-    max-width: 30.928665rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.t-market-landing .iec_market_landing_section--video .wyswig-content p {
-    max-width: 35.235298rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgba(255, 255, 255, 0.76);
-}
-
-.t-market-landing .iec_market_landing_section--solutions h2.iec_sub_section_heading {
-    /* color: #ffffff; */
-    /* font-size: clamp(1.644351rem, 4vw, 2.505678rem); */
-    /* line-height: 1.05; */
-    /* letter-spacing: -0.04em; */
-    /* text-transform: capitalize; */
-}
-
-.t-market-landing .iec_market_landing_section--solutions .wyswig-content p {
-    /* color: rgba(213, 221, 255, 0.7); */
-}
-
-.t-market-landing .iec_market_landing_section--global h2.iec_sub_section_heading {
-    /* color: #ffffff; */
-    /* font-size: clamp(1.487745rem, 4vw, 2.270769rem); */
-    /* line-height: 1.05; */
-    /* letter-spacing: -0.04em; */
-}
-
-.t-market-landing .iec_market_landing_section--global .iec_market_landing_heading_highlight {
-    color: var(--color-secondary);
-}
-
-.t-market-landing .iec_market_landing_section--advantage h2.iec_sub_section_heading {
-    color: #ffffff;
-    font-size: clamp(1.566047rem, 4vw, 2.270769rem);
-    line-height: 1.08;
-    letter-spacing: -0.035em;
-}
-
-.t-market-landing .iec_market_landing_section--centered .col-md-12 {
-    text-align: center;
-}
-
-.t-market-landing .iec_market_landing_section--centered .iec_home_eyebrow {
-    margin-left: auto;
-    margin-right: auto;
-    width: max-content;
-    max-width: 100%;
-}
-
-.t-market-landing .iec_market_landing_section--centered .wyswig-content p {
-    max-width: 35.235298rem;
-    margin-left: auto;
-    margin-right: auto;
-    /* font-size: 0.8765rem; */
-    /* line-height: 144%; */
-}
-
-.t-market-landing .iec-industry-type-card,
-.t-market-landing .iec-industry-card {
-    height: 100%;
-}
-
-.t-market-landing .iec-maritime-industries .iec-land-industries__grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-@media (max-width: 48.939002rem) {
-    .t-market-landing .iec-maritime-industries .iec-land-industries__grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 23.490721rem) {
-    .t-market-landing .iec-maritime-industries .iec-land-industries__grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.t-market-landing .iec-industries-video .container {
-    position: relative;
-    z-index: 2;
-    padding: 3.914683rem 0;
-}
-
-.t-market-landing .iec-industry-types{
-    position: relative;
-    padding: 2.818887rem 0;
-    background:
-            radial-gradient(
-                    circle at 50% 0%,
-                    rgba(65, 96, 180, 0.07),
-                    transparent 38%
-            ),
-            #ffffff;
-}
-.t-market-landing .iec-industry-types .container{
-    width: min(51.679587rem, calc(100% - 1.879258rem));
-    margin: 0 auto;
-}
-.t-market-landing .iec-industry-types-grid{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.096234rem;
-}
-.t-market-landing .iec-industry-type-card{
-    position: relative;
-    min-height: 14.094433rem;
-    display: block;
-    overflow: hidden;
-    border-radius: 0.939629rem;
-    text-decoration: none;
-    color: #101943;
-    background: #f4f6fb;
-    box-shadow:
-            0 0.626419rem 1.761804rem rgba(15, 27, 72, 0.08),
-            0 0.078302rem 0.31321rem rgba(15, 27, 72, 0.04);
-    transition:
-            transform 0.45s cubic-bezier(.2, .7, .2, 1),
-            box-shadow 0.45s ease;
-}
-.t-market-landing .iec-industry-type-card:hover{
-    transform: translateY(-0.234907rem);
-
-    box-shadow:
-            0 0.939629rem 2.349072rem rgba(15, 27, 72, 0.15),
-            0 0.195756rem 0.548117rem rgba(15, 27, 72, 0.06);
-}
-.t-market-landing .iec-industry-type-image{
-    position: absolute;
-    inset: 0;
-}
-.t-market-landing .iec-industry-type-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    transition: transform 0.7s cubic-bezier(.2, .7, .2, 1);
-}
-.t-market-landing .iec-industry-type-card:hover .iec-industry-type-image img{
-    transform: scale(1.04);
-}
-.t-market-landing .iec-industry-type-overlay{
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-            90deg,
-            rgba(27, 32, 76, 0.99) 0%,
-            rgba(27, 32, 76, 0.97) 32%,
-            rgba(27, 32, 76, 0.82) 48%,
-            rgba(27, 32, 76, 0.16) 72%,
-            rgba(27, 32, 76, 0) 100%
-    );
-    z-index: 1;
-}
-.t-market-landing .iec-industry-type-content{
-    position: relative;
-    z-index: 2;
-    width: 57%;
-    min-height: 14.094433rem;
-    padding: 1.487746rem 0.783024rem 1.487746rem 1.487746rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.t-market-landing .iec-industry-type-icon{
-    width: 2.427375rem;
-    height: 2.427375rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 0.822175rem;
-
-    border-radius: 100%;
-
-    color: #172355;
-
-    background: rgba(255, 255, 255, 0.9);
-
-    border: 0.039151rem solid rgba(38, 54, 113, 0.13);
-
-    box-shadow:
-            0 0.31321rem 1.174536rem rgba(15, 27, 72, 0.09);
-
-    backdrop-filter: blur(0.391512rem);
-    -webkit-backdrop-filter: blur(0.391512rem);
-}
-.t-market-landing .iec-industry-type-icon svg{
-    width: 1.331141rem;
-    height: 1.331141rem;
-}
-.t-market-landing .iec-industry-type-label{
-    display: block;
-    margin-bottom: 0.274058rem;
-    font-size: 0.430663rem;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    font-family: 'Segoe UI';
-    color: #6e79a4;
-}
-.t-market-landing .iec-industry-type-content h2{
-    margin: 0 0 0.508966rem;
-
-    font-size: clamp(0.97878rem, 2vw, 1.331141rem);
-    line-height: 1.12;
-
-    font-weight: 700;
-
-    letter-spacing: -0.03em;
-
-    color: #ffffff;
-}
-.t-market-landing .iec-industry-type-content p{
-    max-width: 13.702921rem;
-
-    margin: 0 0 0.97878rem;
-
-    font-size: 0.587268rem;
-    line-height: 1.65;
-
-    color: #ffffff;
-}
-.t-market-landing .iec-industry-type-link{
-    display: inline-flex;
-    align-items: center;
-    gap: 0.391512rem;
-    font-size: 0.508966rem;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.135em;
-    color: #ffffff;
-}
-.t-market-landing .iec-industry-type-link svg{
-    width: 0.704722rem;
-    height: 0.704722rem;
-
-    transition: transform 0.3s ease;
-}
-.t-market-landing .iec-industry-type-card:hover .iec-industry-type-link svg{
-    transform: translateX(0.195756rem);
-}
-.t-market-landing .iec-industry-type-card::after{
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    border: 0.039151rem solid rgba(19, 32, 83, 0.08);
-    border-radius: inherit;
-
-    pointer-events: none;
-
-    z-index: 3;
-}
-@media (max-width: 38.798841rem) {.t-market-landing .iec-industry-types{
-    padding: 2.153316rem 0;
-}
-    .t-market-landing .iec-industry-types-grid{
-        grid-template-columns: 1fr;
-    }
-    .t-market-landing .iec-industry-type-card{
-        min-height: 12.919897rem;
-    }
-    .t-market-landing .iec-industry-type-content{
-        min-height: 12.919897rem;
-        width: 60%;
-    }}
-@media (max-width: 25.056769rem) {.t-market-landing .iec-industry-types{
-    padding: 1.566048rem 0;
-}
-    .t-market-landing .iec-industry-types .container{
-        width: min(100% - 1.174536rem, 51.679587rem);
-    }
-    .t-market-landing .iec-industry-types-grid{
-        gap: 0.783024rem;
-    }
-    .t-market-landing .iec-industry-type-card{
-        /* min-height: 19.967113rem; */
-        /* border-radius: 0.783024rem; */
-    }
-    .t-market-landing .iec-industry-type-image{
-        /* height: 8.417508rem; */
-        /* bottom: auto; */
-    }
-    .t-market-landing .iec-industry-type-image img{
-        /* height: 8.417508rem; */
-    }
-    .t-market-landing .iec-industry-type-overlay{
-        /* background: linear-gradient(
-                180deg,
-                rgba(27, 32, 76, 0) 25%,
-                rgba(27, 32, 76, 0.82) 70%,
-                rgba(27, 32, 76, 0.99) 100%
-        ); */
-    }
-    .t-market-landing .iec-industry-type-content{
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        min-height: 12.332629rem;
-        /* justify-content: flex-end; */
-        padding: 1.174536rem 1.017931rem 1.252838rem;
-        background: transparent;
-    }
-    .t-market-landing .iec-industry-type-icon{
-        width: 2.114165rem;
-        height: 2.114165rem;
-
-        margin-bottom: 0.626419rem;
-
-        border-radius: 100%;
-    }
-    .t-market-landing .iec-industry-type-icon svg{
-        width: 1.135385rem;
-        height: 1.135385rem;
-    }
-    .t-market-landing .iec-industry-type-content h2{
-        font-size: 1.057082rem;
-    }
-    .t-market-landing .iec-industry-type-content p{
-        font-size: 0.548117rem;
-        margin-bottom: 0.783024rem;
-    }}
-.t-market-landing .iec-specialized-connectivity{
-    position: relative;
-    padding: 3.327852rem 0 3.719364rem;
-    overflow: hidden;
-
-    background:
-            radial-gradient(
-                    circle at 50% 0%,
-                    rgba(69, 94, 166, 0.055),
-                    transparent 42%
-            ),
-            #ffffff;
-}
-.t-market-landing .iec-specialized-connectivity__container{
-    width: min(51.679587rem, calc(100% - 1.879258rem));
-    margin: 0 auto;
-}
-.t-market-landing .iec-specialized-connectivity__header{
-    max-width: 36.80213rem;
-    margin: 0 auto 2.544828rem;
-    text-align: center;
-}
-.t-market-landing .iec-specialized-connectivity__grid{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.t-market-landing .iec-connectivity-feature{
-    position: relative;
-
-    padding: 0.391512rem 1.487746rem 0.31321rem;
-
-    text-align: center;
-}
-.t-market-landing .iec-connectivity-feature:not(:last-child)::after{
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    right: 0;
-
-    width: 0.039151rem;
-    height: 100%;
-
-    background:
-            linear-gradient(
-                    180deg,
-                    transparent 0%,
-                    rgba(20, 33, 83, 0.14) 15%,
-                    rgba(20, 33, 83, 0.14) 85%,
-                    transparent 100%
-            );
-}
-.t-market-landing .iec-connectivity-feature__icon{
-    width: 3.523764rem;
-    height: 3.523764rem;
-
-    margin: 0 auto 0.939629rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #17255d;
-
-    border-radius: 50%;
-
-    background: transparent;
-
-    transition:
-            background 0.4s ease,
-            color 0.4s ease;
-}
-.t-market-landing .iec-connectivity-feature__icon svg{
-    width: 2.740584rem;
-    height: 2.740584rem;
-
-    transition: transform 0.45s ease;
-}
-.t-market-landing .iec-connectivity-feature h3{
-    margin: 0 0 0.626419rem;
-
-    color: #111b4b;
-
-    font-size: 0.822175rem;
-    line-height: 1.3;
-    font-weight: 700;
-
-    letter-spacing: -0.018em;
-}
-.t-market-landing .iec-connectivity-feature p{
-    max-width: 9.7878rem;
-    margin: 0 auto;
-
-    color: #5b6483;
-
-    font-size: 0.587268rem;
-    line-height: 1.7;
-}
-.t-market-landing .iec-connectivity-feature:hover .iec-connectivity-feature__icon{
-    background: var(--color-primary);
-    color: #ffffff;
-}
-.t-market-landing .iec-connectivity-feature:hover .iec-connectivity-feature__icon svg{
-    transform: rotateY(180deg);
-}
-@media (max-width: 38.798841rem) {.t-market-landing .iec-specialized-connectivity{
-    padding: 2.740584rem 0;
-}
-    .t-market-landing .iec-specialized-connectivity__header{
-        margin-bottom: 1.879258rem;
-    }
-    .t-market-landing .iec-specialized-connectivity__grid{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        row-gap: 1.761804rem;
-    }
-    .t-market-landing .iec-connectivity-feature:nth-child(2)::after{
-        display: none;
-    }
-    .t-market-landing .iec-connectivity-feature:nth-child(1), .t-market-landing .iec-connectivity-feature:nth-child(2){
-        padding-bottom: 1.174536rem;
-        border-bottom: 0.039151rem solid rgba(20, 33, 83, 0.1);
-    }}
-@media (max-width: 25.056769rem) {.t-market-landing .iec-specialized-connectivity{
-    padding: 2.153316rem 0 2.349072rem;
-}
-    .t-market-landing .iec-specialized-connectivity__container{
-        width: min(100% - 1.174536rem, 51.679587rem);
-    }
-    .t-market-landing .iec-specialized-connectivity__header{
-        margin-bottom: 1.487746rem;
-    }
-    .t-market-landing .iec-specialized-connectivity__grid{
-        grid-template-columns: 1fr;
-        row-gap: 0;
-    }
-    .t-market-landing .iec-connectivity-feature{
-        padding: 1.252838rem 0.783024rem;
-    }
-    .t-market-landing .iec-connectivity-feature:not(:last-child){
-        border-bottom: 0.039151rem solid rgba(20, 33, 83, 0.1);
-    }
-    .t-market-landing .iec-connectivity-feature::after{
-        display: none;
-    }
-    .t-market-landing .iec-connectivity-feature__icon{
-        width: 2.583979rem;
-        height: 2.583979rem;
-
-        margin-bottom: 0.704722rem;
-    }
-    .t-market-landing .iec-connectivity-feature__icon svg{
-        width: 2.349072rem;
-        height: 2.349072rem;
-    }
-    .t-market-landing .iec-connectivity-feature h3{
-        font-size: 0.783024rem;
-        margin-bottom: 0.469814rem;
-    }
-    .t-market-landing .iec-connectivity-feature p{
-        max-width: 11.745361rem;
-        font-size: 0.548117rem;
-    }}
-.t-market-landing .iec-land-industries{
-    position: relative;
-
-    padding: 3.327852rem 0 3.719364rem;
-
-    background:
-            radial-gradient(
-                    circle at 5% 10%,
-                    rgba(71, 100, 180, 0.06),
-                    transparent 28%
-            ),
-            linear-gradient(
-                    180deg,
-                    #f7f9fd 0%,
-                    #ffffff 100%
-            );
-
-    overflow: hidden;
-}
-.t-market-landing .iec-land-industries__container{
-    width: min(54.028659rem, calc(100% - 1.879258rem));
-    margin: 0 auto;
-}
-.t-market-landing .iec-land-industries__heading{
-    max-width: 28.188865rem;
-    margin-bottom: 1.64435rem;
-}
-.t-market-landing .iec-land-industries__grid{
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 0.783024rem;
-    align-items: stretch;
-}
-.t-market-landing .iec-industry-card{
-    position: relative;
-
-    min-width: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    overflow: hidden;
-
-    color: inherit;
-    text-decoration: none;
-
-    background: #ffffff;
-
-    border:
-            0.039151rem solid
-            rgba(17, 27, 75, 0.075);
-
-    border-radius: 0.66557rem;
-
-    box-shadow:
-            0 0.469814rem 1.252838rem
-            rgba(18, 32, 80, 0.055);
-
-    transition:
-            transform 0.4s cubic-bezier(.2, .7, .2, 1),
-            box-shadow 0.4s ease,
-            border-color 0.4s ease;
-}
-.t-market-landing .iec-industry-card:hover{
-    transform: translateY(-0.31321rem);
-
-    border-color:
-            rgba(24, 42, 105, 0.13);
-
-    box-shadow:
-            0 0.939629rem 2.153316rem
-            rgba(18, 32, 80, 0.14);
-}
-.t-market-landing .iec-industry-card__image{
-    position: relative;
-    height: 8.85146rem;
-    overflow: hidden;
-    background: #e9edf6;
-}
-.t-market-landing .iec-industry-card__image::after{
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background:
-            linear-gradient(
-                    180deg,
-                    rgba(13, 24, 64, 0) 45%,
-                    rgba(13, 24, 64, 0.12) 100%
-            );
-
-    pointer-events: none;
-}
-.t-market-landing .iec-industry-card__image img{
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition:
-            transform 0.65s
-            cubic-bezier(.2, .7, .2, 1);
-}
-.t-market-landing .iec-industry-card:hover
-.iec-industry-card__image img{
-    transform: scale(1.055);
-}
-.t-market-landing .iec-land-industries .container > .row:first-child {
-    margin-bottom: 0.783012rem;
-}
-
-.t-market-landing .iec-land-industries .container > .row:first-child .wyswig-content p {
-    margin-bottom: 0;
-}
-
-.t-market-landing .iec-industry-card__body {
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1.64435rem 0.861326rem 0.783012rem;
-}
-.t-market-landing .iec-industry-card__icon{
-    position: absolute;
-
-    top: -1.174536rem;
-    left: 0.783024rem;
-
-    z-index: 3;
-
-    width: 2.349072rem;
-    height: 2.349072rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #ffffff;
-
-    background:
-            linear-gradient(
-                    145deg,
-                    #142057 0%,
-                    #202f73 100%
-            );
-
-    border:
-            0.156605rem solid #ffffff;
-
-    border-radius: 50%;
-
-    box-shadow:
-            0 0.31321rem 0.861326rem
-            rgba(18, 30, 81, 0.2);
-
-    transition:
-            transform 0.35s ease,
-            background 0.35s ease;
-}
-.t-market-landing .iec-industry-card__icon svg{
-    width: 1.135385rem;
-    height: 1.135385rem;
-}
-.t-market-landing .iec-industry-card:hover
-.iec-industry-card__icon{
-    transform: translateY(-0.156605rem);
-
-    background:
-            linear-gradient(
-                    145deg,
-                    #1b2b6f,
-                    #304a9d
-            );
-}
-.t-market-landing .iec-industry-card h3{
-    margin: 0 0 0.469814rem;
-
-    color: #101a4c;
-
-    font-size: 0.743873rem;
-    line-height: 1.25;
-
-    font-weight: 700;
-
-    letter-spacing: -0.015em;
-}
-.t-market-landing .iec-industry-card p{
-    margin: 0 0 0.861326rem;
-
-    color: #59627f;
-
-    font-size: 0.548117rem;
-    line-height: 1.65;
-}
-.t-market-landing .iec-industry-card__link{
-    margin-top: auto;
-
-    display: inline-flex;
-    align-items: center;
-
-    gap: 0.31321rem;
-
-    color: #17245d;
-
-    font-size: 0.469814rem;
-    line-height: 1;
-
-    font-weight: 700;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.035em;
-}
-.t-market-landing .iec-industry-card__link svg{
-    width: 0.66557rem;
-    height: 0.66557rem;
-
-    transition:
-            transform 0.3s ease;
-}
-.t-market-landing .iec-industry-card:hover
-.iec-industry-card__link svg{
-    transform: translateX(0.195756rem);
-}
-@media (max-width: 48.939002rem) {.t-market-landing .iec-land-industries__grid{
-    grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-}}
-@media (max-width: 35.236082rem) {.t-market-landing .iec-land-industries{
-    padding: 2.740584rem 0;
-}
-    .t-market-landing .iec-land-industries__grid{
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 0.861326rem;
-    }
-    .t-market-landing .iec-industry-card__image{
-        height: 7.83024rem;
-    }}
-@media (max-width: 23.490721rem) {.t-market-landing .iec-land-industries{
-    padding: 2.153316rem 0;
-}
-    .t-market-landing .iec-land-industries__container{
-        width:
-                min(100% - 1.174536rem, 54.028659rem);
-    }
-    .t-market-landing .iec-land-industries__heading{
-        margin-bottom: 1.174536rem;
-    }
-    .t-market-landing .iec-land-industries__grid{
-        grid-template-columns: 1fr;
-
-        gap: 0.783024rem;
-    }
-    .t-market-landing .iec-industry-card__image{
-        height: 8.417508rem;
-    }
-    .t-market-landing .iec-industry-card__body{
-        padding:
-                1.683502rem
-                0.939629rem
-                1.057082rem;
-    }
-    .t-market-landing .iec-industry-card h3{
-        font-size: 0.822175rem;
-    }
-    .t-market-landing .iec-industry-card p{
-        font-size: 0.587268rem;
-    }}
-.t-market-landing .iec-global-coverage{
-    position: relative;
-
-    overflow: hidden;
-
-    background:
-            radial-gradient(
-                    circle at 72% 50%,
-                    rgba(29, 83, 210, 0.17),
-                    transparent 35%
-            ),
-            linear-gradient(
-                    110deg,
-                    #071535 0%,
-                    #091a46 50%,
-                    #08183c 100%
-            );
-
-    color: #ffffff;
-}
-.t-market-landing .iec-global-coverage::before{
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background:
-            linear-gradient(
-                    90deg,
-                    rgba(4, 13, 38, 0.2),
-                    transparent 45%,
-                    rgba(13, 35, 92, 0.18)
-            );
-
-    pointer-events: none;
-}
-.t-market-landing .iec-global-coverage__container{
-    position: relative;
-
-    z-index: 2;
-
-    width: 100%;
-
-    min-height: 0;
-
-    margin: 0;
-
-    display: block;
-}
-.t-market-landing .iec-global-coverage__content{
-    position: relative;
-
-    z-index: 5;
-
-    max-width: none;
-
-    padding: 3.132096rem 0;
-}
-.t-market-landing .iec-global-coverage__features{
-    display: grid;
-
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-
-    width: 100%;
-
-    max-width: none;
-
-    align-items: flex-start;
-
-    gap: 0;
-
-    margin-top: 0.783012rem;
-}
-.t-market-landing .iec-global-feature{
-    position: relative;
-
-    width: 100%;
-
-    min-width: 0;
-
-    padding-right: 0.939629rem;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-}
-.t-market-landing .iec-global-feature:not(:first-child){
-    padding-left: 1.017931rem;
-}
-.t-market-landing .iec-global-feature:not(:first-child)::before{
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-
-    top: 0.391512rem;
-
-    width: 0.039151rem;
-
-    height: 2.975491rem;
-
-    background:
-            linear-gradient(
-                    180deg,
-                    transparent,
-                    rgba(126, 163, 255, 0.35),
-                    transparent
-            );
-}
-.t-market-landing .iec-global-feature__icon{
-    width: 2.27077rem;
-    height: 2.27077rem;
-    margin-bottom: 0.548117rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-secondary);
-    border: 0.039151rem solid var(--color-secondary);
-    border-radius: 50%;
-    background:
-            rgba(58, 101, 206, 0.07);
-    box-shadow:
-            inset 0 0 0.97878rem
-            rgba(73, 123, 244, 0.05);
-    transition:
-            transform .35s ease,
-            background .35s ease,
-            box-shadow .35s ease;
-}
-.t-market-landing .iec-global-feature__icon svg{
-    width: 1.331141rem;
-
-    height: 1.331141rem;
-}
-.t-market-landing .iec-global-feature__text{
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 0.195756rem;
-}
-.t-market-landing .iec-global-feature__text strong{
-    color: #ffffff;
-
-    font-size: 0.548117rem;
-
-    line-height: 1.3;
-
-    font-weight: 600;
-}
-.t-market-landing .iec-global-feature__text span{
-    color: rgba(255,255,255,0.5);
-
-    font-size: 0.430663rem;
-
-    line-height: 1.4;
-}
-.t-market-landing .iec-global-feature:hover
-.iec-global-feature__icon{
-    transform: translateY(-0.156605rem);
-
-    background:
-            rgba(75, 128, 255, 0.14);
-
-    box-shadow:
-            0 0 1.174536rem
-            rgba(65, 121, 255, 0.15);
-}
-.t-market-landing .iec-global-coverage__visual{
-    position: relative;
-
-    align-self: stretch;
-
-    min-height: 20.750137rem;
-}
-.t-market-landing .iec-global-coverage__map{
-    position: absolute;
-
-    top: 0;
-
-    right: -0.97878rem;
-
-    bottom: 0;
-
-    left: -2.349072rem;
-
-    z-index: 2;
-
-    background-image:
-            url('../../img/Market-images/side-image-feature.png');
-
-    background-repeat: no-repeat;
-
-    background-position: center right;
-
-    background-size: contain;
-}
-.t-market-landing .iec-global-coverage__visual::before{
-    content: "";
-
-    position: absolute;
-
-    z-index: 3;
-
-    top: 0;
-
-    bottom: 0;
-
-    left: -2.544828rem;
-
-    width: 8.613264rem;
-
-    background:
-            linear-gradient(
-                    90deg,
-                    #091942 0%,
-                    rgba(9,25,66,0.85) 22%,
-                    rgba(9,25,66,0.35) 66%,
-                    transparent 100%
-            );
-
-    pointer-events: none;
-}
-.t-market-landing .iec-global-coverage__glow{
-    position: absolute;
-
-    z-index: 1;
-
-    right: 8%;
-
-    bottom: 6%;
-
-    width: 65%;
-
-    height: 1.566048rem;
-
-    background:
-            radial-gradient(
-                    ellipse,
-                    rgba(28, 94, 255, 0.42),
-                    rgba(28, 94, 255, 0) 68%
-            );
-
-    filter: blur(0.66557rem);
-}
-@media (max-width: 43.066322rem) {
-    .t-market-landing .iec-global-coverage__content{
-        padding-right: 0;
-    }
-    .t-market-landing .iec-global-coverage__features{
-        gap: 0.587268rem;
-    }
-    .t-market-landing .iec-global-feature{
-        padding-right: 0.469814rem;
-    }
-    .t-market-landing .iec-global-feature:not(:first-child){
-        padding-left: 0.587268rem;
-    }
-}
-@media (max-width: 33.278522rem) {
-    .t-market-landing .iec-global-coverage__container{
-        width: 100%;
-
-        min-height: auto;
-    }
-    .t-market-landing .iec-global-coverage__content{
-        width: 100%;
-
-        padding:
-                2.544828rem
-                0
-                0.97878rem;
-    }
-    .t-market-landing .iec-global-coverage__features{
-        width: 100%;
-
-        max-width: none;
-
-        margin-top: 0.783012rem;
-    }
-}
-@media (max-width: 23.490721rem) {
-    .t-market-landing .iec-global-coverage__container{
-        width: 100%;
-    }
-    .t-market-landing .iec-global-coverage__content{
-        padding-top: 2.153316rem;
-    }
-    .t-market-landing .iec-global-coverage__features{
-        grid-template-columns: 1fr;
-
-        gap: 0;
-
-        margin-top: 0.783012rem;
-    }
-    .t-market-landing .iec-global-feature{
-        width: 100%;
-
-        padding:
-                0.704722rem
-                0;
-
-        display: grid;
-
-        grid-template-columns:
-            2.27077rem 1fr;
-
-        column-gap: 0.66557rem;
-
-        align-items: center;
-    }
-    .t-market-landing .iec-global-feature:not(:first-child){
-        padding-left: 0;
-    }
-    .t-market-landing .iec-global-feature:not(:first-child)::before{
-        top: 0;
-
-        left: 0;
-
-        width: 100%;
-
-        height: 0.039151rem;
-
-        background:
-                linear-gradient(
-                        90deg,
-                        transparent,
-                        rgba(126,163,255,.25),
-                        transparent
-                );
-    }
-    .t-market-landing .iec-global-feature__icon{
-        margin-bottom: 0;
-    }
-    .t-market-landing .iec-global-feature__text strong{
-        font-size: 0.587268rem;
-    }
-    .t-market-landing .iec-global-feature__text span{
-        font-size: 0.469814rem;
-    }
-    .t-market-landing .iec-global-coverage__visual{
-        min-height: 10.570825rem;
-    }
-    .t-market-landing .iec-global-coverage__map{
-        background-size: 115% auto;
-
-        background-position: center;
-    }}
-.t-market-landing .iec-industries-video{
-    position: relative;
-    min-height: 23.273745rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: #091745;
-}
-.t-market-landing .iec-industries-video__media{
-    position: absolute;
-    inset: 0;
-}
-.t-market-landing .iec-industries-video__video{
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-    object-position: center;
-}
-.t-market-landing .iec-industries-video__overlay{
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgb(5 15 48 / 0%) 0%, rgb(7 20 59 / 61%) 35%, rgba(7, 20, 59, 0.32) 67%, rgba(7, 20, 59, 0.15) 100%), linear-gradient(180deg, rgba(4, 12, 37, 0.08), rgba(4, 12, 37, 0.25));
-}
-@media (max-width: 35.236082rem) {.t-market-landing .iec-industries-video{
-    min-height: 20.358625rem;
-}
-    .t-market-landing .iec-industries-video .container{
-        padding: 3.132096rem 0;
-    }
-    .t-market-landing .iec-industries-video__overlay{
-        background:
-                rgba(6, 17, 52, 0.68);
-    }}
-@media (max-width: 23.490721rem) {.t-market-landing .iec-industries-video{
-    min-height: 18.792577rem;
-}
-    .t-market-landing .iec-industries-video .container{
-        padding: 2.544828rem 0;
-    }}
-.t-market-landing .iec-our-solutions{
-    position: relative;
-
-    padding: 4.110876rem 0 4.698144rem;
-
-    background: var(--color-primary);
-
-    color: #ffffff;
-}
-
-.t-market-landing .iec-our-solutions .iec_home_eyebrow {
-    margin-left: auto;
-    margin-right: auto;
-    width: max-content;
-    max-width: 100%;
-}
-.t-market-landing .iec-our-solutions__container{
-    width: min(54.028659rem, calc(100% - 1.879258rem));
-
-    margin: 0 auto;
-}
-.t-market-landing .iec-our-solutions__header{
-    margin-bottom: 2.544828rem;
-
-    text-align: center;
-}
-.t-market-landing .iec-our-solutions__grid{
-    display: grid;
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-    column-gap: 0;
-    row-gap: 2.740584rem;
-    margin-top: 1.544rem;
-}
-.t-market-landing .iec-solution-item{
-    position: relative;
-    /* min-height: 12.332629rem; */
-    padding:
-            0.31321rem
-            1.95756rem
-            0.587268rem
-            1.331141rem;
-    border-left: 0.039151rem solid var(--color-secondary);
-}
-.t-market-landing .iec-solution-item:nth-child(2), .t-market-landing .iec-solution-item:nth-child(5){
-    /* margin-top: 1.761804rem; */
-}
-.t-market-landing .iec-solution-item:nth-child(3), .t-market-landing .iec-solution-item:nth-child(6){
-    /* margin-top: 3.523608rem; */
-}
-.t-market-landing .iec-solution-item__icon{
-    width: 2.27077rem;
-    height: 2.27077rem;
-
-    margin-bottom: 0.900478rem;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-start;
-
-    color: #ffffff;
-}
-.t-market-landing .iec-solution-item__icon svg{
-    width: 1.840106rem;
-
-    height: 1.840106rem;
-}
-.t-market-landing .iec-solution-item h3{
-    max-width: 12.919897rem;
-    margin: 0 0 0.704722rem;
-    /* color: #95afff; */
-    font-size: clamp(0.861326rem, 2vw, 1.135385rem);
-    line-height: 1.15;
-    font-weight: 500;
-    letter-spacing: -0.025em;
-}
-.t-market-landing .iec-solution-item p{
-    max-width: 13.311409rem;
-    margin: 0;
-    /* color: rgba(194, 208, 255, 0.78); */
-    font-size: 0.587268rem;
-    line-height: 1.55;
-}
-.t-market-landing .iec-solution-item__icon, .t-market-landing .iec-solution-item h3{
-    transition:
-            transform .35s ease,
-            color .35s ease;
-}
-.t-market-landing .iec-solution-item:hover
-.iec-solution-item__icon{
-    transform: translateY(-0.156605rem);
-
-    color: #adc5ff;
-}
-.t-market-landing .iec-solution-item:hover h3{
-    color: #ffffff;
-}
-@media (max-width: 38.798841rem) {.t-market-landing .iec-our-solutions{
-    padding: 3.132096rem 0;
-}
-    .t-market-landing .iec-our-solutions__grid{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        row-gap: 1.95756rem;
-    }
-    .t-market-landing .iec-solution-item:nth-child(n){
-        margin-top: 0;
-    }
-    .t-market-landing .iec-solution-item{
-        min-height: auto;
-
-        padding:
-                0.391512rem
-                1.370292rem
-                0.783024rem;
-    }
-
-}
-@media (max-width: 23.490721rem) {.t-market-landing .iec-our-solutions{
-    padding:
-            2.544828rem
-            0
-            2.740584rem;
-}
-    .t-market-landing .iec-our-solutions__container{
-        width: calc(100% - 1.174536rem);
-    }
-    .t-market-landing .iec-our-solutions__header{
-        margin-bottom: 1.761804rem;
-    }
-    .t-market-landing .iec-our-solutions__grid{
-        grid-template-columns: 1fr;
-
-        row-gap: 0;
-    }
-    .t-market-landing .iec-solution-item{
-        min-height: auto;
-
-        padding:
-                1.096234rem
-                0.587268rem
-                1.370292rem
-                1.096234rem;
-
-        border-left:
-                0.039151rem solid
-                rgba(152,174,255,.45);
-
-        border-bottom:
-                0.039151rem solid
-                rgba(152,174,255,.12);
-    }
-    .t-market-landing .iec-solution-item:last-child{
-        border-bottom: 0;
-    }
-    .t-market-landing .iec-solution-item h3{
-        font-size: 0.939629rem;
-    }
-    .t-market-landing .iec-solution-item p{
-        max-width: none;
-
-        font-size: 0.548117rem;
-    }}
-.t-market-landing .iec-advantage-section{
-    position: relative;
-
-    padding: 3.719364rem 0 4.306632rem;
-
-    overflow: hidden;
-
-    background:
-            radial-gradient(
-                    circle at 78% 30%,
-                    rgba(45, 91, 190, 0.17),
-                    transparent 34%
-            ),
-            radial-gradient(
-                    circle at 18% 75%,
-                    rgba(45, 73, 160, 0.10),
-                    transparent 30%
-            ),
-            linear-gradient(
-                    110deg,
-                    #050d24 0%,
-                    #0b183d 47%,
-                    #111e51 100%
-            );
-
-    color: #fff;
-}
-.t-market-landing .iec-advantage-section::before{
-    content: "";
-
-    position: absolute;
-
-    width: 23.490721rem;
-    height: 23.490721rem;
-
-    top: -11.745361rem;
-    right: -7.83024rem;
-
-    border-radius: 50%;
-
-    background: rgba(58, 102, 210, 0.08);
-
-    filter: blur(0.783024rem);
-
-    pointer-events: none;
-}
-.t-market-landing .iec-advantage-container{
-    position: relative;
-    z-index: 2;
-
-    width: min(54.028659rem, calc(100% - 1.879258rem));
-
-    margin: 0 auto;
-}
-.t-market-landing .iec-advantage-header{
-    margin-bottom: 2.427375rem;
-
-    text-align: center;
-}
-.t-market-landing .iec-advantage-layout{
-    display: grid;
-
-    grid-template-columns:
-        minmax(15.660481rem, .85fr)
-        minmax(23.490721rem, 1.15fr);
-
-    gap: 2.740584rem;
-
-    align-items: center;
-}
-.t-market-landing .iec-advantage-visual{
-    position: relative;
-
-    min-height: 21.924673rem;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-}
-.t-market-landing .iec-advantage-illustration,
-.t-market-landing .iec-advantage-visual img {
-    position: relative;
-
-    z-index: 2;
-
-    width: 100%;
-
-    max-width: 23.099209rem;
-
-    height: auto;
-
-    display: block;
-
-    object-fit: contain;
-}
-.t-market-landing .iec-advantage-glow{
-    position: absolute;
-
-    width: 14.094433rem;
-    height: 14.094433rem;
-
-    border-radius: 50%;
-
-    background:
-            rgba(53, 111, 235, .19);
-
-    filter: blur(3.132096rem);
-}
-.t-market-landing .iec-dish{
-    transform-origin: center;
-
-    animation:
-            iecDishFloat
-            7s ease-in-out infinite;
-}
-@keyframes iecDishFloat {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-0.391512rem);
-    }
-
-}
-.t-market-landing .iec-advantage-content{
-    min-width: 0;
-}
-.t-market-landing .iec-advantage-table-header{
-    display: grid;
-
-    grid-template-columns:
-        minmax(8.221752rem, .75fr)
-        1.4fr;
-
-    gap: 1.409443rem;
-
-    padding:
-            0
-            0
-            0.900478rem;
-
-    color: #ffffff;
-
-    font-size: 0.861326rem;
-
-    line-height: 1.2;
-
-    font-weight: 700;
-}
-.t-market-landing .iec-advantage-row{
-    display: grid;
-
-    grid-template-columns:
-        minmax(8.221752rem, .75fr)
-        1.4fr;
-
-    gap: 1.409443rem;
-
-    padding: 0.97878rem 0;
-
-    border-bottom:
-            0.039151rem solid
-            rgba(145, 170, 232, .17);
-
-    transition:
-            background .3s ease,
-            padding .3s ease;
-}
-.t-market-landing .iec-advantage-row:last-child{
-    border-bottom: 0;
-}
-.t-market-landing .iec-advantage-row:hover{
-    background:
-            linear-gradient(
-                    90deg,
-                    rgba(87, 126, 228, .05),
-                    transparent
-            );
-}
-.t-market-landing .iec-advantage-feature{
-    position: relative;
-
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 0.548117rem;
-}
-.t-market-landing .iec-advantage-feature h3{
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 0.626419rem;
-
-    line-height: 1.55;
-
-    font-weight: 700;
-}
-.t-market-landing .iec-advantage-dot{
-    flex: 0 0 auto;
-
-    width: 0.508966rem;
-    height: 0.508966rem;
-
-    margin-top: 0.195756rem;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border:
-            0.058727rem solid
-            #70a0ff;
-
-    border-radius: 50%;
-}
-.t-market-landing .iec-advantage-dot span{
-    width: 0.156605rem;
-    height: 0.156605rem;
-
-    border-radius: 50%;
-
-    background: #70a0ff;
-
-    box-shadow:
-            0 0 0.352361rem
-            rgba(112, 160, 255, .85);
-}
-.t-market-landing .iec-advantage-description p{
-    max-width: 22.707697rem;
-
-    margin: 0;
-
-    color:
-            rgba(221, 228, 248, .78);
-
-    font-size: 0.587268rem;
-
-    line-height: 1.75;
-}
-@media (max-width: 41.108762rem) {.t-market-landing .iec-advantage-section{
-    padding:
-            2.93634rem
-            0
-            3.327852rem;
-}
-    .t-market-landing .iec-advantage-layout{
-        grid-template-columns: 1fr;
-
-        gap: 1.174536rem;
-    }
-    .t-market-landing .iec-advantage-visual{
-        min-height: 16.835017rem;
-    }
-    .t-market-landing .iec-advantage-illustration,
-    .t-market-landing .iec-advantage-visual img {
-        max-width: 19.575601rem;
-    }
-    .t-market-landing .iec-advantage-content{
-        max-width: 33.278522rem;
-
-        width: 100%;
-
-        margin: 0 auto;
-    }}
-@media (max-width: 25.448281rem) {.t-market-landing .iec-advantage-section{
-    padding:
-            2.349072rem
-            0
-            2.544828rem;
-}
-    .t-market-landing .iec-advantage-container{
-        width: calc(100% - 1.174536rem);
-    }
-    .t-market-landing .iec-advantage-header{
-        margin-bottom: 1.370292rem;
-    }
-    .t-market-landing .iec-advantage-visual{
-        min-height: 12.528385rem;
-    }
-    .t-market-landing .iec-advantage-illustration,
-    .t-market-landing .iec-advantage-visual img {
-        max-width: 14.094433rem;
-    }
-    .t-market-landing .iec-advantage-table-header{
-        display: none;
-    }
-    .t-market-landing .iec-advantage-row{
-        display: block;
-
-        padding:
-                1.057082rem
-                0.156605rem;
-    }
-    .t-market-landing .iec-advantage-feature{
-        margin-bottom: 0.469814rem;
-    }
-    .t-market-landing .iec-advantage-feature h3{
-        font-size: 0.704722rem;
-    }
-    .t-market-landing .iec-advantage-description{
-        padding-left: 1.057082rem;
-    }
-    .t-market-landing .iec-advantage-description p{
-        font-size: 0.548117rem;
-
-        line-height: 1.7;
-    }}
-/* Hero Section */
+/* ====== Hero ====== */
 .t-market-landing .iec-industries-hero {
-    position: relative;
-    overflow: hidden;
     padding: 1.331141rem 0 3.053746rem;
     background-color: #1b204c;
-    background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 50%;
+    background-image: var(--heroImage);
 }
 
 .t-market-landing .iec-industries-hero::before {
@@ -1733,7 +39,6 @@
     margin-bottom: 1.331141rem;
     font-size: 0.743873rem;
     line-height: 1;
-    color: #ffffff;
 }
 
 .t-market-landing .iec-industries-hero__breadcrumb a {
@@ -1757,73 +62,24 @@
     width: 0.352361rem;
     height: 0.548117rem;
     display: block;
-    color: #ffffff;
 }
 
-.t-market-landing .iec-industries-hero__breadcrumb-sep svg path {
-    fill: #ffffff;
+.t-market-landing .iec-industries-hero .iec-primary-heading {
+    font-size: 1.7243297419rem;
 }
 
 .t-market-landing .iec-industries-hero .iec-secondary-heading {
-    font-size: 27px;
-    line-height: 144%;
+    font-size: 1.057082rem;
     margin-bottom: 1rem;
-    color: #ffffff;
-    font-weight: 400;
-}
-
-
-.t-market-landing .iec-industries-hero__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.391512rem;
-    min-height: 1.800957rem;
-    padding: 0 0.783024rem;
-    border: 0.039151rem solid rgba(255, 255, 255, 0.24);
-    background: rgba(255, 255, 255, 0.04);
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 0.587268rem;
-    font-weight: 700;
-    transition:
-            background 0.3s ease,
-            border-color 0.3s ease,
-            transform 0.3s ease;
-}
-
-.t-market-landing .iec-industries-hero__btn::after {
-    content: "";
-    width: 0.704722rem;
-    height: 0.704722rem;
-    min-width: 12px;
-    min-height: 12px;
-    flex: 0 0 0.704722rem;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M4 10H16M11 5L16 10L11 15' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    transition: transform 0.3s ease;
-}
-
-.t-market-landing .iec-industries-hero__btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.42);
-    transform: translateY(-0.078302rem);
-}
-
-.t-market-landing .iec-industries-hero__btn:hover::after {
-    transform: translateX(0.195756rem);
+    font-weight: var(--regular);
+    text-transform: capitalize;
+    letter-spacing: 0;
 }
 
 .t-market-landing .iec-industries-hero__visual {
     min-height: 16.835017rem;
 }
-h1.iec-primary-heading {
-    font-size: 1.7243297419rem;
-}
+
 @media (max-width: 38.798841rem) {
     .t-market-landing .iec-industries-hero {
         padding-top: 0.939629rem;
@@ -1833,14 +89,13 @@ h1.iec-primary-heading {
 
     .t-market-landing .iec-industries-hero__content {
         padding: 1.017931rem 0 0.391512rem;
-        text-align: center;
     }
 
     .t-market-landing .iec-industries-hero__breadcrumb {
         justify-content: center;
     }
 
-    .t-market-landing .iec-industries-hero__content h1,
+    .t-market-landing .iec-industries-hero__content .iec-primary-heading,
     .t-market-landing .iec-industries-hero__content .iec-secondary-heading {
         max-width: 100%;
         margin-left: auto;
@@ -1848,9 +103,10 @@ h1.iec-primary-heading {
         font-size: 1.23rem;
         line-height: normal;
     }
-    .t-market-landing .iec-industries-hero .iec-secondary-heading{
+
+    .t-market-landing .iec-industries-hero .iec-secondary-heading {
         font-size: 0.923456rem;
-        line-height:144%;
+        line-height: 144%;
     }
 
     .t-market-landing .iec-industries-hero__visual {
@@ -1863,18 +119,814 @@ h1.iec-primary-heading {
         padding-top: 0.704722rem;
     }
 
-    .t-market-landing .iec-industries-hero__content h1 {
+    .t-market-landing .iec-industries-hero__content .iec-primary-heading {
         font-size: 1.331141rem;
     }
 
     .t-market-landing .iec-industries-hero__content .iec-secondary-heading {
-        font-size: 0.548117rem;
-        line-height: 1.7;
+        font-size: 0.833333rem;
+        line-height: 1.5;
+    }
+}
+
+/* ====== Industry types ====== */
+.t-market-landing .iec-industry-types {
+    padding: 2.818887rem 0;
+    background:
+            radial-gradient(circle at 50% 0%, rgba(65, 96, 180, 0.07), transparent 38%),
+            #ffffff;
+}
+
+.t-market-landing .iec-industry-types .grid-2 {
+    gap: 1.096234rem;
+}
+
+.t-market-landing .iec-industry-type-card {
+    position: relative;
+    min-height: 14.094433rem;
+    display: block;
+    overflow: hidden;
+    border-radius: 0.939629rem;
+    text-decoration: none;
+    color: #101943;
+    background: #f4f6fb;
+    box-shadow:
+            0 0.626419rem 1.761804rem rgba(15, 27, 72, 0.08),
+            0 0.078302rem 0.31321rem rgba(15, 27, 72, 0.04);
+    transition:
+            transform 0.45s cubic-bezier(.2, .7, .2, 1),
+            box-shadow 0.45s ease;
+}
+
+.t-market-landing .iec-industry-type-card:hover {
+    transform: translateY(-0.234907rem);
+    box-shadow:
+            0 0.939629rem 2.349072rem rgba(15, 27, 72, 0.15),
+            0 0.195756rem 0.548117rem rgba(15, 27, 72, 0.06);
+}
+
+.t-market-landing .iec-industry-type-image {
+    position: absolute;
+    inset: 0;
+}
+
+.t-market-landing .iec-industry-type-image img {
+    transition: transform 0.7s cubic-bezier(.2, .7, .2, 1);
+}
+
+.t-market-landing .iec-industry-type-card:hover .iec-industry-type-image img {
+    transform: scale(1.04);
+}
+
+.t-market-landing .iec-industry-type-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            90deg,
+            rgba(27, 32, 76, 0.99) 0%,
+            rgba(27, 32, 76, 0.97) 32%,
+            rgba(27, 32, 76, 0.82) 48%,
+            rgba(27, 32, 76, 0.16) 72%,
+            rgba(27, 32, 76, 0) 100%
+    );
+    z-index: 1;
+}
+
+.t-market-landing .iec-industry-type-content {
+    position: relative;
+    z-index: 2;
+    width: 57%;
+    min-height: 14.094433rem;
+    padding: 1.487746rem 0.783024rem 1.487746rem 1.487746rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.t-market-landing .iec-industry-type-icon {
+    width: 2.427375rem;
+    height: 2.427375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.822175rem;
+    border-radius: 100%;
+    color: #172355;
+    background: rgba(255, 255, 255, 0.9);
+    border: 0.039151rem solid rgba(38, 54, 113, 0.13);
+    box-shadow: 0 0.31321rem 1.174536rem rgba(15, 27, 72, 0.09);
+    backdrop-filter: blur(0.391512rem);
+    -webkit-backdrop-filter: blur(0.391512rem);
+}
+
+.t-market-landing .iec-industry-type-icon svg {
+    width: 1.331141rem;
+    height: 1.331141rem;
+}
+
+.t-market-landing .iec-industry-type-label {
+    display: block;
+    margin-bottom: 0.274058rem;
+    font-size: 0.430663rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #6e79a4;
+}
+
+.t-market-landing .iec-industry-type-content h2 {
+    margin: 0 0 0.508966rem;
+    font-size: clamp(0.97878rem, 2vw, 1.331141rem);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.t-market-landing .iec-industry-type-content p {
+    max-width: 13.702921rem;
+    margin: 0 0 0.97878rem;
+    font-size: 0.587268rem;
+    line-height: 1.65;
+}
+
+.t-market-landing .iec-industry-type-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.391512rem;
+    font-size: 0.508966rem;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.135em;
+}
+
+.t-market-landing .iec-industry-type-link svg {
+    width: 0.704722rem;
+    height: 0.704722rem;
+    transition: transform 0.3s ease;
+}
+
+.t-market-landing .iec-industry-type-card:hover .iec-industry-type-link svg {
+    transform: translateX(0.195756rem);
+}
+
+.t-market-landing .iec-industry-type-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 0.039151rem solid rgba(19, 32, 83, 0.08);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 3;
+}
+
+@media (max-width: 38.798841rem) {
+    .t-market-landing .iec-industry-types {
+        padding: 2.153316rem 0;
     }
 
-    .t-market-landing .iec-industries-hero__btn {
-        min-height: 1.644351rem;
-        padding: 0 0.626419rem;
-        font-size: 0.430663rem;
+    .t-market-landing .iec-industry-type-card {
+        min-height: 13.919897rem;
+    }
+
+    .t-market-landing .iec-industry-type-overlay {
+        background:
+                linear-gradient(
+                        180deg,
+                        rgba(27, 32, 76, 0.35) 0%,
+                        rgba(27, 32, 76, 0.62) 45%,
+                        rgba(27, 32, 76, 0.94) 100%
+                ),
+                linear-gradient(
+                        90deg,
+                        rgba(27, 32, 76, 0.94) 0%,
+                        rgba(27, 32, 76, 0.72) 46%,
+                        rgba(27, 32, 76, 0.24) 78%,
+                        rgba(27, 32, 76, 0.1) 100%
+                );
+    }
+
+    .t-market-landing .iec-industry-type-content {
+        width: 100%;
+        min-height: 13.919897rem;
+        padding: 1.174536rem 1.174536rem 1.331141rem;
+        justify-content: flex-end;
+    }
+
+    .t-market-landing .iec-industry-type-icon {
+        margin-bottom: 0.783024rem;
+    }
+
+    .t-market-landing .iec-industry-type-content p {
+        max-width: 21ch;
+        margin-bottom: 0.939629rem;
+    }
+}
+
+@media (max-width: 25.056769rem) {
+    .t-market-landing .iec-industry-types {
+        padding: 1.566048rem 0;
+    }
+
+    .t-market-landing .iec-industry-types .container {
+        width: min(100% - 1.174536rem, 51.679587rem);
+    }
+
+    .t-market-landing .iec-industry-types .grid-2 {
+        gap: 0.783024rem;
+    }
+
+    .t-market-landing .iec-industry-type-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 12.332629rem;
+        padding: 1.174536rem 1.017931rem 1.252838rem;
+        background: transparent;
+    }
+
+    .t-market-landing .iec-industry-type-content h2 {
+        font-size: 1.222222rem;
+    }
+
+    .t-market-landing .iec-industry-type-content p {
+        font-size: 0.777778rem;
+        margin-bottom: 0.783024rem;
+    }
+}
+
+/* ====== Specialized connectivity ====== */
+.t-market-landing .iec-specialized-connectivity {
+    padding: 3.327852rem 0 3.719364rem;
+    background:
+            radial-gradient(circle at 50% 0%, rgba(69, 94, 166, 0.055), transparent 42%),
+            #ffffff;
+}
+
+.t-market-landing .iec-connectivity-feature {
+    position: relative;
+    padding: 0.391512rem 1.487746rem 0.31321rem;
+}
+
+.t-market-landing .iec-connectivity-feature:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.039151rem;
+    height: 100%;
+    background: linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(20, 33, 83, 0.14) 15%,
+            rgba(20, 33, 83, 0.14) 85%,
+            transparent 100%
+    );
+}
+
+.t-market-landing .iec-connectivity-feature__icon {
+    width: 3.523764rem;
+    height: 3.523764rem;
+    margin: 0 auto 0.939629rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #17255d;
+    border-radius: 50%;
+    background: transparent;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.t-market-landing .iec-connectivity-feature__icon svg {
+    width: 2.740584rem;
+    height: 2.740584rem;
+    transition: transform 0.45s ease;
+}
+
+.t-market-landing .iec-connectivity-feature h3 {
+    margin: 0 0 0.626419rem;
+    color: #111b4b;
+    font-size: 0.822175rem;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -0.018em;
+}
+
+.t-market-landing .iec-connectivity-feature p {
+    max-width: 9.7878rem;
+    margin: 0 auto;
+    color: #5b6483;
+    font-size: 0.587268rem;
+    line-height: 1.7;
+}
+
+.t-market-landing .iec-connectivity-feature:hover .iec-connectivity-feature__icon {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+.t-market-landing .iec-connectivity-feature:hover .iec-connectivity-feature__icon svg {
+    transform: rotateY(180deg);
+}
+
+.iec-content {
+    flex-direction: column;
+}
+
+@media (max-width: 38.798841rem) {
+    .t-market-landing .iec-specialized-connectivity {
+        padding: 2.740584rem 0;
+    }
+
+    .t-market-landing .iec-specialized-connectivity .grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 1.761804rem;
+    }
+
+    .t-market-landing .iec-connectivity-feature:nth-child(2)::after {
+        display: none;
+    }
+
+    .t-market-landing .iec-connectivity-feature:nth-child(1),
+    .t-market-landing .iec-connectivity-feature:nth-child(2) {
+        padding-bottom: 1.174536rem;
+        border-bottom: 0.039151rem solid rgba(20, 33, 83, 0.1);
+    }
+}
+
+@media (max-width: 767px) {
+    .t-market-landing .iec-specialized-connectivity .grid-4 {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+}
+
+@media (max-width: 25.056769rem) {
+    .t-market-landing .iec-specialized-connectivity {
+        padding: 2.153316rem 0 2.349072rem;
+    }
+
+    .t-market-landing .iec-connectivity-feature {
+        padding: 1.252838rem 0.783024rem;
+    }
+
+    .t-market-landing .iec-connectivity-feature:not(:last-child) {
+        border-bottom: 0.039151rem solid rgba(20, 33, 83, 0.1);
+    }
+
+    .t-market-landing .iec-connectivity-feature::after {
+        display: none;
+    }
+
+    .t-market-landing .iec-connectivity-feature h3 {
+        margin-bottom: 0.469814rem;
+    }
+
+    .t-market-landing .iec-connectivity-feature p {
+        max-width: none;
+    }
+}
+
+/* ====== Land / maritime cards ====== */
+.t-market-landing .iec-land-industries {
+    padding: 3.327852rem 0 3.719364rem;
+    background: radial-gradient(circle at 5% 10%, rgba(71, 100, 180, 0.06), transparent 28%),
+    linear-gradient(180deg, #f7f9fd 0%, #ffffff 100%);
+}
+
+.t-market-landing .iec-land-industries .container > .row:first-child {
+    margin-bottom: 0.783012rem;
+}
+
+@media (max-width: 35.236082rem) {
+    .t-market-landing .iec-land-industries {
+        padding: 2.740584rem 0;
+    }
+}
+
+@media (max-width: 23.490721rem) {
+    .t-market-landing .iec-land-industries {
+        padding: 2.153316rem 0;
+    }
+}
+
+/* ====== Global coverage ====== */
+.t-market-landing .iec-global-coverage {
+    background: linear-gradient(120deg, #eceef5 0%, #f0f0f6 100%);
+    color: var(--color-primary);
+}
+
+.t-market-landing .iec-global-coverage .iec-section-heading { color: var(--color-primary); }
+
+.t-market-landing .iec-global-coverage .wysiwyg-content p { color: var(--color-secondary); }
+
+.t-market-landing .iec-global-coverage__content {
+    position: relative;
+    z-index: 5;
+    padding: 3.132096rem 0;
+}
+
+.t-market-landing .iec-global-coverage .grid-3 {
+    gap: 0;
+    margin-top: 0.783012rem;
+}
+
+.t-market-landing .iec-global-feature {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    padding-right: 0.939629rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.t-market-landing .iec-global-feature:not(:first-child) {
+    padding-left: 1.017931rem;
+}
+
+.t-market-landing .iec-global-feature:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.391512rem;
+    width: 0.039151rem;
+    height: 3.523553rem;
+    background: linear-gradient(180deg, transparent, rgba(114, 125, 163, 0.45), transparent);
+}
+
+.t-market-landing .iec-global-feature__icon {
+    width: 2.740541rem;
+    height: 2.740541rem;
+    margin: 0 auto 0.704717rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    border: 0.039151rem solid color-mix(in srgb, var(--color-secondary) 30%, var(--color-white));
+    border-radius: 50%;
+    background: var(--color-bg);
+    transition: transform 0.35s ease, background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.t-market-landing .iec-global-feature__icon svg {
+    width: 1.409434rem;
+    height: 1.409434rem;
+}
+
+.t-market-landing .iec-global-feature__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.195756rem;
+}
+
+.t-market-landing .iec-global-feature__text strong {
+    color: var(--color-primary);
+    font-size: 0.548117rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.t-market-landing .iec-global-feature__text span {
+    color: var(--color-secondary);
+    font-size: 0.469814rem;
+    line-height: 1.4;
+}
+
+.t-market-landing .iec-global-feature:hover .iec-global-feature__icon {
+    transform: translateY(-0.156605rem);
+    background: color-mix(in srgb, var(--color-secondary) 16%, var(--color-white));
+    border-color: var(--color-secondary);
+    box-shadow: 0 0.156605rem 1.174536rem rgba(27, 32, 76, 0.12);
+}
+
+@media (max-width: 43.066322rem) {
+    .t-market-landing .iec-global-coverage .grid-3 {
+        gap: 2.587268rem;
+    }
+
+    .t-market-landing .iec-global-feature {
+        padding-right: 0.469814rem;
+    }
+
+    .t-market-landing .iec-global-feature:not(:first-child) {
+        padding-left: 0.587268rem;
+    }
+}
+
+@media (max-width: 33.278522rem) {
+    .t-market-landing .iec-global-coverage__content {
+        padding: 2.544828rem 0 0.97878rem;
+    }
+}
+
+@media (max-width: 23.490721rem) {
+    .t-market-landing .iec-global-coverage__content {
+        padding-top: 2.153316rem;
+    }
+
+    .t-market-landing .iec-global-coverage .grid-3 {
+        gap: 0;
+    }
+
+    .t-market-landing .iec-global-feature {
+        width: 100%;
+        padding: 0.888889rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .t-market-landing .iec-global-feature:not(:first-child) {
+        padding-left: 0;
+    }
+
+    .t-market-landing .iec-global-feature:not(:first-child)::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.039151rem;
+        background: linear-gradient(90deg, transparent, rgba(114, 125, 163, 0.35), transparent);
+    }
+
+    .t-market-landing .iec-global-feature__icon {
+        margin: 0 auto 0.548117rem;
+    }
+
+    .t-market-landing .iec-global-feature__text strong {
+        font-size: 0.587268rem;
+    }
+
+    .t-market-landing .iec-global-feature__text span {
+        font-size: 0.469814rem;
+    }
+}
+
+/* ====== Video ====== */
+.t-market-landing .iec-industries-video {
+    min-height: 23.273745rem;
+    display: flex;
+    align-items: center;
+    background: #091745;
+}
+
+.t-market-landing .iec-industries-video .container {
+    position: relative;
+    z-index: 2;
+    padding: 3.914683rem 0;
+}
+
+.t-market-landing .iec-industries-video__media {
+    position: absolute;
+    inset: 0;
+}
+
+.t-market-landing .iec-industries-video__video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.t-market-landing .iec-industries-video__overlay {
+    position: absolute;
+    inset: 0;
+    background:
+            linear-gradient(90deg, rgb(5 15 48 / 0%) 0%, rgb(7 20 59 / 61%) 35%, rgba(7, 20, 59, 0.32) 67%, rgba(7, 20, 59, 0.15) 100%),
+            linear-gradient(180deg, rgba(4, 12, 37, 0.08), rgba(4, 12, 37, 0.25));
+    display: none;
+}
+
+@media (max-width: 35.236082rem) {
+    .t-market-landing .iec-industries-video {
+        min-height: 20.358625rem;
+    }
+
+    .t-market-landing .iec-industries-video .container {
+        padding: 3.132096rem 0;
+    }
+
+    .t-market-landing .iec-industries-video__overlay {
+        background: rgba(6, 17, 52, 0.68);
+    }
+}
+
+@media (max-width: 23.490721rem) {
+    .t-market-landing .iec-industries-video {
+        min-height: 18.792577rem;
+    }
+
+    .t-market-landing .iec-industries-video .container {
+        padding: 2.544828rem 0;
+    }
+}
+
+/* ====== Solutions ====== */
+.t-market-landing .iec-our-solutions {
+    padding: 4.110876rem 0 4.698144rem;
+    background: var(--color-primary);
+}
+
+.t-market-landing .iec-our-solutions .grid-3 {
+    column-gap: 0;
+    row-gap: 2.740584rem;
+    margin-top: 1.544rem;
+}
+
+.t-market-landing .iec-solution-item {
+    position: relative;
+    padding: 0.31321rem 1.95756rem 0.587268rem 1.331141rem;
+    border-left: 0.039151rem solid var(--color-secondary);
+}
+
+.t-market-landing .iec-solution-item__icon {
+    width: 2.27077rem;
+    height: 2.27077rem;
+    margin-bottom: 0.900478rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.t-market-landing .iec-solution-item__icon svg {
+    width: 1.840106rem;
+    height: 1.840106rem;
+}
+
+.t-market-landing .iec-solution-item h3 {
+    max-width: 12.919897rem;
+    margin: 0 0 0.704722rem;
+    font-size: clamp(0.861326rem, 2vw, 1.135385rem);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+}
+
+.t-market-landing .iec-solution-item p {
+    max-width: 13.311409rem;
+    margin: 0;
+    font-size: 0.587268rem;
+    line-height: 1.55;
+}
+
+.t-market-landing .iec-solution-item__icon,
+.t-market-landing .iec-solution-item h3 {
+    transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.t-market-landing .iec-solution-item:hover .iec-solution-item__icon {
+    transform: translateY(-0.156605rem);
+    color: #adc5ff;
+}
+
+@media (max-width: 38.798841rem) {
+    .t-market-landing .iec-our-solutions {
+        padding: 3.132096rem 0;
+    }
+
+    .t-market-landing .iec-our-solutions .grid-3 {
+        grid-template-columns: 1fr;
+        row-gap: 1.95756rem;
+    }
+
+    .t-market-landing .iec-solution-item {
+        min-height: auto;
+        padding: 0.391512rem 1.370292rem 0.783024rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .t-market-landing .iec-industries-hero__content .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .t-market-landing .iec-industry-type-icon {
+        width: 2.333333rem;
+        height: 2.333333rem;
+        /* display: none; */
+    }
+
+    .t-market-landing .iec-industry-type-icon svg {
+        width: 1.888889rem;
+        height: 1.888889rem;
+    }
+
+    .t-market-landing .iec-industry-type-label {
+        font-size: 0.611111rem;
+    }
+
+    .t-market-landing .iec-industry-type-content h2 {
+        font-size: 1.222222rem;
+    }
+
+    .t-market-landing .iec-industry-type-content p {
+        font-size: 0.777778rem;
+        max-width: 95%;
+    }
+
+    .t-market-landing .iec-industry-type-link {
+        font-size: 0.666667rem;
+    }
+
+    .t-market-landing .iec-industry-type-link svg {
+        width: 0.888889rem;
+        height: 0.888889rem;
+    }
+
+    .t-market-landing .iec-industry-card p {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .t-market-landing .iec-connectivity-feature__icon {
+        width: 4.222222rem;
+        height: 4.222222rem;
+    }
+
+    .t-market-landing .iec-connectivity-feature__icon svg {
+        width: 3.333333rem;
+        height: 3.333333rem;
+    }
+
+    .t-market-landing .iec-connectivity-feature h3 {
+        font-size: 1.055556rem;
+    }
+
+    .t-market-landing .iec-connectivity-feature p {
+        max-width: none;
+        font-size: 0.777778rem;
+    }
+
+    .t-market-landing .iec-global-feature__icon {
+        width: 3.333333rem;
+        height: 3.333333rem;
+    }
+
+    .t-market-landing .iec-global-feature__icon svg {
+        width: 1.888889rem;
+        height: 1.888889rem;
+    }
+
+    .t-market-landing .iec-global-feature__text strong {
+        font-size: 0.777778rem;
+    }
+
+    .t-market-landing .iec-global-feature__text span {
+        font-size: 0.666667rem;
+    }
+
+    .t-market-landing .iec-solution-item__icon {
+        width: 3.333333rem;
+        height: 3.333333rem;
+    }
+
+    .t-market-landing .iec-solution-item__icon svg {
+        width: 2.666667rem;
+        height: 2.666667rem;
+    }
+
+    .t-market-landing .iec-solution-item h3 {
+        max-width: none;
+        font-size: 1.055556rem;
+    }
+
+    .t-market-landing .iec-solution-item p {
+        max-width: none;
+        font-size: 0.777778rem;
+    }
+
+    .t-market-landing .iec_contact_content {
+        text-align: center;
+    }
+
+    .t-market-landing .iec_contact_content .iec-eyebrow {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 23.490721rem) {
+    .t-market-landing .iec-our-solutions {
+        padding: 2.544828rem 0 2.740584rem;
+    }
+
+    .t-market-landing .iec-our-solutions .grid-3 {
+        row-gap: 0;
+    }
+
+    .t-market-landing .iec-solution-item {
+        padding: 1.096234rem 0.587268rem 1.370292rem 1.096234rem;
+        border-left: 0.039151rem solid rgba(152, 174, 255, 0.45);
+        border-bottom: 0.039151rem solid rgba(152, 174, 255, 0.12);
+    }
+
+    .t-market-landing .iec-solution-item:last-child {
+        border-bottom: 0;
     }
 }

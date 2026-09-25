@@ -36,7 +36,7 @@ if ( $variant ) {
 			<div class="col-md-12">
 
 				<?php if ( $title ) : ?>
-					<h2 class="iec_section_heading"><?= $title; ?></h2>
+					<h2 class="iec_section_heading iec-section-heading"><?= $title; ?></h2>
 				<?php endif; ?>
 
 				<div class="<?= $wrapper_class; ?>" data-iec-accordion="expand">

@@ -175,7 +175,8 @@
 		text-align: center;
 	}
 
-.iec_home_about_content .iec_home_eyebrow {
+.iec_home_about_content .iec-eyebrow,
+	.iec_home_about_content .iec_home_eyebrow {
 		margin: 0 auto 1.111111rem;
 	}
 
@@ -1544,6 +1545,11 @@
 		letter-spacing: 0.028889rem;
 	}
 
+	.iec_exlore_section .iec-section-heading,
+	.iec_solution_section .iec-section-heading {
+		text-align: center;
+	}
+
 /* Hero Slider */
 .iec_sec_sub_heading {
 		font-size: 1.111111rem;
@@ -2451,7 +2457,8 @@ div#map{
 		margin-bottom: 0.5rem;
 	}
 
-.iec_starlink_portfolio_hero_content h4 {
+.iec_starlink_portfolio_hero_content h4,
+	.iec_starlink_portfolio_hero_content .iec_starlink_portfolio_hero_subheading {
 		font-size: 1.222222rem;
 		line-height: 146%;
 		letter-spacing: 0.024444rem;
@@ -2658,12 +2665,6 @@ html[lang="tr"] .iec_starlink_portfolio_swiper_content .gray_btn,
 		border-radius: 1.111111rem;
 	}
 
-/* Products */
-.iec_product_listing_section .load-more a {
-		font-size: 0.888889rem;
-		padding: 0.944444rem 1.388889rem 0.833333rem;
-	}
-
 /* Filters */
 .iec_filters_group_warpper {
 		flex-direction:column;
@@ -2677,7 +2678,8 @@ html[lang="tr"] .iec_starlink_portfolio_swiper_content .gray_btn,
 		border-bottom: 1px solid hsla(0,0%,59.2%,.2);
 	}
 
-.iec_filters_group_warpper .filters-group h6 {
+.iec_filters_group_warpper .filters-group h6,
+.iec_filters_group_warpper .filters-group .filters-group-title {
 		font-size: 0.888889rem;
 		margin: 0.444444rem 0;
 		position: relative;
@@ -2703,7 +2705,8 @@ html[lang="tr"] .iec_starlink_portfolio_swiper_content .gray_btn,
 		padding: 0.555556rem 0 1.666667rem;
 	}
 
-.iec_filters_group_warpper .filters-group.expand h6:after{
+.iec_filters_group_warpper .filters-group.expand h6:after,
+.iec_filters_group_warpper .filters-group.expand .filters-group-title:after{
 		top: 0.888889rem;
 		transform: rotate(180deg)
 	}
@@ -3167,4 +3170,15 @@ img.iec_coverage_map {
 
 .tunisian-office .iec_single_office_banner_swiper_warpper .banner_content .gray_btn,
 	.tunisian-office .iec_single_office_banner_swiper_warpper .iec_single_office_banner_box .banner_content h1 {margin-inline: auto;}
+}
+
+@media (max-width: 30.028972rem) {
+	.iec-eyebrow,
+	.iec_home_eyebrow {
+		padding: 0 0.888889rem;
+		font-size: 0.666667rem;
+		line-height: 135%;
+		letter-spacing: 0.133333rem;
+		margin: 0 auto 1.111111rem;
+	}
 }

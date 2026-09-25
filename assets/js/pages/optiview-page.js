@@ -23,8 +23,7 @@
 			if ( ! $target.length ) {
 				return;
 			}
-			var offset = $( window ).width() > 1024 ? 70 : 25;
-			$( 'html, body' ).animate( { scrollTop: $target.offset().top - offset }, 'smooth' );
+			IEC.scrollTo( $target, $( window ).width() > 1024 ? 70 : 25 );
 			$target.closest( '.acordion__item' ).addClass( 'active' )
 				.find( '.acordion__item__trigger' ).attr( 'aria-expanded', 'true' )
 				.find( 'svg' ).addClass( 'rotate' );

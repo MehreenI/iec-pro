@@ -42,7 +42,7 @@ $has_ctas = $cta_url || $file_url;
 			<div class="col-md-5">
 
 				<?php if ( $heading ) : ?>
-					<h1 id="iec-voucher-hero-title" class="iec_primary_heading"><?= $heading; ?></h1>
+					<h1 id="iec-voucher-hero-title" class="iec_primary_heading iec-anim-init iec-anim-fade-up" data-iec-anim-on-load="true"><?= $heading; ?></h1>
 				<?php endif; ?>
 
 				<?php if ( $description ) : ?>
@@ -52,7 +52,7 @@ $has_ctas = $cta_url || $file_url;
 				<?php endif; ?>
 
 				<?php if ( $has_ctas ) : ?>
-					<div class="hero__buttons d-flex align-items-center">
+					<div class="hero__buttons d-flex align-items-center iec-anim-stagger-group" data-iec-anim-on-load="true" data-iec-anim-target="a" data-iec-anim-preset="iec-anim-fade-up" data-iec-anim-stagger="0.12">
 
 						<?php if ( $cta_url ) : ?>
 							<a href="<?= $cta_url; ?>" class="btn btn-outline iec-btn-outline">

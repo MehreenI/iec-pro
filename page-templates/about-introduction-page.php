@@ -42,7 +42,7 @@ while ( have_posts() ) :
 							<div class="iec_about_intorduction_content_box_warpper">
 
 								<?php if ( $caption ) : ?>
-									<h2 id="about-intro-content-heading" class="iec_section_heading"><?php echo $caption; ?></h2>
+									<h2 id="about-intro-content-heading" class="iec_section_heading iec-section-heading"><?php echo $caption; ?></h2>
 								<?php endif; ?>
 
 								<?php if ( $content ) : ?>

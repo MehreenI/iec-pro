@@ -8,6 +8,16 @@ html.iec-anim-reduced [class*="iec-anim-"] {
 	filter: none !important;
 }
 
+html.iec-anim-ready:not(.iec-anim-reduced) .iec-anim-init:not(.iec-anim-play) {
+	opacity: 0;
+	visibility: hidden;
+}
+
+html.iec-anim-ready:not(.iec-anim-reduced) .iec-anim-stagger:not(.iec-anim-play) > li {
+	opacity: 0;
+	visibility: hidden;
+}
+
 /* Hero Animation */
 html.iec-anim-reduced .iec-anim-curtain,
 html.iec-anim-reduced .iec-anim-image-reveal__strips {

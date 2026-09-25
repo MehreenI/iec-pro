@@ -38,13 +38,14 @@
     margin: 0;
 }
 
-.iec_starlink_portfolio_hero_content h4 {
+.iec_starlink_portfolio_hero_content .iec_starlink_portfolio_hero_subheading {
     font-family: 'Myriad Pro';
     font-weight: 400;
     font-size: 1.096216rem;
     line-height: 171.429%;
     letter-spacing: 0.021924rem;
     color: #fff;
+    margin: 0;
 }
 
 .iec_starlink_portfolio_hero_content .iec_starlink_portfolio_hero_button_list {display: none;}
@@ -101,33 +102,6 @@
 .iec_starlink_portfolio_featured_news .iec_main_heading {
     letter-spacing: 0;
     margin-bottom: 0.743861rem;
-}
-
-.iec_starlink_portfolio_featured_news .bd_np_box_image {aspect-ratio: 1 / 0.6275;}
-
-.iec_starlink_portfolio_featured_news .bd_np_box_meta {
-    margin: 0.46980706589827111rem 0 0.743861rem;
-    padding-bottom: 0.626409rem;
-}
-
-.iec_starlink_portfolio_featured_news .bd_np_box_meta span.date,
-.iec_starlink_portfolio_featured_news .bd_np_box_meta .category_pill {
-    font-family: 'Myriad Pro';
-    font-weight: 700;
-    letter-spacing: 0.086131rem;
-}
-
-.iec_starlink_portfolio_featured_news .bd_news_post_title {
-    font-family: 'Myriad Pro';
-    line-height: 130%;
-    margin-bottom: 0.313205rem;
-}
-
-.iec_starlink_portfolio_featured_news .bd_np_rm_link span {
-    font-family: 'Myriad Pro';
-    font-weight: 600;
-    font-size: 0.548108rem;
-    line-height: 114.286%;
 }
 
 /* Services */
@@ -211,44 +185,3 @@
     font-weight: 700;
     display: block;
 }
-
-.bd_starlink_portfolio_service_plan p {}
-
-/* Accordion */
-.iec_starlink_portfolio_accordion_warpper .accordion-item {
-    flex: 0 0 auto;
-    max-width: 100%;
-    width: calc(50% - 0.626409rem);
-    border: none;
-    border-radius: 0;
-    background-color: #E7E6EE;
-    border-left: 1px solid #1B204C;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-header {}
-
-.iec_starlink_portfolio_accordion_header_content h4 {
-    font-family: 'Myriad Pro';
-    font-weight: 600;
-    font-size: 0.783012rem;
-    line-height: 120%;
-    text-align: left;
-    color: #1B204C;
-    margin-bottom: 0;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-collapse.collapse:not(.show) {display: none;}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body {padding: 0.587259rem 0.704710598847406665rem 0.587259rem;}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body p {
-    font-family: 'Myriad Pro';
-    font-weight: 400;
-    font-size: 0.656409rem;
-    line-height: 132%;
-    text-align: left;
-    color: #1B204C;
-    margin-bottom: 0.587259rem;
-}
-
-.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body p a:hover {text-decoration: none;}
