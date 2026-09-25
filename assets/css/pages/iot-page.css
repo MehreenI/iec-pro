@@ -1,0 +1,907 @@
+/* Desktop */
+
+/* Hero */
+.iec_iot_slider_section {
+	width: 100%;
+	position: relative;
+	margin-top: -3.915059rem;
+}
+
+.iec_iot_slider_section .swiper,
+.iec_iot_slider_section .iec-iot-hero-swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.iec_iot_slider_section .swiper-slide {
+	position: relative;
+	overflow: hidden;
+	background-position: 50%;
+	height: 16.141318rem;
+}
+
+.iec_iot_slide_bg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.iec_iot_slide {
+	display: flex;
+	flex-direction: column;
+	height: 13rem;
+	justify-content: flex-end;
+	padding: 3.915059rem 0;
+	position: relative;
+	z-index: 1;
+}
+
+.iec_iot_slide_title .iec_primary_heading {
+	font-family: 'Myriad Pro';
+	font-weight: 700;
+	font-size: 2.035831rem;
+	line-height: 110%;
+	margin-bottom: 0;
+	color: #ffffff;
+}
+
+.iec_iot_slide .iec_iot_slide_content {
+	max-width: 60%;
+}
+
+.iec_iot_slide .wysiwyg-content p {
+	width: 100%;
+	font-family: 'Myriad Pro';
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 140%;
+	color: #ffffff;
+}
+
+.iec_iot_slide_arrow_warpper {
+	position: relative;
+	height: 3.915059rem;
+	margin-top: -3.915059rem;
+	z-index: 10;
+}
+
+.iec_iot_slide_arrow_warpper .slider-button-prev,
+.iec_iot_slide_arrow_warpper .slider-button-next {
+	background-color: transparent;
+	background-image: url("../../img/arrow_back_ios_24px_white.svg");
+	background-size: 0.704710598847406665rem;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	width: 1.252819rem;
+	height: 1.252819rem;
+	border: 1px solid #ffffff;
+	padding: 0;
+	cursor: pointer;
+}
+
+.iec_iot_slide_arrow_warpper .slider-button-prev {
+	left: 0;
+	transform: rotate(90deg);
+}
+
+.iec_iot_slide_arrow_warpper .slider-button-next {
+	left: 1.722626rem;
+	transform: rotate(270deg);
+}
+
+/* Enquiry */
+.iec_iot_enquriy_content_warpper {
+	margin-top: 1.957529rem;
+	max-width: 28.188424rem;
+}
+
+.iec_iot_enquriy_content_warpper p {
+	width: 100%;
+	font-family: 'Myriad Pro';
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 163%;
+	margin-bottom: 0.587259rem;
+	color: #27284a;
+}
+
+.iec_iot_enquriy_content_warpper ul {
+	padding: 0;
+	margin-left: 0.391506rem;
+	margin-bottom: 0.783012rem;
+	margin-top: 0.587259rem;
+	list-style-type: none;
+	max-width: 22.707342rem;
+}
+
+.iec_iot_enquriy_content_warpper ul li {
+	width: 100%;
+	font-family: 'Myriad Pro';
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 160%;
+	position: relative;
+	padding-left: 0.704710598847406665rem;
+	margin-top: 0.313205rem;
+	color: #003366;
+}
+
+.iec_iot_enquriy_content_warpper ul li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.195753rem;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512'><path d='M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6v256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z' fill='%23717da3'/></svg>");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 0.783012rem;
+	height: .626409rem;
+}
+
+.iec_iot_enquriy_arrow_link {
+	padding-right: 1.370271rem;
+}
+
+.iec_iot_enquriy_arrow_link a {
+	font-family: 'Myriad Pro';
+	font-weight: 700;
+	font-size: 0.704710598847406665rem;
+	letter-spacing: 0.078301rem;
+	color: #27284a;
+	position: relative;
+}
+
+.iec_iot_enquriy_arrow_link a:after {
+	content: "";
+	background-image: url("../../img/arrow_back_ios_24px.svg");
+	background-size: 0.704710598847406665rem;
+	background-repeat: no-repeat;
+	width: 0.704710598847406665rem;
+	height: 0.704710598847406665rem;
+	position: absolute;
+	bottom: 0.078301rem;
+	right: -1.370271rem;
+	transition: all 0.5s ease;
+	transform: rotate(270deg);
+}
+
+.iec_iot_enquriy_arrow_link a:hover:after {
+	right: -1.566024rem;
+}
+
+/* Form */
+.iec_iot_form_warpper {
+	border-radius: 0.078301rem;
+	margin-bottom: 0.783012rem;
+	padding: 1.487722rem 0.783012rem 1.252819rem;
+	background-color: #f1f2f7;
+	box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.21);
+}
+
+.iec_iot_form_warpper .form-fields {
+	display: block;
+	width: 100%;
+}
+
+.iec_iot_form_warpper form h5 {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.017915rem;
+	letter-spacing: 0.042674rem;
+	line-height: 175%;
+	margin-bottom: 1.174518rem;
+	color: #1b204c;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group {
+	width: 100%;
+	position: relative;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control,
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control:focus {
+	height: 1.996680rem;
+	padding: 0.626409rem 0.548108rem 0.548108rem;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti {
+	height: 1.996680rem;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti .iti__flag-container {
+	padding: 0;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti .iti__flag-container .iti__selected-dial-code {
+	font-size: 0.704710598847406665rem;
+	line-height: 1.017915rem;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container {
+	height: 1.996680rem;
+	border-bottom: 1px solid #758592 !important;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container .select2-selection--single {
+	padding: 0.548108rem 0.548108rem;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container .select2-selection--single .select2-selection__rendered {
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+	color: #51525a;
+	font-size: 0.704710598847406665rem;
+	line-height: 1.017915rem;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container .select2-selection--multiple:after,
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container .select2-selection--single .select2-selection__arrow {
+	width: 0.783012rem !important;
+	background-image: url(../../img/grey-solid-arrow-down.svg) !important;
+	background-size: 0.313205rem !important;
+	right: 0 !important;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container .select2-selection--multiple .select2-search__field {
+	line-height: 1.996680rem;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container .select2-selection--multiple {
+	padding: 0 0.548108rem !important;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container .select2-selection--single .select2-selection__clear {
+	height: auto;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-dropdown {
+	top: -0.039151rem;
+	border-radius: 0.078301rem;
+	background-color: #dfe0ee;
+	border: 1px solid #b7bcda;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-dropdown ul .select2-results__option {
+	padding: 0.156602rem 0.548108rem 0.156602rem 0.861313rem;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.704710598847406665rem !important;
+	line-height: 1.75;
+	color: #444956;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-dropdown ul .select2-results__option--highlighted[aria-selected] {
+	color: #51525a;
+	background-color: #c3c6da;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-dropdown ul .select2-results__option--selected {
+	background-color: #e8e9f3;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-dropdown .select2-search--dropdown {
+	padding: 0;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-dropdown .select2-search--dropdown input[type="search"] {
+	background-color: #f1f2f7;
+	border: none;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group.no-border textarea,
+.iec_form_warpper.iec_iot_form_warpper form .bf_form_group.no-border textarea:focus {
+	width: 100%;
+	height: 1.996680rem;
+	resize: none;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 0.704710598847406665rem;
+	padding: 0.548108rem;
+	color: #51525a;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #758592;
+	background-color: transparent;
+	transition: all 300ms ease;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .form-button {
+	width: 100%;
+	margin: 0 1.174518rem;
+}
+
+.iec_form_warpper.iec_iot_form_warpper form .form-button .captcha-wrapper {
+	display: none !important;
+}
+
+.iec_form_warpper.iec_iot_form_warpper .form-button .iec_button {
+	max-width: 7.047106rem;
+	margin: 0 auto 0;
+}
+
+.iec_iot_form_warpper form .loading-overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: none;
+	z-index: 3;
+}
+
+.iec_iot_form_warpper form .loading-overlay .loader {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -0.783012rem;
+	margin-top: -0.783012rem;
+}
+
+.iec_iot_form_warpper form .error {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	padding: 0;
+	text-align: left;
+	color: #a84e4e;
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.iec_form_warpper.iec_iot_form_warpper .form-button .iec_button {
+		height: 1.566024rem;
+		font-size: 0.626409rem;
+	}
+}
+
+/* Services */
+.iec_iot_our_services .iec_section_heading {
+	margin-bottom: 1.174518rem;
+}
+
+.iec_iot_our_service_sec_warpper {
+	padding-top: 0.978765rem;
+	padding-bottom: 1.761776rem;
+	background-color: #e9eaef;
+}
+
+.iec_iot_service_box_warpper {
+	min-height: 11.100366rem;
+}
+
+.iec_iot_service_box {
+	width: 100%;
+	height: 100%;
+	max-width: 21.141318rem;
+	margin-right: auto;
+	padding: 1.370271rem 1.566024rem 1.761776rem 0;
+	position: relative;
+}
+
+.iec_iot_service_box_image {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 43%;
+	height: 75%;
+	object-fit: contain;
+	object-position: 90% 90%;
+	z-index: 0;
+}
+
+.iec_iot_service_box h3,
+.iec_iot_service_box p {
+	position: relative;
+	z-index: 1;
+}
+
+.iec_iot_service_box_warpper:nth-child(even) .iec_iot_service_box {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.iec_iot_service_box h3 {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.096216rem;
+	line-height: 140%;
+	color: #27284a;
+}
+
+.iec_iot_service_box p {
+	width: 100%;
+	font-family: 'Myriad Pro';
+	font-weight: 300;
+	font-size: 0.626409rem;
+	line-height: 140%;
+	max-width: 85%;
+	color: #27284a;
+}
+
+/* Areas */
+.iec_iot_area_expert {
+	padding: 2.740541rem 0px;
+}
+
+.iec_iot_area_expert .iec_section_heading {
+	margin-bottom: 1.174518rem;
+}
+
+.iec_iot_area_expert_box_warpper {
+	min-height: 11.572523rem;
+	margin-bottom: 1.174518rem;
+}
+
+.iec_iot_area_expert_box {
+	position: relative;
+	overflow: hidden;
+	background-position: 100% 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.iec_iot_area_expert_box_image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.iec_iot_area_expert_content {
+	background-color: #e9eaef;
+	width: 75%;
+	height: 100%;
+	padding: 2.349035rem;
+	transition: all 0.8s ease;
+	opacity: 1;
+	position: relative;
+	z-index: 1;
+}
+
+.iec_iot_area_expert_content h3 {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.939614rem;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #27284a;
+}
+
+.iec_iot_area_expert_content ul li {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 175%;
+	margin-left: 0.626409rem;
+	color: #27284a;
+}
+
+.iec_iot_area_expert_link {
+	background: #e9eaef;
+	background: linear-gradient(110deg, rgb(233, 234, 239) 30%, rgba(233, 234, 239, 0) 65%);
+	position: absolute;
+	top: 0;
+	left: -100%;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	height: 100%;
+	padding-left: 2.349035rem;
+	transition: all 1.2s ease;
+	z-index: 2;
+}
+
+.iec_iot_area_expert_link a {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.939614rem;
+	line-height: 100%;
+	letter-spacing: 0.078301rem;
+	color: #27284a;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.iec_iot_area_expert_link a:after {
+	content: "";
+	background-image: url("../../img/arrow_back_ios_24px.svg");
+	background-size: 0.704710598847406665rem;
+	background-repeat: no-repeat;
+	width: 0.704710598847406665rem;
+	height: 0.704710598847406665rem;
+	position: absolute;
+	bottom: 0.195753rem;
+	right: -1.370271rem;
+	transition: all 0.5s ease;
+	transform: rotate(270deg);
+}
+
+.iec_iot_area_expert_link a:hover:after {
+	right: -1.566024rem;
+}
+
+.iec_iot_area_expert_box:hover .iec_iot_area_expert_content {
+	opacity: 0;
+}
+
+.iec_iot_area_expert_box:hover .iec_iot_area_expert_link {
+	left: 0;
+	opacity: 1;
+}
+
+/* Push to talk */
+.iec_iot_talk_solution_section {
+	padding: 1.957529rem 0;
+	background-color: #E9EAEF;
+}
+
+.iec_iot_talk_solution_content {
+	width: 100%;
+	max-width: 27.405412rem;
+}
+
+.iec_iot_talk_solution_content .iec_section_heading {
+	font-size: 0.939614rem;
+	line-height: 167%;
+	letter-spacing: -0.02em;
+	color: #27284A;
+	margin-bottom: 0;
+}
+
+.iec_iot_talk_solution_content p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 300;
+	font-size: 0.704710598847406665rem;
+	line-height: 145%;
+	letter-spacing: -0.015660rem;
+	margin-top: 0.46980706589827111rem;
+	color: #27284A;
+}
+
+.iec_iot_talk_solution_content_video {
+	width: 100%;
+	height: 8.613130rem;
+	aspect-ratio: 16 / 9;
+	margin-left: auto;
+}
+
+.iec_iot_talk_solution_content_video iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* Accordion */
+.iec_iot_accordian_section {
+	padding: 2.740541rem 0px;
+}
+
+.iec_iot_accordian_section .iec_section_heading {
+	margin-bottom: 1.174518rem;
+}
+
+.iec_iot_accordian_in_land {
+	padding-top: 2.349035rem;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget {
+	margin: 0;
+}
+
+.iec_iot_accordian_warpper {
+	max-width: 44.631671rem;
+	margin: 0 auto;
+	position: relative;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .title h3 {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.939614rem;
+	line-height: 140%;
+	padding-right: 0.939614rem;
+	max-width: 24.664871rem;
+	text-transform: uppercase;
+	color: #27284a;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .title:after {
+	content: "";
+	width: 0.939614rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url(../../img/arrow_back_ios_24px.svg);
+	background-size: 0.939614rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all 250ms ease;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item.expand .title:after {
+	transform: rotate(180deg);
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content {
+	max-height: 0px;
+	overflow: hidden;
+	padding-bottom: 0px;
+	transition: all 250ms ease;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item.expand .content {
+	max-height: 39.150589rem;
+	padding-bottom: 0;
+	transition: all 250ms ease;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content p,
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content ul li,
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content ol li {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 1rem;
+	color: #27284a;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content p {
+	max-width: 37.664871rem;
+	margin-top: 1rem;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content ul,
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content ol {
+	padding-left: 0.861313rem;
+	max-width: 25.526184rem;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget .item .content ol li {
+	padding-left: 0.391506rem;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(1) {
+	background-color: #e9eaef;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(2) {
+	background-color: #9394a5;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(3) {
+	background-color: #5d5e77;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(4) {
+	background-color: #27284a;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(2) .title:after,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(3) .title:after,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(4) .title:after {
+	background-image: url("../../img/arrow_back_ios_24px_white.svg");
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(2) .title h3,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(3) .title h3,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(4) .title h3,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(2) .content p,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(3) .content p,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(4) .content p,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(3) .content ul li,
+.iec_iot_main_accordian_warpper.need-accordions-widget.maritime .item:nth-child(4) .content ol li {
+	color: #ffffff;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.in_land .item:nth-child(1) {
+	background-color: #f8f4ee;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.in_land .item:nth-child(2) {
+	background-color: #e8e3db;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.in_land .item:nth-child(3) {
+	background-color: #cec8bf;
+}
+
+.iec_iot_main_accordian_warpper.need-accordions-widget.in_land .item:nth-child(4) {
+	background-color: #b8b1a6;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+	/* Hero */
+	.iot-page .iec_iot_slider_section,
+	.page-template-iot-page .iec_iot_slider_section {
+		margin-top: -7.111111rem;
+	}
+
+	/* Enquiry */
+	.iot-page .iec_iot_enquriy_content_warpper,
+	.page-template-iot-page .iec_iot_enquriy_content_warpper {
+		max-width: 100%;
+		margin-top: 2.879958rem;
+	}
+
+	/* Form */
+	.iot-page .iec_iot_form_warpper,
+	.page-template-iot-page .iec_iot_form_warpper {
+		margin-bottom: 2.879958rem;
+	}
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+	/* Headings */
+	.iot-page .iec_section_heading,
+	.page-template-iot-page .iec_section_heading {
+		font-size: 1.777778rem;
+		margin-bottom: 1.111111rem;
+	}
+
+	/* Hero */
+	.iot-page .iec_iot_slide .wysiwyg-content p,
+	.page-template-iot-page .iec_iot_slide .wysiwyg-content p {
+		font-size: 0.888889rem;
+	}
+
+	/* Enquiry */
+	.iot-page .iec_iot_enquriy_content_warpper p,
+	.page-template-iot-page .iec_iot_enquriy_content_warpper p {
+		font-size: 0.888889rem;
+		margin-bottom: 0.833333rem;
+	}
+
+	.iot-page .iec_iot_enquriy_content_warpper ul,
+	.page-template-iot-page .iec_iot_enquriy_content_warpper ul {
+		margin-left: 0.333333rem;
+		margin-bottom: 0.666667rem;
+		margin-top: 0.555556rem;
+	}
+
+	.iot-page .iec_iot_enquriy_content_warpper ul li,
+	.page-template-iot-page .iec_iot_enquriy_content_warpper ul li {
+		font-size: 0.777778rem;
+		line-height: 150%;
+		padding-left: 0.777778rem;
+		margin-top: 0.333333rem;
+	}
+
+	.iot-page .iec_iot_enquriy_content_warpper ul li::before,
+	.page-template-iot-page .iec_iot_enquriy_content_warpper ul li::before {
+		width: 0.444444rem;
+		height: 0.444444rem;
+		top: 0.222222rem;
+	}
+
+	.iot-page .iec_iot_enquriy_arrow_link a,
+	.page-template-iot-page .iec_iot_enquriy_arrow_link a {
+		font-size: 1rem;
+		letter-spacing: 0.111111rem;
+	}
+
+	/* Form */
+	.iot-page .iec_iot_form_warpper,
+	.page-template-iot-page .iec_iot_form_warpper {
+		max-width: 38.888889rem;
+		margin: 0 auto 2.879958rem;
+		padding: 1.888889rem 1.111111rem;
+	}
+
+	.iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control,
+	.page-template-iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control,
+	.iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control:focus,
+	.page-template-iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control:focus {
+		height: 2.833333rem;
+		padding: 0.888889rem 0.777778rem;
+	}
+
+	.iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti,
+	.page-template-iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti,
+	.iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container,
+	.page-template-iot-page .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .select2-container {
+		height: 2.833333rem;
+	}
+
+	.iot-page .iec_form_warpper.iec_iot_form_warpper .form-button .iec_button,
+	.page-template-iot-page .iec_form_warpper.iec_iot_form_warpper .form-button .iec_button {
+		height: 2.611111rem;
+		max-width: 100% !important;
+		margin: 1.111111rem auto 0;
+	}
+
+	/* Services */
+	.iot-page .iec_iot_service_box_warpper,
+	.page-template-iot-page .iec_iot_service_box_warpper {
+		min-height: 100%;
+	}
+
+	.iot-page .iec_iot_service_box,
+	.page-template-iot-page .iec_iot_service_box {
+		max-width: 100%;
+		margin: 0 !important;
+		padding: 0.833333rem 0;
+	}
+
+	.iot-page .iec_iot_service_box p,
+	.page-template-iot-page .iec_iot_service_box p {
+		font-size: 0.888889rem;
+	}
+
+	/* Areas */
+	.iot-page .iec_iot_area_expert_box_warpper:not(:last-child),
+	.page-template-iot-page .iec_iot_area_expert_box_warpper:not(:last-child) {
+		margin-bottom: 1.666667rem;
+	}
+
+	.iot-page .iec_iot_area_expert_content,
+	.page-template-iot-page .iec_iot_area_expert_content {
+		padding: 1.388889rem;
+	}
+
+	.iot-page .iec_iot_area_expert_link a,
+	.page-template-iot-page .iec_iot_area_expert_link a,
+	.iot-page .iec_iot_area_expert_content h3,
+	.page-template-iot-page .iec_iot_area_expert_content h3 {
+		font-size: 1.333333rem;
+	}
+
+	/* Push to talk */
+	.iot-page .iec_iot_talk_solution_content .iec_section_heading,
+	.page-template-iot-page .iec_iot_talk_solution_content .iec_section_heading {
+		font-size: 1.333333rem;
+	}
+
+	.iot-page .iec_iot_talk_solution_content,
+	.page-template-iot-page .iec_iot_talk_solution_content {
+		max-width: 100%;
+		margin-bottom: 2.222222rem;
+	}
+
+	.iot-page .iec_iot_talk_solution_content_video,
+	.page-template-iot-page .iec_iot_talk_solution_content_video {
+		height: 12.222222rem;
+	}
+
+	/* Accordion */
+	.iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item,
+	.page-template-iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item {
+		padding: 0.888889rem 1.111111rem;
+		margin-bottom: 0.444444rem;
+	}
+
+	.iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .title h3,
+	.page-template-iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .title h3 {
+		font-size: 1.111111rem;
+		padding-right: 1.666667rem;
+	}
+
+	.iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .content p,
+	.page-template-iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .content p,
+	.iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .content ul li,
+	.page-template-iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .content ul li,
+	.iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .content ol li,
+	.page-template-iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item .content ol li {
+		font-size: 0.888889rem;
+		line-height: 163%;
+	}
+
+	.iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item.expand .content,
+	.page-template-iot-page .iec_iot_main_accordian_warpper.need-accordions-widget .item.expand .content {
+		padding-top: 0.833333rem;
+	}
+}

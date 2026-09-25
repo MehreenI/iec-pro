@@ -1,0 +1,1638 @@
+:root {
+	--mobile_nav_button_color: #000;
+	--mobile_nav_active_button_color: #fff;
+	--mobile_nav_background: #000;
+	--mobile_nav_item_color: #fff;
+	--mobile_nav_dropdown_background: #fff;
+	--mobile_nav_dropdown_item_color: #000;
+
+	--color-primary: #1b204c;
+	--color-secondary: #727da3;
+	--color-accent: #727da3;
+	--color-bg: #f1f2f7;
+	--color-text: #1b204c;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-gray-text: #758592;
+	--color-header-open: #717ba2;
+
+	--Elements-dark-blue: #1B204C;
+	--Elements-purple: #727DA3;
+
+	--font-primary: "Myriad Pro", sans-serif;
+	--font-secondary: "Segoe UI", sans-serif;
+
+	--radius-md: 0.469752rem;
+	--gradient-purple-navy: linear-gradient(180deg, #727DA3 0%, #1B204C 100%);
+	--shadow-card-lg:
+			0 210px 59px 0 rgba(189, 192, 214, 0.01),
+			0 135px 54px 0 rgba(189, 192, 214, 0.07),
+			0 76px 45px 0 rgba(189, 192, 214, 0.25),
+			0 34px 34px 0 rgba(189, 192, 214, 0.43),
+			0 8px 19px 0 rgba(189, 192, 214, 0.49);
+	--shadow-card-sm:
+			0 12px 30px -8px rgba(189, 192, 214, 0.25),
+			0 4px 12px -4px rgba(189, 192, 214, 0.15);
+	--shadow-card-hover-mobile: 0 16px 36px rgba(27, 32, 76, 0.12);
+	--shadow-service-sm: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Partners */
+.iec_vsat_intro_content p,
+.t-vsat-portfolio .recommended_content p,
+.recommended_content p,
+.iec_section_description,
+.iec_frequency_section p,
+.iec_band_card p,
+.iec_band_features li,
+.iec_service_models_section p,
+.iec_service_body p,
+.iec_advantage_text,
+.iec_partner_label,
+.iec_faq_answer_inner p {
+	font-family: var(--font-secondary);
+	font-weight: 300;
+	line-height: normal;
+}
+
+.iec_section_title,
+.t-vsat-portfolio .recommended_title,
+.recommended_title {
+	font-family: var(--font-secondary);
+	font-size: 1.334073rem;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.iec_section_title {
+	color: var(--color-primary);
+	margin-bottom: 0.58719rem;
+}
+
+.t-vsat-portfolio .recommended_title,
+.recommended_title,
+.iec_frequency_section .iec_section_title {
+	color: var(--color-white);
+}
+
+/* Explore */
+.iec_section_heading {
+	margin-bottom: 1.584211rem;
+	max-width: 100%;
+}
+
+.iec_section_eyebrow {
+	display: inline-block;
+	padding: 0.156584rem 0.469752rem;
+	margin-bottom: 0.58719rem;
+	border-radius: 0.78292rem;
+	background: var(--color-secondary);
+	color: var(--color-white);
+	font-family: "Myriad Pro", "Inter", sans-serif;
+	font-size: 0.548044rem;
+	font-weight: 400;
+	line-height: 135%;
+	letter-spacing: 0.109609rem;
+	text-transform: uppercase;
+}
+
+/* Partners */
+.iec_partner_logo,
+.t-vsat-portfolio .recommended_tabs .solution_btn,
+.recommended_tabs .solution_btn,
+.learn_more_btn span,
+.recommeded_image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Solutions */
+.iec_why_geo,
+.iec_frequency_section,
+.recommended_solutions_section,
+.t-vsat-portfolio .recommended_solutions_section,
+.iec_faq_section {
+	padding: 3.327409rem 0 4.893249rem;
+	position: relative;
+}
+
+/* Services */
+.iec_service_models_section {
+	margin-top: 11rem;
+	padding: 3.9146rem 0 4.697519rem;
+	position: relative;
+	background: rgba(241, 242, 247, 0.60);
+}
+
+/* FAQ */
+.iec_faq_section {
+	background: rgba(255, 255, 255, 0.00);
+	box-shadow: 0 -4px 25.5px -4px rgba(0, 0, 0, 0.25) inset;
+}
+
+.iec_frequency_section {
+	background-color: #1B204C;
+	color: var(--color-white);
+	z-index: 1;
+	padding-top: 2.918284rem;
+}
+
+/* Solutions */
+.recommended_solutions_section,
+.t-vsat-portfolio .recommended_solutions_section {
+	background: var(--color-primary);
+	overflow: visible;
+}
+
+/* Services */
+.iec_band_card,
+.iec_service_card {
+	background-color: var(--color-white);
+	border-radius: var(--radius-md);
+	display: flex;
+	flex-direction: column;
+	color: var(--color-primary);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iec_band_card:hover,
+.iec_service_card:hover {
+	box-shadow: 0 0.626336rem 1.56584rem rgba(0, 0, 0, 0.12);
+}
+
+/* Cards */
+.iec_band_card {
+	border-radius: var(--radius-md);
+	background: var(--color-white);
+	box-shadow: var(--shadow-card-lg);
+	padding: 1.56584rem 1.17438rem;
+}
+
+/* Services */
+.iec_service_card {
+	width: 100%;
+	border-radius: var(--radius-md);
+	background: var(--color-white);
+	box-shadow: 0 0.39146rem 1.17438rem rgba(0, 0, 0, 0.05);
+	border: 0.039146rem solid #e0e4ec;
+	overflow: hidden;
+}
+
+.iec_band_title,
+.iec_service_title,
+.iec_band_subtitle {
+	color: var(--color-primary);
+	font-family: var(--font-secondary);
+	font-size: 0.917175rem;
+	line-height: normal;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.iec_band_title,
+.iec_service_title {
+	font-weight: 700;
+	margin-bottom: 0.313168rem;
+}
+
+.iec_service_title {
+	margin-bottom: 0.58719rem;
+}
+
+.iec_band_subtitle {
+	font-size: 0.743774rem;
+	font-weight: 300;
+	display: block;
+}
+
+.iec_band_subtitle::after {
+	content: "";
+	display: block;
+	width: 7.790052rem;
+	height: 0;
+	border-top: 0.039146rem solid var(--color-secondary);
+	margin-top: 0.78292rem;
+}
+
+.iec_service_header::after {
+	content: "";
+	display: block;
+	width: 10.295396rem;
+	height: 0;
+	border-top: 0.039146rem solid var(--color-secondary);
+	margin-top: 0.78292rem;
+}
+
+/* Slider */
+.iec_band_slider_mobile,
+.iec_advantage_slider_mobile {
+	display: none;
+	position: relative;
+	z-index: 2;
+}
+
+.iec_band_slider,
+.iec_advantage_slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.iec_band_slider .swiper-slide,
+.iec_advantage_slider .swiper-slide {
+	display: flex;
+	height: auto;
+}
+
+/* Cards */
+.iec_band_slider .iec_band_card,
+.iec_advantage_slider .iec_advantage_card {
+	width: 100%;
+}
+
+.t-vsat-portfolio ul:not([class]),
+.t-vsat-portfolio ol:not([class]) {
+	padding-left: 1.252672rem;
+	margin-top: 0.78292rem;
+	margin-bottom: 0.939504rem;
+	color: #4a4f73;
+	font-family: var(--font-secondary);
+	font-size: 0.78292rem;
+	font-weight: 300;
+	line-height: 1.6;
+}
+
+.t-vsat-portfolio ul:not([class]) {
+	list-style-type: disc;
+}
+
+.t-vsat-portfolio ol:not([class]) {
+	list-style-type: decimal;
+}
+
+.t-vsat-portfolio ul:not([class]) li,
+.t-vsat-portfolio ol:not([class]) li {
+	margin-bottom: 0.469752rem;
+	padding-left: 0.313168rem;
+}
+
+.t-vsat-portfolio ul:not([class]) ul,
+.t-vsat-portfolio ol:not([class]) ul,
+.t-vsat-portfolio ul:not([class]) ol,
+.t-vsat-portfolio ol:not([class]) ol {
+	margin-top: 0.469752rem;
+	margin-bottom: 0;
+}
+
+/* Hero */
+.iec_vsat_hero {
+	min-height: 19.575294rem;
+	background-image: var(--desktopImage);
+	background-color: var(--color-primary);
+	padding: 7.80545289401rem 0 2.348759rem;
+	z-index: 1;
+	position: relative;
+}
+
+.iec_vsat_hero_content {
+	width: 100%;
+	max-width: max-content;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 2.38818591832rem;
+}
+
+.iec_vsat_hero_content h1 {
+	font-family: var(--font-primary);
+	font-weight: 700;
+	font-size: 2.192433rem;
+	line-height: 100%;
+	letter-spacing: 0.043849rem;
+	color: var(--color-white);
+	margin: 0;
+}
+
+.iec_vsat_hero_content h4 {
+	font-family: var(--font-primary);
+	font-weight: 400;
+	font-size: 1.083934rem;
+	line-height: 171.429%;
+	letter-spacing: 0.021924rem;
+	color: var(--color-white);
+}
+
+.iec_vsat_hero_below_button {
+	padding-bottom: 2.15303rem;
+}
+
+.iec_vsat_hero_button_wrap {
+	width: 100%;
+	max-width: 62.092835rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.iec_vsat_hero_button_list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.291969rem;
+	line-height: 0;
+	position: relative;
+	z-index: 4;
+}
+
+.iec_vsat_hero_button_list li {
+	flex: 1 1 0;
+	max-width: 14.877224rem;
+}
+
+.iec_vsat_hero_button_list li a {
+	width: 100%;
+	height: 2.568173rem;
+	border-radius: var(--radius-md);
+	border: 0.952px solid var(--color-secondary);
+	background: rgba(255, 255, 255, 0.20);
+	padding: 0.783012rem 0.626409rem;
+	font-family: var(--font-primary);
+	font-weight: 700;
+	font-size: 0.687881rem;
+	line-height: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.313205rem;
+	transition: all 0.2s linear 0s;
+	white-space: nowrap;
+}
+
+.iec_vsat_hero_button_list li a svg,
+.iec_vsat_hero_button_list li a img {
+	width: 1.605056rem;
+	height: 1.605056rem;
+	flex-shrink: 0;
+	aspect-ratio: 1 / 1;
+}
+
+.iec_vsat_hero_button_list li a:hover {
+	transform: scale(1.05);
+	background-color: var(--color-secondary);
+}
+
+.iec_vsat_hero_button_list li:last-child {
+	flex: 0 0 auto;
+	width: 5.386723rem;
+	max-width: none;
+}
+
+.iec_vsat_hero_button_list li:last-child a {
+	width: 5.778452rem;
+	height: 2.568173rem;
+	padding: 0.642064rem 0.513618rem;
+	gap: 0.256809rem;
+	flex-shrink: 0;
+}
+
+.iec_vsat_intro {
+	background: var(--color-white);
+	padding: 4.345715rem 0;
+}
+
+.iec_vsat_intro_content p {
+	font-size: 0.783012rem;
+	color: var(--color-primary);
+	margin-bottom: 0.783012rem;
+}
+
+.iec_vsat_intro_content p:last-child {
+	margin-bottom: 0;
+}
+
+/* Solutions */
+.iec_solution_section {
+	padding: 1.17438rem 0;
+	background-color: #f7f7fa;
+}
+
+/* Partners */
+.iec_partner_bar {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+	width: 100%;
+}
+
+.iec_partner_label {
+	font-size: 0.833795rem;
+	color: #727da4;
+	font-weight: 500;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.iec_partner_logos_wrapper {
+	flex-grow: 1;
+	height: 1.56584rem;
+	display: flex;
+	align-items: center;
+}
+
+.iec_partner_logos {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.833795rem;
+}
+
+.iec_partner_logo {
+	width: 6.263359rem;
+	max-width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.3s ease;
+}
+
+.iec_partner_logo img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.iec_section_description {
+	margin: 0;
+	font-size: 0.792106rem;
+	color: var(--color-primary);
+	max-width: 55.900475rem;
+	text-transform: none;
+}
+
+.iec_advantage_grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.78292rem;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.iec_advantage_grid > [class*="col-"] {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+	border-radius: var(--radius-md);
+	background: var(--gradient-purple-navy);
+	box-shadow: var(--shadow-card-lg);
+	flex: none;
+	min-width: 0;
+}
+
+/* Cards */
+.iec_advantage_card_wrapper {
+	display: flex;
+	min-width: 0;
+}
+
+.iec_advantage_card {
+	width: 100%;
+	height: 100%;
+	padding: 1.17438rem 0.861212rem 1.17438rem 1.17438rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--radius-md);
+	background: var(--gradient-purple-navy);
+	transition: transform 0.3s ease;
+}
+
+.iec_advantage_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 0.58719rem;
+	margin-bottom: 0.78292rem;
+}
+
+.iec_advantage_icon {
+	width: 2.001109rem;
+	height: 2.001109rem;
+	flex-shrink: 0;
+}
+
+.iec_advantage_icon img,
+.iec_advantage_icon svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.iec_band_link {
+	font-size: 0.833333rem;
+}
+
+.iec_advantage_title {
+	margin: 0;
+	color: var(--color-white);
+	font-family: var(--font-secondary);
+	font-size: 0.939504rem;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	overflow-wrap: break-word;
+}
+
+.iec_advantage_text {
+	margin: 0;
+	flex: 1;
+	color: var(--color-white);
+	font-size: 0.750416rem;
+	overflow-wrap: break-word;
+}
+
+.iec_band_grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.17438rem;
+	align-items: stretch;
+	position: relative;
+	z-index: 2;
+	margin-bottom: -14rem;
+}
+
+.iec_frequency_section p {
+	font-size: 0.792106rem;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 0.939504rem;
+	margin: 0;
+	text-transform: none;
+}
+
+.iec_band_header {
+	margin-bottom: 0.78292rem;
+}
+
+.iec_band_card p {
+	color: var(--color-primary);
+	font-size: 0.665482rem;
+	margin-bottom: 1rem;
+	overflow-wrap: break-word;
+}
+
+/* Features */
+.iec_band_features {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1.37011rem 0;
+	flex-grow: 1;
+}
+
+.iec_band_features li {
+	position: relative;
+	padding-left: 1.252672rem;
+	margin-bottom: 0.833795rem;
+	color: var(--color-primary);
+	font-size: 0.665482rem;
+	overflow-wrap: break-word;
+}
+
+.iec_band_features li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.117438rem;
+	width: 0.78292rem;
+	height: 0.78292rem;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23727DA4' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.iec_band_link {
+	display: inline-flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: auto;
+	color: var(--color-secondary);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: var(--font-secondary);
+	font-size: 0.665482rem;
+	font-weight: 700;
+	transition: color 0.3s ease;
+}
+
+.iec_band_link::after {
+	content: "";
+	width: 0.861212rem;
+	height: 0.861212rem;
+	flex-shrink: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	transition: transform 0.3s ease;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M13.0069 5.06228C13.0731 5.0629 13.1405 5.07772 13.2046 5.10765C13.2688 5.13764 13.3302 5.18342 13.3838 5.24373L13.3908 5.25071L17.9854 10.2408C18.067 10.3293 18.1269 10.4483 18.1518 10.584C18.1766 10.7197 18.1635 10.8601 18.1157 10.9853C18.0845 11.0676 18.0399 11.1407 17.9866 11.1993L13.392 16.1894L13.385 16.1964C13.3314 16.2567 13.27 16.3024 13.2058 16.3324C13.1417 16.3623 13.0743 16.3772 13.0081 16.3778C12.9419 16.3784 12.8747 16.3645 12.8104 16.3359C12.746 16.3073 12.6843 16.2635 12.63 16.2045C12.5755 16.1452 12.529 16.0721 12.4975 15.9882C12.4659 15.9044 12.4502 15.8125 12.4509 15.7195C12.4517 15.6266 12.4693 15.536 12.5021 15.4531C12.535 15.37 12.5818 15.297 12.6371 15.239L12.644 15.2321L15.2775 12.3718L16.1975 11.3726H3.82816C3.69825 11.3724 3.56285 11.3167 3.45477 11.1993C3.34511 11.0802 3.27577 10.909 3.27563 10.7212C3.27563 10.5332 3.345 10.3612 3.45477 10.242C3.56284 10.1247 3.69828 10.0688 3.82816 10.0687H16.1975L15.2775 9.06948L12.6429 6.20802L12.6359 6.20104L12.5602 6.10333C12.5376 6.06769 12.5173 6.02858 12.5009 5.98702C12.4683 5.90414 12.4505 5.8135 12.4497 5.72064C12.449 5.62761 12.4647 5.53578 12.4963 5.45195C12.5278 5.36806 12.5743 5.29484 12.6288 5.23559C12.6833 5.17662 12.7448 5.13279 12.8092 5.10416C12.8735 5.07558 12.9408 5.06166 13.0069 5.06228Z' fill='%23727DA3' stroke='%23727DA3' stroke-width='1.19111'/%3E%3C/svg%3E");
+}
+
+.iec_band_link:hover::after {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M13.0069 5.06228C13.0731 5.0629 13.1405 5.07772 13.2046 5.10765C13.2688 5.13764 13.3302 5.18342 13.3838 5.24373L13.3908 5.25071L17.9854 10.2408C18.067 10.3293 18.1269 10.4483 18.1518 10.584C18.1766 10.7197 18.1635 10.8601 18.1157 10.9853C18.0845 11.0676 18.0399 11.1407 17.9866 11.1993L13.392 16.1894L13.385 16.1964C13.3314 16.2567 13.27 16.3024 13.2058 16.3324C13.1417 16.3623 13.0743 16.3772 13.0081 16.3778C12.9419 16.3784 12.8747 16.3645 12.8104 16.3359C12.746 16.3073 12.6843 16.2635 12.63 16.2045C12.5755 16.1452 12.529 16.0721 12.4975 15.9882C12.4659 15.9044 12.4502 15.8125 12.4509 15.7195C12.4517 15.6266 12.4693 15.536 12.5021 15.4531C12.535 15.37 12.5818 15.297 12.6371 15.239L12.644 15.2321L15.2775 12.3718L16.1975 11.3726H3.82816C3.69825 11.3724 3.56285 11.3167 3.45477 11.1993C3.34511 11.0802 3.27577 10.909 3.27563 10.7212C3.27563 10.5332 3.345 10.3612 3.45477 10.242C3.56284 10.1247 3.69828 10.0688 3.82816 10.0687H16.1975L15.2775 9.06948L12.6429 6.20802L12.6359 6.20104L12.5602 6.10333C12.5376 6.06769 12.5173 6.02858 12.5009 5.98702C12.4683 5.90414 12.4505 5.8135 12.4497 5.72064C12.449 5.62761 12.4647 5.53578 12.4963 5.45195C12.5278 5.36806 12.5743 5.29484 12.6288 5.23559C12.6833 5.17662 12.7448 5.13279 12.8092 5.10416C12.8735 5.07558 12.9408 5.06166 13.0069 5.06228Z' fill='%231B204C' stroke='%231B204C' stroke-width='1.19111'/%3E%3C/svg%3E");
+}
+
+/* Cards */
+.iec_band_card {
+	position: relative;
+	background-color: var(--color-white) !important;
+	z-index: 1;
+	overflow: hidden;
+
+	min-width: 0;
+}
+
+.iec_band_card > * {
+	position: relative;
+	z-index: 2;
+}
+
+.iec_band_card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 20px 40px rgba(27, 32, 76, 0.15) !important;
+}
+
+.iec_band_card:hover::before {
+	transform: scaleX(1);
+}
+
+.iec_band_card p,
+.iec_band_card .iec_band_features li,
+.iec_band_card .iec_band_title,
+.iec_band_card .iec_band_subtitle,
+.iec_band_card .iec_band_link,
+.iec_band_card .iec_band_subtitle::after,
+.iec_band_card .iec_band_features li::before,
+.iec_band_card .iec_band_link::after {
+	transition: color 0.4s ease, filter 0.4s ease, border-color 0.4s ease;
+}
+
+.iec_band_card:hover .iec_band_subtitle::after {
+	border-top-color: var(--color-white);
+}
+
+.iec_band_card:hover .iec_band_link:hover::after {
+	filter: brightness(0) invert(0.7);
+}
+
+/* Services */
+.iec_service_models_section p {
+	font-size: 0.704628rem;
+	line-height: 150%;
+	margin-bottom: 0.939504rem;
+	margin: 0;
+}
+
+.iec_service_grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.iec_service_card_wrapper {
+	display: flex;
+	margin-bottom: 1.17438rem;
+	min-width: 0;
+}
+
+.bd_model_img_wrapper {
+	margin-bottom: 0;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+.bd_model_img_wrapper img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	aspect-ratio: 16 / 9;
+}
+
+.iec_service_body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 1.56584rem 1.17438rem;
+}
+
+.iec_service_footer {
+	margin-top: 0.78292rem;
+}
+
+.iec_service_card .iec_service_footer p strong {
+	display: block;
+	font-weight: 600;
+}
+
+/* Tabs */
+.recommended_tabs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.78292rem;
+
+	margin-top: 1.644325rem;
+	margin-right: 0.58719rem;
+	border-right: 0.039146rem solid var(--color-white);
+	padding-right: 1rem;
+	height: 95%;
+}
+
+/* Solutions */
+.t-vsat-portfolio .recommended_tabs .solution_btn,
+.recommended_tabs .solution_btn {
+	width: 100%;
+	max-width: 9.943082rem;
+	height: 2.27rem;
+	margin-inline: auto;
+	border: 0.039146rem solid rgba(255, 255, 255, 0.7);
+	border-radius: 1.565rem;
+	background: transparent;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--color-white);
+	text-align: center;
+	font-family: var(--font-secondary);
+	font-size: 0.627190rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+	overflow-wrap: break-word;
+	margin-top: 0px !important;
+}
+
+.t-vsat-portfolio .recommended_tabs .solution_btn:hover,
+.recommended_tabs .solution_btn:hover {
+	background: rgba(255, 255, 255, 0.12);
+	border-color: var(--color-white);
+	box-shadow: 0 0.313168rem 0.78292rem rgba(0, 0, 0, 0.18),
+	0 0 0.469752rem rgba(255, 255, 255, 0.12);
+}
+
+.t-vsat-portfolio .recommended_tabs .solution_btn.active,
+.recommended_tabs .solution_btn.active {
+	background: #7f89b7;
+	border-color: #7f89b7;
+	box-shadow: 0 0.39146rem 0.939504rem rgba(127, 137, 183, 0.35);
+}
+
+.t-vsat-portfolio .recommended_tabs .solution_btn.active:hover,
+.recommended_tabs .solution_btn.active:hover {
+	background: #9099c3;
+	border-color: #9099c3;
+}
+
+.recommended_solutions_section .iec_section_heading {
+	margin-bottom: 0;
+}
+
+.recommended_content {
+	margin-top: 1.644325rem;
+	padding-left: 0;
+	display: flex;
+}
+
+.t-vsat-portfolio .recommended_content .solution_pane {
+	display: none;
+}
+
+.t-vsat-portfolio .recommended_content .solution_pane.active {
+	display: block;
+}
+
+.recommended_content p {
+	max-width: 18.35947rem;
+	margin-top: 0.352314rem;
+	margin-bottom: 1.213526rem;
+	font-size: 0.782920rem;
+	color: var(--color-white);
+	overflow-wrap: break-word;
+}
+
+.learn_more_btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.313168rem;
+	color: var(--color-secondary);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: var(--font-secondary);
+	font-size: 0.62634rem;
+	font-weight: 600;
+	transition: color 0.3s ease;
+}
+
+.learn_more_btn:hover {
+	color: var(--color-white);
+}
+
+.text-content .learn_more_btn:hover {
+	color: #171f5a;
+}
+
+.recommeded_image {
+	align-items: center;
+	min-width: 0;
+}
+
+.recommended_solutions_section .row {
+	align-items: stretch;
+
+	vertical-align: center;
+	margin:  0 auto;
+}
+
+.learn_more_btn span {
+	width: 0.939504rem;
+	height: 0.939504rem;
+	flex-shrink: 0;
+}
+
+.learn_more_btn span svg {
+	display: block;
+	width: 0.704628rem;
+	height: 0.704628rem;
+	flex-shrink: 0;
+	transition: transform 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+}
+
+.learn_more_btn span svg path {
+	fill: var(--color-secondary);
+	stroke: var(--color-secondary);
+	transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.learn_more_btn:hover span svg {
+	transform: translateX(0.117438rem);
+}
+
+.learn_more_btn:hover span svg path {
+	fill: var(--color-white);
+	stroke: var(--color-white);
+}
+
+.text-content .learn_more_btn:hover span svg path {
+	fill: #171f5a;
+	stroke: #171f5a;
+}
+
+.recommended_solution_image {
+	width: 100%;
+	margin-top: 1.644325rem;
+	text-align: right;
+}
+
+.t-vsat-portfolio .recommended_solution_image .solution_image {
+	display: none;
+}
+
+.t-vsat-portfolio .recommended_solution_image .solution_image.active {
+	display: block;
+}
+
+.recommended_solution_image img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	max-height: 10.999397rem;
+	height: auto;
+	margin-left: auto;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+.offshore .iec_products_posts_sec .iec_defualt_position .solution_btn,
+.offshore .iec_products_posts_sec.iec_defualt_position .right_text.solution_btn .iec_button.iec_blue_gradient {
+	margin-inline: auto !important;
+}
+
+/* FAQ */
+.iec_faq_title {
+	color: var(--color-primary);
+	font-family: var(--font-primary);
+	font-size: 0.833795rem;
+	font-weight: 600;
+	line-height: 120%;
+	margin: 0;
+	flex: 1;
+	min-width: 0;
+	overflow-wrap: break-word;
+	transition: color 0.3s ease-in-out;
+}
+
+/* Slider */
+.iec_advantage_slider .iec_swiper_arrow_warpper,
+.iec_band_slider .iec_swiper_arrow_warpper {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 0.555556rem;
+	z-index: 10;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.iec_band_slider .swiper-button-prev,
+.iec_band_slider .swiper-button-next {
+	position: relative;
+	inset: auto;
+	margin: 0;
+	width: 1.777778rem;
+	height: 1.777778rem;
+	border: 0.055556rem solid var(--color-secondary);
+	border-radius: 0.444444rem;
+	background: var(--color-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-button-disabled {
+	opacity: 0.35;
+	pointer-events: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.iec_band_slider .swiper-button-prev::after,
+.iec_band_slider .swiper-button-next::after {
+	content: "";
+	display: block;
+	width: 0.626336rem;
+	height: 0.626336rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.swiper-button-prev::after,
+.iec_band_slider .swiper-button-prev::after {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M11.8901 2.58002L10.7034 1.40002L4.11011 8.00002L10.7101 14.6L11.8901 13.42L6.47011 8.00002L11.8901 2.58002Z' fill='%23727DA3'/%3E%3C/svg%3E");
+}
+
+.swiper-button-next::after,
+.iec_band_slider .swiper-button-next::after {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4.10989 13.42L5.29656 14.6L11.8899 7.99998L5.28989 1.39998L4.10989 2.57998L9.52989 7.99998L4.10989 13.42Z' fill='%23727DA3'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 768px) {
+/* Solutions */
+.iec_solution_section {
+		overflow: hidden;
+	}
+
+/* Hero */
+.iec_vsat_hero:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: linear-gradient(360deg, #1b204c 27.73%, rgba(27, 32, 76, 0.2) 81.36%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+/* Partners */
+.iec_partner_label {
+		position: relative;
+		z-index: 2;
+	}
+
+.iec_partner_logos_wrapper {
+		overflow: hidden;
+		position: relative;
+		-webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+		mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+	}
+
+.iec_partner_logos {
+		position: relative;
+	}
+
+.iec_partner_logos:hover .iec_partner_logo {
+		animation-play-state: paused;
+	}
+
+.iec_partner_logo {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		animation: pureCssMarquee 25s linear infinite;
+	}
+
+.iec_partner_logo:nth-child(1) {
+		animation-delay: calc(25s / 5 * -5);
+	}
+
+.iec_partner_logo:nth-child(2) {
+		animation-delay: calc(25s / 5 * -4);
+	}
+
+.iec_partner_logo:nth-child(3) {
+		animation-delay: calc(25s / 5 * -3);
+	}
+
+.iec_partner_logo:nth-child(4) {
+		animation-delay: calc(25s / 5 * -2);
+	}
+
+.iec_partner_logo:nth-child(5) {
+		animation-delay: calc(25s / 5 * -1);
+	}
+
+@keyframes pureCssMarquee {
+		0% { left: 100%; }
+		100% { left: -6.263359rem; }
+	}
+
+/* FAQ */
+.iec_faq_grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: stretch;
+		column-gap: 1.17438rem;
+	}
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+.t-vsat-portfolio ul:not([class]),
+	.t-vsat-portfolio ol:not([class]) {
+		font-size: 0.888889rem;
+		padding-left: 1.5rem;
+	}
+
+/* Solutions */
+.iec_solution_section,
+	.iec_vsat_intro,
+	.iec_vsat_operators,
+	.iec_vsat_products {
+		padding: 2.777778rem 0;
+	}
+
+/* Hero */
+.iec_vsat_hero {
+		padding: 3.80545289401rem 0 5.555556rem;
+		background-image: url("https://staging.iec-telecom.com/wp-content/uploads/2026/07/STARLINK-PERFORMANCE-KIT_-Hero-Banners.webp") !important;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+/* FAQ */
+.iec_why_geo,
+	.iec_frequency_section,
+	.iec_faq_section {
+		padding: 2.348759rem 0 4.222222rem !important;
+	}
+
+/* Solutions */
+.recommended_solutions_section {
+		padding: 2.348759rem 0 2.666667rem !important;
+	}
+
+/* Features */
+.iec_band_features li::before {
+		content: "";
+		position: absolute;
+		left: -0.888889rem;
+		top: 0.117438rem;
+		width: 1.111111rem;
+		height: 1.111111rem;
+	}
+
+/* Services */
+.iec_service_models_section {
+		margin-top: 7rem;
+		padding-top: 3rem !important;
+		padding-bottom: 2.348759rem !important;
+		background-color: var(--color-white);
+	}
+
+/* Slider */
+.iec_band_slider_mobile {
+		margin-bottom: -15rem;
+		position: relative;
+		z-index: 2;
+		display: block;
+	}
+
+/* Hero */
+.iec_vsat_hero_content h1 {
+		font-size: 2rem;
+	}
+
+.iec_vsat_hero_content h4 {
+		font-size: 1.166667rem;
+		line-height: 1.5;
+	}
+
+.learn_more_btn span svg {
+		display: block;
+		width: 1rem;
+		height: 1rem;
+	}
+
+.iec_why_geo .iec_section_title {
+		text-wrap: balance;
+	}
+
+/* FAQ */
+.iec_vsat_intro_content p,
+	.iec_vsat_operators_intro p,
+	.recommended_content p,
+	.t-vsat-portfolio .recommended_content p,
+	.iec_advantage_text,
+	.iec_faq_answer_inner p {
+		font-size: 1rem;
+	}
+
+/* Products */
+.iec_vsat_operators_heading,
+	.iec_vsat_products_heading {
+		font-size: 1.625rem;
+		text-align: center;
+	}
+
+.iec_section_title,
+	.section-title,
+	.iec_frequency_section .iec_section_title {
+		font-size: 1.388889rem;
+		text-align: center;
+		text-wrap: balance;
+	}
+
+.recommended_title,
+	.t-vsat-portfolio .recommended_title {
+		font-size: 1.444444rem;
+	}
+
+.iec_section_eyebrow {
+		font-size: 0.611111rem;
+	}
+
+.iec_advantage_title {
+		font-size: 1.333333rem;
+	}
+
+/* Services */
+.iec_band_title,
+	.iec_band_subtitle,
+	.iec_service_title,
+	.iec_faq_title {
+		font-size: 1.055556rem;
+	}
+
+.iec_band_link {
+		font-size: 0.833333rem;
+	}
+
+.iec_section_description,
+	.iec_frequency_section p,
+	.iec_band_features li,
+	.iec_service_models_section p,
+	.iec_service_body p,
+	.iec_faq_answer_inner {
+		font-size: 0.888889rem;
+		line-height: 160%;
+	}
+
+/* Explore */
+.iec_section_heading {
+		margin-bottom: 1rem !important;
+		text-align: center;
+	}
+
+/* Hero */
+.iec_vsat_hero_button_list {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 0;
+		gap: 0.833333rem;
+		flex-wrap: nowrap;
+	}
+
+.iec_vsat_hero_button_list li {
+		width: 100%;
+		flex: 1 1 100%;
+	}
+
+.iec_vsat_hero_button_list li:not(:last-child) a,
+	.iec_vsat_hero_button_list li:last-child a {
+		width: 100%;
+		max-width: 100%;
+	}
+
+.iec_vsat_hero_content {
+		padding-bottom: 1.666667rem;
+	}
+
+.iec_band_subtitle::after {
+		width: 11.111111rem;
+
+	}
+
+/* Partners */
+.iec_partner_bar {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 2.333333rem;
+		padding-inline: 2rem;
+	}
+
+.iec_partner_logos_wrapper,
+	.iec_partner_logos {
+		display: contents;
+	}
+
+.iec_partner_logo {
+		position: static;
+		width: 38%;
+		max-width: 6.666667rem;
+		height: 2.222222rem;
+		animation: none !important;
+	}
+
+.iec_advantage_grid,
+	.iec_band_grid_desktop,
+	.iec_band_grid {
+		display: none;
+	}
+
+/* Slider */
+.iec_advantage_slider_mobile,
+	.iec_band_slider_mobile {
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+
+.iec_advantage_slider,
+	.iec_band_slider {
+		overflow: hidden;
+		padding-top: 1.17438rem;
+	}
+
+.iec_advantage_slider .swiper-wrapper,
+	.iec_band_slider .swiper-wrapper {
+		display: flex;
+		padding-top: 1.666667rem;
+	}
+
+.iec_advantage_slider .swiper-slide,
+	.iec_band_slider .swiper-slide {
+		height: auto;
+		flex-shrink: 0;
+	}
+
+/* Cards */
+.iec_advantage_card {
+		padding: 1.777778rem;
+	}
+
+.iec_advantage_icon {
+		width: 3.444444rem;
+		height: 3.444444rem;
+	}
+
+.iec_band_card {
+		text-align: center;
+		align-items: center;
+		padding: 1.17438rem;
+	}
+
+/* Services */
+.iec_band_subtitle::after,
+	.iec_service_header::after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.iec_service_header::after {
+		width: 14.666667rem;
+	}
+
+/* Features */
+.iec_band_features {
+		margin-left: auto;
+		margin-right: auto;
+		width: fit-content;
+		text-align: left;
+	}
+
+.iec_band_link:hover {
+		color: var(--color-primary);
+	}
+
+/* Cards */
+.iec_band_card,
+	.iec_advantage_grid > [class*="col-"] {
+
+	}
+
+/* Services */
+.iec_service_card {
+		box-shadow: var(--shadow-service-sm) !important;
+	}
+
+.iec_band_card:hover,
+	.iec_service_card:hover,
+	.iec_advantage_card:hover {
+		box-shadow: var(--shadow-card-hover-mobile) !important;
+		transform: translateY(-2px);
+	}
+
+.iec_service_models_section .iec_advantage_grid {
+		display: block;
+	}
+
+.bd_model_img_wrapper img {
+		border-radius: 0.666667rem 0.666667rem 0 0;
+	}
+
+.iec_service_body {
+		padding: 1.111111rem;
+		text-align: center;
+		margin-inline: auto;
+	}
+
+/* Tabs */
+.recommended_tabs,
+	.t-vsat-portfolio .recommended_tabs {
+		align-items: center;
+		justify-content: center;
+		margin-top: 0;
+		margin-bottom: 1.2rem;
+		border-right: 0;
+		padding-right: 0;
+		margin-right: 0;
+	}
+
+.learn_more_btn {
+		font-size: 16px;
+	}
+
+.t-vsat-portfolio .recommended_content p strong {
+		display: block;
+	}
+
+/* Solutions */
+.recommended_content,
+	.recommended_solution_image,
+	.t-vsat-portfolio .recommended_content,
+	.t-vsat-portfolio .recommended_solution_image {
+		text-align: center;
+		margin-top: 1.5rem;
+	}
+
+.recommended_solution_image img {
+		margin: 0 auto;
+	}
+
+.t-vsat-portfolio .recommended_content p {
+		margin-inline: auto;
+	}
+
+.recommended_tabs .solution_btn,
+	.t-vsat-portfolio .recommended_tabs .solution_btn {
+		max-width: 100%;
+		margin-inline: 0;
+		font-size: 0.888889rem;
+		font-weight: 500;
+	}
+
+.recommended_content {
+		margin-top: 0;
+		padding-left: 0;
+		border-left: 0;
+	}
+
+/* FAQ */
+.iec_faq_grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 1.17438rem;
+		row-gap: 0;
+	}
+
+.iec_faq_header {
+		padding: 1.111111rem 0;
+	}
+
+.iec_faq_answer {
+		padding-left: 0;
+	}
+
+.iec_faq_icon {
+		width: 1.055556rem;
+		height: 1.055556rem;
+	}
+
+/* CTA */
+.iec_vsat_products_cta {
+		justify-content: center;
+	}
+
+/* Hero */
+.iec_vsat_products_cta .iec_button,
+	.offshore .iec_single_office_banner_swiper_warpper .iec_single_office_banner_box .banner_content .gray_btn {
+		margin-inline: auto;
+	}
+
+/* Tabs */
+.offshore .functionality .tabs .item {
+		width: 100%;
+	}
+
+/* Hero */
+.offshore .iec_single_office_banner_swiper_warpper .iec_swiper_arrow_warpper {
+		display: none;
+	}
+
+/* Slider */
+.offshore .iec_defualt_position .iec_starlink_portfolio_swiper_section .iec_starlink_portfolio_maritime_swiper_section .iec_starlink_portfolio_swiper_section:after {
+		content: "";
+		background: var(--color-white);
+	}
+
+/* Hero */
+.hero-card-content {
+		padding: 0.5rem;
+	}
+
+.hero-info-card .card-eyebrow {
+		color: var(--color-white);
+		text-align: center;
+		font-family: var(--font-secondary);
+		font-size: 1.222222rem;
+		font-weight: 300;
+		line-height: normal;
+	}
+
+/* Cards */
+p.card-headline {
+		color: var(--color-white);
+		text-align: center;
+		font-family: var(--font-secondary);
+		font-size: 1.222222rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+/* Hero */
+.iec_vsat_hero_button_list li,
+	.iec_vsat_hero_button_list li:last-child {
+		width: 100%;
+		max-width: 100%;
+		flex: 1 1 100%;
+	}
+
+.iec_vsat_hero_button_list li a,
+	.iec_vsat_hero_button_list li:last-child a {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		padding: 0.875rem 1rem;
+		font-size: 0.888889rem !important;
+		justify-content: center;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 0.626336rem;
+	}
+
+.iec_vsat_hero_button_list li a svg,
+	.iec_vsat_hero_button_list li a img {
+		width: 1.777778rem;
+		height: 1.777778rem;
+	}
+
+/* Partners */
+.iec_partner_label {
+		color: var(--color-primary);
+		text-align: center;
+		font-size: 1.111111rem;
+		font-weight: 300;
+		line-height: normal;
+		white-space: nowrap;
+		flex-shrink: 0;
+	}
+
+/* Cards */
+.iec_band_card {
+		position: relative;
+		background-color: var(--color-white) !important;
+		z-index: 2;
+		overflow: visible !important;
+		box-shadow: var(--shadow-card-lg) !important;
+		border-radius: var(--radius-md);
+		padding: 1.56584rem 1.17438rem;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+.iec_band_card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 20px 40px rgba(27, 32, 76, 0.18) !important;
+	}
+
+/* Slider */
+.iec_band_slider,
+	.iec_band_slider .swiper,
+	.iec_band_slider .swiper-wrapper {
+		overflow: visible !important;
+		padding-bottom: 20px;
+	}
+
+.iec_band_slider_mobile,
+	.iec_band_slider {
+		overflow: hidden !important;
+		width: 100% !important;
+	}
+
+.iec_band_slider .swiper-slide {
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box;
+	}
+
+/* Cards */
+.iec_band_slider .iec_band_card {
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
+}
+
+@media (max-width: 767px) {
+/* Slider */
+.iec_band_slider_mobile,
+	.iec_band_slider {
+		overflow: visible !important;
+		width: 100% !important;
+		padding-top: 15px !important;
+		padding-bottom: 25px !important;
+	}
+
+.iec_band_slider .swiper-wrapper {
+		overflow: visible !important;
+	}
+
+.iec_band_slider .swiper-slide {
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box;
+		overflow: visible !important;
+	}
+
+/* Cards */
+.iec_band_card {
+		position: relative !important;
+		z-index: 5 !important;
+		overflow: visible !important;
+		background-color: var(--color-white) !important;
+		width: 100% !important;
+		margin: 0 auto !important;
+
+		border-radius: var(--radius-md) !important;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+.iec_band_card:hover,
+	.iec_band_card:active {
+		box-shadow: 0 15px 35px rgba(27, 32, 76, 0.28) !important;
+	}
+
+.iec_band_card::before {
+		display: none !important;
+	}
+}
+
+@media (hover: hover) {
+/* FAQ */
+.iec_faq_header:hover .iec_faq_title {
+		color: var(--color-secondary);
+	}
+
+.iec_faq_header:hover .iec_faq_icon {
+		color: var(--color-primary);
+	}
+}

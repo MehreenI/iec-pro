@@ -1,0 +1,82 @@
+<?php
+/**
+ * Flexible: features
+ *
+ * @package iec
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+$block   = $args['block'] ?? array();
+$heading = $block['heading'] ?? '';
+$content = $block['content'] ?? '';
+$cards   = is_array( $block['cards'] ?? null ) ? $block['cards'] : array();
+
+$card_items = array();
+
+foreach ( $cards as $card ) {
+	if ( ! is_array( $card ) ) {
+		continue;
+	}
+	$title = $card['title'] ?? '';
+	$body  = $card['body'] ?? '';
+	if ( '' === $title && '' === $body ) {
+		continue;
+	}
+	$card_items[] = array(
+		'title' => $title,
+		'body'  => $body,
+	);
+}
+
+if ( '' === $heading && '' === $content && empty( $card_items ) ) {
+	return;
+}
+
+$icon_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none" aria-hidden="true"><path opacity="0.6" d="M31 0C48.1198 0 62 13.8802 62 31C62 48.1197 48.1198 62 31 62C25.7404 62 20.7804 60.6902 16.4378 58.3756L4.11528 61.8786C3.56186 62.0359 2.97645 62.0426 2.4196 61.8978C1.86275 61.753 1.35469 61.4621 0.94798 61.0552C0.541271 60.6482 0.250683 60.1399 0.106278 59.583C-0.0381274 59.026 -0.0311046 58.4406 0.126619 57.8873L3.62962 45.57C1.23908 41.0861 -0.00766088 36.0814 3.54174e-05 31C3.54174e-05 13.8802 13.8777 0 31 0ZM31 3.875C16.0167 3.875 3.87503 16.0192 3.87503 31C3.87503 35.867 5.15378 40.4292 7.39612 44.3765C7.52323 44.5997 7.60468 44.846 7.63572 45.101C7.66677 45.356 7.64679 45.6147 7.57695 45.8619L4.17212 57.8331L16.1459 54.4282C16.3931 54.3584 16.6517 54.3384 16.9067 54.3695C17.1617 54.4005 17.408 54.482 17.6313 54.6091C21.7069 56.9214 26.3142 58.1331 31 58.125C45.9808 58.125 58.125 45.9807 58.125 31C58.125 16.0192 45.9808 3.875 31 3.875ZM42.5475 21.235C42.9148 20.8928 43.4006 20.7064 43.9025 20.7153C44.4045 20.7241 44.8834 20.9275 45.2384 21.2825C45.5934 21.6375 45.7967 22.1164 45.8056 22.6183C45.8144 23.1203 45.6281 23.606 45.2859 23.9733L28.4942 40.765C28.1309 41.1278 27.6385 41.3316 27.125 41.3316C26.6116 41.3316 26.1191 41.1278 25.7559 40.765L16.7142 31.7233C16.372 31.356 16.1856 30.8703 16.1945 30.3683C16.2034 29.8664 16.4067 29.3875 16.7617 29.0325C17.1167 28.6775 17.5956 28.4741 18.0975 28.4653C18.5995 28.4564 19.0852 28.6428 19.4525 28.985L27.125 36.6575L42.5475 21.235Z" fill="white" fill-opacity="0.4"/></svg>';
+?>
+<section class="iec_single_news_main_section iec_single_news_feature_modules_section iec_defualt_position">
+	<div class="container">
+		<?php if ( '' !== $heading || '' !== $content ) : ?>
+			<div class="row">
+				<div class="col-md-12">
+					<?php if ( '' !== $heading ) : ?>
+						<div class="iec_heading_section">
+							<h2><?= $heading; ?></h2>
+						</div>
+					<?php endif; ?>
+
+					<?php if ( '' !== $content ) : ?>
+						<div class="iec_single_news_main_content_warpper">
+							<?= $content; ?>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+		<?php endif; ?>
+
+		<?php if ( ! empty( $card_items ) ) : ?>
+			<div class="row iec_advantage_grid">
+				<?php foreach ( $card_items as $card_item ) : ?>
+					<div class="col-md-3 iec_advantage_card_wrapper">
+						<article class="iec_advantage_card">
+							<div class="iec_advantage_header">
+								<?php if ( '' !== $card_item['title'] ) : ?>
+									<h3 class="iec_advantage_title"><?= $card_item['title']; ?></h3>
+								<?php endif; ?>
+								<div class="iec_advantage_icon">
+									<?= $icon_svg; ?>
+								</div>
+							</div>
+							<?php if ( '' !== $card_item['body'] ) : ?>
+								<p class="iec_advantage_text"><?= $card_item['body']; ?></p>
+							<?php endif; ?>
+						</article>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
+	</div>
+</section>

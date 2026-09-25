@@ -1,0 +1,119 @@
+/* Hero */
+﻿
+.iec_optisim_hero_banner {
+	min-height: 10.660236rem;
+	padding-top: 5.481082rem;
+}
+
+.iec_optisim_hero_banner .iec_hero_banner__media {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+.iec_optisim_hero_banner .iec_hero_banner__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.iec_optisim_hero_banner .container {
+	position: relative;
+	z-index: 1;
+}
+
+/* Services */
+.iec_main_contact_section.iec_value_added_services_content {
+	padding-top: 1.957529rem;
+}
+
+.iec_value_added_services_box_warpper {
+	min-height: 10.179153rem;
+	margin-top: 0.783012rem;
+}
+
+.iec_value_added_services_box {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 1;
+	border: 1px solid #ccc;
+}
+
+.iec_value_added_services_box:after,
+.iec_value_added_services_box:before {
+	content: " ";
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.iec_value_added_services_box:before {
+	background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.59) 25%, hsla(0, 0%, 100%, 0) 82%);
+}
+
+.iec_value_added_services_box:after {
+	background-image: linear-gradient(90deg, #fff 12%, hsla(0, 0%, 100%, 0) 79%);
+}
+
+.iec_value_added_services_box__image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -2;
+}
+
+.iec_value_added_services_box_content {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	display: flex;
+	justify-content: end;
+	flex-direction: column;
+	padding: 0 0.783012rem 1.096216rem 1.096216rem;
+}
+
+.iec_value_added_services_box_content h2 {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.939614rem;
+	line-height: 120%;
+	letter-spacing: 0.019575rem;
+	margin: 0 0 0.391506rem;
+	color: #1b204c;
+	text-align: left;
+	text-transform: uppercase;
+	padding-right: 1.174518rem;
+	background-image: url(../../img/blue-line-arrow-right.svg);
+	background-size: 0.783012rem;
+	background-repeat: no-repeat;
+	background-position: right center;
+	transition: all 0.25s ease;
+	max-width: max-content;
+}
+
+.iec_value_added_services_box_content p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 138%;
+	color: #1b204c;
+	margin: 0;
+	max-width: 15.855988rem;
+}
+
+.iec_value_added_services_box:hover:after,
+.iec_value_added_services_box:hover:before {
+	opacity: 0.8;
+}
+
+.iec_value_added_services_box:hover .iec_value_added_services_box_content h2 {
+	padding-right: 1.566024rem;
+}

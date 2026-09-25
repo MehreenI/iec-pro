@@ -1,0 +1,3020 @@
+/* =========================================================
+   IEC TELECOM - INDUSTRY TYPE CARDS
+   ========================================================= */
+
+.iec-industry-types {
+    position: relative;
+    padding: 72px 0;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(65, 96, 180, 0.07),
+            transparent 38%
+        ),
+        #ffffff;
+}
+
+.iec-industry-types .container {
+    width: min(1320px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* GRID
+--------------------------------------------------------- */
+
+.iec-industry-types-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+
+/* CARD
+--------------------------------------------------------- */
+
+.iec-industry-type-card {
+    position: relative;
+    min-height: 360px;
+    display: block;
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    text-decoration: none;
+    color: #101943;
+
+    background: #f4f6fb;
+
+    box-shadow:
+        0 16px 45px rgba(15, 27, 72, 0.08),
+        0 2px 8px rgba(15, 27, 72, 0.04);
+
+    transition:
+        transform 0.45s cubic-bezier(.2, .7, .2, 1),
+        box-shadow 0.45s ease;
+}
+
+.iec-industry-type-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 24px 60px rgba(15, 27, 72, 0.15),
+        0 5px 14px rgba(15, 27, 72, 0.06);
+}
+
+
+/* IMAGE
+--------------------------------------------------------- */
+
+.iec-industry-type-image {
+    position: absolute;
+    inset: 0;
+}
+
+.iec-industry-type-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.7s cubic-bezier(.2, .7, .2, 1);
+}
+
+.iec-industry-type-card:hover .iec-industry-type-image img {
+    transform: scale(1.04);
+}
+
+
+/* IMAGE GRADIENT
+--------------------------------------------------------- */
+
+.iec-industry-type-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(248, 250, 255, 0.99) 0%,
+            rgba(248, 250, 255, 0.97) 32%,
+            rgba(248, 250, 255, 0.82) 48%,
+            rgba(248, 250, 255, 0.16) 72%,
+            rgba(248, 250, 255, 0) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* CONTENT
+--------------------------------------------------------- */
+
+.iec-industry-type-content {
+    position: relative;
+    z-index: 2;
+
+    width: 57%;
+    min-height: 360px;
+
+    padding: 38px 20px 38px 38px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* ICON
+--------------------------------------------------------- */
+
+.iec-industry-type-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 21px;
+
+    border-radius: 17px;
+
+    color: #172355;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(38, 54, 113, 0.13);
+
+    box-shadow:
+        0 8px 30px rgba(15, 27, 72, 0.09);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.iec-industry-type-icon svg {
+    width: 34px;
+    height: 34px;
+}
+
+
+/* SMALL LABEL
+--------------------------------------------------------- */
+
+.iec-industry-type-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    color: #6e79a4;
+}
+
+
+/* TITLE
+--------------------------------------------------------- */
+
+.iec-industry-type-content h2 {
+    margin: 0 0 13px;
+
+    font-size: clamp(25px, 2vw, 34px);
+    line-height: 1.12;
+
+    font-weight: 700;
+
+    letter-spacing: -0.03em;
+
+    color: #101943;
+}
+
+
+/* DESCRIPTION
+--------------------------------------------------------- */
+
+.iec-industry-type-content p {
+    max-width: 350px;
+
+    margin: 0 0 25px;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    color: #505a7b;
+}
+
+
+/* LINK
+--------------------------------------------------------- */
+
+.iec-industry-type-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.035em;
+
+    color: #172355;
+}
+
+.iec-industry-type-link svg {
+    width: 18px;
+    height: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+.iec-industry-type-card:hover .iec-industry-type-link svg {
+    transform: translateX(5px);
+}
+
+
+/* SUBTLE BORDER
+--------------------------------------------------------- */
+
+.iec-industry-type-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    border: 1px solid rgba(19, 32, 83, 0.08);
+    border-radius: inherit;
+
+    pointer-events: none;
+
+    z-index: 3;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .iec-industry-types {
+        padding: 55px 0;
+    }
+
+    .iec-industry-types-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iec-industry-type-card {
+        min-height: 330px;
+    }
+
+    .iec-industry-type-content {
+        min-height: 330px;
+        width: 60%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .iec-industry-types {
+        padding: 40px 0;
+    }
+
+    .iec-industry-types .container {
+        width: min(100% - 30px, 1320px);
+    }
+
+    .iec-industry-types-grid {
+        gap: 20px;
+    }
+
+    .iec-industry-type-card {
+        min-height: 510px;
+        border-radius: 20px;
+    }
+
+    .iec-industry-type-image {
+        height: 215px;
+        bottom: auto;
+    }
+
+    .iec-industry-type-image img {
+        height: 215px;
+    }
+
+    .iec-industry-type-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0) 25%,
+                rgba(249, 250, 254, 0.45) 70%,
+                #f9fafe 100%
+            );
+    }
+
+    .iec-industry-type-content {
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        min-height: 315px;
+
+        justify-content: flex-end;
+
+        padding: 30px 26px 32px;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(249, 250, 254, 0) 0%,
+                #f9fafe 20%,
+                #f9fafe 100%
+            );
+    }
+
+    .iec-industry-type-icon {
+        width: 54px;
+        height: 54px;
+
+        margin-bottom: 16px;
+
+        border-radius: 15px;
+    }
+
+    .iec-industry-type-icon svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .iec-industry-type-content h2 {
+        font-size: 27px;
+    }
+
+    .iec-industry-type-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+}
+.iec-specialized-connectivity {
+    position: relative;
+    padding: 85px 0 95px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(69, 94, 166, 0.055),
+            transparent 42%
+        ),
+        #ffffff;
+}
+
+.iec-specialized-connectivity__container {
+    width: min(1320px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* HEADER
+------------------------------------------------------ */
+
+.iec-specialized-connectivity__header {
+    max-width: 940px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.iec-specialized-connectivity__header h2 {
+    margin: 0 0 20px;
+
+    color: #111b4b;
+
+    font-size: clamp(34px, 3vw, 52px);
+    line-height: 1.12;
+    font-weight: 700;
+
+    letter-spacing: -0.035em;
+}
+
+.iec-specialized-connectivity__header p {
+    max-width: 900px;
+    margin: 0 auto;
+
+    color: #535d7e;
+
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+
+/* GRID
+------------------------------------------------------ */
+
+.iec-specialized-connectivity__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+
+/* FEATURE
+------------------------------------------------------ */
+
+.iec-connectivity-feature {
+    position: relative;
+
+    padding: 10px 38px 8px;
+
+    text-align: center;
+}
+
+.iec-connectivity-feature:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(20, 33, 83, 0.14) 15%,
+            rgba(20, 33, 83, 0.14) 85%,
+            transparent 100%
+        );
+}
+
+
+/* ICON
+------------------------------------------------------ */
+
+.iec-connectivity-feature__icon {
+    width: 76px;
+    height: 76px;
+
+    margin: 0 auto 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #17255d;
+
+    transition:
+        transform 0.35s ease,
+        color 0.35s ease;
+}
+
+.iec-connectivity-feature__icon svg {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* TITLE
+------------------------------------------------------ */
+
+.iec-connectivity-feature h3 {
+    margin: 0 0 16px;
+
+    color: #111b4b;
+
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    letter-spacing: -0.018em;
+}
+
+
+/* TEXT
+------------------------------------------------------ */
+
+.iec-connectivity-feature p {
+    max-width: 250px;
+    margin: 0 auto;
+
+    color: #5b6483;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* HOVER
+------------------------------------------------------ */
+
+.iec-connectivity-feature:hover .iec-connectivity-feature__icon {
+    transform: translateY(-5px);
+    color: #304b9b;
+}
+
+
+/* TABLET
+------------------------------------------------------ */
+
+@media (max-width: 991px) {
+
+    .iec-specialized-connectivity {
+        padding: 70px 0;
+    }
+
+    .iec-specialized-connectivity__header {
+        margin-bottom: 48px;
+    }
+
+    .iec-specialized-connectivity__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 45px;
+    }
+
+    .iec-connectivity-feature:nth-child(2)::after {
+        display: none;
+    }
+
+    .iec-connectivity-feature:nth-child(1),
+    .iec-connectivity-feature:nth-child(2) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(20, 33, 83, 0.1);
+    }
+
+}
+
+
+/* MOBILE
+------------------------------------------------------ */
+
+@media (max-width: 640px) {
+
+    .iec-specialized-connectivity {
+        padding: 55px 0 60px;
+    }
+
+    .iec-specialized-connectivity__container {
+        width: min(100% - 30px, 1320px);
+    }
+
+    .iec-specialized-connectivity__header {
+        margin-bottom: 38px;
+    }
+
+    .iec-specialized-connectivity__header h2 {
+        font-size: 31px;
+    }
+
+    .iec-specialized-connectivity__header h2 br {
+        display: none;
+    }
+
+    .iec-specialized-connectivity__header p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .iec-specialized-connectivity__grid {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+
+    .iec-connectivity-feature {
+        padding: 32px 20px;
+    }
+
+    .iec-connectivity-feature:not(:last-child) {
+        border-bottom: 1px solid rgba(20, 33, 83, 0.1);
+    }
+
+    .iec-connectivity-feature::after {
+        display: none;
+    }
+
+    .iec-connectivity-feature__icon {
+        width: 66px;
+        height: 66px;
+
+        margin-bottom: 18px;
+    }
+
+    .iec-connectivity-feature__icon svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .iec-connectivity-feature h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .iec-connectivity-feature p {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+}
+/* ==================================================
+   IEC TELECOM - LAND INDUSTRIES
+================================================== */
+
+.iec-land-industries {
+    position: relative;
+
+    padding: 85px 0 95px;
+
+    background:
+        radial-gradient(
+            circle at 5% 10%,
+            rgba(71, 100, 180, 0.06),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #f7f9fd 0%,
+            #ffffff 100%
+        );
+
+    overflow: hidden;
+}
+
+.iec-land-industries__container {
+    width: min(1380px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* ===============================
+   HEADER
+================================ */
+
+.iec-land-industries__heading {
+    max-width: 720px;
+    margin-bottom: 42px;
+}
+
+.iec-land-industries__eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #6574a7;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+.iec-land-industries__heading h2 {
+    margin: 0 0 14px;
+
+    color: #111b4b;
+
+    font-size: clamp(34px, 3vw, 48px);
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    letter-spacing: -0.035em;
+}
+
+.iec-land-industries__heading p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #596381;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ===============================
+   GRID
+================================ */
+
+.iec-land-industries__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* ===============================
+   CARD
+================================ */
+
+.iec-industry-card {
+    position: relative;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    color: inherit;
+    text-decoration: none;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        rgba(17, 27, 75, 0.075);
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 12px 32px
+        rgba(18, 32, 80, 0.055);
+
+    transition:
+        transform 0.4s cubic-bezier(.2, .7, .2, 1),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.iec-industry-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(24, 42, 105, 0.13);
+
+    box-shadow:
+        0 24px 55px
+        rgba(18, 32, 80, 0.14);
+}
+
+
+/* ===============================
+   CARD IMAGE
+================================ */
+
+.iec-industry-card__image {
+    position: relative;
+
+    height: 175px;
+
+    overflow: hidden;
+
+    background: #e9edf6;
+}
+
+.iec-industry-card__image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(13, 24, 64, 0) 45%,
+            rgba(13, 24, 64, 0.12) 100%
+        );
+
+    pointer-events: none;
+}
+
+.iec-industry-card__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.65s
+        cubic-bezier(.2, .7, .2, 1);
+}
+
+.iec-industry-card:hover
+.iec-industry-card__image img {
+    transform: scale(1.055);
+}
+
+
+/* ===============================
+   BODY
+================================ */
+
+.iec-industry-card__body {
+    position: relative;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding:
+        42px
+        22px
+        24px;
+}
+
+
+/* ===============================
+   FLOATING ICON
+================================ */
+
+.iec-industry-card__icon {
+    position: absolute;
+
+    top: -30px;
+    left: 20px;
+
+    z-index: 3;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #142057 0%,
+            #202f73 100%
+        );
+
+    border:
+        4px solid #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 8px 22px
+        rgba(18, 30, 81, 0.2);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.iec-industry-card__icon svg {
+    width: 29px;
+    height: 29px;
+}
+
+.iec-industry-card:hover
+.iec-industry-card__icon {
+    transform: translateY(-4px);
+
+    background:
+        linear-gradient(
+            145deg,
+            #1b2b6f,
+            #304a9d
+        );
+}
+
+
+/* ===============================
+   CARD TITLE
+================================ */
+
+.iec-industry-card h3 {
+    margin: 0 0 12px;
+
+    color: #101a4c;
+
+    font-size: 19px;
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    letter-spacing: -0.015em;
+}
+
+
+/* ===============================
+   DESCRIPTION
+================================ */
+
+.iec-industry-card p {
+    margin: 0 0 22px;
+
+    color: #59627f;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* ===============================
+   LEARN MORE
+================================ */
+
+.iec-industry-card__link {
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #17245d;
+
+    font-size: 12px;
+    line-height: 1;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.035em;
+}
+
+.iec-industry-card__link svg {
+    width: 17px;
+    height: 17px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.iec-industry-card:hover
+.iec-industry-card__link svg {
+    transform: translateX(5px);
+}
+
+
+/* ===============================
+   LARGE LAPTOP
+================================ */
+
+@media (max-width: 1250px) {
+
+    .iec-land-industries__grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .iec-land-industries {
+        padding: 70px 0;
+    }
+
+    .iec-land-industries__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+    .iec-industry-card__image {
+        height: 200px;
+    }
+
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .iec-land-industries {
+        padding: 55px 0;
+    }
+
+    .iec-land-industries__container {
+        width:
+            min(100% - 30px, 1380px);
+    }
+
+    .iec-land-industries__heading {
+        margin-bottom: 30px;
+    }
+
+    .iec-land-industries__heading h2 {
+        font-size: 33px;
+    }
+
+    .iec-land-industries__heading p {
+        font-size: 15px;
+    }
+
+    .iec-land-industries__grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .iec-industry-card__image {
+        height: 215px;
+    }
+
+    .iec-industry-card__body {
+        padding:
+            43px
+            24px
+            27px;
+    }
+
+    .iec-industry-card h3 {
+        font-size: 21px;
+    }
+
+    .iec-industry-card p {
+        font-size: 15px;
+    }
+
+}
+/* =========================================================
+   ONE PARTNER - GLOBAL COVERAGE
+========================================================= */
+
+.iec-global-coverage {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 72% 50%,
+            rgba(29, 83, 210, 0.17),
+            transparent 35%
+        ),
+        linear-gradient(
+            110deg,
+            #071535 0%,
+            #091a46 50%,
+            #08183c 100%
+        );
+
+    color: #ffffff;
+}
+
+
+/* subtle background effect */
+.iec-global-coverage::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 13, 38, 0.2),
+            transparent 45%,
+            rgba(13, 35, 92, 0.18)
+        );
+
+    pointer-events: none;
+}
+
+
+/* CONTAINER
+------------------------------------------------------- */
+
+.iec-global-coverage__container {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1380px, calc(100% - 48px));
+
+    min-height: 530px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(440px, 0.82fr)
+        minmax(520px, 1.18fr);
+
+    align-items: center;
+}
+
+
+/* LEFT CONTENT
+------------------------------------------------------- */
+
+.iec-global-coverage__content {
+    position: relative;
+
+    z-index: 5;
+
+    padding:
+        80px
+        30px
+        80px
+        0;
+}
+
+
+/* EYEBROW */
+
+.iec-global-coverage__eyebrow {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #7ca5ff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+
+/* HEADING */
+
+.iec-global-coverage__content h2 {
+    max-width: 550px;
+
+    margin: 0 0 24px;
+
+    color: #ffffff;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.04em;
+}
+
+.iec-global-coverage__content h2 span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #5d8dff;
+}
+
+
+/* DESCRIPTION */
+
+.iec-global-coverage__description {
+    max-width: 580px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.74);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* FEATURES
+------------------------------------------------------- */
+
+.iec-global-coverage__features {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0;
+
+    margin-top: 42px;
+}
+
+
+/* FEATURE */
+
+.iec-global-feature {
+    position: relative;
+
+    width: 33.333%;
+
+    min-width: 0;
+
+    padding-right: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+/* divider */
+
+.iec-global-feature:not(:first-child) {
+    padding-left: 26px;
+}
+
+.iec-global-feature:not(:first-child)::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 10px;
+
+    width: 1px;
+
+    height: 76px;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(126, 163, 255, 0.35),
+            transparent
+        );
+}
+
+
+/* ICON */
+
+.iec-global-feature__icon {
+    width: 58px;
+
+    height: 58px;
+
+    margin-bottom: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #74a1ff;
+
+    border:
+        1px solid
+        rgba(116, 161, 255, 0.48);
+
+    border-radius: 50%;
+
+    background:
+        rgba(58, 101, 206, 0.07);
+
+    box-shadow:
+        inset 0 0 25px
+        rgba(73, 123, 244, 0.05);
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        box-shadow .35s ease;
+}
+
+.iec-global-feature__icon svg {
+    width: 34px;
+
+    height: 34px;
+}
+
+
+/* FEATURE TEXT */
+
+.iec-global-feature__text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.iec-global-feature__text strong {
+    color: #ffffff;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+}
+
+.iec-global-feature__text span {
+    color: rgba(255,255,255,0.5);
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* HOVER */
+
+.iec-global-feature:hover
+.iec-global-feature__icon {
+    transform: translateY(-4px);
+
+    background:
+        rgba(75, 128, 255, 0.14);
+
+    box-shadow:
+        0 0 30px
+        rgba(65, 121, 255, 0.15);
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.iec-global-coverage__visual {
+    position: relative;
+
+    align-self: stretch;
+
+    min-height: 530px;
+}
+
+
+/* MAP IMAGE */
+
+.iec-global-coverage__map {
+    position: absolute;
+
+    top: 0;
+
+    right: -25px;
+
+    bottom: 0;
+
+    left: -60px;
+
+    z-index: 2;
+
+    background-image:
+        url('/images/industries/global-coverage-map.png');
+
+    background-repeat: no-repeat;
+
+    background-position: center right;
+
+    background-size: contain;
+}
+
+
+/* fade map into content */
+
+.iec-global-coverage__visual::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: 3;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: -65px;
+
+    width: 220px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #091942 0%,
+            rgba(9,25,66,0.85) 22%,
+            rgba(9,25,66,0.35) 66%,
+            transparent 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* GLOW */
+
+.iec-global-coverage__glow {
+    position: absolute;
+
+    z-index: 1;
+
+    right: 8%;
+
+    bottom: 6%;
+
+    width: 65%;
+
+    height: 40px;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(28, 94, 255, 0.42),
+            rgba(28, 94, 255, 0) 68%
+        );
+
+    filter: blur(17px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .iec-global-coverage__container {
+        grid-template-columns:
+            0.95fr
+            1.05fr;
+    }
+
+    .iec-global-coverage__content {
+        padding-right: 15px;
+    }
+
+    .iec-global-coverage__description {
+        font-size: 15px;
+    }
+
+    .iec-global-coverage__features {
+        gap: 15px;
+    }
+
+    .iec-global-feature {
+        padding-right: 12px;
+    }
+
+    .iec-global-feature:not(:first-child) {
+        padding-left: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .iec-global-coverage__container {
+        width: min(100% - 40px, 1380px);
+
+        display: flex;
+
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+    .iec-global-coverage__content {
+        width: 100%;
+
+        padding:
+            65px
+            0
+            25px;
+
+        text-align: center;
+    }
+
+    .iec-global-coverage__content h2 {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .iec-global-coverage__description {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .iec-global-coverage__features {
+        max-width: 600px;
+
+        margin:
+            38px
+            auto
+            0;
+
+        text-align: left;
+    }
+
+    .iec-global-coverage__visual {
+        width: 100%;
+
+        min-height: 360px;
+    }
+
+    .iec-global-coverage__map {
+        left: 0;
+
+        right: 0;
+
+        background-position: center;
+
+        background-size: contain;
+    }
+
+    .iec-global-coverage__visual::before {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .iec-global-coverage__container {
+        width:
+            min(100% - 30px, 1380px);
+    }
+
+    .iec-global-coverage__content {
+        padding-top: 55px;
+    }
+
+    .iec-global-coverage__content h2 {
+        font-size: 38px;
+    }
+
+    .iec-global-coverage__description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .iec-global-coverage__features {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        margin-top: 35px;
+    }
+
+    .iec-global-feature {
+        width: 100%;
+
+        padding:
+            18px
+            0;
+
+        display: grid;
+
+        grid-template-columns:
+            58px 1fr;
+
+        column-gap: 17px;
+
+        align-items: center;
+    }
+
+    .iec-global-feature:not(:first-child) {
+        padding-left: 0;
+    }
+
+    .iec-global-feature:not(:first-child)::before {
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 1px;
+
+        background:
+            linear-gradient(
+                90deg,
+                transparent,
+                rgba(126,163,255,.25),
+                transparent
+            );
+    }
+
+    .iec-global-feature__icon {
+        margin-bottom: 0;
+    }
+
+    .iec-global-feature__text strong {
+        font-size: 15px;
+    }
+
+    .iec-global-feature__text span {
+        font-size: 12px;
+    }
+
+    .iec-global-coverage__visual {
+        min-height: 270px;
+    }
+
+    .iec-global-coverage__map {
+        background-size: 115% auto;
+
+        background-position: center;
+    }
+
+}
+/* =========================================================
+   IEC INDUSTRIES VIDEO SECTION
+========================================================= */
+
+.iec-industries-video {
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #091745;
+}
+
+
+/* VIDEO
+--------------------------------------------------------- */
+
+.iec-industries-video__media {
+    position: absolute;
+    inset: 0;
+}
+
+.iec-industries-video__video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* DARK OVERLAY */
+
+.iec-industries-video__overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 15, 48, 0.93) 0%,
+            rgba(7, 20, 59, 0.78) 35%,
+            rgba(7, 20, 59, 0.32) 67%,
+            rgba(7, 20, 59, 0.15) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(4, 12, 37, 0.08),
+            rgba(4, 12, 37, 0.25)
+        );
+}
+
+
+/* CONTENT
+--------------------------------------------------------- */
+
+.iec-industries-video__content {
+    position: relative;
+    z-index: 2;
+
+    width: min(1380px, calc(100% - 48px));
+
+    margin: 0 auto;
+
+    padding: 100px 0;
+}
+
+
+/* EYEBROW */
+
+.iec-industries-video__eyebrow {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #94b6ff;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+
+/* HEADING */
+
+.iec-industries-video__content h2 {
+    max-width: 790px;
+
+    margin: 0 0 24px;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    letter-spacing: -0.045em;
+}
+
+.iec-industries-video__content h2 span {
+    display: block;
+
+    color: #a9c1ff;
+}
+
+
+/* PARAGRAPH */
+
+.iec-industries-video__content p {
+    max-width: 610px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.76);
+
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .iec-industries-video {
+        min-height: 520px;
+    }
+
+    .iec-industries-video__content {
+        width: min(100% - 40px, 1380px);
+
+        padding: 80px 0;
+    }
+
+    .iec-industries-video__overlay {
+        background:
+            rgba(6, 17, 52, 0.68);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .iec-industries-video {
+        min-height: 480px;
+    }
+
+    .iec-industries-video__content {
+        width: calc(100% - 30px);
+
+        padding: 65px 0;
+    }
+
+    .iec-industries-video__content h2 {
+        font-size: 38px;
+    }
+
+    .iec-industries-video__content p {
+        font-size: 15px;
+    }
+
+}
+/* =========================================================
+   IEC TELECOM - OUR SOLUTIONS
+========================================================= */
+
+.iec-our-solutions {
+    position: relative;
+
+    padding: 105px 0 120px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% -15%,
+            rgba(60, 82, 190, 0.17),
+            transparent 38%
+        ),
+        #15145d;
+
+    color: #ffffff;
+}
+
+
+.iec-our-solutions__container {
+    width: min(1380px, calc(100% - 48px));
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.iec-our-solutions__header {
+    margin-bottom: 65px;
+
+    text-align: center;
+}
+
+
+.iec-our-solutions__header > span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #98adff;
+
+    font-size: 11px;
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+
+.iec-our-solutions__header h2 {
+    margin: 0 0 16px;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 4vw, 64px);
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    letter-spacing: -0.04em;
+}
+
+
+.iec-our-solutions__header p {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: rgba(213, 221, 255, 0.7);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SOLUTIONS GRID
+========================================================= */
+
+.iec-our-solutions__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    column-gap: 0;
+
+    row-gap: 70px;
+}
+
+
+/* =========================================================
+   SINGLE SOLUTION
+========================================================= */
+
+.iec-solution-item {
+    position: relative;
+
+    min-height: 315px;
+
+    padding:
+        8px
+        50px
+        15px
+        34px;
+
+    border-left:
+        1px solid
+        rgba(152, 174, 255, 0.55);
+}
+
+
+/* staggered effect like reference */
+
+.iec-solution-item:nth-child(2),
+.iec-solution-item:nth-child(5) {
+    margin-top: 45px;
+}
+
+.iec-solution-item:nth-child(3),
+.iec-solution-item:nth-child(6) {
+    margin-top: 90px;
+}
+
+
+/* ICON
+--------------------------------------------------------- */
+
+.iec-solution-item__icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 23px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    color: #ffffff;
+}
+
+
+.iec-solution-item__icon svg {
+    width: 47px;
+
+    height: 47px;
+}
+
+
+/* TITLE
+--------------------------------------------------------- */
+
+.iec-solution-item h3 {
+    max-width: 330px;
+
+    margin: 0 0 18px;
+
+    color: #95afff;
+
+    font-size: clamp(22px, 2vw, 29px);
+
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* DESCRIPTION
+--------------------------------------------------------- */
+
+.iec-solution-item p {
+    max-width: 340px;
+
+    margin: 0;
+
+    color: rgba(194, 208, 255, 0.78);
+
+    font-size: 15px;
+
+    line-height: 1.55;
+}
+
+
+/* HOVER
+--------------------------------------------------------- */
+
+.iec-solution-item__icon,
+.iec-solution-item h3 {
+    transition:
+        transform .35s ease,
+        color .35s ease;
+}
+
+
+.iec-solution-item:hover
+.iec-solution-item__icon {
+    transform: translateY(-4px);
+
+    color: #adc5ff;
+}
+
+
+.iec-solution-item:hover h3 {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .iec-our-solutions {
+        padding: 80px 0;
+    }
+
+
+    .iec-our-solutions__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        row-gap: 50px;
+    }
+
+
+    .iec-solution-item:nth-child(n) {
+        margin-top: 0;
+    }
+
+
+    .iec-solution-item {
+        min-height: auto;
+
+        padding:
+            10px
+            35px
+            20px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .iec-our-solutions {
+        padding:
+            65px
+            0
+            70px;
+    }
+
+
+    .iec-our-solutions__container {
+        width: calc(100% - 30px);
+    }
+
+
+    .iec-our-solutions__header {
+        margin-bottom: 45px;
+    }
+
+
+    .iec-our-solutions__header h2 {
+        font-size: 40px;
+    }
+
+
+    .iec-our-solutions__grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 0;
+    }
+
+
+    .iec-solution-item {
+        min-height: auto;
+
+        padding:
+            28px
+            15px
+            35px
+            28px;
+
+        border-left:
+            1px solid
+            rgba(152,174,255,.45);
+
+        border-bottom:
+            1px solid
+            rgba(152,174,255,.12);
+    }
+
+
+    .iec-solution-item:last-child {
+        border-bottom: 0;
+    }
+
+
+    .iec-solution-item h3 {
+        font-size: 24px;
+    }
+
+
+    .iec-solution-item p {
+        max-width: none;
+
+        font-size: 14px;
+    }
+
+}
+/* =========================================================
+   IEC TELECOM ADVANTAGE SECTION
+========================================================= */
+
+.iec-advantage-section {
+    position: relative;
+
+    padding: 95px 0 110px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 78% 30%,
+            rgba(45, 91, 190, 0.17),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 18% 75%,
+            rgba(45, 73, 160, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            110deg,
+            #050d24 0%,
+            #0b183d 47%,
+            #111e51 100%
+        );
+
+    color: #fff;
+}
+
+
+/* subtle lighting */
+
+.iec-advantage-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    top: -300px;
+    right: -200px;
+
+    border-radius: 50%;
+
+    background: rgba(58, 102, 210, 0.08);
+
+    filter: blur(20px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.iec-advantage-container {
+    position: relative;
+    z-index: 2;
+
+    width: min(1380px, calc(100% - 48px));
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.iec-advantage-header {
+    margin-bottom: 62px;
+
+    text-align: center;
+}
+
+
+.iec-advantage-header > span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #7fa5ff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .16em;
+
+    text-transform: uppercase;
+}
+
+
+.iec-advantage-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    letter-spacing: -.035em;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.iec-advantage-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(400px, .85fr)
+        minmax(600px, 1.15fr);
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT VISUAL
+========================================================= */
+
+.iec-advantage-visual {
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.iec-advantage-illustration {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 590px;
+
+    height: auto;
+
+    filter:
+        drop-shadow(
+            0 35px 50px
+            rgba(0, 0, 0, .36)
+        );
+}
+
+
+.iec-advantage-glow {
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(53, 111, 235, .19);
+
+    filter: blur(80px);
+}
+
+
+/* subtle movement */
+
+.iec-dish {
+    transform-origin: center;
+
+    animation:
+        iecDishFloat
+        7s ease-in-out infinite;
+}
+
+
+@keyframes iecDishFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.iec-advantage-content {
+    min-width: 0;
+}
+
+
+/* HEADER */
+
+.iec-advantage-table-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(210px, .75fr)
+        1.4fr;
+
+    gap: 36px;
+
+    padding:
+        0
+        0
+        23px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.iec-advantage-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(210px, .75fr)
+        1.4fr;
+
+    gap: 36px;
+
+    padding: 25px 0;
+
+    border-bottom:
+        1px solid
+        rgba(145, 170, 232, .17);
+
+    transition:
+        background .3s ease,
+        padding .3s ease;
+}
+
+
+.iec-advantage-row:last-child {
+    border-bottom: 0;
+}
+
+
+/* subtle hover */
+
+.iec-advantage-row:hover {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(87, 126, 228, .05),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   FEATURE
+========================================================= */
+
+.iec-advantage-feature {
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+}
+
+
+.iec-advantage-feature h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    font-weight: 700;
+}
+
+
+/* DOT */
+
+.iec-advantage-dot {
+    flex: 0 0 auto;
+
+    width: 13px;
+    height: 13px;
+
+    margin-top: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1.5px solid
+        #70a0ff;
+
+    border-radius: 50%;
+}
+
+
+.iec-advantage-dot span {
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #70a0ff;
+
+    box-shadow:
+        0 0 9px
+        rgba(112, 160, 255, .85);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.iec-advantage-description p {
+    max-width: 580px;
+
+    margin: 0;
+
+    color:
+        rgba(221, 228, 248, .78);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .iec-advantage-section {
+        padding:
+            75px
+            0
+            85px;
+    }
+
+
+    .iec-advantage-layout {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .iec-advantage-visual {
+        min-height: 430px;
+    }
+
+
+    .iec-advantage-illustration {
+        max-width: 500px;
+    }
+
+
+    .iec-advantage-content {
+        max-width: 850px;
+
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .iec-advantage-section {
+        padding:
+            60px
+            0
+            65px;
+    }
+
+
+    .iec-advantage-container {
+        width: calc(100% - 30px);
+    }
+
+
+    .iec-advantage-header {
+        margin-bottom: 35px;
+    }
+
+
+    .iec-advantage-header h2 {
+        font-size: 36px;
+    }
+
+
+    .iec-advantage-header > span {
+        font-size: 10px;
+
+        line-height: 1.5;
+    }
+
+
+    .iec-advantage-visual {
+        min-height: 320px;
+    }
+
+
+    .iec-advantage-illustration {
+        max-width: 360px;
+    }
+
+
+    /* remove table header */
+
+    .iec-advantage-table-header {
+        display: none;
+    }
+
+
+    /* stacked items */
+
+    .iec-advantage-row {
+        display: block;
+
+        padding:
+            27px
+            4px;
+    }
+
+
+    .iec-advantage-feature {
+        margin-bottom: 12px;
+    }
+
+
+    .iec-advantage-feature h3 {
+        font-size: 18px;
+    }
+
+
+    .iec-advantage-description {
+        padding-left: 27px;
+    }
+
+
+    .iec-advantage-description p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+}
+/* =====================================================
+   IEC TELECOM FAQ
+===================================================== */
+
+.iec-faq-section {
+    position: relative;
+
+    padding: 100px 0 110px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(66, 92, 175, 0.07),
+            transparent 30%
+        ),
+        #f7f8fc;
+}
+
+.iec-faq-container {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* HEADER
+----------------------------------------------------- */
+
+.iec-faq-header {
+    max-width: 760px;
+
+    margin: 0 auto 58px;
+
+    text-align: center;
+}
+
+.iec-faq-header > span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #6978a8;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: .16em;
+
+    text-transform: uppercase;
+}
+
+.iec-faq-header h2 {
+    margin: 0 0 18px;
+
+    color: #111b4b;
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    letter-spacing: -.04em;
+}
+
+.iec-faq-header p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #626b87;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* FAQ LIST
+----------------------------------------------------- */
+
+.iec-faq-list {
+    border-top:
+        1px solid
+        rgba(20, 32, 81, .12);
+}
+
+
+/* FAQ ITEM
+----------------------------------------------------- */
+
+.iec-faq-item {
+    position: relative;
+
+    border-bottom:
+        1px solid
+        rgba(20, 32, 81, .12);
+
+    transition:
+        background .3s ease;
+}
+
+.iec-faq-item:hover {
+    background:
+        rgba(255, 255, 255, .52);
+}
+
+
+/* QUESTION
+----------------------------------------------------- */
+
+.iec-faq-question {
+    width: 100%;
+
+    padding: 27px 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border: 0;
+
+    outline: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    color: #131d4e;
+
+    font-family: inherit;
+
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+}
+
+
+/* PLUS ICON
+----------------------------------------------------- */
+
+.iec-faq-icon {
+    position: relative;
+
+    flex: 0 0 auto;
+
+    width: 34px;
+    height: 34px;
+
+    border:
+        1px solid
+        rgba(30, 48, 111, .2);
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+
+.iec-faq-icon::before,
+.iec-faq-icon::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 13px;
+    height: 1.5px;
+
+    border-radius: 10px;
+
+    background: #1d2a68;
+
+    transform:
+        translate(-50%, -50%);
+
+    transition:
+        transform .35s ease,
+        background .3s ease;
+}
+
+
+.iec-faq-icon::after {
+    transform:
+        translate(-50%, -50%)
+        rotate(90deg);
+}
+
+
+/* ACTIVE ICON */
+
+.iec-faq-item.active
+.iec-faq-icon {
+    border-color: #253d8b;
+
+    background: #17245c;
+}
+
+.iec-faq-item.active
+.iec-faq-icon::before,
+.iec-faq-item.active
+.iec-faq-icon::after {
+    background: #ffffff;
+}
+
+.iec-faq-item.active
+.iec-faq-icon::after {
+    transform:
+        translate(-50%, -50%)
+        rotate(0deg);
+}
+
+
+/* ANSWER
+----------------------------------------------------- */
+
+.iec-faq-answer {
+    display: grid;
+
+    grid-template-rows: 0fr;
+
+    transition:
+        grid-template-rows
+        .4s cubic-bezier(.2,.7,.2,1);
+}
+
+.iec-faq-answer-inner {
+    overflow: hidden;
+
+    max-width: 900px;
+
+    padding:
+        0
+        70px
+        0
+        8px;
+
+    color: #616a85;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    opacity: 0;
+
+    transform: translateY(-6px);
+
+    transition:
+        opacity .3s ease,
+        transform .35s ease,
+        padding .35s ease;
+}
+
+
+/* ACTIVE ANSWER */
+
+.iec-faq-item.active
+.iec-faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.iec-faq-item.active
+.iec-faq-answer-inner {
+    padding-bottom: 28px;
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* TABLET
+----------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .iec-faq-section {
+        padding: 75px 0 85px;
+    }
+
+}
+
+
+/* MOBILE
+----------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .iec-faq-section {
+        padding: 60px 0 65px;
+    }
+
+    .iec-faq-container {
+        width: calc(100% - 30px);
+    }
+
+    .iec-faq-header {
+        margin-bottom: 40px;
+    }
+
+    .iec-faq-header h2 {
+        font-size: 35px;
+    }
+
+    .iec-faq-header p {
+        font-size: 14px;
+    }
+
+    .iec-faq-question {
+        padding: 22px 4px;
+
+        gap: 18px;
+
+        font-size: 17px;
+    }
+
+    .iec-faq-icon {
+        width: 31px;
+        height: 31px;
+    }
+
+    .iec-faq-answer-inner {
+        padding-right: 10px;
+
+        padding-left: 4px;
+
+        font-size: 14px;
+    }
+
+    .iec-faq-item.active
+    .iec-faq-answer-inner {
+        padding-bottom: 23px;
+    }
+
+}

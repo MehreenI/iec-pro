@@ -1,0 +1,70 @@
+.video-section {
+    position: relative;
+    background: white;
+    padding: 60px 0 0 0;
+    height: 850px;
+    z-index: 0;
+}
+
+.video-section .bottom-color {
+    position: absolute;
+    bottom: 0;
+    height: 262px;
+    background: #1B204C;
+    width: 100%;
+}
+.video-section .app-container{
+    display: flex;
+}
+
+.video-section h2 {
+    font-family: Myriad Pro;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    color: #1B204C;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.video-section iframe {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+@media screen and (max-width:1024px) {
+    .video-section {
+        position: relative;
+        background: white;
+        padding: 40px 0 0 0;
+        height: auto;
+    }
+    
+    .video-section .bottom-color {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        height: 50px;
+        background: #1B204C;
+        width: 100%;
+    }
+    
+    .video-section h2 {
+        font-family: Myriad Pro;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        color: #1B204C;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    .video-section iframe {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        height: 100%;
+        aspect-ratio: 16/9;
+    }
+}

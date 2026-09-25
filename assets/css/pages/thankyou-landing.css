@@ -1,0 +1,97 @@
+body.thank-you { height: 100%; }
+
+.ice_thankyou_page_warpper {
+    height: 100%;
+    min-height: calc(100vh - 7.634365rem);
+    background: linear-gradient(275.39deg, #727DA3 0%, #1B204C 90.34%);
+    padding: 1.957529rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-1 {
+    width: 23.803558rem;
+    height: auto;
+    position: absolute;
+    top: 3.915059rem;
+    right: 0;
+}
+
+.svg-2 {
+    position: absolute;
+    bottom: 3.327800rem;
+    left: 0;
+    width: 19.849349rem;
+    height: auto;
+}
+
+.thankyou-container {}
+
+.thankyou-inner {
+    width: 100%;
+    max-width: 23.255450rem;
+    margin: 1.957529rem auto;
+    border-radius: 0.313205rem;
+    padding: 2.035831rem 1.096216rem;
+    background: #fff;
+    box-shadow: 0px 4.25px 15px 8px #00000026;
+    text-align: center;
+}
+
+.thankyou-inner h1 {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    font-size: 1.252819rem;
+    line-height: 100%;
+    margin-bottom: 1.683475rem;
+    text-align: center;
+    color: #1B204C;
+}
+
+.thankyou-inner p {
+    color: #777;
+    font-family: 'Myriad Pro';
+    font-weight: 300;
+    font-size: 0.704710598847406665rem;
+    line-height: 112%;
+    margin-bottom: 0.587259rem;
+    text-align: center;
+}
+
+/* Contact */
+.thankyou-inner p.contacts {
+    font-weight: 700;
+    line-height: 156%;
+    margin: 1.174518rem 0;
+    color: #1B204C;
+}
+
+.thankyou-inner p .btn {
+    width: 100%;
+    max-width: 9.631045rem;
+    height: 1.879228rem;
+    padding: .46980706589827111rem .939614rem;
+    border-radius: .117452rem;
+    margin-top: 1.683475rem;
+    font-size: .783012rem;
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(271.38deg, #727DA3 .39%, #1B204C 100%);
+    margin-inline: auto;
+    transition: 0.35s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.thankyou-inner p .btn:hover {
+    transition: 0.35s cubic-bezier(0.3, 0.7, 0.4, 1);
+    background: linear-gradient(271.38deg, #1a204b 0.39%, #1a204b 100%);
+}

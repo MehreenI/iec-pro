@@ -1,0 +1,129 @@
+/* Hero */
+.iec_optisim_hero_banner {
+	min-height: 13.660236rem;
+	padding-top: 5.481082rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.iec_optisim_hero_banner .iec_hero_banner__media {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+.iec_optisim_hero_banner .iec_hero_banner__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.iec_optisim_hero_banner .container {
+	position: relative;
+	z-index: 1;
+}
+
+.iec_return_link {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.548108rem;
+	line-height: 158%;
+	color: #727da3;
+	gap: 0.313205rem;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+}
+
+.iec_return_link a {
+	color: #727da3;
+}
+
+.iec_return_link svg {
+	height: auto;
+	flex: 0 0 auto;
+	width: 0.391506rem;
+}
+
+/* Contact */
+.iec_main_contact_section.iec_optisim_content {
+	padding-top: 1.957529rem;
+	margin-bottom: 1rem;
+}
+
+.iec_key_points {
+	margin-bottom: 0.665560rem;
+}
+
+.iec_key_points h2 {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.783012rem;
+	color: #1b204c;
+	text-transform: uppercase;
+	margin-bottom: 0.665560rem;
+}
+
+.iec_key_point_box {
+	padding: 0.587259rem 0.783012rem;
+	margin-bottom: 0.391506rem;
+	border-radius: 0.391506rem;
+	background-color: rgba(27, 32, 76, 0.04);
+}
+
+.iec_key_point_box p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 125%;
+	color: #2a2a2a;
+}
+
+/* Buttons */
+.iec_button_list_warpper {
+	width: 100%;
+	gap: 0.783012rem;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.iec_button_list_warpper > * {
+	flex: 0 0 auto;
+}
+
+.iec_additional_buttons .iec_outline_buttton {
+	min-width: 8.613130rem;
+	padding: 0.548108rem 0.978765rem 0.508958rem;
+	font-size: 0.704710598847406665rem;
+}
+
+.iec_button_list_warpper .iec_download_content,
+.iec_button_list_warpper .download__content {
+	gap: 0.46980706589827111rem;
+	max-width: auto;
+	flex-direction: row-reverse;
+	font-size: 0.604710598847406665rem;
+	display: flex;
+	align-items: center;
+}
+
+.iec_button_list_warpper .iec_download_content svg {
+	width: 0.939614rem;
+	height: auto;
+	flex: 0 0 auto;
+}
+
+body.vas-detail-page .download .download__content,
+body.page-template-vas-detail-page .download .download__content {
+	width: 100%;
+	justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+body.vas-detail-page .download .download__content, body.page-template-vas-detail-page .download .download__content{
+		min-width: 100% !important;
+	}
+}

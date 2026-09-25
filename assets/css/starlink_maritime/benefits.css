@@ -1,0 +1,422 @@
+.benefits {
+    background: #1B204C;
+    overflow: hidden;
+    height: 685px;
+}
+
+.benefits-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.benefits-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.benefits-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: 39px;
+    z-index: 1;
+    justify-content: end;
+    gap: 79px;
+}
+
+.benefits-content .left .slogan {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 44px;
+}
+
+.benefits-content .left .slogan .item {
+    font-family: Myriad Pro;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    color: white;
+}
+
+.benefits-content .right .slogan {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 44px;
+}
+
+.benefits-content .right .slogan .item {
+    font-family: Myriad Pro;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    color: white;
+}
+.benefits-content .left .benefits-items .item .left .bottom svg path{
+    stroke-dasharray: 1000; 
+    stroke-dashoffset: 1000; 
+    fill: none;
+  }
+  .benefits-content .right .benefits-items .item .bottom svg path {
+    stroke-dasharray: 1000; 
+    stroke-dashoffset: 1000; 
+    fill: none;
+  }
+.slogan .item:nth-of-type(1) {
+    opacity: 0.11;
+}
+
+.slogan .item:nth-of-type(2) {
+    opacity: 0.32;
+}
+
+.slogan .item:nth-of-type(3) {
+    opacity: 1;
+}
+
+.benefits-content .left .benefits-items {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.benefits-content .left .benefits-items .item .wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 12px;
+}
+.benefits-content .left .benefits-items .item .left  .bottom{
+  margin-bottom: 43px;
+}
+
+.benefits-content .left .benefits-items .item .left .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.benefits-content .left .benefits-items .item .left img {
+   width: 55px;
+   height: 55px;
+   object-fit: cover;
+}
+
+.benefits-content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.benefits-content .left .benefits-items .item .left h3 {
+    font-family: Myriad Pro;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+}
+
+.benefits-content .left .benefits-items .item .left h4 {
+    font-family: Myriad Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: right;
+    color: white;
+
+}
+
+.benefits-content .left .benefits-items .item .left .sub {
+    font-family: Myriad Pro;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: right;
+    margin-top: -35px;
+    color: white;
+
+}
+
+
+
+.benefits-content .right .benefits-items {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.benefits-content .right .benefits-items .item .wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 12px;
+}
+
+.benefits-content .right .benefits-items .item .left .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.benefits-content .right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.benefits-content .right .benefits-items .item .left h3 {
+    font-family: Myriad Pro;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+}
+
+.benefits-content .right .benefits-items .item .left h4 {
+    font-family: Myriad Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: right;
+    color: white;
+
+}
+
+.benefits-content .right .benefits-items .item .bottom {
+    margin-bottom: 43px;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    .benefits {
+        background: #1B204C;
+        overflow: hidden;
+        height: auto;
+    }
+    .benefits-content .left .benefits-items .item .left .bottom{
+        display: none;
+    }
+
+    .benefits-wrapper {
+        position: relative;
+        height: 100%;
+    }
+
+    .benefits-bg {
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        height: 64%;
+        object-fit: cover;
+        opacity: 0.7;
+        transform: translate(-18%, -50%);
+    }
+
+    .benefits-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 20px;
+        z-index: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .benefits-content .right .slogan .item {
+        font-family: Myriad Pro;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 42px;
+        text-align: left;
+        color: white;
+    }
+
+    .slogan .item:nth-of-type(1) {
+        opacity: 0.11;
+    }
+
+    .slogan .item:nth-of-type(2) {
+        opacity: 0.32;
+    }
+
+    .slogan .item:nth-of-type(3) {
+        opacity: 1;
+    }
+
+    .benefits-content .left .benefits-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefits-content .left .benefits-items .item .wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 32px;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+   
+    .benefits-content .left .benefits-items .item .left .text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .benefits-content .left {
+        display: flex;
+        width: calc(100% - 40px);
+        flex-direction: column;
+        align-items: end;
+        z-index: 1;
+        position: relative;
+    }
+
+    .benefits-content .left .benefits-items .item .left h3 {
+        font-family: Myriad Pro;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: start;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .benefits-content .left .benefits-items .item .left h4 {
+        font-family: Myriad Pro;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: start;
+        color: white;
+
+    }
+
+    .benefits-content .left .benefits-items .item .left .sub {
+        margin-top: -13px;
+        width: 100%;
+        text-align: left;
+
+    }
+    .benefits-content .right .benefits-items .item .left {
+      width: 100%;
+
+     }
+     .benefits-content .right .benefits-items  .item .left .is--mobile svg {
+        width: 100%;
+        margin-bottom: 16px;
+       }
+     .benefits-content .left .benefits-items  .item .left {
+        width: 100%;
+  
+       }
+       .benefits-content .left .benefits-items  .item .left .is--mobile svg {
+        width: 100%;
+        margin-bottom: 16px;
+       }
+    .benefits-content .left .benefits-items .item .bottom svg {
+        display: none;
+    }
+
+    .benefits-content .left .benefits-items .item .left:nth-of-type(1) .bottom svg {
+        width: 443px;
+    }
+
+    .benefits-content .left .benefits-items .item .left:nth-of-type(2) {
+        margin-top: unset;
+    }
+
+    .benefits-content .left .benefits-items .item .left:nth-of-type(3) {
+        margin-top: unset;
+    }
+
+    .benefits-content .left .benefits-items .item .left:nth-of-type(3) .bottom svg {
+        width: 551px;
+    }
+
+    .benefits-content .right .benefits-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefits-content .right .benefits-items .item .wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 32px;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .benefits-content .right .benefits-items .item .left .text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .benefits-content .right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: calc(100% - 40px);
+        margin-top: 20px;
+
+    }
+  
+
+    .benefits-content .right .benefits-items .item .left h3 {
+        font-family: Myriad Pro;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .benefits-content .right .benefits-items .item .left h4 {
+        font-family: Myriad Pro;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        color: white;
+
+    }
+
+    .benefits-content .right .benefits-items .item .bottom {
+       display: none;
+    }
+
+    .benefits-content .right .benefits-items .item .left:nth-of-type(3) {
+        margin-top: unset;
+
+    }
+
+}

@@ -1,0 +1,122 @@
+/* Offices */
+.iec_contact_us_regional_offices {
+	padding: 2.231584rem 0 2.544788rem;
+}
+
+.iec_contact_us_regional_offices .iec_main_heading {
+	font-size: 1.566024rem;
+	margin-bottom: 1.331120rem;
+	letter-spacing: 0.031320rem;
+}
+
+.iec_contact_office_box_warpper {
+	min-height: 6.459847rem;
+	margin-bottom: 2.349035rem;
+}
+
+.iec_contact_office_box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.469807rem;
+}
+
+.iec_contact_office_top_detail {
+	display: flex;
+	flex-direction: column;
+	gap: 0.156602rem;
+}
+
+.iec_contact_office_top_detail h5 {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.017915rem;
+	line-height: 100%;
+	color: #1b204c;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.iec_contact_office_top_detail span {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 300;
+	font-size: 0.704711rem;
+	line-height: 144.444%;
+	color: #1b204c;
+}
+
+.iec_contact_office_content_list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.469807rem;
+	margin: 0;
+	padding: 0;
+}
+
+.iec_contact_office_content_list li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 0.254479rem;
+}
+
+.iec_contact_office_content_list li svg {
+	height: auto;
+	flex: 0 0 auto;
+	width: 1.252819rem;
+}
+
+.iec_contact_office_content_list a {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 300;
+	font-size: 0.704711rem;
+	line-height: 144.444%;
+	color: #1b204c;
+	text-decoration: none;
+}
+
+.iec_contact_office_content_list a:hover {
+	font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+/* Offices */
+.iec_contact_office_box_warpper {
+		min-height: auto;
+		margin-bottom: 0;
+	}
+
+.iec_contact_office_box_warpper:not(:last-child) {
+		margin-bottom: 1.666667rem;
+	}
+
+.iec_contact_office_top_detail h5 {
+		font-size: 1.111111rem;
+		line-height: 130%;
+	}
+
+.iec_contact_office_content_list a,
+	.iec_contact_office_top_detail span {
+		font-size: 0.888889rem;
+		line-height: 125%;
+	}
+
+.iec_contact_office_box{
+		gap: 0.666667rem;
+	}
+
+.iec_contact_office_top_detail,
+	.iec_contact_office_content_list {
+		gap: 0.222222rem;
+	}
+
+.iec_contact_office_content_list li svg {
+		width: 1.555556rem;
+	}
+
+.iec_contact_office_content_list li {
+		gap: 0.418903rem;
+	}
+}

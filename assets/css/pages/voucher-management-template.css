@@ -1,0 +1,588 @@
+/* Desktop */
+
+/* Shared */
+.iec-voucher-management .iec_section_heading {
+    font-family: 'Segoe UI';
+    font-size: 1.409421rem;
+    letter-spacing: 0.039151rem;
+    margin-bottom: 0;
+}
+
+.iec_main_content_warpper p {
+    font-family: 'Segoe UI';
+    font-weight: 300;
+    font-size: 0.78301177649rem;
+    line-height: 146%;
+    color: #1B204C;
+}
+
+.gap-100 {
+    gap: 4rem;
+}
+
+.mb-0 {
+    margin-bottom: 0rem !important;
+}
+
+/* Hero */
+.iec-vms-hero {
+    border-radius: 0 0 8rem 0;
+    background: linear-gradient(280deg, #727DA3 24.98%, #1B204C 99.41%);
+    padding: 2.03583061889rem 0rem 2.34903532949rem 0rem;
+}
+
+.iec-vms-hero .iec_primary_heading {
+    text-transform: uppercase;
+}
+
+.iec-vms-hero .iec_sub_heading_content,
+.iec-vms-hero .iec_sub_heading_content p {
+    line-height: normal;
+    width: 434px;
+    max-width: 100%;
+}
+
+.iec-vms-hero .hero__buttons {
+    gap: 0.6rem;
+    margin-top: 1.4rem;
+}
+
+.iec-vms-hero .hero__buttons a {
+    font-weight: 400;
+    width: 100%;
+    max-width: 7.634365rem;
+    gap: 0.156602rem;
+    border-radius: 0.313205rem;
+    justify-content: center;
+    margin: 0rem;
+    padding: 0 0.587259rem !important;
+    font-size: 0.626409rem;
+    height: 1.722626rem;
+    display: flex;
+    align-items: center;
+}
+
+.iec-vms-hero .hero__buttons a svg {
+    width: auto;
+    height: 0.587259rem;
+}
+
+.iec-vms-hero .hero__buttons a.gray_btn {
+    padding-left: 0.597259rem !important;
+}
+
+.iec-vms-hero .hero__buttons a.gray_btn:hover {
+    color: #1b204c;
+}
+
+.iec-vms-hero .hero__buttons a.gray_btn:hover path {
+    fill: #1b204c;
+}
+
+.iec-btn-outline {
+    color: #1B204C;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 0.64rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.64rem;
+    border-radius: 0.32rem;
+    border: 1px solid #FFF;
+    background: #FFF;
+}
+
+a.btn.btn-outline.iec-btn-outline {
+    padding: 12px 28px;
+}
+
+img.hero-side-img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Support / Installation */
+.iec-support-section {
+    border-radius: 0 8rem 0 0;
+    background: rgba(202, 209, 234, 0.60);
+    padding: 4.24rem 0px;
+}
+
+.iec-support-section .iec_main_content_warpper {
+    margin-top: 0.46980706589827111rem;
+}
+
+.vmc_heading.iec_section_heading {
+    margin-bottom: 0.32rem;
+    line-height: normal;
+}
+
+ul.iec_icon_list.vmc_list li {
+    font-family: 'Segoe UI';
+    color: #1B204C;
+    align-items: start;
+    font-size: 0.78301177649rem;
+}
+
+span.iec-list-icon {
+    position: relative;
+    margin-left: -6px;
+}
+
+/* Split media */
+.iec-content-section {
+    min-height: 25.995991rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ice_voucher_content_image_warpper {
+    width: 100%;
+    max-width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ice_voucher_content_image_warpper > * {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.ice_voucher_content_shape_image {
+    max-width: 25.995991rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.iec-content-section.iec-content-left .ice_voucher_content_image_warpper {
+    left: 0;
+    right: auto;
+}
+
+.iec-content-section.iec-content-left .ice_voucher_content_image_warpper .ice_voucher_content_shape_image {
+    margin-inline: 1.409421rem 0;
+}
+
+.iec-content-section.iec-content-left .ice_voucher_content_image_warpper .ice_voucher_content_main_image {
+    max-width: 39.085599rem;
+    object-fit: contain;
+    margin-top: 1.5rem;
+    height: 100%;
+}
+
+section.iec_defualt_position.iec-content-section.iec-content-left p {
+    margin-bottom: 0.8rem;
+}
+
+.iec-content-section.iec-content-right .ice_voucher_content_image_warpper {
+    max-width: 25.995991rem;
+    right: 2.349035rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iec-content-section.iec-content-right .ice_voucher_content_image_warpper .ice_voucher_content_main_image {
+    max-width: 25.003915rem;
+}
+
+.iec_main_content_warpper.vm_content {
+    margin-top: 0.43065647707rem;
+}
+
+.split_media_text_list,
+ul.iec_icon_list.vmc_list {
+    max-width: 100%;
+}
+
+.split_media_text_list li {
+    font-family: 'Segoe UI';
+    color: #1B204C;
+    align-items: start;
+}
+
+.split_media_text_list li:not(:last-child) {
+    margin-bottom: 1.01791530945rem !important;
+}
+
+a.iec_button.iec_blue_gradient.vmc_btn {
+    width: 10.16rem;
+    max-width: 100%;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+}
+
+/* Solution architecture */
+.iec-solution-architecture .col-md-4 {
+    width: calc(33.3% - 2.3rem);
+}
+
+.row.iec-arch-cards {
+    gap: 3.327800rem;
+    margin-top: 1.4rem;
+}
+
+.row.iec-arch-cards .col-md-4 {
+    padding: 0px;
+}
+
+.iec-arch-card {
+    padding: 0.64rem;
+    background: linear-gradient(123.75deg, #1B204C 5%, #727DA3 96.03%);
+    border-radius: 1.12rem;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 11.431972rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.iec-arch-card__icon img {
+    min-width: 4.78850851917rem;
+    min-height: 4.36928401403rem;
+}
+
+h3.iec-arch-card__title {
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-size: 0.96rem;
+    line-height: 1.04rem;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.iec-arch-card__subtitle {
+    font-family: 'Segoe UI';
+    font-size: 0.861313rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 145.455%;
+    margin-bottom: 0.8rem;
+}
+
+.card_front {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    opacity: 0;
+    border-radius: 1.12rem;
+    visibility: hidden;
+    background: #727DA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.6rem;
+}
+
+.iec-arch-card:hover .card_front {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card_front p.iec-arch-card__subtitle {
+    line-height: 1.6;
+}
+
+a.iec-arch-card__link {
+    font-weight: 500;
+    font-size: 0.64rem;
+    line-height: 0.88rem;
+    display: flex;
+    width: fit-content;
+    margin: 0px auto;
+    gap: 0.25rem;
+    align-items: center;
+    color: white;
+}
+
+.mob_show {
+    display: none;
+}
+
+/* Key features */
+.iec-voucher-management .iec_use_case_accordion .iec_section_heading {
+    margin-bottom: 1.096216rem;
+}
+
+/* Use cases slider */
+.iec-voucher-management .iec_optiview_directions .directions__title {
+    font-family: "Segoe UI";
+    font-size: 0.939614rem;
+}
+
+.iec-voucher-management .iec_optiview_directions .directions__desc {
+    font-family: "Segoe UI";
+    font-weight: 300;
+}
+
+/* Video */
+.iec-video-section {
+    padding: 3.44rem 0;
+    background: rgba(202, 209, 234, 0.60);
+    border-radius: 200px 0;
+}
+
+.iec-video-player {
+    position: relative;
+    width: 100%;
+    max-width: 35.235530rem;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.469858rem;
+    overflow: hidden;
+    background: #1B204C;
+}
+
+.iec-video-thumbnail {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+}
+
+.iec-video-thumbnail.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.iec-video-thumb-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iec-video-play-btn {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.iec-video-play-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+
+.iec-video-play-btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+    border-radius: 50%;
+}
+
+.iec-video-iframe iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    /* Hero */
+    .iec-vms-hero .hero__buttons {
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .iec-vms-hero .hero__buttons a {
+        width: 100%;
+        max-width: unset !important;
+    }
+
+    /* Split media */
+    .iec-content-section.iec-content-left .ice_voucher_content_image_warpper .ice_voucher_content_shape_image {
+        margin-inline: 0;
+    }
+
+    /* Solution architecture */
+    .mob_show {
+        display: block;
+    }
+
+    .iec-solution-architecture .col-md-4 {
+        width: 100%;
+    }
+
+    body .iec-arch-card {
+        padding: 24px;
+    }
+
+    .row.iec-arch-cards {
+        gap: 0.8rem;
+        margin-top: 0.8rem;
+    }
+
+    .row.iec-arch-cards .col-md-4,
+    body .row.iec-arch-cards .col-md-4 {
+        padding: 0 0.6rem;
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    /* Hero */
+    .hero.iec-vms-hero {
+        text-align: center;
+    }
+
+    .iec-vms-hero .iec_primary_heading {
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+
+    .iec-vms-hero .hero__buttons {
+        flex-direction: column;
+    }
+
+    .iec-vms-hero .hero__buttons a {
+        height: 2.444444rem;
+        max-width: 10.666667rem !important;
+        font-size: 0.888889rem !important;
+        gap: 0.222222rem;
+    }
+
+    .iec-vms-hero .hero__buttons a svg {
+        height: 0.833333rem;
+    }
+
+    /* Support / Installation */
+    .iec-support-section .gap-100 {
+        gap: 0px;
+    }
+
+    .iec-support-section h2,
+    .iec-support-section p {
+        text-align: center;
+        font-size: 1.111111rem;
+    }
+
+    .iec-support-section h2 {
+        font-size: 1.625rem;
+        line-height: 1.625rem;
+    }
+
+    /* Split media */
+    .iec-content-section {
+        flex-direction: column-reverse;
+    }
+
+    .iec-content-section h2 {
+        margin-top: 1.5rem;
+    }
+
+    .iec-content-left h2,
+    .iec-content-left p,
+    .iec-content-right h2,
+    .iec-content-right p {
+        text-align: center;
+    }
+
+    .iec-content-left h2,
+    .iec-content-right h2 {
+        font-size: 1.625rem;
+        line-height: 1.625rem;
+    }
+
+    .ice_voucher_content_image_warpper {
+        width: 100%;
+        max-width: 22.353722rem;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        position: relative;
+    }
+
+    .iec-content-section .ice_voucher_content_image_warpper > * {
+        max-width: 100% !important;
+        margin-inline: 0 !important;
+    }
+
+    .iec-content-section.iec-content-right .ice_voucher_content_image_warpper {
+        right: 0;
+    }
+
+    .iec-content-section.iec-content-left .ice_voucher_content_image_warpper .ice_voucher_content_main_image {
+        margin-top: 0.555556rem;
+    }
+
+    a.iec_button.iec_blue_gradient.vmc_btn {
+        margin: auto;
+    }
+
+    .iec_main_content_warpper p,
+    .iec_main_content_warpper.vm_content p {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    /* Solution architecture */
+    .iec-solution-architecture {
+        text-align: center;
+    }
+
+    .iec-solution-architecture .iec_section_heading {
+        font-size: 1.625rem;
+        line-height: 1.625rem;
+    }
+
+    .iec-solution-architecture .iec_main_content_warpper p,
+    .iec-arch-card__subtitle {
+        font-size: 1.111111rem;
+    }
+
+    .row.iec-arch-cards {
+        gap: 1.327800rem;
+    }
+
+    .iec-arch-card__title {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+
+    .card_front {
+        display: none;
+    }
+
+    /* Key features */
+    .iec-voucher-management .iec_use_case_accordion .iec_section_heading {
+        text-align: center;
+        font-size: 1.625rem;
+        line-height: 1.625rem;
+    }
+
+    /* Video */
+    .iec-video-section {
+        border-radius: 3rem 0;
+        padding: 2.5rem 0;
+    }
+
+    button#iecPlayBtn svg {
+        width: 30px;
+    }
+}

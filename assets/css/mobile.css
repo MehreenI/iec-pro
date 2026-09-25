@@ -1,0 +1,1035 @@
+/* ===========================================================================
+   Page-specific mobile (max-width: 767px)
+   Loaded after responsive.css so these overrides win.
+   =========================================================================== */
+
+/* ==========================================================================
+   Single Office — mobile start
+   ========================================================================== */
+@media (max-width: 767px) {
+    .iec-tab-landing .iec_single_office_banner_swiper_warpper .iec_single_office_banner_box {
+        background-image: var(--mobileImage, var(--desktopImage));
+    }
+
+    .iec-tab-landing .iec_single_office_tab_section {
+        margin-top: 0;
+    }
+
+    .iec-tab-landing .iec_tab_landing_panel_inner {
+        padding-top: 1.5rem;
+    }
+
+    .iec_single_office_banner_box .banner_content .iec_single_office_logo {
+        max-width: 100% !important;
+        margin-top: 0.666667rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .iec-tab-landing .iec_tab_about,
+    .iec-tab-landing .iec_tab_department {
+        padding: 2.222222rem 0;
+    }
+
+    .iec-tab-landing .iec_tab_dept_card_title,
+    .iec-tab-landing .iec_tab_section_heading {
+        font-size: 1.444444rem;
+        line-height: 115.385%;
+        letter-spacing: 0.028889rem;
+        margin-bottom: 1.111111rem;
+        text-align: center;
+    }
+
+    .iec-tab-landing .iec_tab_body_text,
+    .iec-tab-landing .iec_tab_dept_intro,
+    .iec-tab-landing .iec_tab_dept_card_body {
+        font-size: 0.888889rem;
+        line-height: 150%;
+        margin-bottom: 1.111111rem;
+    }
+
+    .iec-tab-landing .iec_tab_disclaimer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0.888889rem;
+        text-align: center;
+        padding: 1.111111rem;
+        margin-bottom: 1.111111rem;
+    }
+
+    .iec-tab-landing .iec_tab_disclaimer_icon {
+        width: 3.333333rem;
+        height: auto;
+    }
+
+    .iec-tab-landing .iec_tab_disclaimer_label {
+        font-size: 1.111111rem;
+        margin-bottom: 0.222222rem;
+    }
+
+    .iec-tab-landing .iec_tab_feature_label,
+    .iec-tab-landing .iec_tab_disclaimer_text {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 133.333%;
+    }
+
+    .iec-tab-landing .iec_tab_feature_item {
+        flex: 1 1 100%;
+        gap: 0.666667rem;
+        padding: 1.111111rem 0.666667rem;
+    }
+
+    .iec-tab-landing .iec_tab_body_text p:not(:last-child) {
+        margin-bottom: 1.111111rem;
+    }
+
+    .iec-tab-landing .iec_tab_features {
+        flex-direction: column;
+    }
+
+    .iec-tab-landing .iec_tab_role_heading {
+        margin-top: 0;
+    }
+
+    .iec-tab-landing .iec_tab_feature_icon {
+        width: 1.666667rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_header {
+        margin-bottom: 1.111111rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_cta_col {
+        justify-content: center;
+    }
+
+    .iec-tab-landing .iec_tab_dept_contact_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 10.277778rem;
+        height: 2.111111rem;
+        padding: 0.222222rem 1.11111rem 0;
+        border-radius: 0.277778rem;
+        font-size: 1rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_card {
+        padding: 1.555556rem 0.888889rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_card_layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.666667rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_card_body,
+    .iec-tab-landing .iec_tab_dept_card_title {
+        margin-bottom: 0.888889rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_features {
+        gap: 0.666667rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_features li {
+        gap: 0.666667rem;
+        font-size: 0.888889rem;
+        line-height: 150%;
+    }
+
+    .iec-tab-landing .iec_tab_dept_features li svg {
+        width: 1.666667rem;
+    }
+
+    .iec-tab-landing .iec_tab_dept_card_media {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .iec_single_office_tab_contact_us .address_detail_repeater p,
+    .address_detail_repeater p {
+        max-width: 9.444444rem;
+        margin-inline: auto;
+    }
+}
+/* Single Office — mobile end */
+
+/* ==========================================================================
+   Single Solution — mobile start
+   ========================================================================== */
+@media (max-width: 767px) {
+    .iec_single_solution_hero {
+        min-height: 33.333333rem;
+        padding-top: 3.611111rem;
+        padding-bottom: 23.333333rem;
+        background-image: var(--bg_mobile);
+        align-items: start;
+        text-align: center;
+    }
+
+    .iec_single_solution_hero::before {
+        background: linear-gradient(180deg, rgba(27, 32, 76, 1) 10%, rgba(27, 32, 76, 0.92) 35%, rgba(27, 32, 76, 0.7) 60%, rgba(27, 32, 76, 0.35) 85%, rgb(255 255 255 / 0%) 100%);
+    }
+
+    .iec_single_solution_tagline {
+        width: 10.388889rem;
+        height: 2.166667rem;
+        border-radius: 0 0 0.758333rem 0.758333rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .iec_single_solution_tagline span {
+        transform: rotate(0deg);
+        writing-mode: horizontal-tb;
+        font-size: 1.333333rem;
+    }
+
+    .iec_single_solution_hero_content {
+        max-width: 19.555556rem;
+        margin-inline: auto;
+    }
+
+    .iec_single_solution_slide_pills {
+        margin-bottom: 0.722222rem;
+        justify-content: center;
+    }
+
+    .iec_single_solution_slide_pills li {
+        height: 1.222222rem;
+        font-size: 0.666667rem;
+        padding-bottom: 0.111111rem;
+        padding-inline: 0.555556rem;
+    }
+
+    .iec_single_solution_name {
+        font-size: 2rem;
+        letter-spacing: 0.04rem;
+        margin-bottom: 0.666667rem;
+    }
+
+    .iec_single_solution_sub_head {
+        font-size: 1.222222rem;
+        line-height: 145.455%;
+        letter-spacing: 0.024444rem;
+    }
+
+    .iec_single_solution_slide_buttons {
+        gap: 0.333518rem;
+        margin-top: 1.111111rem;
+        justify-content: space-between;
+    }
+
+    .iec_single_solution_slide_buttons li {
+        width: 9.5rem;
+        min-width: 9.5rem;
+    }
+
+    .iec_single_solution_slide_buttons li a {
+        max-width: 100% !important;
+        height: 2.222222rem;
+        padding: 0 1.11111rem !important;
+        font-size: 0.888889rem !important;
+        margin-top: 0px !important;
+    }
+
+    .iec_outline_button_with_icon {
+        gap: 0.5rem;
+    }
+
+    .iec_outline_button_with_icon svg {
+        width: 0.777778rem;
+    }
+
+    .iec_single_product_section_title,
+    .iec_single_solution_use_cases h2 {
+        font-size: 1.444444rem;
+        line-height: 184.615%;
+        letter-spacing: 0.028889rem;
+        text-align: center;
+    }
+
+    .iec_single_solution_overview_content_warpper {
+        padding: 2.222222rem 0;
+        margin-top: 0;
+    }
+
+    .iec_single_solution_image_modal {
+        padding: 2.222222rem 0;
+    }
+
+    .iec_single_solution_product_image_grid,
+    .iec_single_solution_use_cases_box_grid {
+        display: none;
+    }
+
+    .iec_single_solution_mobile_swiper_warpper {
+        display: block;
+        padding-top: 2.777778rem;
+        position: relative;
+        max-width: 19.444444rem;
+        margin-inline: auto;
+    }
+
+    .iec_single_solution_mobile_swiper_warpper .iec_swiper_arrow_warpper {
+        top: 0;
+    }
+
+    .image-modal-swiper .swiper-slide {
+        width: 100% !important;
+        max-width: 19.388889rem !important;
+        margin-top: 0 !important;
+        height: calc((100% - 0.833333rem) / 2) !important;
+    }
+
+    .iec_single_solution_product_image_post {
+        width: 100%;
+    }
+
+    .image-modal-swiper .swiper-wrapper {
+        flex-direction: row !important;
+        row-gap: 0.833333rem !important;
+    }
+
+    .iec_single_solution_image_warpper {
+        aspect-ratio: 5/3;
+    }
+
+    .iec_single_product_image_content {
+        margin-top: 0.444444rem;
+    }
+
+    .iec_modal_image_icon {
+        display: none;
+    }
+
+    .iec_single_product_image_content h3 {
+        font-size: 0.773889rem;
+    }
+
+    .iec_single_product_image_content p {
+        font-size: 0.677167rem;
+    }
+
+    .iec_single_solution_use_cases {
+        padding: 2rem 0 3.222222rem;
+    }
+
+    .iec_single_solution_use_cases h2 {
+        margin-bottom: 1.111111rem;
+    }
+
+    .use_cases_swiper .swiper-slide {
+        width: 100%;
+        height: auto;
+    }
+
+    .iec_single_solution_use_cases_box {
+        padding: 2.222222rem 2.111111rem;
+        border-radius: 0.444444rem;
+    }
+
+    .iec_single_solution_use_cases_box_icon {
+        width: 3.555556rem;
+        height: 3.555556rem;
+        margin-bottom: 1.111111rem;
+    }
+
+    .iec_single_solution_use_cases_box h3 {
+        font-size: 1.111111rem;
+        margin-bottom: 0.444444rem;
+    }
+
+    .iec_single_solution_use_cases_box p {
+        font-size: 0.888889rem;
+    }
+
+    .iec_single_solution_use_cases .iec_single_solution_mobile_swiper_warpper .iec_swiper_arrow_warpper > * {
+        border: 1px solid #fff !important;
+    }
+
+    .iec_single_solution_use_cases .iec_single_solution_mobile_swiper_warpper .iec_swiper_arrow_warpper > * svg path {
+        fill: #fff;
+    }
+
+    .iec_specification_section,
+    .iec_single_solution_acordions_section {
+        padding: 2.222222rem 0;
+    }
+
+    .iec_specs_button {
+        width: 7.277778rem;
+        height: 1.722222rem;
+        padding: 0 0.833333rem;
+        font-size: 0.888889rem;
+        margin-top: 0.222222rem;
+    }
+
+    .iec_specs_button svg {
+        width: 1rem;
+    }
+
+    .iec_product_materials_section {
+        margin-top: 0;
+        padding: 2.222222rem 0;
+    }
+
+    .iec_product_materials_box_content ul.iec_table_button {
+        flex: 1 0 auto;
+        gap: 0.222222rem;
+    }
+
+    .iec_outline_table_button {
+        height: 1.888889rem !important;
+        padding: 0.444444rem 0.666667rem 0.5rem;
+        font-size: 0.777778rem;
+        font-weight: 400;
+    }
+
+    .iec_product_materials_box_content ul.iec_table_button li {
+        margin-bottom: 0 !important;
+    }
+
+    .iec_single_solution_acordion_row {
+        gap: 1.111111rem;
+        flex-direction: column;
+    }
+
+    .iec_single_solution_acordion_item {
+        width: 100%;
+    }
+
+    .iec_single_solution_acordion_header {
+        min-height: 100%;
+        gap: 1rem;
+        font-size: 1.111111rem;
+        padding: 1rem;
+    }
+
+    .iec_single_solution_acordion_header svg {
+        height: 1.111111rem;
+    }
+
+    .iec_single_solution_acordion_body {
+        padding: 0 1rem;
+        font-size: 0.888889rem;
+    }
+
+    .iec_single_solution_acordion_body p {
+        padding: 0.666667rem 0;
+    }
+
+    .at_feature_wrapper {
+        padding: 0.93961413179rem 1.48725883237rem;
+    }
+
+    .at_feature_wrapper .row {
+        row-gap: 2.16602355299rem !important;
+    }
+
+    .iec_single_product_feature_item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.68301177649rem;
+    }
+
+    h3.iec_single_product_feature_heading {
+        text-align: center;
+        font-size: 0.80471059884rem;
+        line-height: 1.096503226008rem;
+    }
+
+    .feature-content p {
+        text-align: center;
+        font-size: 0.80471059884rem;
+        line-height: 1.096503226008rem;
+    }
+}
+/* Single Solution — mobile end */
+
+/* ==========================================================================
+   Voucher Management — mobile start
+   ========================================================================== */
+@media (max-width: 767px) {
+    .iec-voucher-management .ice_voucher_content_image_warpper {
+        max-width: 22.353722rem;
+        height: auto;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .iec-voucher-management .iec-content-section .ice_voucher_content_image_warpper > * {
+        max-width: 100% !important;
+        margin-inline: 0 !important;
+    }
+
+    .iec-voucher-management .iec-content-section.iec-content-right .ice_voucher_content_image_warpper {
+        right: 0;
+    }
+
+    .iec-voucher-management .iec-content-section.iec-content-left .ice_voucher_content_image_warpper .ice_voucher_content_main_image {
+        margin-top: 0.555556rem;
+    }
+
+    .iec-voucher-management .iec-video-section {
+        border-radius: 3rem 0;
+        padding: 2.5rem 0;
+    }
+
+    .iec-voucher-management .hero.iec-vms-hero,
+    .iec-voucher-management .iec-solution-architecture,
+    .iec-voucher-management .iec-key-features h2#kf-heading,
+    .iec-voucher-management .iec-content-left h2,
+    .iec-voucher-management .iec-content-left p,
+    .iec-voucher-management .iec-content-right h2,
+    .iec-voucher-management .iec-content-right p {
+        text-align: center;
+    }
+
+    .iec-voucher-management .row.iec-arch-cards {
+        gap: 1.327800rem;
+    }
+
+    .iec-voucher-management button#iecPlayBtn svg {
+        width: 30px;
+    }
+
+    .iec-voucher-management .iec-accordion-item {
+        width: 100%;
+    }
+
+    .iec-voucher-management a.iec_button.btn-primary.vmc_btn {
+        margin: auto;
+    }
+
+    .iec-voucher-management .iec-content-section {
+        flex-direction: column-reverse;
+    }
+
+    .iec-voucher-management .iec-content-section h2 {
+        margin-top: 1.5rem;
+    }
+
+    .iec-voucher-management .iec-support-section .gap-100 {
+        gap: 0px;
+    }
+
+    .iec-voucher-management .iec-support-section h2,
+    .iec-voucher-management .iec-support-section p {
+        text-align: center;
+    }
+
+    .iec-voucher-management .card_front {
+        display: none;
+    }
+
+    .iec-voucher-management .iec_main_content_warpper p {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .iec-voucher-management .iec-vms-hero h1 {
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+
+    .iec-voucher-management .iec-solution-architecture .iec_section_heading,
+    .iec-voucher-management .iec-key-features h2#kf-heading,
+    .iec-voucher-management .iec-content-left h2,
+    .iec-voucher-management .iec-content-right h2,
+    .iec-voucher-management .iec-support-section h2 {
+        font-size: 1.625rem;
+        line-height: 1.625rem;
+    }
+
+    .iec-voucher-management .iec-solution-architecture .iec_main_content_warpper p,
+    .iec-voucher-management .iec-arch-card__subtitle,
+    .iec-voucher-management .iec-accordion-header span,
+    .iec-voucher-management .iec_main_content_warpper.vm_content p,
+    .iec-voucher-management .iec-support-section p {
+        font-size: 1.111111rem;
+    }
+
+    .iec-voucher-management .iec-arch-card__title,
+    .iec-voucher-management .iec-accordion-body p {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+}
+/* Voucher Management — mobile end */
+
+/* ==========================================================================
+   VSAT Portfolio — mobile start
+   ========================================================================== */
+@media (max-width: 767px) {
+    .t-vsat-portfolio ul:not([class]),
+    .t-vsat-portfolio ol:not([class]) {
+        font-size: 0.888889rem;
+        padding-left: 1.5rem;
+    }
+
+    .t-vsat-portfolio .iec_solution_section,
+    .t-vsat-portfolio .iec_vsat_intro,
+    .t-vsat-portfolio .iec_vsat_operators,
+    .t-vsat-portfolio .iec_vsat_products {
+        padding: 2.777778rem 0;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero {
+        padding: 3.80545289401rem 0 5.555556rem;
+        background-image: var(--mobileImage, var(--desktopImage));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .t-vsat-portfolio .iec_why_geo,
+    .t-vsat-portfolio .iec_frequency_section,
+    .t-vsat-portfolio .iec_faq_section {
+        padding: 2.348759rem 0 4.222222rem !important;
+    }
+
+    .t-vsat-portfolio .recommended_solutions_section {
+        padding: 2.348759rem 0 2.666667rem !important;
+    }
+
+    .t-vsat-portfolio .iec_band_features li::before {
+        content: "";
+        position: absolute;
+        left: -0.888889rem;
+        top: 0.117438rem;
+        width: 1.111111rem;
+        height: 1.111111rem;
+    }
+
+    .t-vsat-portfolio .iec_service_models_section {
+        margin-top: 7rem;
+        padding-top: 3rem !important;
+        padding-bottom: 2.348759rem !important;
+        background-color: var(--color-white);
+    }
+
+    .t-vsat-portfolio .iec_band_slider_mobile {
+        margin-bottom: -15rem;
+        position: relative;
+        z-index: 2;
+        display: block;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_content h1 {
+        font-size: 2rem;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_content h4 {
+        font-size: 1.166667rem;
+        line-height: 1.5;
+    }
+
+    .t-vsat-portfolio .learn_more_btn span svg {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .t-vsat-portfolio .iec_why_geo .iec_section_title {
+        text-wrap: balance;
+    }
+
+    .t-vsat-portfolio .iec_vsat_intro_content p,
+    .t-vsat-portfolio .iec_vsat_operators_intro p,
+    .t-vsat-portfolio .recommended_content p,
+    .t-vsat-portfolio .iec_advantage_text,
+    .t-vsat-portfolio .iec_faq_answer_inner p {
+        font-size: 1rem;
+    }
+
+    .t-vsat-portfolio .iec_vsat_operators_heading,
+    .t-vsat-portfolio .iec_vsat_products_heading {
+        font-size: 1.625rem;
+        text-align: center;
+    }
+
+    .t-vsat-portfolio .iec_section_title,
+    .t-vsat-portfolio .section-title,
+    .t-vsat-portfolio .iec_frequency_section .iec_section_title {
+        font-size: 1.388889rem;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .t-vsat-portfolio .recommended_title {
+        font-size: 1.444444rem;
+    }
+
+    .t-vsat-portfolio .iec_section_eyebrow {
+        font-size: 0.611111rem;
+    }
+
+    .t-vsat-portfolio .iec_advantage_title {
+        font-size: 1.333333rem;
+    }
+
+    .t-vsat-portfolio .iec_band_title,
+    .t-vsat-portfolio .iec_band_subtitle,
+    .t-vsat-portfolio .iec_service_title,
+    .t-vsat-portfolio .iec_faq_title {
+        font-size: 1.055556rem;
+    }
+
+    .t-vsat-portfolio .iec_band_link {
+        font-size: 0.833333rem;
+    }
+
+    .t-vsat-portfolio .iec_section_description,
+    .t-vsat-portfolio .iec_frequency_section p,
+    .t-vsat-portfolio .iec_band_features li,
+    .t-vsat-portfolio .iec_service_models_section p,
+    .t-vsat-portfolio .iec_service_body p,
+    .t-vsat-portfolio .iec_faq_answer_inner {
+        font-size: 0.888889rem;
+        line-height: 160%;
+    }
+
+    .t-vsat-portfolio .iec_section_heading {
+        margin-bottom: 1rem !important;
+        text-align: center;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_button_list {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        gap: 0.833333rem;
+        flex-wrap: nowrap;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_button_list li {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_button_list li:not(:last-child) a,
+    .t-vsat-portfolio .iec_vsat_hero_button_list li:last-child a {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_content {
+        padding-bottom: 1.666667rem;
+    }
+
+    .t-vsat-portfolio .iec_band_subtitle::after {
+        width: 11.111111rem;
+    }
+
+    .t-vsat-portfolio .iec_partner_bar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2.333333rem;
+        padding-inline: 2rem;
+    }
+
+    .t-vsat-portfolio .iec_partner_logos_wrapper,
+    .t-vsat-portfolio .iec_partner_logos {
+        display: contents;
+    }
+
+    .t-vsat-portfolio .iec_partner_logo {
+        position: static;
+        width: 38%;
+        max-width: 6.666667rem;
+        height: 2.222222rem;
+        animation: none !important;
+    }
+
+    .t-vsat-portfolio .iec_advantage_grid,
+    .t-vsat-portfolio .iec_band_grid_desktop,
+    .t-vsat-portfolio .iec_band_grid {
+        display: none;
+    }
+
+    .t-vsat-portfolio .iec_advantage_slider_mobile,
+    .t-vsat-portfolio .iec_band_slider_mobile {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+    .t-vsat-portfolio .iec_advantage_slider,
+    .t-vsat-portfolio .iec_band_slider {
+        overflow: hidden;
+        padding-top: 1.17438rem;
+    }
+
+    .t-vsat-portfolio .iec_advantage_slider .swiper-wrapper,
+    .t-vsat-portfolio .iec_band_slider .swiper-wrapper {
+        display: flex;
+        padding-top: 1.666667rem;
+    }
+
+    .t-vsat-portfolio .iec_advantage_slider .swiper-slide,
+    .t-vsat-portfolio .iec_band_slider .swiper-slide {
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .t-vsat-portfolio .iec_advantage_card {
+        padding: 1.777778rem;
+    }
+
+    .t-vsat-portfolio .iec_advantage_icon {
+        width: 3.444444rem;
+        height: 3.444444rem;
+    }
+
+    .t-vsat-portfolio .iec_band_card {
+        text-align: center;
+        align-items: center;
+        padding: 1.56584rem 1.17438rem;
+        position: relative !important;
+        background-color: var(--color-white) !important;
+        z-index: 5 !important;
+        overflow: visible !important;
+        box-shadow: var(--shadow-card-lg) !important;
+        border-radius: var(--radius-md) !important;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .t-vsat-portfolio .iec_band_subtitle::after,
+    .t-vsat-portfolio .iec_service_header::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .t-vsat-portfolio .iec_service_header::after {
+        width: 14.666667rem;
+    }
+
+    .t-vsat-portfolio .iec_band_features {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        text-align: left;
+    }
+
+    .t-vsat-portfolio .iec_band_link:hover {
+        color: var(--color-primary);
+    }
+
+    .t-vsat-portfolio .iec_service_card {
+        box-shadow: var(--shadow-service-sm) !important;
+    }
+
+    .t-vsat-portfolio .iec_band_card:hover,
+    .t-vsat-portfolio .iec_service_card:hover,
+    .t-vsat-portfolio .iec_advantage_card:hover {
+        box-shadow: var(--shadow-card-hover-mobile) !important;
+        transform: translateY(-2px);
+    }
+
+    .t-vsat-portfolio .iec_service_models_section .iec_advantage_grid {
+        display: block;
+    }
+
+    .t-vsat-portfolio .bd_model_img_wrapper img {
+        border-radius: 0.666667rem 0.666667rem 0 0;
+    }
+
+    .t-vsat-portfolio .iec_service_body {
+        padding: 1.111111rem;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .t-vsat-portfolio .recommended_tabs {
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 1.2rem;
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .t-vsat-portfolio .learn_more_btn {
+        font-size: 16px;
+    }
+
+    .t-vsat-portfolio .recommended_content p strong {
+        display: block;
+    }
+
+    .t-vsat-portfolio .recommended_content,
+    .t-vsat-portfolio .recommended_solution_image {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .t-vsat-portfolio .recommended_solution_image img {
+        margin: 0 auto;
+    }
+
+    .t-vsat-portfolio .recommended_content p {
+        margin-inline: auto;
+    }
+
+    .t-vsat-portfolio .recommended_tabs .solution_btn {
+        max-width: 100%;
+        margin-inline: 0;
+        font-size: 0.888889rem;
+        font-weight: 500;
+    }
+
+    .t-vsat-portfolio .recommended_content {
+        margin-top: 0;
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .t-vsat-portfolio .iec_faq_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1.17438rem;
+        row-gap: 0;
+    }
+
+    .t-vsat-portfolio .iec_faq_header {
+        padding: 1.111111rem 0;
+    }
+
+    .t-vsat-portfolio .iec_faq_answer {
+        padding-left: 0;
+    }
+
+    .t-vsat-portfolio .iec_faq_icon {
+        width: 1.055556rem;
+        height: 1.055556rem;
+    }
+
+    .t-vsat-portfolio .iec_vsat_products_cta {
+        justify-content: center;
+    }
+
+    .t-vsat-portfolio .iec_vsat_products_cta .iec_button {
+        margin-inline: auto;
+    }
+
+    .t-vsat-portfolio .hero-card-content {
+        padding: 0.5rem;
+    }
+
+    .t-vsat-portfolio .hero-info-card .card-eyebrow {
+        color: var(--color-white);
+        text-align: center;
+        font-family: var(--font-secondary);
+        font-size: 1.222222rem;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .t-vsat-portfolio p.card-headline {
+        color: var(--color-white);
+        text-align: center;
+        font-family: var(--font-secondary);
+        font-size: 1.222222rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_button_list li,
+    .t-vsat-portfolio .iec_vsat_hero_button_list li:last-child {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_button_list li a,
+    .t-vsat-portfolio .iec_vsat_hero_button_list li:last-child a {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 0.875rem 1rem;
+        font-size: 0.888889rem !important;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 0.626336rem;
+    }
+
+    .t-vsat-portfolio .iec_vsat_hero_button_list li a svg,
+    .t-vsat-portfolio .iec_vsat_hero_button_list li a img {
+        width: 1.777778rem;
+        height: 1.777778rem;
+    }
+
+    .t-vsat-portfolio .iec_partner_label {
+        color: var(--color-primary);
+        text-align: center;
+        font-size: 1.111111rem;
+        font-weight: 300;
+        line-height: normal;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .t-vsat-portfolio .iec_band_card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(27, 32, 76, 0.18) !important;
+    }
+
+    .t-vsat-portfolio .iec_band_slider,
+    .t-vsat-portfolio .iec_band_slider .swiper,
+    .t-vsat-portfolio .iec_band_slider .swiper-wrapper {
+        overflow: visible !important;
+        padding-bottom: 20px;
+    }
+
+    .t-vsat-portfolio .iec_band_slider_mobile,
+    .t-vsat-portfolio .iec_band_slider {
+        overflow: visible !important;
+        width: 100% !important;
+        padding-top: 15px !important;
+        padding-bottom: 25px !important;
+    }
+
+    .t-vsat-portfolio .iec_band_slider .swiper-slide {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        overflow: visible !important;
+    }
+
+    .t-vsat-portfolio .iec_band_slider .iec_band_card {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .t-vsat-portfolio .iec_band_slider .swiper-wrapper {
+        overflow: visible !important;
+    }
+
+    .t-vsat-portfolio .iec_band_card:hover,
+    .t-vsat-portfolio .iec_band_card:active {
+        box-shadow: 0 15px 35px rgba(27, 32, 76, 0.28) !important;
+    }
+
+    .t-vsat-portfolio .iec_band_card::before {
+        display: none !important;
+    }
+}
+/* VSAT Portfolio — mobile end */
+
+/* ==========================================================================
+   Starlink Portfolio — mobile start
+   Shared Starlink mobile lives in responsive.css (multiple templates).
+   ========================================================================== */
+/* Starlink Portfolio — mobile end */

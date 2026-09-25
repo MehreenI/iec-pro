@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="6px" viewBox="0 0 8 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>dropdown-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="top" transform="translate(-1029.000000, -40.000000)" fill="#4DC4CF">
+            <g id="Group-2">
+                <g transform="translate(859.000000, 23.000000)">
+                    <g id="Group-6-Copy" transform="translate(93.000000, 0.000000)">
+                        <path d="M78.9148317,17 L83.4407239,17 C83.9930086,17 84.4407239,17.4477153 84.4407239,18 C84.4407239,18.2043225 84.3781353,18.4037419 84.2613812,18.5714207 L81.9984351,21.8213964 C81.6828482,22.2746329 81.0595936,22.38622 80.6063571,22.0706331 C80.5091765,22.0029666 80.424787,21.918577 80.3571205,21.8213964 L78.0941744,18.5714207 C77.7785875,18.1181841 77.8901745,17.4949296 78.343411,17.1793427 C78.5110898,17.0625886 78.7105092,17 78.9148317,17 Z" id="dropdown-icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

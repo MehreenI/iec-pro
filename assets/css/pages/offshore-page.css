@@ -1,0 +1,812 @@
+/* Hero */
+.offshore .iec-offshore-hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.offshore .iec-offshore-hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.offshore .iec-offshore-hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.offshore .iec-offshore-hero__img--mobile {
+    display: none;
+}
+
+.offshore .iec-offshore-hero .iec_single_office_banner_box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+    padding-top: 3.523553rem;
+    padding-bottom: 3.327800rem;
+    min-height: 26.490353rem;
+    display: flex;
+    align-items: center;
+}
+
+.offshore .iec_single_office_banner_box > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.offshore .banner_content h1 {
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 1.56602355299rem;
+    font-weight: 700;
+    line-height: 1.5434876rem;
+    text-transform: uppercase;
+    margin-top: 0.704710598847406665rem;
+    margin-bottom: 1rem;
+    max-width: 23.487595rem;
+}
+
+.offshore .banner_content .sub_head {
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 0.97876472062rem;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 22.939551rem;
+    margin-bottom: 1rem;
+}
+
+.offshore .hero__buttons {
+    gap: 0.6rem;
+    margin-top: 1.4rem;
+}
+
+.offshore .hero__buttons a {
+    font-weight: 400;
+    width: 100%;
+    max-width: 7.634365rem;
+    gap: 0.256602rem;
+    border-radius: 0.313205rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0.587259rem !important;
+    font-size: 0.626409rem !important;
+    height: 1.722626rem;
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+}
+
+.offshore .hero__buttons a.gray_btn {
+    padding-left: 0.597259rem !important;
+}
+
+.offshore .hero__buttons a svg {
+    width: auto;
+    height: 0.587259rem;
+}
+
+.offshore .hero__buttons a svg path {
+    fill: #fff !important;
+}
+
+.offshore .hero__buttons a.gray_btn:hover {
+    color: #1b204c !important;
+}
+
+.offshore .hero__buttons a.gray_btn:hover path {
+    fill: #1b204c !important;
+}
+
+.offshore .iec-btn-outline {
+    color: #fff;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 0.64rem;
+    font-weight: 400;
+    line-height: 0.64rem;
+    border-radius: 0.32rem;
+    background: #727DA3;
+    border: 1px solid var(--color-primary);
+}
+
+.offshore a.btn.btn-outline.iec-btn-outline {
+    padding: 12px 28px;
+}
+
+.offshore .hero-info-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.209256rem 0.939504rem !important;
+    background: rgba(114, 125, 163, 0.1);
+    backdrop-filter: blur(0.469752rem);
+    -webkit-backdrop-filter: blur(0.469752rem);
+    border: 0.039146rem solid rgba(200, 255, 235, 0.2);
+    border-radius: 0.313168rem;
+    max-width: 25.914646rem;
+    margin-top: 3.288263rem;
+    gap: 1.37011rem;
+}
+
+.offshore .hero-info-card .card-icon {
+    flex-shrink: 0;
+    width: 6.498235rem;
+    height: 6.341651rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offshore .hero-info-card .card-icon.default-icon::before {
+    content: "";
+    display: block;
+    width: 6.498235rem;
+    height: 6.341651rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='132' height='139' viewBox='0 0 132 139' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M130.583 124.795C131.135 124.795 131.583 125.242 131.583 125.795V137.244C131.583 137.796 131.135 138.244 130.583 138.244H1C0.447772 138.244 9.17307e-05 137.796 0 137.244V125.795C0 125.242 0.447715 124.795 1 124.795H130.583ZM2 136.244H129.583V126.795H2V136.244Z' fill='white'/%3E%3Cpath d='M35.583 125.795V101.306H17.25V125.795C17.2497 126.347 16.8021 126.795 16.25 126.795C15.6979 126.795 15.2503 126.347 15.25 125.795V100.306C15.25 99.7536 15.6977 99.3058 16.25 99.3058H36.583C37.1353 99.3058 37.583 99.7536 37.583 100.306V125.795C37.5827 126.347 37.1351 126.795 36.583 126.795C36.031 126.795 35.5833 126.347 35.583 125.795Z' fill='white'/%3E%3Cpath d='M103.075 25.8406C103.585 25.6291 104.169 25.8709 104.381 26.3807C104.593 26.8907 104.351 27.4764 103.841 27.6883L84.6333 35.6687L84.6313 35.6697L4.75732 68.7215L4.7495 68.7244C2.68666 69.5586 1.67715 71.9745 2.54736 74.0555C3.42329 76.1498 5.80247 77.143 7.86181 76.2771L7.86669 76.2752L33.8667 65.4949L33.8686 65.4939L40.8686 62.6101L106.993 35.242C107.503 35.0311 108.087 35.2738 108.298 35.784C108.509 36.2941 108.267 36.8783 107.757 37.0896L41.6323 64.4588L41.6304 64.4598L34.6304 67.3426L8.63622 78.1199L8.6372 78.1209C5.53006 79.4274 1.99241 77.9136 0.701653 74.8269C-0.594758 71.7267 0.89585 68.125 3.9995 66.8699L76.2837 36.9549L83.8677 33.8211L103.075 25.8406Z' fill='white'/%3E%3Cpath d='M105.286 0.141782C106.141 -0.210438 107.009 0.157563 107.632 0.549009C108.306 0.972464 109.019 1.62597 109.733 2.39569C111.172 3.94508 112.784 6.14482 114.328 8.47381C117.409 13.1218 120.344 18.4782 121.216 20.6174H121.217L124.258 28.0139L124.26 28.0168C125.127 30.1469 126.818 36.0135 127.918 41.4846C128.468 44.2231 128.882 46.917 128.962 49.0275C129.002 50.0759 128.962 51.0408 128.788 51.8146C128.628 52.527 128.279 53.4046 127.427 53.7609L127.424 53.7619L121.966 56.0187H121.965C121.109 56.3713 120.241 56.004 119.618 55.6125C118.944 55.189 118.231 54.5355 117.517 53.7658C116.078 52.2163 114.466 50.0158 112.922 47.6867C109.84 43.0381 106.904 37.6816 106.033 35.5431L102.992 28.1476L102.99 28.1447C102.123 26.0146 100.431 20.1479 99.332 14.6769C98.7816 11.9382 98.3679 9.24362 98.288 7.13299C98.2484 6.08456 98.2881 5.11971 98.4619 4.34588C98.6219 3.6336 98.9705 2.75686 99.8232 2.40057L99.8261 2.39862L105.284 0.142759L105.286 0.141782ZM100.624 4.2326C100.604 4.25554 100.505 4.37866 100.414 4.78436C100.296 5.31068 100.25 6.07587 100.287 7.0578C100.361 9.00807 100.75 11.5788 101.293 14.2824C102.38 19.6933 104.042 25.419 104.842 27.3869L107.883 34.7824L107.885 34.7863C108.682 36.7448 111.537 41.9778 114.589 46.5822C116.112 48.8807 117.654 50.9742 118.982 52.4045C119.651 53.1243 120.225 53.6319 120.682 53.9191C121.039 54.144 121.199 54.1566 121.228 54.1584L126.624 51.9279C126.642 51.9064 126.744 51.786 126.836 51.3771C126.954 50.8508 127 50.0856 126.963 49.1037C126.889 47.1535 126.5 44.5827 125.957 41.8791C124.869 36.4676 123.208 30.7408 122.408 28.7736L119.367 21.3781L119.365 21.3752C118.568 19.4168 115.713 14.1838 112.661 9.57928C111.137 7.28076 109.596 5.18732 108.268 3.75702C107.599 3.03714 107.025 2.52961 106.568 2.24237C106.201 2.01167 106.043 2.00349 106.019 2.00213L100.624 4.2326Z' fill='white'/%3E%3Cpath d='M119.542 125.794V54.9692C119.542 54.417 119.989 53.9692 120.542 53.9692C121.094 53.9692 121.542 54.417 121.542 54.9692V125.794C121.542 126.347 121.094 126.794 120.542 126.794C119.989 126.794 119.542 126.347 119.542 125.794Z' fill='white'/%3E%3Cpath d='M25.4165 100.306V69.761C25.4165 69.2088 25.8642 68.761 26.4165 68.761C26.9688 68.761 27.4165 69.2088 27.4165 69.761V100.306C27.4164 100.858 26.9687 101.306 26.4165 101.306C25.8643 101.306 25.4166 100.858 25.4165 100.306Z' fill='white'/%3E%3Cpath d='M79.7502 66.2122L79.8401 66.2161C80.2868 66.2563 80.6576 66.5921 80.7356 67.0413L90.9016 125.623C90.996 126.168 90.6313 126.685 90.0872 126.78C89.5431 126.874 89.0253 126.509 88.9309 125.965L78.9084 68.2122H62.842L52.8186 125.965C52.7242 126.509 52.2065 126.874 51.6623 126.78C51.1182 126.685 50.7535 126.168 50.8479 125.623L61.0149 67.0413L61.0344 66.9534C61.1503 66.52 61.5442 66.2122 62.0002 66.2122H79.7502Z' fill='white'/%3E%3Cpath d='M56.3052 94.9501C56.6787 94.5433 57.3105 94.5162 57.7174 94.8896L90.5924 125.058C90.9993 125.431 91.0263 126.064 90.6529 126.471C90.2795 126.877 89.6477 126.904 89.2408 126.531L56.3658 96.3623C55.9589 95.9888 55.9318 95.357 56.3052 94.9501Z' fill='white'/%3E%3Cpath d='M84.6729 94.4586C85.225 94.462 85.6702 94.9124 85.667 95.4645C85.6637 96.0168 85.2124 96.462 84.6602 96.4586L57.1192 96.2916C56.567 96.2883 56.1218 95.838 56.125 95.2858C56.1284 94.7336 56.5787 94.2884 57.1309 94.2916L84.6729 94.4586Z' fill='white'/%3E%3Cpath d='M61.3571 66.4465C61.78 66.0915 62.4102 66.1467 62.7653 66.5696L85.1823 93.2698C85.5373 93.6928 85.4822 94.3239 85.0592 94.679C84.6362 95.0339 84.0051 94.9788 83.65 94.5559L61.234 67.8547C60.879 67.4318 60.9341 66.8016 61.3571 66.4465Z' fill='white'/%3E%3Cpath d='M73.6665 67.2122V49.7043C73.6665 49.1521 74.1142 48.7043 74.6665 48.7043C75.2188 48.7043 75.6665 49.1521 75.6665 49.7043V67.2122C75.6665 67.7644 75.2188 68.2122 74.6665 68.2122C74.1142 68.2122 73.6665 67.7644 73.6665 67.2122Z' fill='white'/%3E%3Cpath d='M66.0415 67.212V52.88C66.0415 52.3277 66.4892 51.88 67.0415 51.88C67.5938 51.88 68.0415 52.3277 68.0415 52.88V67.212C68.0415 67.7643 67.5938 68.212 67.0415 68.212C66.4892 68.212 66.0415 67.7643 66.0415 67.212Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.offshore .hero-info-card .card-eyebrow {
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 0.9rem !important;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 0.274022rem;
+}
+
+.offshore .hero-info-card .card-headline {
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 0.8rem !important;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.05rem !important;
+    text-transform: uppercase;
+    margin-bottom: 0.626336rem;
+    max-width: 15.854126rem;
+}
+
+.offshore .hero-card-content {
+    padding: 0;
+}
+
+.offshore .hero-card-content .gray_btn {
+    margin: 0;
+    max-width: 7.047106rem;
+    padding: 0.391506rem 0.783012rem 0.274054rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+.offshore .gray_btn::before,
+.offshore .gray_btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #1b204c;
+    transition: transform 0.45s cubic-bezier(0.7, 0, 0.3, 1);
+    z-index: -1;
+}
+
+.offshore .gray_btn::before {
+    left: 0;
+    transform: translateY(-100%);
+}
+
+.offshore .gray_btn::after {
+    right: 0;
+    transform: translateY(100%);
+}
+
+.offshore .gray_btn:hover::before,
+.offshore .gray_btn:hover::after {
+    transform: translateY(0);
+}
+
+.offshore .gray_btn:hover {
+    color: #fff !important;
+}
+
+@media (max-width: 767px) {
+    .offshore .iec-offshore-hero__img--desktop {
+        display: none;
+    }
+
+    .offshore .iec-offshore-hero__img--mobile {
+        display: block;
+    }
+
+    .offshore .iec-offshore-hero .iec_single_office_banner_box {
+        background-image: none;
+        background-position: center !important;
+        min-height: 35.444444rem !important;
+        align-items: flex-start !important;
+        width: 100%;
+        position: relative;
+        overflow: visible !important;
+        padding-top: 1.956111rem !important;
+        padding-bottom: 0 !important;
+    }
+
+    .offshore .banner_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .offshore .iec-offshore-hero .banner_content .gray_btn {
+        margin-inline: auto;
+        margin-bottom: 0;
+    }
+
+    .offshore .hero__buttons {
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .offshore .hero-info-card {
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        margin-top: auto;
+        margin-bottom: -70%;
+        transform: translateY(26%);
+        margin-inline: auto;
+    }
+
+    .offshore .hero-card-content {
+        padding: 0.5rem;
+    }
+
+    .offshore .hero-info-card .card-eyebrow,
+    .offshore .hero-info-card .card-headline {
+        font-size: 1.222222rem !important;
+        max-width: 16.222222rem;
+        text-align: center;
+    }
+
+    .offshore .hero-info-card .card-headline {
+        margin-inline: auto;
+    }
+
+    .offshore .gray_btn,
+    .offshore .iec_button {
+        margin-inline: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .offshore .iec-offshore-hero {
+        background-attachment: scroll;
+    }
+}
+
+/* Portfolio */
+.offshore .iec-offshore-portfolio-section .iec_section_heading {
+    color: #fff;
+}
+
+.offshore .iec_defualt_position.iec_starlink_portfolio_swiper_section {
+    overflow: hidden;
+}
+
+.offshore .iec_starlink_portfolio_swiper_section {
+    padding: 2.388186rem 0 3.171198rem;
+}
+
+.offshore .iec_starlink_portfolio_swiper_section:after {
+    content: " ";
+    width: 100%;
+    height: 6.263359rem;
+    background: #fff;
+}
+
+.offshore span.highlight {
+    color: var(--color-secondary);
+}
+
+@media (min-width: 768px) {
+    .offshore .iec_starlink_portfolio_swiper_warpper .swiper-slide {
+        max-width: 11.508921rem;
+    }
+
+    .offshore .iec_starlink_portfolio_swiper_box,
+    .offshore .iec_starlink_portfolio_swiper_box_content {
+        min-height: 12.135257rem;
+    }
+
+    .offshore .iec_starlink_portfolio_swiper_box_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .offshore .iec_starlink_portfolio_swiper_box_content h3 {
+        color: #fff;
+        text-align: center;
+        font-family: "Segoe UI";
+        font-size: 0.939504rem;
+        font-weight: 700;
+        line-height: 1.252672rem;
+        text-transform: uppercase;
+        max-width: 8.612118rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .offshore .iec_starlink_portfolio_swiper_section,
+    .offshore .iec_defualt_position.iec_starlink_portfolio_swiper_section {
+        padding-top: 3rem;
+    }
+
+    .offshore .iec_starlink_portfolio_swiper_section:after {
+        height: 13.263359rem;
+    }
+
+    .offshore .iec_starlink_portfolio_swiper_box_content h3 {
+        color: #fff;
+        text-align: center;
+        font-family: "Myriad Pro";
+        font-size: 1.111111rem;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        max-width: 13.555556rem;
+    }
+
+    .offshore .iec_starlink_portfolio_swiper_warpper .swiper-button-next {
+        right: calc(50% - 2.111111rem);
+    }
+
+    .offshore .iec_starlink_portfolio_swiper_content .gray_btn {
+        max-width: 14.444444rem !important;
+    }
+}
+
+/* VAS */
+.offshore .block-7 {
+    width: 100%;
+    padding-top: 3.640577rem;
+    padding-bottom: 4.932395rem;
+    background: #dbdfee;
+}
+
+.offshore .main-container {
+    max-width: 49.167365rem;
+    margin: auto;
+}
+
+.offshore .iec-offshore-vas-section .iec_section_heading {
+    color: #1b204c;
+}
+
+.offshore .service-card {
+    border-radius: 0.313168rem;
+    overflow: hidden;
+    box-shadow:
+        50px 88px 41px rgba(27, 32, 76, 0.01),
+        28px 49px 34px rgba(27, 32, 76, 0.05),
+        13px 22px 25px rgba(27, 32, 76, 0.09),
+        3px 5px 14px rgba(27, 32, 76, 0.1);
+}
+
+.offshore .tabs-wrapper {
+    display: flex;
+    width: 100%;
+    isolation: isolate;
+    background: transparent !important;
+}
+
+.offshore .custom-tab {
+    flex: 1;
+    height: 1.918154rem;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.626336rem;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #cad1ea;
+    color: #1b204c;
+    box-shadow: 0.352314rem 0 0.469752rem rgba(0, 0, 0, 0.12);
+    border-radius: 0 0.313168rem 0 0;
+    transition: 0.3s ease;
+}
+
+.offshore .custom-tab:nth-child(odd) {
+    background: #dbdfee;
+    margin-left: -0.352314rem;
+}
+
+.offshore .custom-tab.active {
+    background: #727da3 !important;
+    color: #fff;
+    z-index: 5;
+}
+
+.offshore .serviceSwiper {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+.offshore .swiper-slide {
+    height: auto;
+}
+
+.offshore .tab-pane-custom {
+    padding: 1.5rem 2.348759rem 0;
+    min-height: 17.615696rem;
+}
+
+.offshore .image-section {
+    position: relative;
+    width: 100%;
+    height: 16.950214rem;
+}
+
+.offshore .main-image img {
+    width: 100%;
+    height: 14.8772237534rem;
+    display: block;
+    object-fit: contain;
+}
+
+.offshore .text-content {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.offshore .text-content h3 {
+    color: #1b204c;
+    font-family: "Myriad Pro";
+    font-size: 1.17438rem;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 1.096088rem;
+}
+
+.offshore .text-content p {
+    color: #1b204c;
+    font-family: "Segoe UI";
+    font-size: 0.78292rem;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 0.861212rem;
+    max-width: 22.704675rem;
+}
+
+.offshore .learn_more_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.313168rem;
+    color: #727da3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Segoe UI";
+    font-size: 0.62634rem;
+    font-weight: 800;
+    line-height: normal;
+    transition: color 0.3s ease;
+}
+
+.offshore .learn_more_btn:hover {
+    color: #fff;
+}
+
+.offshore .text-content .learn_more_btn:hover {
+    color: #171f5a;
+}
+
+.offshore .learn_more_btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.939504rem;
+    height: 0.939504rem;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.offshore .learn_more_btn span svg {
+    width: 0.704628rem;
+    height: 0.704628rem;
+    display: block;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+    margin-top: 0.117438rem;
+}
+
+.offshore .learn_more_btn span svg path {
+    fill: #727da3;
+    stroke: #727da3;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.offshore .learn_more_btn:hover span svg {
+    transform: translateX(0.117438rem);
+}
+
+.offshore .learn_more_btn:hover span svg path {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.offshore .text-content .learn_more_btn:hover span svg path {
+    fill: #171f5a;
+    stroke: #171f5a;
+}
+
+@media (max-width: 991px) {
+    .offshore .block-7 {
+        padding: 2.888889rem 0 3.555556rem;
+    }
+
+    .offshore .tab-pane-custom {
+        padding: 1.56584rem 0.97865rem;
+        min-height: auto;
+    }
+
+    .offshore .image-section {
+        height: auto;
+        margin-bottom: 1.56584rem;
+    }
+
+    .offshore .custom-tab {
+        font-size: 0.631579rem;
+        padding: 0 0.526316rem;
+        text-align: center;
+    }
+
+    .offshore .text-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .offshore .text-content p {
+        font-size: 0.947368rem;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .offshore .tabs-wrapper {
+        flex-direction: column;
+    }
+
+    .offshore .custom-tab {
+        width: 100%;
+        margin-left: 0 !important;
+        border-radius: 0;
+        height: 2.722222rem;
+        padding: 0.833333rem 1.444444rem;
+        font-size: 0.777778rem;
+    }
+
+    .offshore .tab-pane-custom {
+        padding: 1.666667rem 1.111111rem;
+    }
+
+    .offshore .text-content h3 {
+        margin-bottom: 1rem;
+    }
+
+    .offshore .image-section {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .offshore .main-image {
+        margin-inline: auto;
+    }
+
+    .offshore a.learn_more_btn {
+        color: #727da3;
+        font-family: "Segoe UI";
+        font-size: 0.888889rem;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+
+/* News */
+.offshore .iec-offshore-news-section .iec_section_heading {
+    color: #1b204c;
+}
+
+.offshore .iec_defualt_position.bd_do_featured_news.iec_starlink_portfolio_featured_news {
+    background: #ECEEF3;
+    box-shadow: 0 4px 22.7px 0 rgba(27, 32, 76, 0.30) inset;
+    padding-top: 2.935949rem;
+    padding-bottom: 3.131679rem;
+}
+
+.offshore .iec_defualt_position.bd_do_featured_news.iec_starlink_portfolio_featured_news .iec_section_heading {
+    margin-bottom: 1.291818rem;
+}
+
+.offshore .iec-offshore-news-section .iec_news_post_box_warpper {
+    padding-top: 12.54px;
+    padding-bottom: 20px;
+    border-radius: 0.234876rem;
+}
+
+.offshore .iec-offshore-news-section .iec_news_post_box_warpper:hover {
+    background: #1b204c;
+    color: #fff;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.45);
+}
+
+.offshore .iec-offshore-news-section .iec_news_post_box_warpper:hover .iec_news_post_title {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .offshore .iec_single_office_featured_news_swiper .swiper {
+        padding-top: 3rem;
+    }
+
+    .offshore .iec-offshore-news-section .iec_section_heading {
+        margin-bottom: 1.291818rem;
+    }
+}
+
+/* Products */
+.offshore .iec-offshore-products-section .iec_section_heading {
+    color: #1b204c;
+}
+
+.offshore .second-product-section {
+    padding-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .offshore .iec-offshore-products-section .iec_section_heading {
+        margin-bottom: 1.291818rem;
+    }
+}
+
+/* FAQ */
+.offshore .iec-offshore-faq-section .iec_section_heading {
+    color: #1b204c;
+}
+
+/* Popup */
+.offshore .iec_iot_form_warpper {
+    border-radius: 0.078301rem;
+    margin-bottom: 0.783012rem;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.offshore .iec_iot_form_warpper .form-fields {
+    display: block;
+    width: 100%;
+}
+
+.offshore .iec_iot_form_warpper form h5 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1.317915rem;
+    letter-spacing: 0.042674rem;
+    line-height: 175%;
+    color: #1b204c;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group {
+    width: 100%;
+    position: relative;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control,
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control:focus {
+    height: 1.99668rem;
+    padding: 0.626409rem 0.548108rem 0.548108rem;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control.field-invalid,
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iec_form_control.field-invalid:focus {
+    border-color: #d52114;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti {
+    height: 1.996680rem;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti .iti__flag-container {
+    padding: 0;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group .iti .iti__selected-dial-code {
+    font-size: 0.704710598847406665rem;
+    line-height: 1.017915rem;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group.no-border textarea,
+.offshore .iec_form_warpper.iec_iot_form_warpper form .bf_form_group.no-border textarea:focus {
+    width: 100%;
+    height: 1.996680rem;
+    resize: none;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 0.704710598847406665rem;
+    padding: 0.548108rem;
+    color: #51525a;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #758592;
+    background-color: transparent;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .form-button {
+    margin: 0;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper form .form-button .captcha-wrapper {
+    width: 100% !important;
+}
+
+.offshore .iec_form_warpper.iec_iot_form_warpper .form-button .iec_button {
+    max-width: 100%;
+    margin: 0.783012rem auto 0;
+}
+
+.offshore .iec_iot_form_warpper form .loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 3;
+}
+
+.offshore .iec_iot_form_warpper form .loading-overlay .loader {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -0.783012rem;
+    margin-top: -0.783012rem;
+}
+
+.offshore .iec_iot_form_warpper form .error {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 400;
+    font-size: 0.626409rem;
+    padding: 0;
+    text-align: left;
+    color: #a84e4e;
+    display: none;
+}

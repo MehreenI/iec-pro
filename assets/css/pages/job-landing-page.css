@@ -1,0 +1,310 @@
+.iec_no_results_note p,
+.iec_inner_main_content_box p {
+    font-family: 'Myriad Pro';
+    font-weight: 300;
+    font-size: 0.726409rem;
+    line-height: 175%;
+    margin: 0 0 0.783012rem;
+    max-width: 37.584565rem;
+    color: #202449;
+}
+
+/* Filters */
+.iec_filters {
+    width: 100%;
+    margin-bottom: 3.053746rem;
+    max-width: 9.787647rem;
+    margin-left: auto;
+}
+
+.iec_filters select,
+.iec_filters select:focus {
+    width: 100%;
+    height: 1.996680rem;
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+    font-size: 0.704710598847406665rem;
+    color: #1b204c;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.117452rem;
+    box-shadow: 0 2px 12px 0 rgb(97 97 97 / .12);
+    border: 2px solid #515a79;
+    background-color: #fff;
+    outline: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.20682 0.500001L9.0954e-08 1.87275L6.75 9.5L13.5 1.86504L12.2932 0.500001L6.75 6.76992L1.20682 0.500001Z' fill='%231B204C'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 0.548108rem;
+    background-position: right .587259rem center;
+    padding: 0.587259rem 1.566024rem 0.548108rem 0.704710598847406665rem;
+    outline: none;
+    box-shadow: none;
+}
+
+.iec_no_results_note {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f1f2f7;
+    padding: 3.132047rem 0.783012rem;
+    box-shadow: 0 0 20px 3px rgb(0 0 0 / .21);
+}
+
+.iec_vacancies_widget.no-results .iec_no_results_note {display: block;}
+
+.iec_no_results_note h5,
+.iec_no_results_note .iec-no-results-heading {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    font-size: 0.861313rem;
+    line-height: 175%;
+    margin: .195753rem 0;
+    color: #1b204c;
+}
+
+.iec_no_results_note p {
+    color: #1b204c;
+    max-width: 100%;
+    margin: 0.195753rem 0;
+}
+
+.job-landing-page .iec-job-vacancies,
+.page-template-job-landing-page .iec-job-vacancies {
+	padding: 2.349035rem 0 3.915059rem;
+}
+
+/* Form */
+.job-landing-page .iec-job-form-errors,
+.page-template-job-landing-page .iec-job-form-errors {
+	color: #a84e4e;
+	margin-bottom: 1.174518rem;
+}
+
+.job-landing-page .iec-job-form-errors p,
+.page-template-job-landing-page .iec-job-form-errors p {
+	margin: 0 0 0.391506rem;
+}
+
+.job-landing-page .iec-job-items .iec-job-item,
+.page-template-job-landing-page .iec-job-items .iec-job-item {
+	position: relative;
+	margin-bottom: 0.783012rem;
+	background-color: #f1f2f7;
+	box-shadow: 0 0 20px 3px rgb(0 0 0 / 0.08);
+}
+
+.job-landing-page .iec-job-item__close,
+.page-template-job-landing-page .iec-job-item__close {
+	display: none;
+	position: absolute;
+	top: 0.587259rem;
+	right: 0.587259rem;
+	width: 1.174518rem;
+	height: 1.174518rem;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	z-index: 2;
+}
+
+.job-landing-page .iec-job-item.expand .iec-job-item__close,
+.page-template-job-landing-page .iec-job-item.expand .iec-job-item__close {
+	display: block;
+}
+
+.job-landing-page .iec-job-item__columns,
+.page-template-job-landing-page .iec-job-item__columns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.174518rem;
+}
+
+.job-landing-page .iec-job-item__form,
+.page-template-job-landing-page .iec-job-item__form {
+	flex: 1 1 16.678151rem;
+	max-width: 16.678151rem;
+}
+
+.job-landing-page .iec-job-item__details,
+.page-template-job-landing-page .iec-job-item__details {
+	flex: 1 1 20rem;
+}
+
+.job-landing-page .iec-job-item:not(.expand) .iec-job-item__form,
+.page-template-job-landing-page .iec-job-item:not(.expand) .iec-job-item__form,
+.job-landing-page .iec-job-item:not(.expand) .iec-job-item__description,
+.page-template-job-landing-page .iec-job-item:not(.expand) .iec-job-item__description {
+	display: none;
+}
+
+.job-landing-page .iec-job-item__header,
+.page-template-job-landing-page .iec-job-item__header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.156602rem;
+	width: 100%;
+	padding: 0.783012rem 2.349035rem 0.783012rem 0.783012rem;
+	border: 0;
+	background: transparent;
+	text-align: left;
+	cursor: pointer;
+	font: inherit;
+}
+
+.job-landing-page .iec-job-item__title,
+.page-template-job-landing-page .iec-job-item__title {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.939614rem;
+	line-height: 130%;
+	color: #1b204c;
+	margin: 0;
+}
+
+.job-landing-page .iec-job-item__location,
+.page-template-job-landing-page .iec-job-item__location {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	color: #515a79;
+}
+
+.job-landing-page .iec-job-item__description,
+.page-template-job-landing-page .iec-job-item__description {
+	padding: 0 0.783012rem 0.783012rem;
+}
+
+.job-landing-page .iec-job-item__description p,
+.page-template-job-landing-page .iec-job-item__description p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 0.626409rem;
+	line-height: 175%;
+	color: #202449;
+}
+
+.job-landing-page .iec-job-apply-form,
+.page-template-job-landing-page .iec-job-apply-form {
+	position: relative;
+}
+
+.job-landing-page .iec-job-apply-form .form-fields h6,
+.page-template-job-landing-page .iec-job-apply-form .form-fields h6,
+.job-landing-page .iec-job-apply-form .form-fields .iec-form-heading,
+.page-template-job-landing-page .iec-job-apply-form .form-fields .iec-form-heading {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.704711rem;
+	margin-bottom: 0.783012rem;
+	color: #1b204c;
+}
+
+.job-landing-page .iec-job-apply-form .form-field,
+.page-template-job-landing-page .iec-job-apply-form .form-field {
+	margin-bottom: 0.587259rem;
+}
+
+.job-landing-page .iec-job-apply-form .form-field input[type="text"],
+.page-template-job-landing-page .iec-job-apply-form .form-field input[type="text"],
+.job-landing-page .iec-job-apply-form .form-field input[type="email"],
+.page-template-job-landing-page .iec-job-apply-form .form-field input[type="email"] {
+	width: 100%;
+	height: 1.840078rem;
+	padding: 0.391506rem 0.587259rem;
+	border: 1px solid #dedede;
+	border-radius: 0.117452rem;
+	background: #f7f7f7;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 0.704711rem;
+}
+
+.job-landing-page .iec-job-apply-form .file-upload,
+.page-template-job-landing-page .iec-job-apply-form .file-upload {
+	position: relative;
+}
+
+.job-landing-page .iec-job-apply-form .file-upload input[type="file"],
+.page-template-job-landing-page .iec-job-apply-form .file-upload input[type="file"] {
+	position: absolute;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.job-landing-page .iec-job-apply-form .file-upload label,
+.page-template-job-landing-page .iec-job-apply-form .file-upload label {
+	display: block;
+	padding: 0.587259rem;
+	border: 1px dashed #515a79;
+	border-radius: 0.117452rem;
+	background: #fff;
+	cursor: pointer;
+	font-size: 0.626409rem;
+	color: #1b204c;
+}
+
+.job-landing-page .iec-job-submit,
+.page-template-job-landing-page .iec-job-submit {
+	width: 100%;
+	border: 0;
+	border-radius: 0.117452rem;
+	background: linear-gradient(93deg, #1b204b, #717da3);
+	color: #fff;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 600;
+	font-size: 0.783012rem;
+	line-height: 2.349035rem;
+	cursor: pointer;
+}
+
+.job-landing-page .iec-job-apply-form .overlay,
+.page-template-job-landing-page .iec-job-apply-form .overlay {
+	position: absolute;
+	inset: 0;
+	background: rgb(255 255 255 / 0.85);
+	z-index: 5;
+}
+
+.job-landing-page .iec-job-apply-form.loading .overlay,
+.page-template-job-landing-page .iec-job-apply-form.loading .overlay {
+	display: block;
+}
+
+.job-landing-page .iec-job-apply-form .loader,
+.page-template-job-landing-page .iec-job-apply-form .loader {
+	margin: 45% auto 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+/* Filters */
+.job-landing-page .iec_filters,
+	.page-template-job-landing-page .iec_filters {
+		max-width: 100%;
+		margin: 0 0 1.666667rem;
+	}
+
+.job-landing-page .iec_inner_main_content_box p,
+	.page-template-job-landing-page .iec_inner_main_content_box p {
+		font-size: 0.888889rem;
+	}
+
+.job-landing-page .iec-job-item__columns,
+	.page-template-job-landing-page .iec-job-item__columns {
+		flex-direction: column;
+	}
+
+/* Form */
+.job-landing-page .iec-job-item__form,
+	.page-template-job-landing-page .iec-job-item__form {
+		max-width: 100%;
+	}
+
+.job-landing-page .iec-job-item__title,
+	.page-template-job-landing-page .iec-job-item__title {
+		font-size: 1.111111rem;
+	}
+}

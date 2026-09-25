@@ -1,0 +1,342 @@
+.iec_management_member_category_heading {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.017915rem;
+	line-height: 142%;
+	margin-bottom: 1.174518rem;
+	color: #1b204c;
+	text-transform: uppercase;
+}
+
+.iec_management_member_grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(9.787647rem, 1fr));
+	gap: 1.174518rem;
+	padding: 0.783012rem 0;
+	position: relative;
+}
+
+.iec_management_member_box {
+	width: 100%;
+	height: 100%;
+	min-height: 16.521548rem;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: #f8f9fa;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-decoration: none;
+	color: inherit;
+}
+
+button.iec_management_member_box,
+.iec_management_member_box--bio {
+	border: 0;
+	padding: 0;
+	font: inherit;
+	text-align: inherit;
+	cursor: pointer;
+	appearance: none;
+}
+
+.iec_management_member_links .iec-member-bio-trigger {
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.iec_management_member_image {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1 / 0.9;
+	position: relative;
+	overflow: hidden;
+}
+
+.iec_management_member_image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+
+.iec_management_member_content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0.978765rem 0.783012rem;
+}
+
+.iec_management_member_name {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 650;
+	font-size: 0.665560rem;
+	line-height: 175%;
+	color: #1b204c;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.iec_management_member_role {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 156%;
+	margin-bottom: 0.078301rem;
+	color: grey;
+}
+
+.iec_management_member_details {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.234903rem;
+	margin-bottom: 0.587259rem;
+}
+
+.iec_management_member_item {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.508958rem;
+	line-height: 156%;
+	min-height: 0.822162rem;
+	color: #495057;
+	display: flex;
+	align-items: center;
+}
+
+.iec_management_member_links {
+	width: auto;
+	min-width: 0.548108rem;
+	height: 0.548108rem;
+	flex-shrink: 0;
+}
+
+.iec_management_member_links > * {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* Popup */
+.iec_management_member_links .popup {
+	opacity: 0.5;
+	background-image: url('../../img/popup.png');
+}
+
+.iec_management_member_links .linkedin {
+	background-image: url(../../img/linkedin-grey.svg);
+}
+
+.bio-popup {
+	background: #fff;
+	max-width: 27.405412rem;
+	width: calc(100% - 2rem);
+	border: 0;
+	border-radius: 0.313205rem;
+	padding: 0;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-height: 90vh;
+	overflow-y: auto;
+	margin: 0;
+	z-index: 9999;
+
+	animation: bioPopupOpen 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes bioPopupOpen {
+	from {
+		opacity: 0;
+		transform: translate(-50%, -45%) scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+.bio-popup::backdrop {
+	background: rgba(0, 0, 0, 0.55);
+	position: fixed;
+	inset: 0;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
+body:has(.bio-popup[open]) {
+	overflow: hidden;
+}
+
+.bio-popup .close {
+	position: absolute;
+	top: 0.783012rem;
+	right: 0.783012rem;
+	width: 1.566024rem;
+	height: 1.566024rem;
+	font-size: 0.783012rem;
+	border-radius: 50%;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s ease, transform 0.3s ease;
+	background-color: #4a5568;
+	z-index: 10;
+}
+
+.bio-popup .close:hover {
+	background: #2d3748;
+	transform: rotate(90deg);
+}
+
+.bio-popup .close::before {
+	content: '×';
+}
+
+.bio-popup .header {
+	padding: 1.174518rem;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	align-items: center;
+	gap: 0.783012rem;
+}
+
+.bio-popup .img {
+	width: 4.698071rem;
+	height: 4.698071rem;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	border: 3px solid #f0f0f0;
+}
+
+.bio-popup .name {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.704711rem;
+	color: #1b204c;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.bio-popup .position {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	margin: 0 0 0.078301rem;
+	line-height: 1.56;
+	color: grey;
+}
+
+.bio-popup .company {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.548108rem;
+	line-height: 1.56;
+	color: #1b204c;
+	margin: 0;
+}
+
+.bio-popup .bio-wrapper {
+	padding: 1.174518rem;
+}
+
+.bio-popup .bio {
+	max-height: 60vh;
+	overflow-y: auto;
+	line-height: 175%;
+	font-size: 0.626409rem;
+	padding-right: 0.391506rem;
+	scrollbar-color: #d4d6df transparent;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+.iec_management_member_grid {
+		grid-template-columns: repeat(3, minmax(9.787647rem, 1fr));
+	}
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+.iec_management_member_grid {
+		grid-template-columns: 1fr;
+		gap: 1.388889rem;
+		padding: 1.11111rem 0;
+	}
+
+.iec_management_member_category_heading {
+		font-size: 1.444444rem;
+		margin-bottom: 1.666667rem;
+	}
+
+.iec_management_member_content {
+		padding: 1.388889rem 1.111111rem;
+	}
+
+.iec_management_member_name {
+		font-size: 0.944444rem;
+	}
+
+.iec_management_member_role {
+		font-size: 0.888889rem;
+		margin-bottom: 0.111111rem;
+	}
+
+.iec_management_member_links {
+		min-width: 0.777778rem;
+		height: 0.777778rem;
+	}
+
+.iec_management_member_item {
+		font-size: 0.722222rem;
+		min-height: 1.111111rem;
+	}
+
+.iec_management_member_details {
+		gap: 0.444444rem;
+		margin-bottom: 0.833333rem;
+	}
+
+/* Popup */
+.bio-popup .bio {
+		font-size: 0.888889rem;
+		padding-right: 0;
+	}
+
+.bio-popup .img {
+		width: 6.666667rem;
+		height: 6.666667rem;
+	}
+
+.bio-popup .name {
+		font-size: 1rem;
+	}
+
+.bio-popup .company {
+		font-size: 0.777778rem;
+	}
+
+.bio-popup .header {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media (hover: hover) {
+.iec_management_member_box:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+	}
+}

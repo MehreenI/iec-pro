@@ -1,0 +1,152 @@
+/* About */
+.iec_about_intorduction_content_box_warpper {
+    width: 100%;
+    padding-bottom: 1.722626rem;
+}
+
+.iec_about_intorduction_content_box {
+    column-count: 2;
+    gap: 2.349035rem;
+}
+
+.iec_qoute_author span,
+.iec_about_intorduction_content_box_warpper p {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    font-size: 0.626409rem;
+    line-height: 170%;
+    color: #1b204c;
+    margin-bottom: 0;
+}
+
+.iec_about_intorduction_content_box_warpper p:not(:last-child) {margin-bottom: 0.587259rem;}
+
+.iec_about_qoute_section {background-color: rgba(230, 232, 242, 0.70);}
+
+.iec_qoute_box_warpper {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.352355rem;
+    max-width: 38.485029rem;
+    margin: 0 auto;
+}
+
+.iec_qoute_box_warpper > * {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.iec_qoute_content_warpper {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: calc(61% - 0.299110rem);
+    padding: 2.897144rem 0 1.017915rem;
+    position: relative;
+    z-index: 1;
+}
+
+.iec_qoute_content_warpper:before {
+    content: " ";
+    width: 7.007955rem;
+    height: 4.698071rem;
+    background-image: url(/wp-content/uploads/2026/02/qoute-shape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    bottom: 2.466487rem;
+    right: -2.309885rem;
+    z-index: -1;
+}
+
+.iec_qoute_content_warpper h5,
+.iec_qoute_content_warpper > p {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 0.861313rem;
+    line-height: 154.545%;
+    color: #1B204C;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.iec_author_name {
+    display: block;
+    font-family: 'Myriad Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.783012rem;
+    line-height: 140%;
+    color: #1B204C;
+    margin-bottom: 0;
+}
+
+.iec_qoute_author span {
+    display: block;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 0.626409rem;
+    line-height: 175%;
+    color: #1B204C;
+}
+
+.iec_qoute_author_image_warpper {
+    width: calc(39% - 0.053245rem);
+    height: 12.841393rem;
+    margin: 0;
+}
+
+.iec_qoute_author_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Mobile */
+@media (max-width:768px) {
+/* About */
+.iec_about_intorduction_content_box_warpper {padding-bottom: 2.444444rem;}
+
+.iec_about_intorduction_content_box {
+        gap: 0;
+        column-count: 1;
+    }
+
+.iec_qoute_author span,
+    .iec_about_intorduction_content_box_warpper p {font-size: 0.888889rem;}
+
+.iec_about_intorduction_content_box_warpper p:not(:last-child) {margin-bottom: 0.833333rem;}
+
+.iec_qoute_box_warpper {
+        gap: 0;
+        max-width: 19.444444rem;
+        flex-direction: column-reverse;
+    }
+
+.iec_qoute_content_warpper {
+        padding: 4.333333rem 0 2rem;
+        text-align: center;
+        gap: 1.555556rem;
+    }
+
+.iec_qoute_box_warpper>* {width: 100% !important;}
+
+.iec_qoute_author_image_warpper {height: 16.722222rem;}
+
+.iec_qoute_content_warpper h5,
+    .iec_qoute_content_warpper > p {font-size: 1.222222rem;}
+
+.iec_author_name {font-size: 1.111111rem;}
+
+.iec_qoute_content_warpper:before {
+        right: 0;
+        width: 9.944444rem;
+        height: 6.666667rem;
+        top: 1.111111rem;
+        bottom: auto;
+        transform: translateX(-50%);
+    }
+}

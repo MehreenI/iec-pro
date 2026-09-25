@@ -1,0 +1,254 @@
+/* Hero */
+.iec_starlink_portfolio_hero {
+    min-height: 16.575294rem;
+    background-image: var(--desktopImage);
+    padding: 2.740541rem 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.iec_starlink_portfolio_hero:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(360deg, #1B204C 27.73%, rgba(27, 32, 76, 0.20) 81.36%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.iec_starlink_portfolio_hero_content {
+    width: 100%;
+    max-width: max-content;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.iec_starlink_portfolio_hero_content h1 {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    font-size: 2.192433rem;
+    line-height: 100%;
+    letter-spacing: 0.043849rem;
+    color: #fff;
+    margin: 0;
+}
+
+.iec_starlink_portfolio_hero_content h4 {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    font-size: 1.096216rem;
+    line-height: 171.429%;
+    letter-spacing: 0.021924rem;
+    color: #fff;
+}
+
+.iec_starlink_portfolio_hero_content .iec_starlink_portfolio_hero_button_list {display: none;}
+
+.iec_starlink_portfolio_hero_below_button {padding-bottom: 55px;}
+
+.iec_starlink_portfolio_hero_button_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 3.249499rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    position: relative;
+    margin-top: -2.427337rem;
+    z-index: 1;
+}
+
+.iec_starlink_portfolio_hero_button_list li a {
+    width: 14.603170rem;
+    height: 3.680155rem;
+    padding: 0 0.978765rem;
+    border-radius: 0.581073rem;
+    background-color: #727DA3;
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    font-size: 0.861313rem;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.291969rem;
+    transition: all 0.2s linear 0s;
+}
+
+.iec_starlink_portfolio_hero_button_list li a svg {
+    width: 1.957529rem;
+    height: auto;
+}
+
+.iec_starlink_portfolio_hero_button_list li a:hover {
+    transform: scale(1.1);
+    background-color: #727DA3;
+    transition: all 0.2s linear 0s;
+}
+
+/* News */
+.iec_starlink_portfolio_featured_news {padding: 2.779692rem 0 4.110812rem;}
+
+.iec_starlink_portfolio_featured_news .iec_main_heading {
+    letter-spacing: 0;
+    margin-bottom: 0.743861rem;
+}
+
+.iec_starlink_portfolio_featured_news .bd_np_box_image {aspect-ratio: 1 / 0.6275;}
+
+.iec_starlink_portfolio_featured_news .bd_np_box_meta {
+    margin: 0.46980706589827111rem 0 0.743861rem;
+    padding-bottom: 0.626409rem;
+}
+
+.iec_starlink_portfolio_featured_news .bd_np_box_meta span.date,
+.iec_starlink_portfolio_featured_news .bd_np_box_meta .category_pill {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    letter-spacing: 0.086131rem;
+}
+
+.iec_starlink_portfolio_featured_news .bd_news_post_title {
+    font-family: 'Myriad Pro';
+    line-height: 130%;
+    margin-bottom: 0.313205rem;
+}
+
+.iec_starlink_portfolio_featured_news .bd_np_rm_link span {
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+    font-size: 0.548108rem;
+    line-height: 114.286%;
+}
+
+/* Services */
+.iec_starlink_portfolio_service_plan {
+    padding: 2.349035rem 0 3.836758rem;
+    height: 100%;
+    background-color: #F1F2F7;
+}
+
+.iec_starlink_portfolio_service_plan h3 {
+    color: #1B204C;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.iec_starlink_portfolio_service_boxes {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    gap: 1.644325rem;
+    margin: 1.957529rem 0;
+}
+
+.iec_starlink_portfolio_service_box_warpper {
+    flex: 0 0 auto;
+    max-width: 100%;
+    min-height: 19.340391rem;
+    width: calc(35% + 0.783012rem);
+}
+
+.iec_starlink_portfolio_service_box {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 2.114132rem 1.017915rem 1.840078rem;
+    border-radius: 1.017915rem;
+    background-color: #FFF;
+    box-shadow: 0 210px 59px 0 rgba(189, 192, 214, 0.01), 0 135px 54px 0 rgba(189, 192, 214, 0.07), 0 76px 45px 0 rgba(189, 192, 214, 0.25), 0 34px 34px 0 rgba(189, 192, 214, 0.43), 0 8px 19px 0 rgba(189, 192, 214, 0.49);
+    text-align: center;
+}
+
+.iec_starlink_portfolio_service_box h5 {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    font-size: 0.861313rem;
+    line-height: 130%;
+    margin-bottom: 0.156602rem;
+    color: #1B204C;
+}
+
+.iec_starlink_portfolio_service_plan p,
+.iec_starlink_portfolio_service_box_list li {
+    font-family: 'Myriad Pro';
+    font-weight: 300;
+    font-size: 0.861313rem;
+    line-height: 118.182%;
+    color: #1B204C;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.iec_starlink_portfolio_service_box p a {text-decoration: underline;}
+
+.iec_starlink_portfolio_service_box p a:hover {text-decoration: none;}
+
+.iec_starlink_portfolio_service_box_list {
+    list-style: none;
+    display: flex;
+    gap: 0.783012rem;
+    margin: 1.566024rem 0 0;
+    flex-direction: column;
+}
+
+.iec_starlink_portfolio_service_box_list li strong {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    display: block;
+}
+
+.bd_starlink_portfolio_service_plan p {}
+
+/* Accordion */
+.iec_starlink_portfolio_accordion_warpper .accordion-item {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: calc(50% - 0.626409rem);
+    border: none;
+    border-radius: 0;
+    background-color: #E7E6EE;
+    border-left: 1px solid #1B204C;
+}
+
+.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-header {}
+
+.iec_starlink_portfolio_accordion_header_content h4 {
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+    font-size: 0.783012rem;
+    line-height: 120%;
+    text-align: left;
+    color: #1B204C;
+    margin-bottom: 0;
+}
+
+.iec_starlink_portfolio_accordion_warpper .accordion-collapse.collapse:not(.show) {display: none;}
+
+.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body {padding: 0.587259rem 0.704710598847406665rem 0.587259rem;}
+
+.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body p {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    font-size: 0.656409rem;
+    line-height: 132%;
+    text-align: left;
+    color: #1B204C;
+    margin-bottom: 0.587259rem;
+}
+
+.iec_starlink_portfolio_accordion_warpper .accordion-item .accordion-body p a:hover {text-decoration: none;}

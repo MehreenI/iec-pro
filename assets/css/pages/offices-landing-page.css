@@ -1,0 +1,555 @@
+.iec_main_menu li:last-child a:not(.iec_mega_menu_column a) {
+    background: #727da3
+}
+
+.iec_main_menu li:last-child a:not(.iec_mega_menu_column a):hover {
+    color: #1c214c;
+    background: #fff
+}
+
+.regional-offices-page .iec_main_header:not(.menu_open) {
+    --hv2_color: #fff;
+    background: #1b204c!important;
+    box-shadow: 0 4px 44.4px 0 rgba(0,0,0,.25);
+    position: relative!important
+}
+
+.regional-offices-page .iec_main_header .main_header_row .logo_search_block .search {
+    border: 2px solid #fff
+}
+
+.regional-offices-page .iec_main_header .main_header_row .logo_search_block .search svg #s_icon_c,.regional-offices-page .iec_main_header .main_header_row .logo_search_block .search .search-icon svg line,.regional-offices-page .iec_main_header .main_header_row .logo_search_block .search .search-icon svg circle,.regional-offices-page .iec_main_header .main_header_row .logo_search_block .search .search-icon svg #s_icon_l {
+    stroke: #fff!important
+}
+
+.regional-offices-page .iec_main_header .main_header_row .logo_search_block .search.searching .search-form,.regional-offices-page .iec_main_header .main_header_row .logo_search_block .search .search-form input[type="text"] {
+    background: #fff
+}
+
+.regional-offices-page .iec_main_header .main_header_row .logo_search_block .logo .logo_dark {
+    display: none
+}
+
+.regional-offices-page .iec_main_header .main_header_row .logo_search_block .logo .logo_light {
+    display: block
+}
+
+.regional-offices-page .iec_main_header .lang-container .lang,.regional-offices-page .iec_main_header .lang-container .language-menu {
+    background: #fff!important
+}
+
+.regional-offices-page .iec_main_header .lang-container .lang svg path {
+    stroke: #1b204c!important
+}
+
+.regional-offices-page .iec_main_header .lang-container .lang span.current-lang,.regional-offices-page .iec_main_header .lang-container .language-menu li a {
+    color: #1b204c!important
+}
+
+.regional-offices-page #footer {
+    box-shadow: 0 -4px 38px 0 rgba(0,0,0,.25)
+}
+
+/* Offices */
+.iec_regional_offices_section {
+    background-color: #1B204C
+}
+
+.iec_regional_offices_main_content {
+    padding: 3.523553rem 0
+}
+
+.iec_regional_offices_main_content h1 {
+    color: #FFF;
+    font-family: 'Myriad Pro',sans-serif;
+    font-weight: 700;
+    font-size: 1.566024rem;
+    line-height: 120%;
+    letter-spacing: .03132rem;
+    text-transform: uppercase;
+    margin-bottom: 0
+}
+
+.iec_regional_offices_main_content ul {
+    list-style: none;
+    margin-top: 89px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    max-width: 14.289965rem;
+    gap: 1.096216rem .861313rem;
+    line-height: 0
+}
+
+.iec_regional_offices_button {
+    width: auto;
+    height: 1.840078rem;
+    display: block;
+    border-radius: 100vw;
+    padding: .391506rem 1.409421rem .234903532949135555rem;
+    border: 1.099px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    font-family: 'Myriad Pro',sans-serif;
+    font-weight: 300;
+    font-size: .861313rem;
+    line-height: 129.844%;
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+.iec_regional_offices_button.active {
+    background: #727DA3;
+    border-color: #727DA3;
+    color: #fff
+}
+
+.iec_regional_offices_button:hover,.iec_regional_offices_button.active:hover {
+    color: #1B204C;
+    background-color: #fff;
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+.iec_regional_offices_map_image_warpper {
+    width: calc(100% + 1.624749rem);
+    height: 100%;
+    margin-left: -1.624749rem;
+    position: relative
+}
+
+.iec_regional_offices_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.iec_svg_map {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.iec_svg_map > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: .2
+}
+
+.iec_map_pointer {
+    cursor: pointer;
+    position: absolute;
+    left: var(--dx);
+    top: var(--dy);
+    width: 23px;
+    height: 23px;
+    transform: translate(-50%,-50%);
+    z-index: 1
+}
+
+.iec_map_pin {
+    display: block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #1B204C;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+.iec_map_pin:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+.iec_hover_tooltip {
+    opacity: 0;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 4px);
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FFF;
+    pointer-events: none;
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+.iec_hover_tooltip:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0 0,100% 0,46% 100%)
+}
+
+.iec_hover_tooltip span {
+    font-family: 'Myriad Pro',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144.444%;
+    color: #1b1f4c
+}
+
+.iec_map_pointer:not(.active):hover .iec_hover_tooltip {
+    opacity: 1;
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+/* Cards */
+.iec_map_card {
+    position: absolute;
+    top: 0;
+    padding: .783012rem 1.096216rem;
+    border-radius: .46980706589827111rem;
+    width: 100%;
+    max-width: 15.581934rem;
+    background-color: #FFF;
+    box-shadow: 139px 122px 52px 0 rgba(0,0,0,0),89px 78px 47px 0 rgba(0,0,0,.01),50px 44px 40px 0 rgba(0,0,0,.05),22px 20px 30px 0 rgba(0,0,0,.09),6px 5px 16px 0 rgba(0,0,0,.1);
+    display: none;
+    z-index: 9999
+}
+
+.iec_map_card_header {
+    display: flex;
+    align-items: center;
+    gap: .46980706589827111rem;
+    margin-bottom: 16px
+}
+
+.iec_map_card_header img {
+    width: 2.349035rem;
+    height: 2.349035rem;
+    border-radius: 100%
+}
+
+.iec_map_card_header div {
+    flex-grow: 1
+}
+
+.iec_map_card_header .iec_map_card_title {
+    font-family: 'Myriad Pro',sans-serif;
+    font-weight: 700;
+    font-size: 1.017915rem;
+    line-height: 100%;
+    color: #1B204C;
+    margin: 0
+}
+
+.iec_map_card_header .iec_map_card_title strong {
+    font-weight: 700
+}
+
+.iec_desktop_icon {
+    width: auto;
+    height: 1.409421rem;
+    padding-inline:.783012rem;display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b204c;
+    border-radius: 100vw
+}
+
+.iec_desktop_icon svg {
+    width: auto;
+    height: .743861rem
+}
+
+.iec_desktop_icon svg path {
+    stroke: #fff
+}
+
+.iec_desktop_icon:hover {
+    background-color: #727DA3
+}
+
+.iec_map_card_info:not(:last-child) {
+    margin-bottom: .626409rem
+}
+
+.iec_map_card_info,.iec_map_card_contact,.iec_map_card_address {
+    font-family: 'Myriad Pro',sans-serif;
+    font-weight: 300;
+    font-size: .704710598847406665rem;
+    line-height: 144.444%;
+    color: #1B204C;
+    margin-bottom: .391506rem
+}
+
+.iec_map_card_info h6 {
+    font-family: 'Myriad Pro',sans-serif;
+    font-weight: 700;
+    font-size: .783012rem;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1B204C
+}
+
+.iec_map_card_contact {
+    font-weight: 400;
+    margin-top: .156602rem;
+    margin-bottom: 0
+}
+
+.iec_map_card_contact a {
+    font-weight: 300
+}
+
+.iec_map_card_contact a:hover {
+    text-decoration: underline
+}
+
+.iec_map_pointer.active {
+    width: 36px;
+    height: 36px
+}
+
+.iec_map_pointer.active .iec_map_pin {
+    width: 36px;
+    height: 36px;
+    background: #727DA3;
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+.iec_map_pointer.active .iec_map_pin:after {
+    width: 18px;
+    height: 18px;
+    transition: 0.35s cubic-bezier(.3,.7,.4,1)
+}
+
+.iec_map_card_france,.iec_map_card_europe {
+    top: calc(38% - 0.156602rem);
+    left: calc(11% - 0.039151rem);
+    border-top-left-radius: 0
+}
+
+.iec_map_card_norway {
+    top: 25%;
+    left: calc(13% + 0.117452rem);
+    border-top-left-radius: 0
+}
+
+.iec_map_card_sweden {
+    top: calc(28% - 0.117452rem);
+    left: calc(13% + 0.352355rem);
+    border-top-left-radius: 0
+}
+
+.iec_map_card_turkey {
+    top: calc(50% - 2.192433rem);
+    left: calc(21% + 0.46980706589827111rem);
+    border-top-left-radius: 0
+}
+
+.iec_map_card_kazakhstan {
+    top: auto;
+    left: auto;
+    right: 54%;
+    bottom: calc(60% - 0.117452rem);
+    border-bottom-right-radius: 0
+}
+
+.iec_map_card_uae {
+    top: auto;
+    left: calc(34% + 0.156602rem);
+    bottom: calc(46% - 0.078301rem);
+    border-bottom-left-radius: 0
+}
+
+.iec_map_card_sangapore,.iec_map_card_singapore {
+    top: auto;
+    left: auto;
+    right: calc(40% + 0.430656rem);
+    bottom: calc(32% - -0.117452rem);
+    border-bottom-right-radius: 0
+}
+
+.iec_map_card_indonesia {
+    top: auto;
+    left: auto;
+    right: calc(38% + 0.391506rem);
+    bottom: calc(28% - -0.078301rem);
+    border-bottom-right-radius: 0
+}
+
+.iec_map_card_malaysia {
+    top: auto;
+    right: calc(44% + 0.039151rem);
+    bottom: calc(35% - 0.078301rem);
+    border-bottom-right-radius: 0
+}
+
+.iec_map_card_tunisia {
+    top: calc(47% - 0.156602rem);
+    left: calc(14% - 0.039151rem);
+    border-top-left-radius: 0
+}
+
+.iec_mobile_icon,.iec_map_card .gray_btn {
+    display: none
+}
+
+.iec_mobile_menu_warpper .iec_header_top_bar_right .search .search-icon svg path {
+    stroke: white
+}
+
+.iec_mobile_menu_btn span{
+    color: white;
+    background: white;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+/* Offices */
+.iec_regional_offices_main_content ul {
+        margin-top:2.618144rem;
+        max-width: 100%
+    }
+
+.iec_regional_offices_map_image_warpper {
+        width: 100%;
+        margin-left: 0
+    }
+
+/* Cards */
+.iec_map_card {
+        top: auto!important;
+        bottom: 50%!important;
+        left: auto!important;
+        right: 50%!important;
+        transform: translate(50%,50%)!important;
+        max-width: 20.94515rem;
+        border-radius: 0.628354rem!important
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+/* Offices */
+.iec_regional_offices_main_content {
+        padding:1.722222rem 0 1.055556rem
+    }
+
+.iec_regional_offices_main_content h1 {
+        font-size: 2rem;
+        line-height: 111.111%;
+        letter-spacing: .04rem;
+        text-align: center
+    }
+
+.iec_regional_offices_main_content ul {
+        gap: 1.333333rem 1.111111rem;
+        margin-top: 1.111111rem;
+        justify-content: center
+    }
+
+.iec_regional_offices_button {
+        height: 2.611111rem;
+        font-size: 1.201611rem;
+        padding: .611111rem 1.833333rem .327722rem
+    }
+
+.iec_regional_offices_map_image_warpper {
+        width: calc(100% + 1.944444rem);
+        margin: 0 -1.111111rem 1.166667rem -.833333rem;
+        height: 25.833333rem
+    }
+
+.iec_regional_offices_image {
+        object-fit: cover;
+        object-position: left center
+    }
+
+.iec_svg_map > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center
+    }
+
+.iec_hover_tooltip {
+        display: none
+    }
+
+.iec_map_pointer {
+        left: var(--mx);
+        top: var(--my);
+        width: 19px;
+        height: 19px
+    }
+
+.iec_map_pin {
+        width: 19px;
+        height: 19px
+    }
+
+.iec_map_pin:after {
+        width: 10px;
+        height: 10px
+    }
+
+.iec_desktop_icon {
+        display: none
+    }
+
+.iec_mobile_icon {
+        display: block
+    }
+
+/* Cards */
+.iec_map_card {
+        max-width: 19.444444rem;
+        padding: .977222rem 1.367778rem
+    }
+
+.iec_map_card_header {
+        gap: .555556rem;
+        margin-bottom: .777778rem
+    }
+
+.iec_map_card_header img {
+        width: 2.931333rem;
+        height: 2.931333rem
+    }
+
+.iec_map_card_header .iec_map_card_title {
+        font-size: 1.111111rem;
+        line-height: 114.322%
+    }
+
+.iec_map_card_info:not(:last-child) {
+        margin-bottom: .777778rem
+    }
+
+.iec_map_card_info h6 {
+        font-size: 1rem
+    }
+
+.iec_map_card_info,.iec_map_card_contact,.iec_map_card_address {
+        font-size: .888889rem
+    }
+
+.iec_map_card .gray_btn {
+        max-width: 10rem;
+        margin: 1.333333rem auto 0;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex
+    }
+}

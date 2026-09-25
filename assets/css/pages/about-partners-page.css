@@ -1,0 +1,517 @@
+/* Partners */
+.iec_partner_accordian_list,
+.iec_partner_accordian_list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	position: relative;
+	margin: 0 -0.274054rem;
+	padding: 0;
+}
+
+.iec_partner_accordian_box_warpper,
+.iec_partner_accordian_box_warpper {
+	flex: 0 0 auto;
+	max-width: 100%;
+	width: 20%;
+	margin-bottom: 0.783012rem;
+	padding: 0 0.274054rem;
+}
+
+button.iec_partner_accordian_trigger,
+button.iec_partner_accordian_trigger {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	font: inherit;
+	color: inherit;
+	text-align: inherit;
+	cursor: pointer;
+	display: block;
+}
+
+.iec_partner_accordian_box,
+.iec_partner_accordian_box {
+	display: block;
+	width: 100%;
+	min-height: 5.990040rem;
+	position: relative;
+	border-radius: 0.117452rem;
+	padding: 0.313205rem 0.469807rem;
+	background-color: #fff;
+	border: 3px solid transparent;
+	box-shadow: 0 1px 12px 0 hsla(0, 0%, 42.7%, 0.16);
+	transition: all 0.25s ease;
+}
+
+.iec_partner_accordian_image,
+.iec_partner_accordian_image {
+	width: 100%;
+	aspect-ratio: 1 / 0.4554;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	margin: 0 auto 0.313205rem;
+}
+
+.iec_partner_accordian_image img,
+.iec_partner_accordian_image img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.iec_partner_accordian_content,
+.iec_partner_accordian_content,
+.iec_partner_accordian_box_warpper.active,
+.iec_partner_accordian_box_warpper.active {
+	position: relative;
+}
+
+.iec_partner_accordian_content h6,
+.iec_partner_accordian_content .iec_partner_accordian_caption {
+	width: 100%;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 600;
+	font-size: 0.508958rem;
+	padding-right: 1.174518rem;
+	margin: 0;
+	color: #1b204c;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.iec_partner_accordian_content .toggle-icon,
+.iec_partner_accordian_content .toggle-icon {
+	width: 0.939614rem;
+	height: 0.939614rem;
+	border-radius: 0.783012rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #f8f8f9;
+}
+
+.iec_partner_accordian_content .toggle-icon::after,
+.iec_partner_accordian_content .toggle-icon::after,
+.iec_partner_accordian_content .toggle-icon::before,
+.iec_partner_accordian_content .toggle-icon::before {
+	content: '';
+	display: block;
+	width: 0.391506rem;
+	height: 0.078301rem;
+	background-color: #979797;
+	position: absolute;
+	top: 0.430656rem;
+	left: 0.274054rem;
+}
+
+.iec_partner_accordian_content .toggle-icon::after,
+.iec_partner_accordian_content .toggle-icon::after {
+	transform: rotate(90deg);
+	transition: all 0.2s ease;
+}
+
+.iec_partner_accordian_box:hover,
+.iec_partner_accordian_box:hover {
+	border-color: rgba(27, 32, 76, 0.51);
+}
+
+.iec_partner_accordian_box_warpper.active .iec_partner_accordian_box,
+.iec_partner_accordian_box_warpper.active .iec_partner_accordian_box {
+	border-color: #1b204c;
+}
+
+.iec_partner_accordian_below_content,
+.iec_partner_accordian_below_content {
+	display: none;
+	width: 100%;
+	position: relative;
+	background-color: #f6f6f8;
+	padding: 1.957529rem 0;
+	margin: 1.174518rem 0;
+	z-index: 1;
+}
+
+.iec_partner_accordian_below_content.active,
+.iec_partner_accordian_below_content.active {
+	display: block;
+}
+
+.iec_partner_accordian_below_content::before,
+.iec_partner_accordian_below_content::before {
+	content: ' ';
+	width: 200vw;
+	height: 100%;
+	display: block;
+	background-color: #f6f6f8;
+	position: absolute;
+	top: 0;
+	left: -50%;
+	transform: translateX(-20%);
+	z-index: -1;
+}
+
+.iec_partner_accordian_below_content h2,
+.iec_partner_accordian_below_content h3 {
+	width: 100%;
+	display: block;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.017915rem;
+	line-height: 140%;
+	margin-bottom: 0.391506rem;
+	color: #1b204c;
+	text-transform: uppercase;
+}
+
+.iec_partner_accordian_below_content h2 a.js-operator-link,
+.iec_partner_accordian_below_content h3 a.js-operator-link {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.iec_partner_accordian_below_content h2 a.js-operator-link:hover,
+.iec_partner_accordian_below_content h3 a.js-operator-link:hover {
+	color: #515a79;
+}
+
+.iec_para_content,
+.iec_para_content {
+	column-gap: 1.174518rem;
+	column-count: 2;
+}
+
+.iec_para_content p,
+.iec_para_content p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.626409rem;
+	line-height: 169%;
+	padding: 0.274054rem 0;
+	color: #1b204c;
+}
+
+.iec_partner_accordian_button_list,
+.iec_partner_accordian_button_list {
+	margin: 2.349035rem -0.195753rem 0.587259rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.iec_partner_accordian_button_list > div,
+.iec_partner_accordian_button_list > div {
+	flex: 0 0 auto;
+	max-width: 100%;
+	width: 50%;
+	padding: 0 0.195753rem;
+}
+
+.iec_partner_accordian_button_list a,
+.iec_partner_accordian_button_list a,
+.iec_partner_accordian_button_list button.view-map,
+.iec_partner_accordian_button_list button.view-map {
+	border-radius: 0.117452rem;
+	background-color: #515a79;
+	text-shadow: 0 1px 2px rgba(45, 143, 152, 0.07);
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 600;
+	font-size: 0.783012rem;
+	line-height: 2.466487rem;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-transform: uppercase;
+	transition: all 0.2s ease;
+	border: 0;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.iec_partner_accordian_button_list a.download-brochure,
+.iec_partner_accordian_button_list a.download-brochure {
+	background-color: #bdb4a6;
+}
+
+.iec_partner_accordian_button_list a.download-brochure::before,
+.iec_partner_accordian_button_list a.download-brochure::before {
+	content: '';
+	display: inline-block;
+	background-image: url(../../img/download.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 0.900464rem;
+	height: 1.096216rem;
+	position: relative;
+	top: 0.195753rem;
+	margin-right: 0.587259rem;
+}
+
+.iec_partner_accordian_button_list a.download-brochure:hover,
+.iec_partner_accordian_button_list a.download-brochure:hover {
+	background-color: rgba(189, 180, 166, 0.8);
+}
+
+.iec_partner_accordian_button_list a:hover,
+.iec_partner_accordian_button_list a:hover,
+.iec_partner_accordian_button_list button.view-map:hover,
+.iec_partner_accordian_button_list button.view-map:hover {
+	background-color: rgba(81, 90, 121, 0.81);
+}
+
+.iec-partner-coverage-dialog,
+.iec-partner-coverage-dialog {
+	background-color: #fff;
+	max-width: 36.018542rem;
+	width: calc(100% - 2rem);
+	margin: auto;
+	padding: 2.505638rem;
+	border: 0;
+	border-radius: 0.117452rem;
+	position: fixed;
+	inset: 0;
+}
+
+.iec-partner-coverage-dialog::backdrop,
+.iec-partner-coverage-dialog::backdrop {
+	background: rgb(0 0 0 / 0.55);
+}
+
+.iec-partner-coverage-dialog img,
+.iec-partner-coverage-dialog img {
+	width: 100%;
+	height: auto;
+}
+
+.iec-partner-coverage-dialog .close,
+.iec-partner-coverage-dialog .close {
+	width: 1.174518rem;
+	height: 1.174518rem;
+	border-radius: 100vw;
+	background-color: #646d8b;
+	border: 0;
+	position: absolute;
+	top: 0.469807rem;
+	right: 0.469807rem;
+	cursor: pointer;
+	transform: rotate(45deg);
+	padding: 0;
+}
+
+.iec-partner-coverage-dialog .close:hover,
+.iec-partner-coverage-dialog .close:hover {
+	opacity: 0.8;
+}
+
+.iec-partner-coverage-dialog .close::after,
+.iec-partner-coverage-dialog .close::after,
+.iec-partner-coverage-dialog .close::before,
+.iec-partner-coverage-dialog .close::before {
+	content: '';
+	display: block;
+	width: 0.548108rem;
+	height: 0.078301rem;
+	background-color: #fff;
+	position: absolute;
+	top: 0.548108rem;
+	left: 0.313205rem;
+}
+
+.iec-partner-coverage-dialog .close::after,
+.iec-partner-coverage-dialog .close::after {
+	transform: rotate(90deg);
+	transition: all 0.2s ease;
+}
+
+.screen-reader-text,
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* About Hero And Tabs */
+h1.iec-primary-heading {
+	color:  #FFF ;
+	font-family: "Segoe UI";
+	font-size: 1.9243297419rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 2.34903532949rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-bottom: 0.97876472062rem;
+}
+
+.iec-sub-heading{
+	color:  #FFF;
+	font-family: "Segoe UI";
+	font-size: 1.0962164871rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding-bottom: 0.97876472062rem
+}
+
+/* Hero */
+.our-partners-page .iec_hero_banner{
+	padding: 4.655600rem 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+/* Partners */
+.iec_partner_accordian_box_warpper,
+	.iec_partner_accordian_box_warpper {
+		width: 33.333333%;
+	}
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+/* Partners */
+.iec_partner_accordian_list,
+	.iec_partner_accordian_list {
+		margin: 0 -0.388889rem;
+	}
+
+.iec_partner_accordian_box_warpper,
+	.iec_partner_accordian_box_warpper {
+		width: 100%;
+		margin-bottom: 1.111111rem;
+		padding: 0 0.388889rem;
+	}
+
+.iec_partner_accordian_box,
+	.iec_partner_accordian_box {
+		min-height: 8.5rem;
+		border-radius: 0.166667rem;
+		padding: 0.444444rem 0.666667rem;
+	}
+
+.iec_partner_accordian_image,
+	.iec_partner_accordian_image {
+		margin: 0 auto 0.444444rem;
+	}
+
+.iec_partner_accordian_content h6,
+	.iec_partner_accordian_content .iec_partner_accordian_caption {
+		font-size: 0.722222rem;
+		padding-right: 1.666667rem;
+	}
+
+.iec_partner_accordian_content .toggle-icon,
+	.iec_partner_accordian_content .toggle-icon {
+		width: 1.333333rem;
+		height: 1.333333rem;
+		border-radius: 100vw;
+	}
+
+.iec_partner_accordian_content .toggle-icon::after,
+	.iec_partner_accordian_content .toggle-icon::after,
+	.iec_partner_accordian_content .toggle-icon::before,
+	.iec_partner_accordian_content .toggle-icon::before {
+		width: 0.555556rem;
+		height: 0.111111rem;
+		top: 0.611111rem;
+		left: 0.388889rem;
+	}
+
+.iec_partner_accordian_below_content,
+	.iec_partner_accordian_below_content {
+		padding: 2.222222rem 0;
+		margin: 1.666667rem 0;
+	}
+
+.iec_partner_accordian_below_content h2,
+	.iec_partner_accordian_below_content h3 {
+		font-size: 1.111111rem;
+		margin-bottom: 0.111111rem;
+	}
+
+.iec_para_content,
+	.iec_para_content {
+		column-count: 1;
+	}
+
+.iec_para_content p,
+	.iec_para_content p {
+		font-size: 0.888889rem;
+		padding: 0.388889rem 0;
+	}
+
+.iec_partner_accordian_button_list,
+	.iec_partner_accordian_button_list {
+		margin: 1.666667rem 0 0.833333rem;
+	}
+
+.iec_partner_accordian_button_list > div,
+	.iec_partner_accordian_button_list > div {
+		width: 100%;
+		padding: 0;
+	}
+
+.iec_partner_accordian_button_list a,
+	.iec_partner_accordian_button_list a,
+	.iec_partner_accordian_button_list button.view-map,
+	.iec_partner_accordian_button_list button.view-map {
+		border-radius: 0.166667rem;
+		font-size: 0.888889rem;
+		line-height: 2.777778rem;
+	}
+
+.iec_partner_accordian_button_list a.download-brochure::before,
+	.iec_partner_accordian_button_list a.download-brochure::before {
+		width: 1.222222rem;
+		height: 1.555556rem;
+		top: 0.555556rem;
+		margin-right: 0.833333rem;
+	}
+
+.iec-partner-coverage-dialog,
+	.iec-partner-coverage-dialog {
+		padding: 0.833333rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+/* Hero */
+.iec_hero_banner{
+		background-image: var(--mobileImage) !important;
+		min-height: 800px;
+	}
+
+/* About Hero And Tabs */
+h1.iec-primary-heading {
+        text-align: center;
+    }
+
+h2.iec-sub-heading {
+        text-align:center;
+        font-size: 22px
+    }
+
+.btn{
+        margin: auto;
+    }
+
+/* Buttons */
+a.gray_btn {
+        font-size: 15px !important;
+    }
+}

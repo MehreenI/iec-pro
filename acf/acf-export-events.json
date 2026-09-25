@@ -1,0 +1,818 @@
+[
+    {
+        "key": "group_685aab08acd3a",
+        "title": "Events News Fields",
+        "fields": [
+            {
+                "key": "field_685aab25ef1d3",
+                "label": "Content",
+                "name": "event_content",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_685aab2cef1d4",
+                "label": "Details",
+                "name": "event_details",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 3,
+                "collapsed": "",
+                "min": 1,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Row",
+                "sub_fields": [
+                    {
+                        "key": "field_685aab38ef1d5",
+                        "label": "Title",
+                        "name": "title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_685aab2cef1d4"
+                    },
+                    {
+                        "key": "field_68a581543d39d",
+                        "label": "Description",
+                        "name": "description",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_685aab2cef1d4"
+                    }
+                ],
+                "rows_per_page": 20
+            },
+            {
+                "key": "field_685aab51ef1d6",
+                "label": "Event details title",
+                "name": "event_details_title",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_68b8fdec75f5b",
+                "label": "New Event Detail Style",
+                "name": "new_event_detail_style",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 0,
+                "message": "Allow Repeater for Event Detail",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_68b8fcccc57a6",
+                "label": "Event Details",
+                "name": "event_details_repeater",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_68b8fdec75f5b",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 0,
+                "collapsed": "",
+                "min": 1,
+                "max": 6,
+                "layout": "table",
+                "button_label": "Add Row",
+                "sub_fields": [
+                    {
+                        "key": "field_68b8fce3c57a7",
+                        "label": "Title",
+                        "name": "title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 0,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_68b8fcccc57a6"
+                    },
+                    {
+                        "key": "field_68b8fcf3c57a8",
+                        "label": "Description",
+                        "name": "description",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 0,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_68b8fcccc57a6"
+                    }
+                ],
+                "rows_per_page": 20
+            },
+            {
+                "key": "field_685aab8eef1d7",
+                "label": "Session",
+                "name": "session",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_68b8fdec75f5b",
+                            "operator": "!=",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_685aab93ef1d8",
+                "label": "Time",
+                "name": "time",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_68b8fdec75f5b",
+                            "operator": "!=",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_685aab9fef1d9",
+                "label": "Venue",
+                "name": "venue",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_68b8fdec75f5b",
+                            "operator": "!=",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_685aaba6ef1da",
+                "label": "Speaker photo",
+                "name": "speaker_photo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 3,
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_685aabc7ef1db",
+                "label": "Speaker name",
+                "name": "speaker_name",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_685aabcfef1dc",
+                "label": "Speaker details",
+                "name": "speaker_details",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_685aabe1ef1dd",
+                "label": "Delegates",
+                "name": "delegates",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2,
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_685aabecef1de",
+                        "label": "Photo",
+                        "name": "photo",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 3,
+                        "return_format": "url",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "parent_repeater": "field_685aabe1ef1dd"
+                    },
+                    {
+                        "key": "field_685aabf9ef1df",
+                        "label": "Name",
+                        "name": "name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_685aabe1ef1dd"
+                    },
+                    {
+                        "key": "field_685aac0def1e0",
+                        "label": "Position",
+                        "name": "position",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_685aabe1ef1dd"
+                    },
+                    {
+                        "key": "field_685aac1fef1e1",
+                        "label": "Company",
+                        "name": "company",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_685aabe1ef1dd"
+                    },
+                    {
+                        "key": "field_68a709de9c97d",
+                        "label": "LinkedIn Profile",
+                        "name": "linkedin_link",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 1,
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_685aabe1ef1dd"
+                    }
+                ]
+            },
+            {
+                "key": "field_68b56ccfb8bd9",
+                "label": "Gradient Generator",
+                "name": "",
+                "aria-label": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 0,
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_68b56900b8bd8",
+                "label": "Add Custom Background Color",
+                "name": "add_custom_background_color",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "Add a custom background color to the speaker banner.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 0,
+                "message": "Add Background Color",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_68b56d10b8bda",
+                "label": "",
+                "name": "gradient_generator",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_68b56900b8bd8",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 0,
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_68b56d29b8bdb",
+                        "label": "Gradient Type",
+                        "name": "gradient_type",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "Choose the type of gradient",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 0,
+                        "choices": {
+                            "linear": "Linear Gradient",
+                            "radial": "Radial Gradient"
+                        },
+                        "default_value": "linear",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": "",
+                        "create_options": 0,
+                        "save_options": 0
+                    },
+                    {
+                        "key": "field_68b56d58b8bdd",
+                        "label": "Direction",
+                        "name": "direction",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "Set the direction for linear gradients",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_68b56d29b8bdb",
+                                    "operator": "==",
+                                    "value": "linear"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 0,
+                        "choices": {
+                            "to top": "To Top (0deg)",
+                            "to top right": "To Top Right (45deg)",
+                            "to right": "To Right (90deg)",
+                            "to bottom right": "To Bottom Right (135deg)",
+                            "to bottom": "To Bottom (180deg)",
+                            "to bottom left": "To Bottom Left (225deg)",
+                            "to left": "To Left (270deg)",
+                            "to top left": "To Top Left (315deg)"
+                        },
+                        "default_value": "to top",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": "",
+                        "create_options": 0,
+                        "save_options": 0
+                    },
+                    {
+                        "key": "field_68b56d7bb8bde",
+                        "label": "Custom Angle",
+                        "name": "custom_angle",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "Enter a custom angle in degrees (0-360). This will override the direction setting.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_68b56d29b8bdb",
+                                    "operator": "==",
+                                    "value": "linear"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 0,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_68b56e0fb8bdf",
+                        "label": "Radial Position",
+                        "name": "radial_position",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "Set the position for radial gradients",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_68b56d29b8bdb",
+                                    "operator": "==",
+                                    "value": "radial"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 0,
+                        "choices": {
+                            "center": "Center",
+                            "top": "Top",
+                            "bottom": "Bottom",
+                            "left": "Left",
+                            "right": "Right",
+                            "top left": "Top Left",
+                            "top right": "Top Right",
+                            "bottom left": "Bottom Left",
+                            "bottom right": "Bottom Right"
+                        },
+                        "default_value": "center",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": "",
+                        "create_options": 0,
+                        "save_options": 0
+                    },
+                    {
+                        "key": "field_68b56e45b8be0",
+                        "label": "Gradient Colors",
+                        "name": "gradient_colors",
+                        "aria-label": "",
+                        "type": "repeater",
+                        "instructions": "Add gradient color stops. Minimum 2 colors required.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "wpml_cf_preferences": 0,
+                        "collapsed": "",
+                        "min": 2,
+                        "max": 10,
+                        "layout": "table",
+                        "button_label": "Add Color",
+                        "sub_fields": [
+                            {
+                                "key": "field_68b56e64b8be1",
+                                "label": "Color",
+                                "name": "color",
+                                "aria-label": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "wpml_cf_preferences": 0,
+                                "default_value": "",
+                                "enable_opacity": false,
+                                "custom_palette_source": "",
+                                "palette_colors": "",
+                                "show_color_wheel": true,
+                                "return_format": "string",
+                                "parent_repeater": "field_68b56e45b8be0"
+                            },
+                            {
+                                "key": "field_68b56e6fb8be2",
+                                "label": "Position",
+                                "name": "position",
+                                "aria-label": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "wpml_cf_preferences": 0,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "parent_repeater": "field_68b56e45b8be0"
+                            }
+                        ],
+                        "rows_per_page": 20
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_taxonomy",
+                    "operator": "==",
+                    "value": "news_type:events"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "acfml_field_group_mode": "advanced"
+    }
+]
